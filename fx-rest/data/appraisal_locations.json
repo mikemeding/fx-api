@@ -1,0 +1,602 @@
+[
+  {
+    "pid":100096000000,
+    "situs_address":"509 ELM ST",
+    "situs_city":"DALLAS",
+    "appraisal_district":"Dallas"
+  },
+  {
+    "pid":101221000000,
+    "situs_address":"1423 W GRIFFIN ST",
+    "situs_city":"DALLAS",
+    "appraisal_district":"Dallas"
+  },
+  {
+    "pid":107560000000,
+    "situs_address":"301 TEXAS ST",
+    "situs_city":"DALLAS",
+    "appraisal_district":"Dallas"
+  },
+  {
+    "pid":107680200000,
+    "situs_address":"1503 MARSEILLE PL",
+    "situs_city":"DALLAS",
+    "appraisal_district":"Dallas"
+  },
+  {
+    "pid":107680320000,
+    "situs_address":"1403 MARSEILLE PL",
+    "situs_city":"DALLAS",
+    "appraisal_district":"Dallas"
+  },
+  {
+    "pid":107680440000,
+    "situs_address":"904 PAVILLION ST",
+    "situs_city":"DALLAS",
+    "appraisal_district":"Dallas"
+  },
+  {
+    "pid":107682240000,
+    "situs_address":"3207 BASIL CT",
+    "situs_city":"DALLAS",
+    "appraisal_district":"Dallas"
+  },
+  {
+    "pid":107682420000,
+    "situs_address":"1524 SPENWICK TERRACE ",
+    "situs_city":"DALLAS",
+    "appraisal_district":"Dallas"
+  },
+  {
+    "pid":107682560000,
+    "situs_address":"1420 SPENWICK TERRACE ",
+    "situs_city":"DALLAS",
+    "appraisal_district":"Dallas"
+  },
+  {
+    "pid":107682620000,
+    "situs_address":"1408 SPENWICK TERRACE ",
+    "situs_city":"DALLAS",
+    "appraisal_district":"Dallas"
+  },
+  {
+    "pid":107686120000,
+    "situs_address":"3208 BASIL CT",
+    "situs_city":"DALLAS",
+    "appraisal_district":"Dallas"
+  },
+  {
+    "pid":107686140000,
+    "situs_address":"3212 BASIL CT",
+    "situs_city":"DALLAS",
+    "appraisal_district":"Dallas"
+  },
+  {
+    "pid":107686180000,
+    "situs_address":"3220 BASIL CT",
+    "situs_city":"DALLAS",
+    "appraisal_district":"Dallas"
+  },
+  {
+    "pid":107686260000,
+    "situs_address":"3236 BASIL CT",
+    "situs_city":"DALLAS",
+    "appraisal_district":"Dallas"
+  },
+  {
+    "pid":107686360000,
+    "situs_address":"3219 LAKENHEATH PL",
+    "situs_city":"DALLAS",
+    "appraisal_district":"Dallas"
+  },
+  {
+    "pid":107686380000,
+    "situs_address":"3215 LAKENHEATH PL",
+    "situs_city":"DALLAS",
+    "appraisal_district":"Dallas"
+  },
+  {
+    "pid":107687000000,
+    "situs_address":"3204 LAKENHEATH PL",
+    "situs_city":"DALLAS",
+    "appraisal_district":"Dallas"
+  },
+  {
+    "pid":107687020000,
+    "situs_address":"3208 LAKENHEATH PL",
+    "situs_city":"DALLAS",
+    "appraisal_district":"Dallas"
+  },
+  {
+    "pid":107687060000,
+    "situs_address":"3216 LAKENHEATH PL",
+    "situs_city":"DALLAS",
+    "appraisal_district":"Dallas"
+  },
+  {
+    "pid":107687100000,
+    "situs_address":"3224 LAKENHEATH PL",
+    "situs_city":"DALLAS",
+    "appraisal_district":"Dallas"
+  },
+  {
+    "pid":107688040000,
+    "situs_address":"3112 TREVOLLE PL",
+    "situs_city":"DALLAS",
+    "appraisal_district":"Dallas"
+  },
+  {
+    "pid":107688260000,
+    "situs_address":"3223 BRYAN ST",
+    "situs_city":"DALLAS",
+    "appraisal_district":"Dallas"
+  },
+  {
+    "pid":107688300000,
+    "situs_address":"3215 BRYAN ST",
+    "situs_city":"DALLAS",
+    "appraisal_district":"Dallas"
+  },
+  {
+    "pid":107688360000,
+    "situs_address":"3203 BRYAN ST",
+    "situs_city":"DALLAS",
+    "appraisal_district":"Dallas"
+  },
+  {
+    "pid":109441000000,
+    "situs_address":"5602 REIGER AVE",
+    "situs_city":"DALLAS",
+    "appraisal_district":"Dallas"
+  },
+  {
+    "pid":109681000000,
+    "situs_address":"1300 POWHATTAN ST",
+    "situs_city":"DALLAS",
+    "appraisal_district":"Dallas"
+  },
+  {
+    "pid":109684000000,
+    "situs_address":"1214 POWHATTAN ST",
+    "situs_city":"DALLAS",
+    "appraisal_district":"Dallas"
+  },
+  {
+    "pid":110131000000,
+    "situs_address":"5532 REIGER AVE",
+    "situs_city":"DALLAS",
+    "appraisal_district":"Dallas"
+  },
+  {
+    "pid":111676220000,
+    "situs_address":"1308 BIRKENHEAD CT",
+    "situs_city":"DALLAS",
+    "appraisal_district":"Dallas"
+  },
+  {
+    "pid":111676260000,
+    "situs_address":"1316 BIRKENHEAD CT",
+    "situs_city":"DALLAS",
+    "appraisal_district":"Dallas"
+  },
+  {
+    "pid":111676280000,
+    "situs_address":"1320 BIRKENHEAD CT",
+    "situs_city":"DALLAS",
+    "appraisal_district":"Dallas"
+  },
+  {
+    "pid":111739000000,
+    "situs_address":"3024 ADOLPH ST",
+    "situs_city":"DALLAS",
+    "appraisal_district":"Dallas"
+  },
+  {
+    "pid":113113000000,
+    "situs_address":"2315 ROUTH ST",
+    "situs_city":"DALLAS",
+    "appraisal_district":"Dallas"
+  },
+  {
+    "pid":113251000000,
+    "situs_address":"2608 HIBERNIA ST",
+    "situs_city":"DALLAS",
+    "appraisal_district":"Dallas"
+  },
+  {
+    "pid":113275000000,
+    "situs_address":"2615 STATE ST",
+    "situs_city":"DALLAS",
+    "appraisal_district":"Dallas"
+  },
+  {
+    "pid":115720000000,
+    "situs_address":"2004 CADDO ST",
+    "situs_city":"DALLAS",
+    "appraisal_district":"Dallas"
+  },
+  {
+    "pid":115735000000,
+    "situs_address":"1906 CADDO ST",
+    "situs_city":"DALLAS",
+    "appraisal_district":"Dallas"
+  },
+  {
+    "pid":115828000000,
+    "situs_address":"202 N ORIENT ST",
+    "situs_city":"DALLAS",
+    "appraisal_district":"Dallas"
+  },
+  {
+    "pid":115891000000,
+    "situs_address":"5316 REIGER AVE",
+    "situs_city":"DALLAS",
+    "appraisal_district":"Dallas"
+  },
+  {
+    "pid":115966000000,
+    "situs_address":"2100 CADDO ST",
+    "situs_city":"DALLAS",
+    "appraisal_district":"Dallas"
+  },
+  {
+    "pid":118231000000,
+    "situs_address":"1520 HOLLY ST",
+    "situs_city":"DALLAS",
+    "appraisal_district":"Dallas"
+  },
+  {
+    "pid":118291000000,
+    "situs_address":"4218 ROSELAND AVE",
+    "situs_city":"DALLAS",
+    "appraisal_district":"Dallas"
+  },
+  {
+    "pid":118492000000,
+    "situs_address":"1900 N PRAIRIE AVE",
+    "situs_city":"DALLAS",
+    "appraisal_district":"Dallas"
+  },
+  {
+    "pid":118498000000,
+    "situs_address":"1904 N PRAIRIE AVE",
+    "situs_city":"DALLAS",
+    "appraisal_district":"Dallas"
+  },
+  {
+    "pid":118537000000,
+    "situs_address":"2038 N PRAIRIE AVE",
+    "situs_city":"DALLAS",
+    "appraisal_district":"Dallas"
+  },
+  {
+    "pid":118558000000,
+    "situs_address":"2124 N PRAIRIE AVE",
+    "situs_city":"DALLAS",
+    "appraisal_district":"Dallas"
+  },
+  {
+    "pid":118576000000,
+    "situs_address":"4640 MUNGER AVE",
+    "situs_city":"DALLAS",
+    "appraisal_district":"Dallas"
+  },
+  {
+    "pid":118594000000,
+    "situs_address":"1931 N PRAIRIE AVE",
+    "situs_city":"DALLAS",
+    "appraisal_district":"Dallas"
+  },
+  {
+    "pid":118642000000,
+    "situs_address":"2115 N PRAIRIE AVE",
+    "situs_city":"DALLAS",
+    "appraisal_district":"Dallas"
+  },
+  {
+    "pid":118732000000,
+    "situs_address":"4221 ROSELAND AVE",
+    "situs_city":"DALLAS",
+    "appraisal_district":"Dallas"
+  },
+  {
+    "pid":118762000000,
+    "situs_address":"4214 MUNGER AVE",
+    "situs_city":"DALLAS",
+    "appraisal_district":"Dallas"
+  },
+  {
+    "pid":118774000000,
+    "situs_address":"4301 ROSELAND AVE",
+    "situs_city":"DALLAS",
+    "appraisal_district":"Dallas"
+  },
+  {
+    "pid":118780000000,
+    "situs_address":"4307 ROSELAND AVE",
+    "situs_city":"DALLAS",
+    "appraisal_district":"Dallas"
+  },
+  {
+    "pid":118783000000,
+    "situs_address":"4311 ROSELAND AVE",
+    "situs_city":"DALLAS",
+    "appraisal_district":"Dallas"
+  },
+  {
+    "pid":118849000000,
+    "situs_address":"4406 MUNGER AVE",
+    "situs_city":"DALLAS",
+    "appraisal_district":"Dallas"
+  },
+  {
+    "pid":118873000000,
+    "situs_address":"4211 DELANO PL",
+    "situs_city":"DALLAS",
+    "appraisal_district":"Dallas"
+  },
+  {
+    "pid":118885000000,
+    "situs_address":"4227 DELANO PL",
+    "situs_city":"DALLAS",
+    "appraisal_district":"Dallas"
+  },
+  {
+    "pid":118978000000,
+    "situs_address":"4417 MUNGER AVE",
+    "situs_city":"DALLAS",
+    "appraisal_district":"Dallas"
+  },
+  {
+    "pid":119005000000,
+    "situs_address":"4301 MUNGER AVE",
+    "situs_city":"DALLAS",
+    "appraisal_district":"Dallas"
+  },
+  {
+    "pid":119032000000,
+    "situs_address":"1917 ASHBY ST",
+    "situs_city":"DALLAS",
+    "appraisal_district":"Dallas"
+  },
+  {
+    "pid":119035000000,
+    "situs_address":"1915 ASHBY ST",
+    "situs_city":"DALLAS",
+    "appraisal_district":"Dallas"
+  },
+  {
+    "pid":119038000000,
+    "situs_address":"1916 PEAK ST",
+    "situs_city":"DALLAS",
+    "appraisal_district":"Dallas"
+  },
+  {
+    "pid":119290000000,
+    "situs_address":"4327 CABELL DR",
+    "situs_city":"DALLAS",
+    "appraisal_district":"Dallas"
+  },
+  {
+    "pid":119467000000,
+    "situs_address":"2303 N CARROLL AVE",
+    "situs_city":"DALLAS",
+    "appraisal_district":"Dallas"
+  },
+  {
+    "pid":119536000000,
+    "situs_address":"4414 RUSK AVE",
+    "situs_city":"DALLAS",
+    "appraisal_district":"Dallas"
+  },
+  {
+    "pid":119539000000,
+    "situs_address":"4418 RUSK AVE",
+    "situs_city":"DALLAS",
+    "appraisal_district":"Dallas"
+  },
+  {
+    "pid":119545000000,
+    "situs_address":"2319 N CARROLL AVE",
+    "situs_city":"DALLAS",
+    "appraisal_district":"Dallas"
+  },
+  {
+    "pid":119608000000,
+    "situs_address":"4410 CAPITOL AVE",
+    "situs_city":"DALLAS",
+    "appraisal_district":"Dallas"
+  },
+  {
+    "pid":119629000000,
+    "situs_address":"4314 CAPITOL AVE",
+    "situs_city":"DALLAS",
+    "appraisal_district":"Dallas"
+  },
+  {
+    "pid":119638000000,
+    "situs_address":"5703 LINDELL AVE",
+    "situs_city":"DALLAS",
+    "appraisal_district":"Dallas"
+  },
+  {
+    "pid":119656000000,
+    "situs_address":"5811 LINDELL AVE",
+    "situs_city":"DALLAS",
+    "appraisal_district":"Dallas"
+  },
+  {
+    "pid":119662000000,
+    "situs_address":"5819 LINDELL AVE",
+    "situs_city":"DALLAS",
+    "appraisal_district":"Dallas"
+  },
+  {
+    "pid":119668000000,
+    "situs_address":"5706 LINDELL AVE",
+    "situs_city":"DALLAS",
+    "appraisal_district":"Dallas"
+  },
+  {
+    "pid":119677000000,
+    "situs_address":"5802 LINDELL AVE",
+    "situs_city":"DALLAS",
+    "appraisal_district":"Dallas"
+  },
+  {
+    "pid":119686000000,
+    "situs_address":"5816 LINDELL AVE",
+    "situs_city":"DALLAS",
+    "appraisal_district":"Dallas"
+  },
+  {
+    "pid":119689000000,
+    "situs_address":"5818 LINDELL AVE",
+    "situs_city":"DALLAS",
+    "appraisal_district":"Dallas"
+  },
+  {
+    "pid":119695000000,
+    "situs_address":"5815 BRYAN PKWY",
+    "situs_city":"DALLAS",
+    "appraisal_district":"Dallas"
+  },
+  {
+    "pid":119707000000,
+    "situs_address":"5717 BRYAN PKWY",
+    "situs_city":"DALLAS",
+    "appraisal_district":"Dallas"
+  },
+  {
+    "pid":119734000000,
+    "situs_address":"4625 MUNGER AVE",
+    "situs_city":"DALLAS",
+    "appraisal_district":"Dallas"
+  },
+  {
+    "pid":119743000000,
+    "situs_address":"4634 MONARCH ST",
+    "situs_city":"DALLAS",
+    "appraisal_district":"Dallas"
+  },
+  {
+    "pid":119764000000,
+    "situs_address":"4700 MONARCH ST",
+    "situs_city":"DALLAS",
+    "appraisal_district":"Dallas"
+  },
+  {
+    "pid":119770000000,
+    "situs_address":"1910 N CARROLL AVE",
+    "situs_city":"DALLAS",
+    "appraisal_district":"Dallas"
+  },
+  {
+    "pid":119800000000,
+    "situs_address":"1918 CALIFORNIA DR",
+    "situs_city":"DALLAS",
+    "appraisal_district":"Dallas"
+  },
+  {
+    "pid":119842000000,
+    "situs_address":"2015 CALIFORNIA DR",
+    "situs_city":"DALLAS",
+    "appraisal_district":"Dallas"
+  },
+  {
+    "pid":119956000000,
+    "situs_address":"5110 LIVE OAK ST",
+    "situs_city":"DALLAS",
+    "appraisal_district":"Dallas"
+  },
+  {
+    "pid":119983000000,
+    "situs_address":"5126 BRYAN ST",
+    "situs_city":"DALLAS",
+    "appraisal_district":"Dallas"
+  },
+  {
+    "pid":120121000000,
+    "situs_address":"1715 BENNETT AVE",
+    "situs_city":"DALLAS",
+    "appraisal_district":"Dallas"
+  },
+  {
+    "pid":120127000100,
+    "situs_address":"1721 BENNETT AVE",
+    "situs_city":"DALLAS",
+    "appraisal_district":"Dallas"
+  },
+  {
+    "pid":120154000000,
+    "situs_address":"5306 COLUMBIA AVE",
+    "situs_city":"DALLAS",
+    "appraisal_district":"Dallas"
+  },
+  {
+    "pid":120172000000,
+    "situs_address":"5329 EAST SIDE AVE",
+    "situs_city":"DALLAS",
+    "appraisal_district":"Dallas"
+  },
+  {
+    "pid":120202020200,
+    "situs_address":"5404 COLUMBIA AVE",
+    "situs_city":"DALLAS",
+    "appraisal_district":"Dallas"
+  },
+  {
+    "pid":120235000000,
+    "situs_address":"5405 EAST SIDE AVE",
+    "situs_city":"DALLAS",
+    "appraisal_district":"Dallas"
+  },
+  {
+    "pid":120274000000,
+    "situs_address":"5602 LINDELL AVE",
+    "situs_city":"DALLAS",
+    "appraisal_district":"Dallas"
+  },
+  {
+    "pid":120277000000,
+    "situs_address":"5604 LINDELL AVE",
+    "situs_city":"DALLAS",
+    "appraisal_district":"Dallas"
+  },
+  {
+    "pid":120280000000,
+    "situs_address":"5608 LINDELL AVE",
+    "situs_city":"DALLAS",
+    "appraisal_district":"Dallas"
+  },
+  {
+    "pid":120292000000,
+    "situs_address":"5615 BRYAN PKWY",
+    "situs_city":"DALLAS",
+    "appraisal_district":"Dallas"
+  },
+  {
+    "pid":120295000000,
+    "situs_address":"5611 BRYAN PKWY",
+    "situs_city":"DALLAS",
+    "appraisal_district":"Dallas"
+  },
+  {
+    "pid":120301000000,
+    "situs_address":"5601 BRYAN PKWY",
+    "situs_city":"DALLAS",
+    "appraisal_district":"Dallas"
+  },
+  {
+    "pid":120331000000,
+    "situs_address":"5606 BRYAN PKWY",
+    "situs_city":"DALLAS",
+    "appraisal_district":"Dallas"
+  },
+  {
+    "pid":120334000000,
+    "situs_address":"5610 BRYAN PKWY",
+    "situs_city":"DALLAS",
+    "appraisal_district":"Dallas"
+  }
+]
