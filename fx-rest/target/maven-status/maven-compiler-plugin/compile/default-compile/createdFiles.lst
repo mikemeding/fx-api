@@ -1,7 +1,11 @@
+com/uml/fx/entities/FxUsers_.class
+com/uml/fx/entities/FxUsersServiceImpl.class
 com/uml/fx/response/NamesResponse.class
 com/uml/fx/response/TimeSeriesResponse.class
 com/uml/fx/response/MapResponse.class
+com/uml/fx/entities/FxUsersService.class
 com/uml/fx/response/SubTagReferenceResponse.class
+com/uml/fx/entities/FxUsers.class
 com/uml/fx/response/ListResponse.class
 com/uml/fx/rest/FundsExpert.class
 com/uml/fx/response/AbstractResponse.class

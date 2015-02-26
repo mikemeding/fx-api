@@ -1,4 +1,4 @@
-REATE TABLE appraisal_data (
+CREATE TABLE appraisal_data (
     list INT,
     list_address VARCHAR(42) CHARACTER SET utf8,
     list_assessed_value INT,

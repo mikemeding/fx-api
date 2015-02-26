@@ -1,4 +1,4 @@
-REATE TABLE fx_users (
+CREATE TABLE fx_users (
     list INT,
     list_active INT,
     list_can_edit_pages INT,

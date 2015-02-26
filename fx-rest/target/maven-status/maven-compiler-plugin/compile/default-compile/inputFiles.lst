@@ -2,10 +2,13 @@
 /BIG/DOCUMENTS/fx-api/fx-rest/src/main/java/com/uml/fx/response/MessageResponse.java
 /BIG/DOCUMENTS/fx-api/fx-rest/src/main/java/com/uml/fx/rest/CORSFilter.java
 /BIG/DOCUMENTS/fx-api/fx-rest/src/main/java/com/uml/fx/response/SingleResponse.java
+/BIG/DOCUMENTS/fx-api/fx-rest/src/main/java/com/uml/fx/entities/FxUsersServiceImpl.java
+/BIG/DOCUMENTS/fx-api/fx-rest/src/main/java/com/uml/fx/entities/FxUsers.java
 /BIG/DOCUMENTS/fx-api/fx-rest/src/main/java/com/uml/fx/response/ListResponse.java
 /BIG/DOCUMENTS/fx-api/fx-rest/src/main/java/com/uml/fx/response/AbstractResponse.java
 /BIG/DOCUMENTS/fx-api/fx-rest/src/main/java/com/uml/fx/rest/FundsExpert.java
 /BIG/DOCUMENTS/fx-api/fx-rest/src/main/java/com/uml/fx/response/SubTagReference.java
+/BIG/DOCUMENTS/fx-api/fx-rest/src/main/java/com/uml/fx/entities/FxUsersService.java
 /BIG/DOCUMENTS/fx-api/fx-rest/src/main/java/com/uml/fx/response/GenericResponse.java
 /BIG/DOCUMENTS/fx-api/fx-rest/src/main/java/com/uml/fx/response/NamesResponse.java
 /BIG/DOCUMENTS/fx-api/fx-rest/src/main/java/com/uml/fx/response/MapResponse.java

@@ -1,4 +1,4 @@
-REATE TABLE appraisal_locations (
+CREATE TABLE appraisal_locations (
     list INT,
     list_appraisal_district VARCHAR(6) CHARACTER SET utf8,
     list_pid INT,
