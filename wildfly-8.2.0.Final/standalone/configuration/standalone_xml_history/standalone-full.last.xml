@@ -507,4 +507,9 @@
         </outbound-socket-binding>
     </socket-binding-group>
 
+    <deployments>
+        <deployment name="fx-rest-1.0.war" runtime-name="fx-rest-1.0.war">
+            <content sha1="db6d3ea2aac93800a7a7b8aab2e00c2718b88cf7"/>
+        </deployment>
+    </deployments>
 </server>

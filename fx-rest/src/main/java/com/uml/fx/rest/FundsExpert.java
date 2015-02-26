@@ -1,5 +1,6 @@
 package com.uml.fx.rest;
 
+import com.uml.fx.entities.FxUsersService;
 import com.uml.fx.response.GenericResponse;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
@@ -15,8 +16,9 @@ import javax.ws.rs.core.Response;
 import java.util.logging.Logger;
 import javax.ws.rs.POST;
 import javax.ws.rs.Path;
-import os.util.json.DefaultJSONFactory;
-import os.util.json.JSONObject;
+import com.uml.fx.json.DefaultJSONFactory;
+import com.uml.fx.json.JSONObject;
+import javax.ejb.EJB;
 
 /**
  *
@@ -41,6 +43,9 @@ public class FundsExpert {
 
 	private final List<JSONObject> userList = new ArrayList<>();
 
+	@EJB
+	private FxUsersService users;
+
 	public FundsExpert() {
 		JSONObject jo = JSONFactory.jsonObject("{username:\"mike\",password:\"ccaes1\"}");
 		this.userList.add(jo);
@@ -59,6 +64,8 @@ public class FundsExpert {
 	@Produces({MediaType.TEXT_PLAIN})
 	public Response ping(@Context HttpServletRequest req
 	) {
+		log.info("ABOUT TO CALL DATABASE");
+		users.createUserPasswd(123, "password");
 		return Response.ok("PONG", MediaType.TEXT_PLAIN).build();
 	}
 

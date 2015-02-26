@@ -5,10 +5,13 @@
  */
 package com.uml.fx.entities;
 
+import javax.ejb.Local;
+
 /**
  *
  * @author mike
  */
+@Local
 public interface FxUsersService {
 	/**
 	 * Create a new entry in the password table for a given userId

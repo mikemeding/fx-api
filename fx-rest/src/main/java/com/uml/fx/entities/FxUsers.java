@@ -9,6 +9,7 @@ import java.io.Serializable;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.xml.bind.annotation.XmlRootElement;
 
 /**
  * SCHEMA +---------------------+-------------+------+-----+---------+-------+ |
@@ -24,6 +25,7 @@ import javax.persistence.Table;
  */
 @Entity
 @Table(name = "fx_passwd")
+@XmlRootElement
 public class FxUsers implements Serializable {
 
 	private int userId;

@@ -149,6 +149,31 @@
                         <password>sa</password>
                     </security>
                 </datasource>
+                <datasource jta="true" jndi-name="java:jboss/datasources/fxdb" pool-name="fxdb" enabled="true" use-ccm="true">
+                    <connection-url>jdbc:mariadb://localhost:3306</connection-url>
+                    <driver-class>org.mariadb.jdbc.Driver</driver-class>
+                    <driver>mariadb-java-client-1.1.7.jar</driver>
+                    <security>
+                        <user-name>root</user-name>
+                        <password>ccaes1</password>
+                    </security>
+                    <validation>
+                        <validate-on-match>false</validate-on-match>
+                        <background-validation>false</background-validation>
+                    </validation>
+                    <timeout>
+                        <set-tx-query-timeout>false</set-tx-query-timeout>
+                        <blocking-timeout-millis>0</blocking-timeout-millis>
+                        <idle-timeout-minutes>0</idle-timeout-minutes>
+                        <query-timeout>0</query-timeout>
+                        <use-try-lock>0</use-try-lock>
+                        <allocation-retry>0</allocation-retry>
+                        <allocation-retry-wait-millis>0</allocation-retry-wait-millis>
+                    </timeout>
+                    <statement>
+                        <share-prepared-statements>false</share-prepared-statements>
+                    </statement>
+                </datasource>
                 <drivers>
                     <driver name="h2" module="com.h2database.h2">
                         <xa-datasource-class>org.h2.jdbcx.JdbcDataSource</xa-datasource-class>
@@ -482,4 +507,9 @@
         </outbound-socket-binding>
     </socket-binding-group>
 
+    <deployments>
+        <deployment name="fx-rest-1.0.war" runtime-name="fx-rest-1.0.war">
+            <content sha1="db6d3ea2aac93800a7a7b8aab2e00c2718b88cf7"/>
+        </deployment>
+    </deployments>
 </server>

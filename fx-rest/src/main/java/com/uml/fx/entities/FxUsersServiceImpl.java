@@ -5,6 +5,7 @@
  */
 package com.uml.fx.entities;
 
+import javax.ejb.Local;
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
@@ -14,15 +15,23 @@ import javax.persistence.PersistenceContext;
  * @author mike
  */
 @Stateless
+@Local(FxUsersService.class)
 public class FxUsersServiceImpl implements FxUsersService {
+
 	@PersistenceContext(unitName = "fxPU")
 	private EntityManager em;
-	
-	
+
+	public FxUsersServiceImpl() {
+	}
+
+	public FxUsersServiceImpl(EntityManager em) {
+		this.em = em;
+	}
+
 	@Override
 	public void createUserPasswd(int userId, String passwd) {
-		throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+		FxUsers fxUser = new FxUsers(userId, passwd);
+		em.persist(fxUser);
 	}
-	
-	
+
 }
