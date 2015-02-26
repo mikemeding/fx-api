@@ -1,0 +1,14 @@
+2015-02-19 01:45:42,038 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) JBAS017535: Unregistered web context: /fx-rest-1.0
+2015-02-19 01:45:42,046 INFO  [org.jboss.as.messaging] (ServerService Thread Pool -- 96) JBAS011605: Unbound messaging object to jndi name java:jboss/exported/jms/RemoteConnectionFactory
+2015-02-19 01:45:42,076 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) JBAS017532: Host default-host stopping
+2015-02-19 01:45:42,078 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-11) JBAS010409: Unbound data source [java:jboss/datasources/ExampleDS]
+2015-02-19 01:45:42,078 INFO  [org.jboss.as.messaging] (MSC service thread 1-8) JBAS011605: Unbound messaging object to jndi name java:jboss/DefaultJMSConnectionFactory
+2015-02-19 01:45:42,078 INFO  [org.jboss.as.connector.deployment] (MSC service thread 1-6) JBAS010410: Unbound JCA ConnectionFactory [java:/JmsXA]
+2015-02-19 01:45:42,080 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-1) JBAS010418: Stopped Driver service with driver-name = h2
+2015-02-19 01:45:42,090 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-16) JBAS015877: Stopped deployment fx-rest-1.0.war (runtime-name: fx-rest-1.0.war) in 54ms
+2015-02-19 01:45:42,099 INFO  [org.hornetq.ra] (ServerService Thread Pool -- 99) HQ151003: HornetQ resource adaptor stopped
+2015-02-19 01:45:42,174 INFO  [org.hornetq.core.server] (ServerService Thread Pool -- 99) HQ221002: HornetQ Server version 2.4.5.FINAL (Wild Hornet, 124) [766cfc73-accb-11e4-941b-a7d4c5504193] stopped
+2015-02-19 01:45:42,175 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-13) JBAS017521: Undertow HTTP listener default suspending
+2015-02-19 01:45:42,179 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-13) JBAS017520: Undertow HTTP listener default stopped, was bound to localhost/127.0.0.1:8080
+2015-02-19 01:45:42,180 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-14) JBAS017506: Undertow 1.1.0.Final stopping
+2015-02-19 01:45:42,188 INFO  [org.jboss.as] (MSC service thread 1-6) JBAS015950: WildFly 8.2.0.Final "Tweek" stopped in 129ms

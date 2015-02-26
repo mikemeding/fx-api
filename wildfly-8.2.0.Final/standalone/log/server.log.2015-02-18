@@ -1,0 +1,418 @@
+2015-02-18 19:39:34,455 INFO  [org.jboss.modules] (main) JBoss Modules version 1.3.3.Final
+2015-02-18 19:39:34,900 INFO  [org.jboss.msc] (main) JBoss MSC version 1.2.2.Final
+2015-02-18 19:39:34,976 INFO  [org.jboss.as] (MSC service thread 1-7) JBAS015899: WildFly 8.2.0.Final "Tweek" starting
+2015-02-18 19:39:34,984 DEBUG [org.jboss.as.config] (MSC service thread 1-7) Configured system properties:
+	[Standalone] = 
+	awt.toolkit = sun.awt.X11.XToolkit
+	file.encoding = UTF-8
+	file.encoding.pkg = sun.io
+	file.separator = /
+	java.awt.graphicsenv = sun.awt.X11GraphicsEnvironment
+	java.awt.headless = true
+	java.awt.printerjob = sun.print.PSPrinterJob
+	java.class.path = /usr/apps/wildfly-8.2.0.Final/jboss-modules.jar
+	java.class.version = 52.0
+	java.endorsed.dirs = /usr/java/jdk1.8.0_25/jre/lib/endorsed
+	java.ext.dirs = /usr/java/jdk1.8.0_25/jre/lib/ext:/usr/java/packages/lib/ext
+	java.home = /usr/java/jdk1.8.0_25/jre
+	java.io.tmpdir = /tmp
+	java.library.path = /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+	java.net.preferIPv4Stack = true
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 1.8.0_25-b17
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 1.8
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+	java.version = 1.8.0_25
+	java.vm.info = mixed mode
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 1.8
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 25.25-b02
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	javax.xml.datatype.DatatypeFactory = __redirected.__DatatypeFactory
+	javax.xml.parsers.DocumentBuilderFactory = __redirected.__DocumentBuilderFactory
+	javax.xml.parsers.SAXParserFactory = __redirected.__SAXParserFactory
+	javax.xml.stream.XMLEventFactory = __redirected.__XMLEventFactory
+	javax.xml.stream.XMLInputFactory = __redirected.__XMLInputFactory
+	javax.xml.stream.XMLOutputFactory = __redirected.__XMLOutputFactory
+	javax.xml.transform.TransformerFactory = __redirected.__TransformerFactory
+	javax.xml.validation.SchemaFactory:http://www.w3.org/2001/XMLSchema = __redirected.__SchemaFactory
+	javax.xml.xpath.XPathFactory:http://java.sun.com/jaxp/xpath/dom = __redirected.__XPathFactory
+	jboss.home.dir = /usr/apps/wildfly-8.2.0.Final
+	jboss.host.name = apollo8
+	jboss.modules.dir = /usr/apps/wildfly-8.2.0.Final/modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = apollo8
+	jboss.qualified.host.name = apollo8
+	jboss.server.base.dir = /usr/apps/wildfly-8.2.0.Final/standalone
+	jboss.server.config.dir = /usr/apps/wildfly-8.2.0.Final/standalone/configuration
+	jboss.server.data.dir = /usr/apps/wildfly-8.2.0.Final/standalone/data
+	jboss.server.deploy.dir = /usr/apps/wildfly-8.2.0.Final/standalone/data/content
+	jboss.server.log.dir = /usr/apps/wildfly-8.2.0.Final/standalone/log
+	jboss.server.name = apollo8
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = /usr/apps/wildfly-8.2.0.Final/standalone/tmp
+	line.separator = 
+
+	logging.configuration = file:/usr/apps/wildfly-8.2.0.Final/standalone/configuration/logging.properties
+	module.path = /usr/apps/wildfly-8.2.0.Final/modules
+	org.jboss.boot.log.file = /usr/apps/wildfly-8.2.0.Final/standalone/log/server.log
+	org.jboss.resolver.warning = true
+	org.xml.sax.driver = __redirected.__XMLReaderFactory
+	os.arch = amd64
+	os.name = Linux
+	os.version = 3.16.0-30-generic
+	path.separator = :
+	sun.arch.data.model = 64
+	sun.boot.class.path = /usr/java/jdk1.8.0_25/jre/lib/resources.jar:/usr/java/jdk1.8.0_25/jre/lib/rt.jar:/usr/java/jdk1.8.0_25/jre/lib/sunrsasign.jar:/usr/java/jdk1.8.0_25/jre/lib/jsse.jar:/usr/java/jdk1.8.0_25/jre/lib/jce.jar:/usr/java/jdk1.8.0_25/jre/lib/charsets.jar:/usr/java/jdk1.8.0_25/jre/lib/jfr.jar:/usr/java/jdk1.8.0_25/jre/classes
+	sun.boot.library.path = /usr/java/jdk1.8.0_25/jre/lib/amd64
+	sun.cpu.endian = little
+	sun.cpu.isalist = 
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = /usr/apps/wildfly-8.2.0.Final/jboss-modules.jar -mp /usr/apps/wildfly-8.2.0.Final/modules org.jboss.as.standalone -Djboss.home.dir=/usr/apps/wildfly-8.2.0.Final -Djboss.server.base.dir=/usr/apps/wildfly-8.2.0.Final/standalone -c standalone-full.xml
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = UTF-8
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = unknown
+	user.country = US
+	user.dir = /usr/apps/wildfly-8.2.0.Final/standalone/configuration
+	user.home = /home/mike
+	user.language = en
+	user.name = mike
+	user.timezone = America/New_York
+2015-02-18 19:39:34,986 DEBUG [org.jboss.as.config] (MSC service thread 1-7) VM Arguments: -D[Standalone] -Xms64m -Xmx512m -XX:MaxPermSize=256m -Djava.net.preferIPv4Stack=true -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true -Dorg.jboss.boot.log.file=/usr/apps/wildfly-8.2.0.Final/standalone/log/server.log -Dlogging.configuration=file:/usr/apps/wildfly-8.2.0.Final/standalone/configuration/logging.properties 
+2015-02-18 19:39:37,547 INFO  [org.jboss.as.server] (Controller Boot Thread) JBAS015888: Creating http management service using socket-binding (management-http)
+2015-02-18 19:39:37,594 INFO  [org.xnio] (MSC service thread 1-12) XNIO version 3.3.0.Final
+2015-02-18 19:39:37,633 INFO  [org.xnio.nio] (MSC service thread 1-12) XNIO NIO Implementation Version 3.3.0.Final
+2015-02-18 19:39:37,653 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 35) JBAS010280: Activating Infinispan subsystem.
+2015-02-18 19:39:37,663 INFO  [org.jboss.as.jacorb] (ServerService Thread Pool -- 36) JBAS016300: Activating JacORB Subsystem
+2015-02-18 19:39:37,666 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 42) JBAS012615: Activated the following JSF Implementations: [main]
+2015-02-18 19:39:37,694 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 34) WFLYIO001: Worker 'default' has auto-configured to 16 core threads with 128 task threads based on your 8 available processors
+2015-02-18 19:39:37,705 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 51) JBAS013171: Activating Security Subsystem
+2015-02-18 19:39:37,711 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 52) JBAS010153: Node identifier property is set to the default value. Please make sure it is unique.
+2015-02-18 19:39:37,714 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 54) JBAS015537: Activating WebServices Extension
+2015-02-18 19:39:37,723 INFO  [org.jboss.as.security] (MSC service thread 1-11) JBAS013170: Current PicketBox version=4.0.21.Final
+2015-02-18 19:39:37,732 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 46) JBAS011800: Activating Naming Subsystem
+2015-02-18 19:39:37,735 INFO  [org.jboss.as.connector.logging] (MSC service thread 1-10) JBAS010408: Starting JCA Subsystem (IronJacamar 1.1.9.Final)
+2015-02-18 19:39:37,783 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) JBAS017502: Undertow 1.1.0.Final starting
+2015-02-18 19:39:37,783 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 53) JBAS017502: Undertow 1.1.0.Final starting
+2015-02-18 19:39:37,897 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 30) JBAS010403: Deploying JDBC-compliant driver class org.h2.Driver (version 1.3)
+2015-02-18 19:39:37,933 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-2) JBAS010417: Started Driver service with driver-name = h2
+2015-02-18 19:39:37,958 INFO  [org.jboss.remoting] (MSC service thread 1-12) JBoss Remoting version 4.0.6.Final
+2015-02-18 19:39:38,204 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-12) JBAS015400: Bound mail session [java:jboss/mail/Default]
+2015-02-18 19:39:38,211 INFO  [org.jboss.as.naming] (MSC service thread 1-3) JBAS011802: Starting Naming Service
+2015-02-18 19:39:38,224 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 53) JBAS017527: Creating file handler for path /usr/apps/wildfly-8.2.0.Final/welcome-content
+2015-02-18 19:39:38,266 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-11) JBAS017525: Started server default-server.
+2015-02-18 19:39:38,292 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) JBAS017531: Host default-host starting
+2015-02-18 19:39:38,391 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-11) JBAS017519: Undertow HTTP listener default listening on /127.0.0.1:8080
+2015-02-18 19:39:38,476 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-16) JBAS015012: Started FileSystemDeploymentService for directory /usr/apps/wildfly-8.2.0.Final/standalone/deployments
+2015-02-18 19:39:38,478 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-13) JBAS015876: Starting deployment of "fx-rest-1.0.war" (runtime-name: "fx-rest-1.0.war")
+2015-02-18 19:39:38,632 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-16) JBAS010400: Bound data source [java:jboss/datasources/ExampleDS]
+2015-02-18 19:39:38,695 INFO  [org.jboss.as.jacorb] (MSC service thread 1-14) JBAS016330: CORBA ORB Service started
+2015-02-18 19:39:38,742 WARN  [org.jboss.as.messaging] (MSC service thread 1-8) JBAS011600: AIO wasn't located on this platform, it will fall back to using pure Java NIO. If your platform is Linux, install LibAIO to enable the AIO journal
+2015-02-18 19:39:38,818 INFO  [org.jboss.as.jacorb] (MSC service thread 1-12) JBAS016328: CORBA Naming Service started
+2015-02-18 19:39:38,858 INFO  [org.hornetq.core.server] (ServerService Thread Pool -- 56) HQ221000: live server is starting with configuration HornetQ Configuration (clustered=false,backup=false,sharedStore=true,journalDirectory=/usr/apps/wildfly-8.2.0.Final/standalone/data/messagingjournal,bindingsDirectory=/usr/apps/wildfly-8.2.0.Final/standalone/data/messagingbindings,largeMessagesDirectory=/usr/apps/wildfly-8.2.0.Final/standalone/data/messaginglargemessages,pagingDirectory=/usr/apps/wildfly-8.2.0.Final/standalone/data/messagingpaging)
+2015-02-18 19:39:38,861 INFO  [org.hornetq.core.server] (ServerService Thread Pool -- 56) HQ221006: Waiting to obtain live lock
+2015-02-18 19:39:38,970 INFO  [org.hornetq.core.server] (ServerService Thread Pool -- 56) HQ221013: Using NIO Journal
+2015-02-18 19:39:39,105 INFO  [io.netty.util.internal.PlatformDependent] (ServerService Thread Pool -- 56) Your platform does not provide complete low-level API for accessing direct buffers reliably. Unless explicitly requested, heap buffer will always be preferred to avoid potential system unstability.
+2015-02-18 19:39:39,130 INFO  [org.hornetq.core.server] (ServerService Thread Pool -- 56) HQ221043: Adding protocol support CORE
+2015-02-18 19:39:39,172 INFO  [org.hornetq.core.server] (ServerService Thread Pool -- 56) HQ221043: Adding protocol support AMQP
+2015-02-18 19:39:39,176 INFO  [org.hornetq.core.server] (ServerService Thread Pool -- 56) HQ221043: Adding protocol support STOMP
+2015-02-18 19:39:39,252 INFO  [org.hornetq.core.server] (ServerService Thread Pool -- 56) HQ221034: Waiting to obtain live lock
+2015-02-18 19:39:39,253 INFO  [org.hornetq.core.server] (ServerService Thread Pool -- 56) HQ221035: Live Server Obtained live lock
+2015-02-18 19:39:39,328 INFO  [org.jboss.ws.common.management] (MSC service thread 1-3) JBWS022052: Starting JBoss Web Services - Stack CXF Server 4.3.2.Final
+2015-02-18 19:39:39,823 INFO  [org.jboss.messaging] (MSC service thread 1-16) JBAS011615: Registered HTTP upgrade for hornetq-remoting protocol handled by http-acceptor-throughput acceptor
+2015-02-18 19:39:39,823 INFO  [org.jboss.messaging] (MSC service thread 1-2) JBAS011615: Registered HTTP upgrade for hornetq-remoting protocol handled by http-acceptor acceptor
+2015-02-18 19:39:39,988 INFO  [org.hornetq.core.server] (ServerService Thread Pool -- 56) HQ221007: Server is now live
+2015-02-18 19:39:39,988 INFO  [org.hornetq.core.server] (ServerService Thread Pool -- 56) HQ221001: HornetQ Server version 2.4.5.FINAL (Wild Hornet, 124) [766cfc73-accb-11e4-941b-a7d4c5504193] 
+2015-02-18 19:39:40,007 INFO  [org.jboss.as.messaging] (ServerService Thread Pool -- 56) JBAS011601: Bound messaging object to jndi name java:jboss/exported/jms/RemoteConnectionFactory
+2015-02-18 19:39:40,055 INFO  [org.hornetq.core.server] (ServerService Thread Pool -- 57) HQ221003: trying to deploy queue jms.queue.ExpiryQueue
+2015-02-18 19:39:40,060 INFO  [org.jboss.as.messaging] (ServerService Thread Pool -- 57) JBAS011601: Bound messaging object to jndi name java:/jms/queue/ExpiryQueue
+2015-02-18 19:39:40,060 INFO  [org.hornetq.core.server] (ServerService Thread Pool -- 58) HQ221003: trying to deploy queue jms.queue.DLQ
+2015-02-18 19:39:40,061 INFO  [org.jboss.as.messaging] (ServerService Thread Pool -- 58) JBAS011601: Bound messaging object to jndi name java:/jms/queue/DLQ
+2015-02-18 19:39:40,062 INFO  [org.jboss.as.messaging] (ServerService Thread Pool -- 59) JBAS011601: Bound messaging object to jndi name java:/ConnectionFactory
+2015-02-18 19:39:40,093 INFO  [org.jboss.as.connector.deployment] (MSC service thread 1-7) JBAS010406: Registered connection factory java:/JmsXA
+2015-02-18 19:39:40,168 INFO  [org.hornetq.ra] (MSC service thread 1-7) HornetQ resource adaptor started
+2015-02-18 19:39:40,169 INFO  [org.jboss.as.connector.services.resourceadapters.ResourceAdapterActivatorService$ResourceAdapterActivator] (MSC service thread 1-7) IJ020002: Deployed: file://RaActivatorhornetq-ra
+2015-02-18 19:39:40,170 INFO  [org.jboss.as.connector.deployment] (MSC service thread 1-4) JBAS010401: Bound JCA ConnectionFactory [java:/JmsXA]
+2015-02-18 19:39:40,170 INFO  [org.jboss.as.messaging] (MSC service thread 1-7) JBAS011601: Bound messaging object to jndi name java:jboss/DefaultJMSConnectionFactory
+2015-02-18 19:39:40,843 INFO  [org.jboss.resteasy.spi.ResteasyDeployment] (MSC service thread 1-9) Deploying javax.ws.rs.core.Application: class com.uml.fx.rest.ApplicationConfig
+2015-02-18 19:39:40,845 INFO  [org.jboss.resteasy.spi.ResteasyDeployment] (MSC service thread 1-9) Adding class resource com.uml.fx.rest.FundsExpert from Application class com.uml.fx.rest.ApplicationConfig
+2015-02-18 19:39:40,913 INFO  [org.hibernate.validator.internal.util.Version] (MSC service thread 1-9) HV000001: Hibernate Validator 5.1.3.Final
+2015-02-18 19:39:40,954 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-9) JBAS017534: Registered web context: /fx-rest-1.0
+2015-02-18 19:39:41,005 INFO  [org.jboss.as.server] (Controller Boot Thread) JBAS018559: Deployed "fx-rest-1.0.war" (runtime-name : "fx-rest-1.0.war")
+2015-02-18 19:39:41,088 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015961: Http management interface listening on http://127.0.0.1:9990/management
+2015-02-18 19:39:41,089 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015951: Admin console listening on http://127.0.0.1:9990
+2015-02-18 19:39:41,089 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015874: WildFly 8.2.0.Final "Tweek" started in 7280ms - Started 286 of 340 services (103 services are lazy, passive or on-demand)
+2015-02-18 19:59:44,556 INFO  [org.jboss.as.repository] (management-handler-thread - 6) JBAS014900: Content added at location /usr/apps/wildfly-8.2.0.Final/standalone/data/content/e2/eefdc6ddc7375e4c15aa76295b568790237595/content
+2015-02-18 19:59:44,566 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-10) JBAS017535: Unregistered web context: /fx-rest-1.0
+2015-02-18 19:59:44,656 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-14) JBAS015877: Stopped deployment fx-rest-1.0.war (runtime-name: fx-rest-1.0.war) in 96ms
+2015-02-18 19:59:44,658 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-15) JBAS015876: Starting deployment of "fx-rest-1.0.war" (runtime-name: "fx-rest-1.0.war")
+2015-02-18 19:59:44,801 INFO  [org.jboss.resteasy.spi.ResteasyDeployment] (MSC service thread 1-15) Deploying javax.ws.rs.core.Application: class com.uml.fx.rest.ApplicationConfig
+2015-02-18 19:59:44,802 INFO  [org.jboss.resteasy.spi.ResteasyDeployment] (MSC service thread 1-15) Adding class resource com.uml.fx.rest.FundsExpert from Application class com.uml.fx.rest.ApplicationConfig
+2015-02-18 19:59:44,808 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-15) JBAS017534: Registered web context: /fx-rest-1.0
+2015-02-18 19:59:44,926 INFO  [org.jboss.as.server] (management-handler-thread - 6) JBAS018565: Replaced deployment "fx-rest-1.0.war" with deployment "fx-rest-1.0.war"
+2015-02-18 19:59:44,927 INFO  [org.jboss.as.repository] (management-handler-thread - 6) JBAS014901: Content removed from location /usr/apps/wildfly-8.2.0.Final/standalone/data/content/c7/7478609f72585b0ef42d88f83227e2a837495d/content
+2015-02-18 20:00:37,117 WARN  [org.jboss.resteasy.core.ExceptionHandler] (default task-1) failed to execute: javax.ws.rs.NotFoundException: Could not find resource for full path: http://localhost:8080/fx-rest-1.0
+	at org.jboss.resteasy.core.registry.ClassNode.match(ClassNode.java:73) [resteasy-jaxrs-3.0.10.Final.jar:]
+	at org.jboss.resteasy.core.registry.RootClassNode.match(RootClassNode.java:48) [resteasy-jaxrs-3.0.10.Final.jar:]
+	at org.jboss.resteasy.core.ResourceMethodRegistry.getResourceInvoker(ResourceMethodRegistry.java:444) [resteasy-jaxrs-3.0.10.Final.jar:]
+	at org.jboss.resteasy.core.SynchronousDispatcher.getInvoker(SynchronousDispatcher.java:234) [resteasy-jaxrs-3.0.10.Final.jar:]
+	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:171) [resteasy-jaxrs-3.0.10.Final.jar:]
+	at org.jboss.resteasy.plugins.server.servlet.ServletContainerDispatcher.service(ServletContainerDispatcher.java:220) [resteasy-jaxrs-3.0.10.Final.jar:]
+	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:56) [resteasy-jaxrs-3.0.10.Final.jar:]
+	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:51) [resteasy-jaxrs-3.0.10.Final.jar:]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790) [jboss-servlet-api_3.1_spec-1.0.0.Final.jar:1.0.0.Final]
+	at io.undertow.servlet.handlers.ServletHandler.handleRequest(ServletHandler.java:85) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:61) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at org.wildfly.extension.undertow.security.SecurityContextAssociationHandler.handleRequest(SecurityContextAssociationHandler.java:78)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:131) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:56) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:45) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:63) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.security.handlers.AuthenticationMechanismsHandler.handleRequest(AuthenticationMechanismsHandler.java:58) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.security.CachedAuthenticatedSessionHandler.handleRequest(CachedAuthenticatedSessionHandler.java:70) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.security.handlers.SecurityInitialHandler.handleRequest(SecurityInitialHandler.java:76) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at org.wildfly.extension.undertow.security.jacc.JACCContextIdHandler.handleRequest(JACCContextIdHandler.java:61)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:261) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:247) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler.access$000(ServletInitialHandler.java:76) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:166) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.server.Connectors.executeRootHandler(Connectors.java:197) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:759) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [rt.jar:1.8.0_25]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [rt.jar:1.8.0_25]
+	at java.lang.Thread.run(Thread.java:745) [rt.jar:1.8.0_25]
+
+2015-02-18 20:00:43,042 WARN  [org.jboss.resteasy.core.ExceptionHandler] (default task-3) failed to execute: javax.ws.rs.NotFoundException: Could not find resource for full path: http://localhost:8080/fx-rest-1.0/index.html
+	at org.jboss.resteasy.core.registry.ClassNode.match(ClassNode.java:73) [resteasy-jaxrs-3.0.10.Final.jar:]
+	at org.jboss.resteasy.core.registry.RootClassNode.match(RootClassNode.java:48) [resteasy-jaxrs-3.0.10.Final.jar:]
+	at org.jboss.resteasy.core.ResourceMethodRegistry.getResourceInvoker(ResourceMethodRegistry.java:444) [resteasy-jaxrs-3.0.10.Final.jar:]
+	at org.jboss.resteasy.core.SynchronousDispatcher.getInvoker(SynchronousDispatcher.java:234) [resteasy-jaxrs-3.0.10.Final.jar:]
+	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:171) [resteasy-jaxrs-3.0.10.Final.jar:]
+	at org.jboss.resteasy.plugins.server.servlet.ServletContainerDispatcher.service(ServletContainerDispatcher.java:220) [resteasy-jaxrs-3.0.10.Final.jar:]
+	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:56) [resteasy-jaxrs-3.0.10.Final.jar:]
+	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:51) [resteasy-jaxrs-3.0.10.Final.jar:]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790) [jboss-servlet-api_3.1_spec-1.0.0.Final.jar:1.0.0.Final]
+	at io.undertow.servlet.handlers.ServletHandler.handleRequest(ServletHandler.java:85) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:61) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at org.wildfly.extension.undertow.security.SecurityContextAssociationHandler.handleRequest(SecurityContextAssociationHandler.java:78)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:131) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:56) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:45) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:63) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.security.handlers.AuthenticationMechanismsHandler.handleRequest(AuthenticationMechanismsHandler.java:58) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.security.CachedAuthenticatedSessionHandler.handleRequest(CachedAuthenticatedSessionHandler.java:70) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.security.handlers.SecurityInitialHandler.handleRequest(SecurityInitialHandler.java:76) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at org.wildfly.extension.undertow.security.jacc.JACCContextIdHandler.handleRequest(JACCContextIdHandler.java:61)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:261) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:247) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler.access$000(ServletInitialHandler.java:76) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:166) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.server.Connectors.executeRootHandler(Connectors.java:197) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:759) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [rt.jar:1.8.0_25]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [rt.jar:1.8.0_25]
+	at java.lang.Thread.run(Thread.java:745) [rt.jar:1.8.0_25]
+
+2015-02-18 20:00:53,877 WARN  [org.jboss.resteasy.core.ExceptionHandler] (default task-4) failed to execute: javax.ws.rs.NotFoundException: Could not find resource for full path: http://localhost:8080/fx-rest-1.0/fx/index.html
+	at org.jboss.resteasy.core.registry.SegmentNode.match(SegmentNode.java:112) [resteasy-jaxrs-3.0.10.Final.jar:]
+	at org.jboss.resteasy.core.registry.RootNode.match(RootNode.java:43) [resteasy-jaxrs-3.0.10.Final.jar:]
+	at org.jboss.resteasy.core.registry.RootClassNode.match(RootClassNode.java:48) [resteasy-jaxrs-3.0.10.Final.jar:]
+	at org.jboss.resteasy.core.ResourceMethodRegistry.getResourceInvoker(ResourceMethodRegistry.java:444) [resteasy-jaxrs-3.0.10.Final.jar:]
+	at org.jboss.resteasy.core.SynchronousDispatcher.getInvoker(SynchronousDispatcher.java:234) [resteasy-jaxrs-3.0.10.Final.jar:]
+	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:171) [resteasy-jaxrs-3.0.10.Final.jar:]
+	at org.jboss.resteasy.plugins.server.servlet.ServletContainerDispatcher.service(ServletContainerDispatcher.java:220) [resteasy-jaxrs-3.0.10.Final.jar:]
+	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:56) [resteasy-jaxrs-3.0.10.Final.jar:]
+	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:51) [resteasy-jaxrs-3.0.10.Final.jar:]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790) [jboss-servlet-api_3.1_spec-1.0.0.Final.jar:1.0.0.Final]
+	at io.undertow.servlet.handlers.ServletHandler.handleRequest(ServletHandler.java:85) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:61) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at org.wildfly.extension.undertow.security.SecurityContextAssociationHandler.handleRequest(SecurityContextAssociationHandler.java:78)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:131) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:56) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:45) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:63) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.security.handlers.AuthenticationMechanismsHandler.handleRequest(AuthenticationMechanismsHandler.java:58) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.security.CachedAuthenticatedSessionHandler.handleRequest(CachedAuthenticatedSessionHandler.java:70) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.security.handlers.SecurityInitialHandler.handleRequest(SecurityInitialHandler.java:76) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at org.wildfly.extension.undertow.security.jacc.JACCContextIdHandler.handleRequest(JACCContextIdHandler.java:61)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:261) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:247) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler.access$000(ServletInitialHandler.java:76) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:166) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.server.Connectors.executeRootHandler(Connectors.java:197) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:759) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [rt.jar:1.8.0_25]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [rt.jar:1.8.0_25]
+	at java.lang.Thread.run(Thread.java:745) [rt.jar:1.8.0_25]
+
+2015-02-18 20:04:09,985 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-16) JBAS017535: Unregistered web context: /fx-rest-1.0
+2015-02-18 20:04:09,996 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-16) JBAS015877: Stopped deployment fx-rest-1.0.war (runtime-name: fx-rest-1.0.war) in 11ms
+2015-02-18 20:04:09,997 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) JBAS015876: Starting deployment of "fx-rest-1.0.war" (runtime-name: "fx-rest-1.0.war")
+2015-02-18 20:04:10,118 INFO  [org.jboss.resteasy.spi.ResteasyDeployment] (MSC service thread 1-16) Deploying javax.ws.rs.core.Application: class com.uml.fx.rest.ApplicationConfig
+2015-02-18 20:04:10,119 INFO  [org.jboss.resteasy.spi.ResteasyDeployment] (MSC service thread 1-16) Adding class resource com.uml.fx.rest.FundsExpert from Application class com.uml.fx.rest.ApplicationConfig
+2015-02-18 20:04:10,123 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-16) JBAS017534: Registered web context: /fx-rest-1.0
+2015-02-18 20:04:10,202 INFO  [org.jboss.as.server] (management-handler-thread - 8) JBAS018565: Replaced deployment "fx-rest-1.0.war" with deployment "fx-rest-1.0.war"
+2015-02-18 20:04:59,678 SEVERE [com.uml.fx.rest.FundsExpert] (default task-10) A JSONObject text must begin with '{' at character 0
+2015-02-18 20:05:17,519 WARN  [org.jboss.resteasy.core.ExceptionHandler] (default task-11) failed to execute: javax.ws.rs.NotFoundException: Could not find resource for full path: http://localhost:8080/fx-rest-1.0/fx/
+	at org.jboss.resteasy.core.registry.SegmentNode.match(SegmentNode.java:112) [resteasy-jaxrs-3.0.10.Final.jar:]
+	at org.jboss.resteasy.core.registry.RootNode.match(RootNode.java:43) [resteasy-jaxrs-3.0.10.Final.jar:]
+	at org.jboss.resteasy.core.registry.RootClassNode.match(RootClassNode.java:48) [resteasy-jaxrs-3.0.10.Final.jar:]
+	at org.jboss.resteasy.core.ResourceMethodRegistry.getResourceInvoker(ResourceMethodRegistry.java:444) [resteasy-jaxrs-3.0.10.Final.jar:]
+	at org.jboss.resteasy.core.SynchronousDispatcher.getInvoker(SynchronousDispatcher.java:234) [resteasy-jaxrs-3.0.10.Final.jar:]
+	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:171) [resteasy-jaxrs-3.0.10.Final.jar:]
+	at org.jboss.resteasy.plugins.server.servlet.ServletContainerDispatcher.service(ServletContainerDispatcher.java:220) [resteasy-jaxrs-3.0.10.Final.jar:]
+	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:56) [resteasy-jaxrs-3.0.10.Final.jar:]
+	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:51) [resteasy-jaxrs-3.0.10.Final.jar:]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790) [jboss-servlet-api_3.1_spec-1.0.0.Final.jar:1.0.0.Final]
+	at io.undertow.servlet.handlers.ServletHandler.handleRequest(ServletHandler.java:85) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:61) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at org.wildfly.extension.undertow.security.SecurityContextAssociationHandler.handleRequest(SecurityContextAssociationHandler.java:78)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:131) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:56) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:45) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:63) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.security.handlers.AuthenticationMechanismsHandler.handleRequest(AuthenticationMechanismsHandler.java:58) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.security.CachedAuthenticatedSessionHandler.handleRequest(CachedAuthenticatedSessionHandler.java:70) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.security.handlers.SecurityInitialHandler.handleRequest(SecurityInitialHandler.java:76) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at org.wildfly.extension.undertow.security.jacc.JACCContextIdHandler.handleRequest(JACCContextIdHandler.java:61)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:261) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:247) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler.access$000(ServletInitialHandler.java:76) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:166) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.server.Connectors.executeRootHandler(Connectors.java:197) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:759) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [rt.jar:1.8.0_25]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [rt.jar:1.8.0_25]
+	at java.lang.Thread.run(Thread.java:745) [rt.jar:1.8.0_25]
+
+2015-02-18 20:05:21,004 SEVERE [com.uml.fx.rest.FundsExpert] (default task-12) A JSONObject text must begin with '{' at character 0
+2015-02-18 20:09:38,432 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) JBAS017535: Unregistered web context: /fx-rest-1.0
+2015-02-18 20:09:38,446 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) JBAS015877: Stopped deployment fx-rest-1.0.war (runtime-name: fx-rest-1.0.war) in 14ms
+2015-02-18 20:09:38,447 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) JBAS015876: Starting deployment of "fx-rest-1.0.war" (runtime-name: "fx-rest-1.0.war")
+2015-02-18 20:09:38,543 INFO  [org.jboss.resteasy.spi.ResteasyDeployment] (MSC service thread 1-9) Deploying javax.ws.rs.core.Application: class com.uml.fx.rest.ApplicationConfig
+2015-02-18 20:09:38,544 INFO  [org.jboss.resteasy.spi.ResteasyDeployment] (MSC service thread 1-9) Adding class resource com.uml.fx.rest.FundsExpert from Application class com.uml.fx.rest.ApplicationConfig
+2015-02-18 20:09:38,548 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-9) JBAS017534: Registered web context: /fx-rest-1.0
+2015-02-18 20:09:38,624 INFO  [org.jboss.as.server] (management-handler-thread - 10) JBAS018565: Replaced deployment "fx-rest-1.0.war" with deployment "fx-rest-1.0.war"
+2015-02-18 20:09:49,553 INFO  [org.jboss.as.repository] (management-handler-thread - 12) JBAS014900: Content added at location /usr/apps/wildfly-8.2.0.Final/standalone/data/content/c9/12a0cadc250833b65bc9080be7269033602cb9/content
+2015-02-18 20:09:49,554 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-16) JBAS017535: Unregistered web context: /fx-rest-1.0
+2015-02-18 20:09:49,569 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-9) JBAS015877: Stopped deployment fx-rest-1.0.war (runtime-name: fx-rest-1.0.war) in 15ms
+2015-02-18 20:09:49,570 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-16) JBAS015876: Starting deployment of "fx-rest-1.0.war" (runtime-name: "fx-rest-1.0.war")
+2015-02-18 20:09:49,667 INFO  [org.jboss.resteasy.spi.ResteasyDeployment] (MSC service thread 1-1) Deploying javax.ws.rs.core.Application: class com.uml.fx.rest.ApplicationConfig
+2015-02-18 20:09:49,672 INFO  [org.jboss.resteasy.spi.ResteasyDeployment] (MSC service thread 1-1) Adding class resource com.uml.fx.rest.FundsExpert from Application class com.uml.fx.rest.ApplicationConfig
+2015-02-18 20:09:49,678 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) JBAS017534: Registered web context: /fx-rest-1.0
+2015-02-18 20:09:49,754 INFO  [org.jboss.as.server] (management-handler-thread - 12) JBAS018565: Replaced deployment "fx-rest-1.0.war" with deployment "fx-rest-1.0.war"
+2015-02-18 20:09:49,755 INFO  [org.jboss.as.repository] (management-handler-thread - 12) JBAS014901: Content removed from location /usr/apps/wildfly-8.2.0.Final/standalone/data/content/e2/eefdc6ddc7375e4c15aa76295b568790237595/content
+2015-02-18 20:09:54,655 SEVERE [com.uml.fx.rest.FundsExpert] (default task-13) A JSONObject text must begin with '{' at character 0
+2015-02-18 20:39:42,275 INFO  [org.jboss.as.repository] (management-handler-thread - 14) JBAS014900: Content added at location /usr/apps/wildfly-8.2.0.Final/standalone/data/content/20/7ed24693b4f9f58eb2db7780f030c77e455464/content
+2015-02-18 20:39:42,278 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-13) JBAS017535: Unregistered web context: /fx-rest-1.0
+2015-02-18 20:39:42,290 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-16) JBAS015877: Stopped deployment fx-rest-1.0.war (runtime-name: fx-rest-1.0.war) in 13ms
+2015-02-18 20:39:42,291 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) JBAS015876: Starting deployment of "fx-rest-1.0.war" (runtime-name: "fx-rest-1.0.war")
+2015-02-18 20:39:42,379 INFO  [org.jboss.resteasy.spi.ResteasyDeployment] (MSC service thread 1-4) Deploying javax.ws.rs.core.Application: class com.uml.fx.rest.ApplicationConfig
+2015-02-18 20:39:42,380 INFO  [org.jboss.resteasy.spi.ResteasyDeployment] (MSC service thread 1-4) Adding provider class com.uml.fx.rest.CORSFilter from Application class com.uml.fx.rest.ApplicationConfig
+2015-02-18 20:39:42,381 INFO  [org.jboss.resteasy.spi.ResteasyDeployment] (MSC service thread 1-4) Adding class resource com.uml.fx.rest.FundsExpert from Application class com.uml.fx.rest.ApplicationConfig
+2015-02-18 20:39:42,385 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) JBAS017534: Registered web context: /fx-rest-1.0
+2015-02-18 20:39:42,470 INFO  [org.jboss.as.server] (management-handler-thread - 14) JBAS018565: Replaced deployment "fx-rest-1.0.war" with deployment "fx-rest-1.0.war"
+2015-02-18 20:39:42,471 INFO  [org.jboss.as.repository] (management-handler-thread - 14) JBAS014901: Content removed from location /usr/apps/wildfly-8.2.0.Final/standalone/data/content/c9/12a0cadc250833b65bc9080be7269033602cb9/content
+2015-02-18 20:40:41,142 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) JBAS017535: Unregistered web context: /fx-rest-1.0
+2015-02-18 20:40:41,152 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) JBAS015877: Stopped deployment fx-rest-1.0.war (runtime-name: fx-rest-1.0.war) in 10ms
+2015-02-18 20:40:41,153 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-13) JBAS015876: Starting deployment of "fx-rest-1.0.war" (runtime-name: "fx-rest-1.0.war")
+2015-02-18 20:40:41,219 INFO  [org.jboss.resteasy.spi.ResteasyDeployment] (MSC service thread 1-3) Deploying javax.ws.rs.core.Application: class com.uml.fx.rest.ApplicationConfig
+2015-02-18 20:40:41,221 INFO  [org.jboss.resteasy.spi.ResteasyDeployment] (MSC service thread 1-3) Adding provider class com.uml.fx.rest.CORSFilter from Application class com.uml.fx.rest.ApplicationConfig
+2015-02-18 20:40:41,221 INFO  [org.jboss.resteasy.spi.ResteasyDeployment] (MSC service thread 1-3) Adding class resource com.uml.fx.rest.FundsExpert from Application class com.uml.fx.rest.ApplicationConfig
+2015-02-18 20:40:41,224 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) JBAS017534: Registered web context: /fx-rest-1.0
+2015-02-18 20:40:41,301 INFO  [org.jboss.as.server] (management-handler-thread - 16) JBAS018565: Replaced deployment "fx-rest-1.0.war" with deployment "fx-rest-1.0.war"
+2015-02-18 20:49:53,018 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) JBAS017535: Unregistered web context: /fx-rest-1.0
+2015-02-18 20:49:53,027 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-10) JBAS015877: Stopped deployment fx-rest-1.0.war (runtime-name: fx-rest-1.0.war) in 9ms
+2015-02-18 20:49:53,027 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) JBAS015876: Starting deployment of "fx-rest-1.0.war" (runtime-name: "fx-rest-1.0.war")
+2015-02-18 20:49:53,109 INFO  [org.jboss.resteasy.spi.ResteasyDeployment] (MSC service thread 1-11) Deploying javax.ws.rs.core.Application: class com.uml.fx.rest.ApplicationConfig
+2015-02-18 20:49:53,111 INFO  [org.jboss.resteasy.spi.ResteasyDeployment] (MSC service thread 1-11) Adding provider class com.uml.fx.rest.CORSFilter from Application class com.uml.fx.rest.ApplicationConfig
+2015-02-18 20:49:53,112 INFO  [org.jboss.resteasy.spi.ResteasyDeployment] (MSC service thread 1-11) Adding class resource com.uml.fx.rest.FundsExpert from Application class com.uml.fx.rest.ApplicationConfig
+2015-02-18 20:49:53,116 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-11) JBAS017534: Registered web context: /fx-rest-1.0
+2015-02-18 20:49:53,194 INFO  [org.jboss.as.server] (management-handler-thread - 18) JBAS018565: Replaced deployment "fx-rest-1.0.war" with deployment "fx-rest-1.0.war"
+2015-02-18 20:50:03,899 INFO  [org.jboss.as.repository] (management-handler-thread - 20) JBAS014900: Content added at location /usr/apps/wildfly-8.2.0.Final/standalone/data/content/03/fa77f8205612a866597c93605a73d5093ddef0/content
+2015-02-18 20:50:03,902 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) JBAS017535: Unregistered web context: /fx-rest-1.0
+2015-02-18 20:50:03,918 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-9) JBAS015877: Stopped deployment fx-rest-1.0.war (runtime-name: fx-rest-1.0.war) in 17ms
+2015-02-18 20:50:03,919 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) JBAS015876: Starting deployment of "fx-rest-1.0.war" (runtime-name: "fx-rest-1.0.war")
+2015-02-18 20:50:03,982 INFO  [org.jboss.resteasy.spi.ResteasyDeployment] (MSC service thread 1-8) Deploying javax.ws.rs.core.Application: class com.uml.fx.rest.ApplicationConfig
+2015-02-18 20:50:03,983 INFO  [org.jboss.resteasy.spi.ResteasyDeployment] (MSC service thread 1-8) Adding provider class com.uml.fx.rest.CORSFilter from Application class com.uml.fx.rest.ApplicationConfig
+2015-02-18 20:50:03,984 INFO  [org.jboss.resteasy.spi.ResteasyDeployment] (MSC service thread 1-8) Adding class resource com.uml.fx.rest.FundsExpert from Application class com.uml.fx.rest.ApplicationConfig
+2015-02-18 20:50:03,987 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) JBAS017534: Registered web context: /fx-rest-1.0
+2015-02-18 20:50:04,051 INFO  [org.jboss.as.server] (management-handler-thread - 20) JBAS018565: Replaced deployment "fx-rest-1.0.war" with deployment "fx-rest-1.0.war"
+2015-02-18 20:50:04,052 INFO  [org.jboss.as.repository] (management-handler-thread - 20) JBAS014901: Content removed from location /usr/apps/wildfly-8.2.0.Final/standalone/data/content/20/7ed24693b4f9f58eb2db7780f030c77e455464/content
+2015-02-18 20:50:56,510 INFO  [com.uml.fx.rest.FundsExpert] (default task-24) {"username":"asdf","password":"asdf"}
+2015-02-18 20:51:50,324 INFO  [org.jboss.as.repository] (management-handler-thread - 22) JBAS014900: Content added at location /usr/apps/wildfly-8.2.0.Final/standalone/data/content/56/ea406422075fdf913010877f08eaf5ed850446/content
+2015-02-18 20:51:50,328 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) JBAS017535: Unregistered web context: /fx-rest-1.0
+2015-02-18 20:51:50,343 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) JBAS015877: Stopped deployment fx-rest-1.0.war (runtime-name: fx-rest-1.0.war) in 16ms
+2015-02-18 20:51:50,344 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-16) JBAS015876: Starting deployment of "fx-rest-1.0.war" (runtime-name: "fx-rest-1.0.war")
+2015-02-18 20:51:50,423 INFO  [org.jboss.resteasy.spi.ResteasyDeployment] (MSC service thread 1-6) Deploying javax.ws.rs.core.Application: class com.uml.fx.rest.ApplicationConfig
+2015-02-18 20:51:50,425 INFO  [org.jboss.resteasy.spi.ResteasyDeployment] (MSC service thread 1-6) Adding class resource com.uml.fx.rest.FundsExpert from Application class com.uml.fx.rest.ApplicationConfig
+2015-02-18 20:51:50,425 INFO  [org.jboss.resteasy.spi.ResteasyDeployment] (MSC service thread 1-6) Adding provider class com.uml.fx.rest.CORSFilter from Application class com.uml.fx.rest.ApplicationConfig
+2015-02-18 20:51:50,430 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) JBAS017534: Registered web context: /fx-rest-1.0
+2015-02-18 20:51:50,502 INFO  [org.jboss.as.server] (management-handler-thread - 22) JBAS018565: Replaced deployment "fx-rest-1.0.war" with deployment "fx-rest-1.0.war"
+2015-02-18 20:51:50,503 INFO  [org.jboss.as.repository] (management-handler-thread - 22) JBAS014901: Content removed from location /usr/apps/wildfly-8.2.0.Final/standalone/data/content/03/fa77f8205612a866597c93605a73d5093ddef0/content
+2015-02-18 20:52:16,658 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) JBAS017535: Unregistered web context: /fx-rest-1.0
+2015-02-18 20:52:16,676 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-15) JBAS015877: Stopped deployment fx-rest-1.0.war (runtime-name: fx-rest-1.0.war) in 19ms
+2015-02-18 20:52:16,677 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-12) JBAS015876: Starting deployment of "fx-rest-1.0.war" (runtime-name: "fx-rest-1.0.war")
+2015-02-18 20:52:16,754 INFO  [org.jboss.resteasy.spi.ResteasyDeployment] (MSC service thread 1-4) Deploying javax.ws.rs.core.Application: class com.uml.fx.rest.ApplicationConfig
+2015-02-18 20:52:16,755 INFO  [org.jboss.resteasy.spi.ResteasyDeployment] (MSC service thread 1-4) Adding class resource com.uml.fx.rest.FundsExpert from Application class com.uml.fx.rest.ApplicationConfig
+2015-02-18 20:52:16,755 INFO  [org.jboss.resteasy.spi.ResteasyDeployment] (MSC service thread 1-4) Adding provider class com.uml.fx.rest.CORSFilter from Application class com.uml.fx.rest.ApplicationConfig
+2015-02-18 20:52:16,759 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) JBAS017534: Registered web context: /fx-rest-1.0
+2015-02-18 20:52:16,824 INFO  [org.jboss.as.server] (management-handler-thread - 24) JBAS018565: Replaced deployment "fx-rest-1.0.war" with deployment "fx-rest-1.0.war"
+2015-02-18 20:52:21,721 INFO  [com.uml.fx.rest.FundsExpert] (default task-25) {"username":"mike","password":"as;ldkfj"}
+2015-02-18 20:55:02,761 INFO  [com.uml.fx.rest.FundsExpert] (default task-26) {"username":"asdf","password":"asdf"}
+2015-02-18 20:56:40,562 INFO  [com.uml.fx.rest.FundsExpert] (default task-27) {"username":"asdf","password":"asdf"}
+2015-02-18 20:57:16,721 INFO  [com.uml.fx.rest.FundsExpert] (default task-28) {"username":"asdf","password":"asdf"}
+2015-02-18 21:26:41,085 INFO  [com.uml.fx.rest.FundsExpert] (default task-31) {"username":"asdf","password":"asdf"}
+2015-02-18 21:26:56,397 INFO  [org.jboss.as.repository] (management-handler-thread - 26) JBAS014900: Content added at location /usr/apps/wildfly-8.2.0.Final/standalone/data/content/ea/7d5831beff0b79c5b4269abec158a18a069884/content
+2015-02-18 21:26:56,398 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-11) JBAS017535: Unregistered web context: /fx-rest-1.0
+2015-02-18 21:26:56,408 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-16) JBAS015877: Stopped deployment fx-rest-1.0.war (runtime-name: fx-rest-1.0.war) in 10ms
+2015-02-18 21:26:56,409 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-13) JBAS015876: Starting deployment of "fx-rest-1.0.war" (runtime-name: "fx-rest-1.0.war")
+2015-02-18 21:26:56,478 INFO  [org.jboss.resteasy.spi.ResteasyDeployment] (MSC service thread 1-16) Deploying javax.ws.rs.core.Application: class com.uml.fx.rest.ApplicationConfig
+2015-02-18 21:26:56,479 INFO  [org.jboss.resteasy.spi.ResteasyDeployment] (MSC service thread 1-16) Adding class resource com.uml.fx.rest.FundsExpert from Application class com.uml.fx.rest.ApplicationConfig
+2015-02-18 21:26:56,480 INFO  [org.jboss.resteasy.spi.ResteasyDeployment] (MSC service thread 1-16) Adding provider class com.uml.fx.rest.CORSFilter from Application class com.uml.fx.rest.ApplicationConfig
+2015-02-18 21:26:56,484 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-16) JBAS017534: Registered web context: /fx-rest-1.0
+2015-02-18 21:26:56,557 INFO  [org.jboss.as.server] (management-handler-thread - 26) JBAS018565: Replaced deployment "fx-rest-1.0.war" with deployment "fx-rest-1.0.war"
+2015-02-18 21:26:56,558 INFO  [org.jboss.as.repository] (management-handler-thread - 26) JBAS014901: Content removed from location /usr/apps/wildfly-8.2.0.Final/standalone/data/content/56/ea406422075fdf913010877f08eaf5ed850446/content
+2015-02-18 21:27:10,526 INFO  [com.uml.fx.rest.FundsExpert] (default task-32) {"username":"asdf","password":"asdf"}
+2015-02-18 21:28:30,155 INFO  [com.uml.fx.rest.FundsExpert] (default task-33) {"username":"root","password":"admin"}
+2015-02-18 21:28:43,316 INFO  [com.uml.fx.rest.FundsExpert] (default task-34) {"username":"mike","password":"ccaes1"}
+2015-02-18 21:39:27,242 INFO  [com.uml.fx.rest.FundsExpert] (default task-36) {"username":"adsf","password":"asdf"}
+2015-02-18 21:39:35,460 INFO  [com.uml.fx.rest.FundsExpert] (default task-37) {"username":"asdf","password":"asdf"}
+2015-02-18 21:41:44,907 INFO  [com.uml.fx.rest.FundsExpert] (default task-38) {"username":"asdf","password":"asdf"}
+2015-02-18 21:42:06,979 INFO  [com.uml.fx.rest.FundsExpert] (default task-39) {"username":"mike","password":"ccaes1"}
+2015-02-18 21:45:11,020 INFO  [com.uml.fx.rest.FundsExpert] (default task-40) {"username":"root","password":"admin"}
+2015-02-18 22:14:09,060 INFO  [com.uml.fx.rest.FundsExpert] (default task-42) {"username":"asdf","password":"asdf"}
+2015-02-18 22:14:20,949 INFO  [com.uml.fx.rest.FundsExpert] (default task-43) {"username":"mike","password":"ccaes1"}

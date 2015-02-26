@@ -1,0 +1,788 @@
+2015-02-25 10:47:13,768 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) JBAS015876: Starting deployment of "mariadb-java-client-1.1.7.jar" (runtime-name: "mariadb-java-client-1.1.7.jar")
+2015-02-25 10:47:13,804 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-3) JBAS010404: Deploying non-JDBC-compliant driver class org.mariadb.jdbc.Driver (version 1.1)
+2015-02-25 10:47:13,805 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-4) JBAS010417: Started Driver service with driver-name = mariadb-java-client-1.1.7.jar
+2015-02-25 10:47:13,901 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 2) JBAS018559: Deployed "mariadb-java-client-1.1.7.jar" (runtime-name : "mariadb-java-client-1.1.7.jar")
+2015-02-25 10:47:37,927 INFO  [org.jboss.modules] (main) JBoss Modules version 1.3.3.Final
+2015-02-25 10:47:38,106 INFO  [org.jboss.msc] (main) JBoss MSC version 1.2.2.Final
+2015-02-25 10:47:38,164 INFO  [org.jboss.as] (MSC service thread 1-5) JBAS015899: WildFly 8.2.0.Final "Tweek" starting
+2015-02-25 10:47:38,170 DEBUG [org.jboss.as.config] (MSC service thread 1-5) Configured system properties:
+	[Standalone] = 
+	awt.toolkit = sun.awt.X11.XToolkit
+	file.encoding = UTF-8
+	file.encoding.pkg = sun.io
+	file.separator = /
+	java.awt.graphicsenv = sun.awt.X11GraphicsEnvironment
+	java.awt.headless = true
+	java.awt.printerjob = sun.print.PSPrinterJob
+	java.class.path = /usr/apps/wildfly-8.2.0.Final/jboss-modules.jar
+	java.class.version = 52.0
+	java.endorsed.dirs = /usr/java/jdk1.8.0_25/jre/lib/endorsed
+	java.ext.dirs = /usr/java/jdk1.8.0_25/jre/lib/ext:/usr/java/packages/lib/ext
+	java.home = /usr/java/jdk1.8.0_25/jre
+	java.io.tmpdir = /tmp
+	java.library.path = /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+	java.net.preferIPv4Stack = true
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 1.8.0_25-b17
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 1.8
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+	java.version = 1.8.0_25
+	java.vm.info = mixed mode
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 1.8
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 25.25-b02
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	javax.xml.datatype.DatatypeFactory = __redirected.__DatatypeFactory
+	javax.xml.parsers.DocumentBuilderFactory = __redirected.__DocumentBuilderFactory
+	javax.xml.parsers.SAXParserFactory = __redirected.__SAXParserFactory
+	javax.xml.stream.XMLEventFactory = __redirected.__XMLEventFactory
+	javax.xml.stream.XMLInputFactory = __redirected.__XMLInputFactory
+	javax.xml.stream.XMLOutputFactory = __redirected.__XMLOutputFactory
+	javax.xml.transform.TransformerFactory = __redirected.__TransformerFactory
+	javax.xml.validation.SchemaFactory:http://www.w3.org/2001/XMLSchema = __redirected.__SchemaFactory
+	javax.xml.xpath.XPathFactory:http://java.sun.com/jaxp/xpath/dom = __redirected.__XPathFactory
+	jboss.home.dir = /usr/apps/wildfly-8.2.0.Final
+	jboss.host.name = apollo8
+	jboss.modules.dir = /usr/apps/wildfly-8.2.0.Final/modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = apollo8
+	jboss.qualified.host.name = apollo8
+	jboss.server.base.dir = /usr/apps/wildfly-8.2.0.Final/standalone
+	jboss.server.config.dir = /usr/apps/wildfly-8.2.0.Final/standalone/configuration
+	jboss.server.data.dir = /usr/apps/wildfly-8.2.0.Final/standalone/data
+	jboss.server.deploy.dir = /usr/apps/wildfly-8.2.0.Final/standalone/data/content
+	jboss.server.log.dir = /usr/apps/wildfly-8.2.0.Final/standalone/log
+	jboss.server.name = apollo8
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = /usr/apps/wildfly-8.2.0.Final/standalone/tmp
+	line.separator = 
+
+	logging.configuration = file:/usr/apps/wildfly-8.2.0.Final/standalone/configuration/logging.properties
+	module.path = /usr/apps/wildfly-8.2.0.Final/modules
+	org.jboss.boot.log.file = /usr/apps/wildfly-8.2.0.Final/standalone/log/server.log
+	org.jboss.resolver.warning = true
+	org.xml.sax.driver = __redirected.__XMLReaderFactory
+	os.arch = amd64
+	os.name = Linux
+	os.version = 3.16.0-30-generic
+	path.separator = :
+	sun.arch.data.model = 64
+	sun.boot.class.path = /usr/java/jdk1.8.0_25/jre/lib/resources.jar:/usr/java/jdk1.8.0_25/jre/lib/rt.jar:/usr/java/jdk1.8.0_25/jre/lib/sunrsasign.jar:/usr/java/jdk1.8.0_25/jre/lib/jsse.jar:/usr/java/jdk1.8.0_25/jre/lib/jce.jar:/usr/java/jdk1.8.0_25/jre/lib/charsets.jar:/usr/java/jdk1.8.0_25/jre/lib/jfr.jar:/usr/java/jdk1.8.0_25/jre/classes
+	sun.boot.library.path = /usr/java/jdk1.8.0_25/jre/lib/amd64
+	sun.cpu.endian = little
+	sun.cpu.isalist = 
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = /usr/apps/wildfly-8.2.0.Final/jboss-modules.jar -mp /usr/apps/wildfly-8.2.0.Final/modules org.jboss.as.standalone -Djboss.home.dir=/usr/apps/wildfly-8.2.0.Final -Djboss.server.base.dir=/usr/apps/wildfly-8.2.0.Final/standalone -c standalone-full.xml
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = UTF-8
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = unknown
+	user.country = US
+	user.dir = /usr/apps/wildfly-8.2.0.Final/standalone/configuration
+	user.home = /home/mike
+	user.language = en
+	user.name = mike
+	user.timezone = America/New_York
+2015-02-25 10:47:38,171 DEBUG [org.jboss.as.config] (MSC service thread 1-5) VM Arguments: -D[Standalone] -Xms64m -Xmx512m -XX:MaxPermSize=256m -Djava.net.preferIPv4Stack=true -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true -Dorg.jboss.boot.log.file=/usr/apps/wildfly-8.2.0.Final/standalone/log/server.log -Dlogging.configuration=file:/usr/apps/wildfly-8.2.0.Final/standalone/configuration/logging.properties 
+2015-02-25 10:47:39,170 INFO  [org.jboss.as.server] (Controller Boot Thread) JBAS015888: Creating http management service using socket-binding (management-http)
+2015-02-25 10:47:39,194 INFO  [org.xnio] (MSC service thread 1-3) XNIO version 3.3.0.Final
+2015-02-25 10:47:39,201 INFO  [org.xnio.nio] (MSC service thread 1-3) XNIO NIO Implementation Version 3.3.0.Final
+2015-02-25 10:47:39,227 INFO  [org.jboss.as.jacorb] (ServerService Thread Pool -- 36) JBAS016300: Activating JacORB Subsystem
+2015-02-25 10:47:39,228 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 34) WFLYIO001: Worker 'default' has auto-configured to 16 core threads with 128 task threads based on your 8 available processors
+2015-02-25 10:47:39,237 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 35) JBAS010280: Activating Infinispan subsystem.
+2015-02-25 10:47:39,292 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 52) JBAS010153: Node identifier property is set to the default value. Please make sure it is unique.
+2015-02-25 10:47:39,293 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 46) JBAS011800: Activating Naming Subsystem
+2015-02-25 10:47:39,295 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 42) JBAS012615: Activated the following JSF Implementations: [main]
+2015-02-25 10:47:39,299 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 51) JBAS013171: Activating Security Subsystem
+2015-02-25 10:47:39,330 INFO  [org.jboss.as.security] (MSC service thread 1-5) JBAS013170: Current PicketBox version=4.0.21.Final
+2015-02-25 10:47:39,341 INFO  [org.jboss.as.connector.logging] (MSC service thread 1-13) JBAS010408: Starting JCA Subsystem (IronJacamar 1.1.9.Final)
+2015-02-25 10:47:39,345 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 54) JBAS015537: Activating WebServices Extension
+2015-02-25 10:47:39,365 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-11) JBAS017502: Undertow 1.1.0.Final starting
+2015-02-25 10:47:39,366 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 53) JBAS017502: Undertow 1.1.0.Final starting
+2015-02-25 10:47:39,384 INFO  [org.jboss.remoting] (MSC service thread 1-3) JBoss Remoting version 4.0.6.Final
+2015-02-25 10:47:39,386 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 30) JBAS010403: Deploying JDBC-compliant driver class org.h2.Driver (version 1.3)
+2015-02-25 10:47:39,396 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-6) JBAS010417: Started Driver service with driver-name = h2
+2015-02-25 10:47:39,409 INFO  [org.jboss.as.naming] (MSC service thread 1-8) JBAS011802: Starting Naming Service
+2015-02-25 10:47:39,410 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-16) JBAS015400: Bound mail session [java:jboss/mail/Default]
+2015-02-25 10:47:39,641 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 53) JBAS017527: Creating file handler for path /usr/apps/wildfly-8.2.0.Final/welcome-content
+2015-02-25 10:47:39,650 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) JBAS017525: Started server default-server.
+2015-02-25 10:47:39,684 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-13) JBAS017531: Host default-host starting
+2015-02-25 10:47:39,736 ERROR [org.jboss.msc.service.fail] (MSC service thread 1-8) MSC000001: Failed to start service jboss.undertow.listener.default: org.jboss.msc.service.StartException in service jboss.undertow.listener.default: Could not start http listener
+	at org.wildfly.extension.undertow.ListenerService.start(ListenerService.java:137)
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:1948) [jboss-msc-1.2.2.Final.jar:1.2.2.Final]
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1881) [jboss-msc-1.2.2.Final.jar:1.2.2.Final]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [rt.jar:1.8.0_25]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [rt.jar:1.8.0_25]
+	at java.lang.Thread.run(Thread.java:745) [rt.jar:1.8.0_25]
+Caused by: java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method) [rt.jar:1.8.0_25]
+	at sun.nio.ch.Net.bind(Net.java:436) [rt.jar:1.8.0_25]
+	at sun.nio.ch.Net.bind(Net.java:428) [rt.jar:1.8.0_25]
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:214) [rt.jar:1.8.0_25]
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74) [rt.jar:1.8.0_25]
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:67) [rt.jar:1.8.0_25]
+	at org.xnio.nio.NioXnioWorker.createTcpConnectionServer(NioXnioWorker.java:182)
+	at org.xnio.XnioWorker.createStreamConnectionServer(XnioWorker.java:243) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.wildfly.extension.undertow.HttpListenerService.startListening(HttpListenerService.java:113)
+	at org.wildfly.extension.undertow.ListenerService.start(ListenerService.java:134)
+	... 5 more
+
+2015-02-25 10:47:39,798 INFO  [org.jboss.as.jacorb] (MSC service thread 1-1) JBAS016330: CORBA ORB Service started
+2015-02-25 10:47:39,824 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-14) JBAS015876: Starting deployment of "fx-rest-1.0.war" (runtime-name: "fx-rest-1.0.war")
+2015-02-25 10:47:39,824 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) JBAS015876: Starting deployment of "mariadb-java-client-1.1.7.jar" (runtime-name: "mariadb-java-client-1.1.7.jar")
+2015-02-25 10:47:39,825 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-11) JBAS015012: Started FileSystemDeploymentService for directory /usr/apps/wildfly-8.2.0.Final/standalone/deployments
+2015-02-25 10:47:39,861 WARN  [jacorb.orb.iiop] (MSC service thread 1-8) could not create server socket port: 3528 host: /127.0.0.1: java.net.BindException: Address already in use
+	at java.net.PlainSocketImpl.socketBind(Native Method) [rt.jar:1.8.0_25]
+	at java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:382) [rt.jar:1.8.0_25]
+	at java.net.ServerSocket.bind(ServerSocket.java:375) [rt.jar:1.8.0_25]
+	at java.net.ServerSocket.<init>(ServerSocket.java:237) [rt.jar:1.8.0_25]
+	at org.jacorb.orb.factory.DefaultServerSocketFactory.createServerSocket(DefaultServerSocketFactory.java:49) [jacorb-2.3.2-jbossorg-5.jar:2.3.2-jbossorg-5]
+	at org.jacorb.orb.iiop.IIOPListener$Acceptor.createServerSocket(IIOPListener.java:572) [jacorb-2.3.2-jbossorg-5.jar:2.3.2-jbossorg-5]
+	at org.jacorb.orb.iiop.IIOPListener$Acceptor.init(IIOPListener.java:417) [jacorb-2.3.2-jbossorg-5.jar:2.3.2-jbossorg-5]
+	at org.jacorb.orb.iiop.IIOPListener.configure(IIOPListener.java:163) [jacorb-2.3.2-jbossorg-5.jar:2.3.2-jbossorg-5]
+	at org.jacorb.orb.etf.FactoriesBase.newInstance(FactoriesBase.java:125) [jacorb-2.3.2-jbossorg-5.jar:2.3.2-jbossorg-5]
+	at org.jacorb.orb.etf.FactoriesBase.create_listener(FactoriesBase.java:74) [jacorb-2.3.2-jbossorg-5.jar:2.3.2-jbossorg-5]
+	at org.jacorb.orb.BasicAdapter.configure(BasicAdapter.java:102) [jacorb-2.3.2-jbossorg-5.jar:2.3.2-jbossorg-5]
+	at org.jacorb.orb.ORB.getRootPOA(ORB.java:1036) [jacorb-2.3.2-jbossorg-5.jar:2.3.2-jbossorg-5]
+	at org.jacorb.orb.ORB.resolve_initial_references(ORB.java:1307) [jacorb-2.3.2-jbossorg-5.jar:2.3.2-jbossorg-5]
+	at org.jboss.as.jacorb.service.CorbaPOAService.start(CorbaPOAService.java:153) [wildfly-jacorb-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:1948) [jboss-msc-1.2.2.Final.jar:1.2.2.Final]
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1881) [jboss-msc-1.2.2.Final.jar:1.2.2.Final]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [rt.jar:1.8.0_25]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [rt.jar:1.8.0_25]
+	at java.lang.Thread.run(Thread.java:745) [rt.jar:1.8.0_25]
+
+2015-02-25 10:47:39,866 ERROR [org.jboss.msc.service.fail] (MSC service thread 1-8) MSC000001: Failed to start service jboss.jacorb.poa-service.rootpoa: org.jboss.msc.service.StartException in service jboss.jacorb.poa-service.rootpoa: JBAS016490: Failed to resolve initial reference RootPOA
+	at org.jboss.as.jacorb.service.CorbaPOAService.start(CorbaPOAService.java:155)
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:1948) [jboss-msc-1.2.2.Final.jar:1.2.2.Final]
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1881) [jboss-msc-1.2.2.Final.jar:1.2.2.Final]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [rt.jar:1.8.0_25]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [rt.jar:1.8.0_25]
+	at java.lang.Thread.run(Thread.java:745) [rt.jar:1.8.0_25]
+Caused by: org.omg.CORBA.INITIALIZE: Could not create server socket (3528): java.net.BindException: Address already in use
+	at org.jacorb.orb.iiop.IIOPListener$Acceptor.createServerSocket(IIOPListener.java:580)
+	at org.jacorb.orb.iiop.IIOPListener$Acceptor.init(IIOPListener.java:417)
+	at org.jacorb.orb.iiop.IIOPListener.configure(IIOPListener.java:163)
+	at org.jacorb.orb.etf.FactoriesBase.newInstance(FactoriesBase.java:125)
+	at org.jacorb.orb.etf.FactoriesBase.create_listener(FactoriesBase.java:74)
+	at org.jacorb.orb.BasicAdapter.configure(BasicAdapter.java:102)
+	at org.jacorb.orb.ORB.getRootPOA(ORB.java:1036)
+	at org.jacorb.orb.ORB.resolve_initial_references(ORB.java:1307)
+	at org.jboss.as.jacorb.service.CorbaPOAService.start(CorbaPOAService.java:153)
+	... 5 more
+
+2015-02-25 10:47:39,873 ERROR [org.jboss.msc.service.fail] (MSC service thread 1-5) MSC000001: Failed to start service jboss.serverManagement.controller.management.http: org.jboss.msc.service.StartException in service jboss.serverManagement.controller.management.http: JBAS015811: Failed to start the http-interface service
+	at org.jboss.as.server.mgmt.UndertowHttpManagementService.start(UndertowHttpManagementService.java:258) [wildfly-server-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:1948) [jboss-msc-1.2.2.Final.jar:1.2.2.Final]
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1881) [jboss-msc-1.2.2.Final.jar:1.2.2.Final]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [rt.jar:1.8.0_25]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [rt.jar:1.8.0_25]
+	at java.lang.Thread.run(Thread.java:745) [rt.jar:1.8.0_25]
+Caused by: java.lang.RuntimeException: java.net.BindException: Address already in use
+	at org.jboss.as.domain.http.server.ManagementHttpServer.start(ManagementHttpServer.java:156)
+	at org.jboss.as.server.mgmt.UndertowHttpManagementService.start(UndertowHttpManagementService.java:224) [wildfly-server-8.2.0.Final.jar:8.2.0.Final]
+	... 5 more
+Caused by: java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method) [rt.jar:1.8.0_25]
+	at sun.nio.ch.Net.bind(Net.java:436) [rt.jar:1.8.0_25]
+	at sun.nio.ch.Net.bind(Net.java:428) [rt.jar:1.8.0_25]
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:214) [rt.jar:1.8.0_25]
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74) [rt.jar:1.8.0_25]
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:67) [rt.jar:1.8.0_25]
+	at org.xnio.nio.NioXnioWorker.createTcpConnectionServer(NioXnioWorker.java:182)
+	at org.xnio.XnioWorker.createStreamConnectionServer(XnioWorker.java:243)
+	at org.jboss.as.domain.http.server.ManagementHttpServer.start(ManagementHttpServer.java:135)
+	... 6 more
+
+2015-02-25 10:47:39,872 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-16) JBAS010400: Bound data source [java:jboss/datasources/ExampleDS]
+2015-02-25 10:47:40,045 ERROR [org.jboss.as.controller.management-operation] (Controller Boot Thread) JBAS014613: Operation ("add") failed - address: ([
+    ("core-service" => "management"),
+    ("management-interface" => "http-interface")
+]) - failure description: {"JBAS014671: Failed services" => {"jboss.serverManagement.controller.management.http" => "org.jboss.msc.service.StartException in service jboss.serverManagement.controller.management.http: JBAS015811: Failed to start the http-interface service
+    Caused by: java.lang.RuntimeException: java.net.BindException: Address already in use
+    Caused by: java.net.BindException: Address already in use"}}
+2015-02-25 10:47:40,048 ERROR [org.jboss.as.controller.management-operation] (Controller Boot Thread) JBAS014613: Operation ("deploy") failed - address: ([("deployment" => "mariadb-java-client-1.1.7.jar")]) - failure description: {"JBAS014879: One or more services were unable to start due to one or more indirect dependencies not being available." => {
+    "Services that were unable to start:" => ["jboss.deployment.unit.\"mariadb-java-client-1.1.7.jar\".INSTALL"],
+    "Services that may be the cause:" => [
+        "jboss.http-upgrade-registry.default",
+        "jboss.remoting.remotingConnectorInfoService.http-remoting-connector"
+    ]
+}}
+2015-02-25 10:47:40,049 ERROR [org.jboss.as.controller.management-operation] (Controller Boot Thread) JBAS014613: Operation ("add") failed - address: ([
+    ("subsystem" => "messaging"),
+    ("hornetq-server" => "default")
+]) - failure description: {
+    "JBAS014771: Services with missing/unavailable dependencies" => ["jboss.messaging.default is missing [jboss.http-upgrade-registry.default]"],
+    "JBAS014879: One or more services were unable to start due to one or more indirect dependencies not being available." => {
+        "Services that were unable to start:" => ["jboss.messaging.default.jms.manager"],
+        "Services that may be the cause:" => [
+            "jboss.http-upgrade-registry.default",
+            "jboss.remoting.remotingConnectorInfoService.http-remoting-connector"
+        ]
+    }
+}
+2015-02-25 10:47:40,051 ERROR [org.jboss.as.controller.management-operation] (Controller Boot Thread) JBAS014613: Operation ("add") failed - address: ([("subsystem" => "jacorb")]) - failure description: {
+    "JBAS014671: Failed services" => {"jboss.jacorb.poa-service.rootpoa" => "org.jboss.msc.service.StartException in service jboss.jacorb.poa-service.rootpoa: JBAS016490: Failed to resolve initial reference RootPOA
+    Caused by: org.omg.CORBA.INITIALIZE: Could not create server socket (3528): java.net.BindException: Address already in use"},
+    "JBAS014879: One or more services were unable to start due to one or more indirect dependencies not being available." => {
+        "Services that were unable to start:" => [
+            "jboss.jacorb.naming-service",
+            "jboss.jacorb.poa-service.irpoa",
+            "jboss.jacorb.poa-service.namingpoa"
+        ],
+        "Services that may be the cause:" => [
+            "jboss.http-upgrade-registry.default",
+            "jboss.remoting.remotingConnectorInfoService.http-remoting-connector"
+        ]
+    }
+}
+2015-02-25 10:47:40,052 ERROR [org.jboss.as.controller.management-operation] (Controller Boot Thread) JBAS014613: Operation ("add") failed - address: ([("subsystem" => "webservices")]) - failure description: {"JBAS014879: One or more services were unable to start due to one or more indirect dependencies not being available." => {
+    "Services that were unable to start:" => ["jboss.ws.config"],
+    "Services that may be the cause:" => [
+        "jboss.http-upgrade-registry.default",
+        "jboss.remoting.remotingConnectorInfoService.http-remoting-connector"
+    ]
+}}
+2015-02-25 10:47:40,053 ERROR [org.jboss.as.controller.management-operation] (Controller Boot Thread) JBAS014613: Operation ("add") failed - address: ([
+    ("subsystem" => "undertow"),
+    ("server" => "default-server"),
+    ("http-listener" => "default")
+]) - failure description: {"JBAS014671: Failed services" => {"jboss.undertow.listener.default" => "org.jboss.msc.service.StartException in service jboss.undertow.listener.default: Could not start http listener
+    Caused by: java.net.BindException: Address already in use"}}
+2015-02-25 10:47:40,053 ERROR [org.jboss.as.controller.management-operation] (Controller Boot Thread) JBAS014613: Operation ("add") failed - address: ([
+    ("subsystem" => "ejb3"),
+    ("service" => "remote")
+]) - failure description: {"JBAS014771: Services with missing/unavailable dependencies" => ["jboss.ejb3.connector is missing [jboss.remoting.remotingConnectorInfoService.http-remoting-connector]"]}
+2015-02-25 10:47:40,054 ERROR [org.jboss.as.controller.management-operation] (Controller Boot Thread) JBAS014613: Operation ("add") failed - address: ([("deployment" => "fx-rest-1.0.war")]) - failure description: {"JBAS014879: One or more services were unable to start due to one or more indirect dependencies not being available." => {
+    "Services that were unable to start:" => ["jboss.deployment.unit.\"fx-rest-1.0.war\".INSTALL"],
+    "Services that may be the cause:" => [
+        "jboss.http-upgrade-registry.default",
+        "jboss.remoting.remotingConnectorInfoService.http-remoting-connector"
+    ]
+}}
+2015-02-25 10:47:40,098 INFO  [org.jboss.as.server] (Controller Boot Thread) JBAS018559: Deployed "fx-rest-1.0.war" (runtime-name : "fx-rest-1.0.war")
+2015-02-25 10:47:40,099 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 31) JBAS018559: Deployed "mariadb-java-client-1.1.7.jar" (runtime-name : "mariadb-java-client-1.1.7.jar")
+2015-02-25 10:47:40,101 INFO  [org.jboss.as.controller] (Controller Boot Thread) JBAS014774: Service status report
+JBAS014775:    New missing/unsatisfied dependencies:
+      service jboss.http-upgrade-registry.default (missing) dependents: [service jboss.messaging.default] 
+      service jboss.remoting.remotingConnectorInfoService.http-remoting-connector (missing) dependents: [service jboss.ejb3.connector] 
+JBAS014777:   Services which failed to start:      service jboss.serverManagement.controller.management.http: org.jboss.msc.service.StartException in service jboss.serverManagement.controller.management.http: JBAS015811: Failed to start the http-interface service
+      service jboss.undertow.listener.default: org.jboss.msc.service.StartException in service jboss.undertow.listener.default: Could not start http listener
+      service jboss.jacorb.poa-service.rootpoa: org.jboss.msc.service.StartException in service jboss.jacorb.poa-service.rootpoa: JBAS016490: Failed to resolve initial reference RootPOA
+
+2015-02-25 10:47:40,182 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015964: Http management interface is not enabled
+2015-02-25 10:47:40,183 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015954: Admin console is not enabled
+2015-02-25 10:47:40,183 ERROR [org.jboss.as] (Controller Boot Thread) JBAS015875: WildFly 8.2.0.Final "Tweek" started (with errors) in 2540ms - Started 231 of 305 services (12 services failed or missing dependencies, 96 services are lazy, passive or on-demand)
+2015-02-25 10:47:40,357 INFO  [org.hibernate.validator.internal.util.Version] (MSC service thread 1-2) HV000001: Hibernate Validator 5.1.3.Final
+2015-02-25 10:47:40,428 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-12) JBAS015877: Stopped deployment fx-rest-1.0.war (runtime-name: fx-rest-1.0.war) in 90ms
+2015-02-25 10:47:40,427 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) JBAS015877: Stopped deployment mariadb-java-client-1.1.7.jar (runtime-name: mariadb-java-client-1.1.7.jar) in 94ms
+2015-02-25 10:47:40,533 INFO  [org.jboss.as.repository] (DeploymentScanner-threads - 2) JBAS014901: Content removed from location /usr/apps/wildfly-8.2.0.Final/standalone/data/content/ea/7d5831beff0b79c5b4269abec158a18a069884/content
+2015-02-25 10:47:40,533 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 2) JBAS018558: Undeployed "fx-rest-1.0.war" (runtime-name: "fx-rest-1.0.war")
+2015-02-25 10:47:40,533 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 2) JBAS018558: Undeployed "mariadb-java-client-1.1.7.jar" (runtime-name: "mariadb-java-client-1.1.7.jar")
+2015-02-25 10:47:40,534 INFO  [org.jboss.as.controller] (DeploymentScanner-threads - 2) JBAS014774: Service status report
+JBAS014775:    New missing/unsatisfied dependencies:
+      service jboss.naming.context.java.app."fx-rest-1.0" (missing) dependents: [service jboss.deployment.unit."fx-rest-1.0.war".INSTALL] 
+      service jboss.naming.context.java.app."mariadb-java-client-1.1.7" (missing) dependents: [service jboss.deployment.unit."mariadb-java-client-1.1.7.jar".INSTALL] 
+      service jboss.naming.context.java.module."fx-rest-1.0"."fx-rest-1.0" (missing) dependents: [service jboss.deployment.unit."fx-rest-1.0.war".INSTALL] 
+      service jboss.naming.context.java.module."mariadb-java-client-1.1.7"."mariadb-java-client-1.1.7" (missing) dependents: [service jboss.deployment.unit."mariadb-java-client-1.1.7.jar".INSTALL] 
+JBAS014777:   Services which failed to start:      service jboss.serverManagement.controller.management.http: org.jboss.msc.service.StartException in service jboss.serverManagement.controller.management.http: JBAS015811: Failed to start the http-interface service
+      service jboss.undertow.listener.default: org.jboss.msc.service.StartException in service jboss.undertow.listener.default: Could not start http listener
+      service jboss.jacorb.poa-service.rootpoa: org.jboss.msc.service.StartException in service jboss.jacorb.poa-service.rootpoa: JBAS016490: Failed to resolve initial reference RootPOA
+
+2015-02-25 10:47:49,447 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-6) JBAS010409: Unbound data source [java:jboss/datasources/ExampleDS]
+2015-02-25 10:47:49,447 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-11) JBAS017532: Host default-host stopping
+2015-02-25 10:47:49,459 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-14) JBAS010418: Stopped Driver service with driver-name = h2
+2015-02-25 10:47:49,459 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) JBAS017506: Undertow 1.1.0.Final stopping
+2015-02-25 10:47:49,472 INFO  [org.jboss.as] (MSC service thread 1-13) JBAS015950: WildFly 8.2.0.Final "Tweek" stopped in 10ms
+2015-02-25 10:48:04,553 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-13) JBAS010418: Stopped Driver service with driver-name = mariadb-java-client-1.1.7.jar
+2015-02-25 10:48:04,561 INFO  [org.jboss.as.messaging] (ServerService Thread Pool -- 62) JBAS011605: Unbound messaging object to jndi name java:jboss/exported/jms/RemoteConnectionFactory
+2015-02-25 10:48:04,565 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) JBAS017535: Unregistered web context: /fx-rest-1.0
+2015-02-25 10:48:04,570 INFO  [org.jboss.as.messaging] (ServerService Thread Pool -- 61) JBAS011605: Unbound messaging object to jndi name java:/ConnectionFactory
+2015-02-25 10:48:04,588 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-11) JBAS017532: Host default-host stopping
+2015-02-25 10:48:04,592 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-13) JBAS010409: Unbound data source [java:jboss/datasources/ExampleDS]
+2015-02-25 10:48:04,594 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-2) JBAS010418: Stopped Driver service with driver-name = h2
+2015-02-25 10:48:04,596 INFO  [org.jboss.as.messaging] (MSC service thread 1-2) JBAS011605: Unbound messaging object to jndi name java:jboss/DefaultJMSConnectionFactory
+2015-02-25 10:48:04,597 INFO  [org.jboss.as.connector.deployment] (MSC service thread 1-13) JBAS010410: Unbound JCA ConnectionFactory [java:/JmsXA]
+2015-02-25 10:48:04,638 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-15) JBAS015877: Stopped deployment mariadb-java-client-1.1.7.jar (runtime-name: mariadb-java-client-1.1.7.jar) in 88ms
+2015-02-25 10:48:04,639 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-16) JBAS015877: Stopped deployment fx-rest-1.0.war (runtime-name: fx-rest-1.0.war) in 97ms
+2015-02-25 10:48:04,645 INFO  [org.hornetq.ra] (ServerService Thread Pool -- 64) HQ151003: HornetQ resource adaptor stopped
+2015-02-25 10:48:04,741 INFO  [org.hornetq.core.server] (ServerService Thread Pool -- 64) HQ221002: HornetQ Server version 2.4.5.FINAL (Wild Hornet, 124) [766cfc73-accb-11e4-941b-a7d4c5504193] stopped
+2015-02-25 10:48:04,743 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-10) JBAS017521: Undertow HTTP listener default suspending
+2015-02-25 10:48:04,747 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-10) JBAS017520: Undertow HTTP listener default stopped, was bound to localhost/127.0.0.1:8080
+2015-02-25 10:48:04,747 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) JBAS017506: Undertow 1.1.0.Final stopping
+2015-02-25 10:48:04,752 INFO  [org.jboss.as] (MSC service thread 1-12) JBAS015950: WildFly 8.2.0.Final "Tweek" stopped in 180ms
+2015-02-25 10:48:13,536 INFO  [org.jboss.modules] (main) JBoss Modules version 1.3.3.Final
+2015-02-25 10:48:13,716 INFO  [org.jboss.msc] (main) JBoss MSC version 1.2.2.Final
+2015-02-25 10:48:13,775 INFO  [org.jboss.as] (MSC service thread 1-7) JBAS015899: WildFly 8.2.0.Final "Tweek" starting
+2015-02-25 10:48:13,780 DEBUG [org.jboss.as.config] (MSC service thread 1-7) Configured system properties:
+	[Standalone] = 
+	awt.toolkit = sun.awt.X11.XToolkit
+	file.encoding = UTF-8
+	file.encoding.pkg = sun.io
+	file.separator = /
+	java.awt.graphicsenv = sun.awt.X11GraphicsEnvironment
+	java.awt.headless = true
+	java.awt.printerjob = sun.print.PSPrinterJob
+	java.class.path = /usr/apps/wildfly-8.2.0.Final/jboss-modules.jar
+	java.class.version = 52.0
+	java.endorsed.dirs = /usr/java/jdk1.8.0_25/jre/lib/endorsed
+	java.ext.dirs = /usr/java/jdk1.8.0_25/jre/lib/ext:/usr/java/packages/lib/ext
+	java.home = /usr/java/jdk1.8.0_25/jre
+	java.io.tmpdir = /tmp
+	java.library.path = /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+	java.net.preferIPv4Stack = true
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 1.8.0_25-b17
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 1.8
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+	java.version = 1.8.0_25
+	java.vm.info = mixed mode
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 1.8
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 25.25-b02
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	javax.xml.datatype.DatatypeFactory = __redirected.__DatatypeFactory
+	javax.xml.parsers.DocumentBuilderFactory = __redirected.__DocumentBuilderFactory
+	javax.xml.parsers.SAXParserFactory = __redirected.__SAXParserFactory
+	javax.xml.stream.XMLEventFactory = __redirected.__XMLEventFactory
+	javax.xml.stream.XMLInputFactory = __redirected.__XMLInputFactory
+	javax.xml.stream.XMLOutputFactory = __redirected.__XMLOutputFactory
+	javax.xml.transform.TransformerFactory = __redirected.__TransformerFactory
+	javax.xml.validation.SchemaFactory:http://www.w3.org/2001/XMLSchema = __redirected.__SchemaFactory
+	javax.xml.xpath.XPathFactory:http://java.sun.com/jaxp/xpath/dom = __redirected.__XPathFactory
+	jboss.home.dir = /usr/apps/wildfly-8.2.0.Final
+	jboss.host.name = apollo8
+	jboss.modules.dir = /usr/apps/wildfly-8.2.0.Final/modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = apollo8
+	jboss.qualified.host.name = apollo8
+	jboss.server.base.dir = /usr/apps/wildfly-8.2.0.Final/standalone
+	jboss.server.config.dir = /usr/apps/wildfly-8.2.0.Final/standalone/configuration
+	jboss.server.data.dir = /usr/apps/wildfly-8.2.0.Final/standalone/data
+	jboss.server.deploy.dir = /usr/apps/wildfly-8.2.0.Final/standalone/data/content
+	jboss.server.log.dir = /usr/apps/wildfly-8.2.0.Final/standalone/log
+	jboss.server.name = apollo8
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = /usr/apps/wildfly-8.2.0.Final/standalone/tmp
+	line.separator = 
+
+	logging.configuration = file:/usr/apps/wildfly-8.2.0.Final/standalone/configuration/logging.properties
+	module.path = /usr/apps/wildfly-8.2.0.Final/modules
+	org.jboss.boot.log.file = /usr/apps/wildfly-8.2.0.Final/standalone/log/server.log
+	org.jboss.resolver.warning = true
+	org.xml.sax.driver = __redirected.__XMLReaderFactory
+	os.arch = amd64
+	os.name = Linux
+	os.version = 3.16.0-30-generic
+	path.separator = :
+	sun.arch.data.model = 64
+	sun.boot.class.path = /usr/java/jdk1.8.0_25/jre/lib/resources.jar:/usr/java/jdk1.8.0_25/jre/lib/rt.jar:/usr/java/jdk1.8.0_25/jre/lib/sunrsasign.jar:/usr/java/jdk1.8.0_25/jre/lib/jsse.jar:/usr/java/jdk1.8.0_25/jre/lib/jce.jar:/usr/java/jdk1.8.0_25/jre/lib/charsets.jar:/usr/java/jdk1.8.0_25/jre/lib/jfr.jar:/usr/java/jdk1.8.0_25/jre/classes
+	sun.boot.library.path = /usr/java/jdk1.8.0_25/jre/lib/amd64
+	sun.cpu.endian = little
+	sun.cpu.isalist = 
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = /usr/apps/wildfly-8.2.0.Final/jboss-modules.jar -mp /usr/apps/wildfly-8.2.0.Final/modules org.jboss.as.standalone -Djboss.home.dir=/usr/apps/wildfly-8.2.0.Final -Djboss.server.base.dir=/usr/apps/wildfly-8.2.0.Final/standalone -c standalone-full.xml
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = UTF-8
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = unknown
+	user.country = US
+	user.dir = /usr/apps/wildfly-8.2.0.Final/standalone/configuration
+	user.home = /home/mike
+	user.language = en
+	user.name = mike
+	user.timezone = America/New_York
+2015-02-25 10:48:13,781 DEBUG [org.jboss.as.config] (MSC service thread 1-7) VM Arguments: -D[Standalone] -Xms64m -Xmx512m -XX:MaxPermSize=256m -Djava.net.preferIPv4Stack=true -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true -Dorg.jboss.boot.log.file=/usr/apps/wildfly-8.2.0.Final/standalone/log/server.log -Dlogging.configuration=file:/usr/apps/wildfly-8.2.0.Final/standalone/configuration/logging.properties 
+2015-02-25 10:48:14,804 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) JBAS015014: Re-attempting failed deployment mariadb-java-client-1.1.7.jar
+2015-02-25 10:48:14,820 INFO  [org.jboss.as.server] (Controller Boot Thread) JBAS015888: Creating http management service using socket-binding (management-http)
+2015-02-25 10:48:14,837 INFO  [org.xnio] (MSC service thread 1-12) XNIO version 3.3.0.Final
+2015-02-25 10:48:14,847 INFO  [org.xnio.nio] (MSC service thread 1-12) XNIO NIO Implementation Version 3.3.0.Final
+2015-02-25 10:48:14,873 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 34) WFLYIO001: Worker 'default' has auto-configured to 16 core threads with 128 task threads based on your 8 available processors
+2015-02-25 10:48:14,874 INFO  [org.jboss.remoting] (MSC service thread 1-12) JBoss Remoting version 4.0.6.Final
+2015-02-25 10:48:14,878 INFO  [org.jboss.as.jacorb] (ServerService Thread Pool -- 36) JBAS016300: Activating JacORB Subsystem
+2015-02-25 10:48:14,887 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 35) JBAS010280: Activating Infinispan subsystem.
+2015-02-25 10:48:14,916 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 30) JBAS010403: Deploying JDBC-compliant driver class org.h2.Driver (version 1.3)
+2015-02-25 10:48:14,921 INFO  [org.jboss.as.connector.logging] (MSC service thread 1-14) JBAS010408: Starting JCA Subsystem (IronJacamar 1.1.9.Final)
+2015-02-25 10:48:14,941 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-16) JBAS010417: Started Driver service with driver-name = h2
+2015-02-25 10:48:14,950 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 42) JBAS012615: Activated the following JSF Implementations: [main]
+2015-02-25 10:48:14,987 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 51) JBAS013171: Activating Security Subsystem
+2015-02-25 10:48:14,998 INFO  [org.jboss.as.security] (MSC service thread 1-9) JBAS013170: Current PicketBox version=4.0.21.Final
+2015-02-25 10:48:14,999 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 52) JBAS010153: Node identifier property is set to the default value. Please make sure it is unique.
+2015-02-25 10:48:15,003 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 46) JBAS011800: Activating Naming Subsystem
+2015-02-25 10:48:15,013 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-14) JBAS017502: Undertow 1.1.0.Final starting
+2015-02-25 10:48:15,014 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 53) JBAS017502: Undertow 1.1.0.Final starting
+2015-02-25 10:48:15,061 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 54) JBAS015537: Activating WebServices Extension
+2015-02-25 10:48:15,231 INFO  [org.jboss.as.naming] (MSC service thread 1-9) JBAS011802: Starting Naming Service
+2015-02-25 10:48:15,232 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-4) JBAS015400: Bound mail session [java:jboss/mail/Default]
+2015-02-25 10:48:15,302 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 53) JBAS017527: Creating file handler for path /usr/apps/wildfly-8.2.0.Final/welcome-content
+2015-02-25 10:48:15,334 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) JBAS017525: Started server default-server.
+2015-02-25 10:48:15,391 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) JBAS017531: Host default-host starting
+2015-02-25 10:48:15,461 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) JBAS017519: Undertow HTTP listener default listening on /127.0.0.1:8080
+2015-02-25 10:48:15,512 INFO  [org.jboss.as.jacorb] (MSC service thread 1-15) JBAS016330: CORBA ORB Service started
+2015-02-25 10:48:15,594 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-6) JBAS015012: Started FileSystemDeploymentService for directory /usr/apps/wildfly-8.2.0.Final/standalone/deployments
+2015-02-25 10:48:15,597 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-14) JBAS015876: Starting deployment of "mariadb-java-client-1.1.7.jar" (runtime-name: "mariadb-java-client-1.1.7.jar")
+2015-02-25 10:48:15,629 INFO  [org.jboss.as.jacorb] (MSC service thread 1-11) JBAS016328: CORBA Naming Service started
+2015-02-25 10:48:15,631 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) JBAS010400: Bound data source [java:jboss/datasources/ExampleDS]
+2015-02-25 10:48:15,719 INFO  [org.hornetq.core.server] (ServerService Thread Pool -- 56) HQ221000: live server is starting with configuration HornetQ Configuration (clustered=false,backup=false,sharedStore=true,journalDirectory=/usr/apps/wildfly-8.2.0.Final/standalone/data/messagingjournal,bindingsDirectory=/usr/apps/wildfly-8.2.0.Final/standalone/data/messagingbindings,largeMessagesDirectory=/usr/apps/wildfly-8.2.0.Final/standalone/data/messaginglargemessages,pagingDirectory=/usr/apps/wildfly-8.2.0.Final/standalone/data/messagingpaging)
+2015-02-25 10:48:15,722 INFO  [org.hornetq.core.server] (ServerService Thread Pool -- 56) HQ221006: Waiting to obtain live lock
+2015-02-25 10:48:15,745 INFO  [org.hornetq.core.server] (ServerService Thread Pool -- 56) HQ221012: Using AIO Journal
+2015-02-25 10:48:15,777 INFO  [io.netty.util.internal.PlatformDependent] (ServerService Thread Pool -- 56) Your platform does not provide complete low-level API for accessing direct buffers reliably. Unless explicitly requested, heap buffer will always be preferred to avoid potential system unstability.
+2015-02-25 10:48:15,800 INFO  [org.hornetq.core.server] (ServerService Thread Pool -- 56) HQ221043: Adding protocol support CORE
+2015-02-25 10:48:15,806 INFO  [org.hornetq.core.server] (ServerService Thread Pool -- 56) HQ221043: Adding protocol support AMQP
+2015-02-25 10:48:15,809 INFO  [org.hornetq.core.server] (ServerService Thread Pool -- 56) HQ221043: Adding protocol support STOMP
+2015-02-25 10:48:15,837 INFO  [org.jboss.ws.common.management] (MSC service thread 1-3) JBWS022052: Starting JBoss Web Services - Stack CXF Server 4.3.2.Final
+2015-02-25 10:48:15,849 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-14) JBAS010404: Deploying non-JDBC-compliant driver class org.mariadb.jdbc.Driver (version 1.1)
+2015-02-25 10:48:15,866 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-11) JBAS010417: Started Driver service with driver-name = mariadb-java-client-1.1.7.jar
+2015-02-25 10:48:15,901 INFO  [org.hornetq.core.server] (ServerService Thread Pool -- 56) HQ221034: Waiting to obtain live lock
+2015-02-25 10:48:15,902 INFO  [org.hornetq.core.server] (ServerService Thread Pool -- 56) HQ221035: Live Server Obtained live lock
+2015-02-25 10:48:16,346 INFO  [org.jboss.messaging] (MSC service thread 1-4) JBAS011615: Registered HTTP upgrade for hornetq-remoting protocol handled by http-acceptor acceptor
+2015-02-25 10:48:16,346 INFO  [org.jboss.messaging] (MSC service thread 1-2) JBAS011615: Registered HTTP upgrade for hornetq-remoting protocol handled by http-acceptor-throughput acceptor
+2015-02-25 10:48:16,431 INFO  [org.hornetq.core.server] (ServerService Thread Pool -- 56) HQ221007: Server is now live
+2015-02-25 10:48:16,431 INFO  [org.hornetq.core.server] (ServerService Thread Pool -- 56) HQ221001: HornetQ Server version 2.4.5.FINAL (Wild Hornet, 124) [766cfc73-accb-11e4-941b-a7d4c5504193] 
+2015-02-25 10:48:16,446 INFO  [org.jboss.as.messaging] (ServerService Thread Pool -- 56) JBAS011601: Bound messaging object to jndi name java:jboss/exported/jms/RemoteConnectionFactory
+2015-02-25 10:48:16,471 INFO  [org.jboss.as.messaging] (ServerService Thread Pool -- 58) JBAS011601: Bound messaging object to jndi name java:/ConnectionFactory
+2015-02-25 10:48:16,473 INFO  [org.hornetq.core.server] (ServerService Thread Pool -- 57) HQ221003: trying to deploy queue jms.queue.DLQ
+2015-02-25 10:48:16,477 INFO  [org.jboss.as.messaging] (ServerService Thread Pool -- 57) JBAS011601: Bound messaging object to jndi name java:/jms/queue/DLQ
+2015-02-25 10:48:16,478 INFO  [org.hornetq.core.server] (ServerService Thread Pool -- 59) HQ221003: trying to deploy queue jms.queue.ExpiryQueue
+2015-02-25 10:48:16,478 INFO  [org.jboss.as.messaging] (ServerService Thread Pool -- 59) JBAS011601: Bound messaging object to jndi name java:/jms/queue/ExpiryQueue
+2015-02-25 10:48:16,493 INFO  [org.jboss.as.connector.deployment] (MSC service thread 1-11) JBAS010406: Registered connection factory java:/JmsXA
+2015-02-25 10:48:16,523 INFO  [org.hornetq.ra] (MSC service thread 1-11) HornetQ resource adaptor started
+2015-02-25 10:48:16,524 INFO  [org.jboss.as.connector.services.resourceadapters.ResourceAdapterActivatorService$ResourceAdapterActivator] (MSC service thread 1-11) IJ020002: Deployed: file://RaActivatorhornetq-ra
+2015-02-25 10:48:16,525 INFO  [org.jboss.as.connector.deployment] (MSC service thread 1-6) JBAS010401: Bound JCA ConnectionFactory [java:/JmsXA]
+2015-02-25 10:48:16,526 INFO  [org.jboss.as.messaging] (MSC service thread 1-10) JBAS011601: Bound messaging object to jndi name java:jboss/DefaultJMSConnectionFactory
+2015-02-25 10:48:16,572 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 31) JBAS018559: Deployed "mariadb-java-client-1.1.7.jar" (runtime-name : "mariadb-java-client-1.1.7.jar")
+2015-02-25 10:48:16,663 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015961: Http management interface listening on http://127.0.0.1:9990/management
+2015-02-25 10:48:16,664 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015951: Admin console listening on http://127.0.0.1:9990
+2015-02-25 10:48:16,665 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015874: WildFly 8.2.0.Final "Tweek" started in 3412ms - Started 251 of 306 services (101 services are lazy, passive or on-demand)
+2015-02-25 10:52:56,134 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) JBAS010400: Bound data source [java:jboss/datasources/fxdb]
+2015-02-25 10:52:56,545 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-14) JBAS010409: Unbound data source [java:jboss/datasources/fxdb]
+2015-02-25 10:53:13,870 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-10) JBAS010400: Bound data source [java:jboss/datasources/fxdb]
+2015-02-25 11:48:31,335 INFO  [org.jboss.as.repository] (management-handler-thread - 7) JBAS014900: Content added at location /usr/apps/wildfly-8.2.0.Final/standalone/data/content/88/7630a4e247943d660d72e7126141ba6ab9ecfb/content
+2015-02-25 11:48:31,338 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) JBAS015876: Starting deployment of "fx-rest-1.0.war" (runtime-name: "fx-rest-1.0.war")
+2015-02-25 11:48:31,402 INFO  [org.jboss.as.jpa] (MSC service thread 1-11) JBAS011401: Read persistence.xml for fxPU
+2015-02-25 11:48:31,463 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 61) JBAS011409: Starting Persistence Unit (phase 1 of 2) Service 'fx-rest-1.0.war#fxPU'
+2015-02-25 11:48:31,513 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 61) HHH000204: Processing PersistenceUnitInfo [
+	name: fxPU
+	...]
+2015-02-25 11:48:31,628 INFO  [org.hibernate.Version] (ServerService Thread Pool -- 61) HHH000412: Hibernate Core {4.3.7.Final}
+2015-02-25 11:48:31,630 INFO  [org.hibernate.cfg.Environment] (ServerService Thread Pool -- 61) HHH000206: hibernate.properties not found
+2015-02-25 11:48:31,631 INFO  [org.hibernate.cfg.Environment] (ServerService Thread Pool -- 61) HHH000021: Bytecode provider name : javassist
+2015-02-25 11:48:31,846 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 61) JBAS011409: Starting Persistence Unit (phase 2 of 2) Service 'fx-rest-1.0.war#fxPU'
+2015-02-25 11:48:31,928 INFO  [org.hibernate.annotations.common.Version] (ServerService Thread Pool -- 61) HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2015-02-25 11:48:31,987 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 61) HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2015-02-25 11:48:32,078 INFO  [org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory] (ServerService Thread Pool -- 61) HHH000397: Using ASTQueryTranslatorFactory
+2015-02-25 11:48:32,119 INFO  [org.hibernate.validator.internal.util.Version] (ServerService Thread Pool -- 61) HV000001: Hibernate Validator 5.1.3.Final
+2015-02-25 11:48:32,439 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 61) HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2015-02-25 11:48:32,447 ERROR [org.jboss.msc.service.fail] (ServerService Thread Pool -- 61) MSC000001: Failed to start service jboss.persistenceunit."fx-rest-1.0.war#fxPU": org.jboss.msc.service.StartException in service jboss.persistenceunit."fx-rest-1.0.war#fxPU": javax.persistence.PersistenceException: Unable to execute JPA schema generation create command [create table fx_passwd (userId integer not null, passwd varchar(255), primary key (userId))]
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl$1$1.run(PersistenceUnitServiceImpl.java:172) [wildfly-jpa-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl$1$1.run(PersistenceUnitServiceImpl.java:117) [wildfly-jpa-8.2.0.Final.jar:8.2.0.Final]
+	at java.security.AccessController.doPrivileged(Native Method) [rt.jar:1.8.0_25]
+	at org.wildfly.security.manager.WildFlySecurityManager.doChecked(WildFlySecurityManager.java:474)
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl$1.run(PersistenceUnitServiceImpl.java:182) [wildfly-jpa-8.2.0.Final.jar:8.2.0.Final]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [rt.jar:1.8.0_25]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [rt.jar:1.8.0_25]
+	at java.lang.Thread.run(Thread.java:745) [rt.jar:1.8.0_25]
+	at org.jboss.threads.JBossThread.run(JBossThread.java:122)
+Caused by: javax.persistence.PersistenceException: Unable to execute JPA schema generation create command [create table fx_passwd (userId integer not null, passwd varchar(255), primary key (userId))]
+	at org.hibernate.jpa.internal.schemagen.GenerationTargetToDatabase.acceptCreateCommands(GenerationTargetToDatabase.java:64) [hibernate-entitymanager-4.3.7.Final.jar:4.3.7.Final]
+	at org.hibernate.jpa.internal.schemagen.JpaSchemaGenerator.doGeneration(JpaSchemaGenerator.java:507) [hibernate-entitymanager-4.3.7.Final.jar:4.3.7.Final]
+	at org.hibernate.jpa.internal.schemagen.JpaSchemaGenerator.access$300(JpaSchemaGenerator.java:69) [hibernate-entitymanager-4.3.7.Final.jar:4.3.7.Final]
+	at org.hibernate.jpa.internal.schemagen.JpaSchemaGenerator$Generation.execute(JpaSchemaGenerator.java:184) [hibernate-entitymanager-4.3.7.Final.jar:4.3.7.Final]
+	at org.hibernate.jpa.internal.schemagen.JpaSchemaGenerator.performGeneration(JpaSchemaGenerator.java:76) [hibernate-entitymanager-4.3.7.Final.jar:4.3.7.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl$4.perform(EntityManagerFactoryBuilderImpl.java:859) [hibernate-entitymanager-4.3.7.Final.jar:4.3.7.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl$4.perform(EntityManagerFactoryBuilderImpl.java:845) [hibernate-entitymanager-4.3.7.Final.jar:4.3.7.Final]
+	at org.hibernate.boot.registry.classloading.internal.ClassLoaderServiceImpl.withTccl(ClassLoaderServiceImpl.java:398) [hibernate-core-4.3.7.Final.jar:4.3.7.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:844) [hibernate-entitymanager-4.3.7.Final.jar:4.3.7.Final]
+	at org.jboss.as.jpa.hibernate4.TwoPhaseBootstrapImpl.build(TwoPhaseBootstrapImpl.java:44) [jipijapa-hibernate4-3-1.0.1.Final.jar:]
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl$1$1.run(PersistenceUnitServiceImpl.java:154) [wildfly-jpa-8.2.0.Final.jar:8.2.0.Final]
+	... 8 more
+Caused by: java.sql.SQLException: No database selected
+	at org.mariadb.jdbc.internal.SQLExceptionMapper.get(SQLExceptionMapper.java:149)
+	at org.mariadb.jdbc.internal.SQLExceptionMapper.throwException(SQLExceptionMapper.java:106)
+	at org.mariadb.jdbc.MySQLStatement.executeQueryEpilog(MySQLStatement.java:264)
+	at org.mariadb.jdbc.MySQLStatement.execute(MySQLStatement.java:288)
+	at org.mariadb.jdbc.MySQLStatement.execute(MySQLStatement.java:338)
+	at org.jboss.jca.adapters.jdbc.WrappedStatement.execute(WrappedStatement.java:157)
+	at org.hibernate.jpa.internal.schemagen.GenerationTargetToDatabase.acceptCreateCommands(GenerationTargetToDatabase.java:61) [hibernate-entitymanager-4.3.7.Final.jar:4.3.7.Final]
+	... 18 more
+Caused by: org.mariadb.jdbc.internal.common.QueryException: No database selected
+	at org.mariadb.jdbc.internal.mysql.MySQLProtocol.getResult(MySQLProtocol.java:942)
+	at org.mariadb.jdbc.internal.mysql.MySQLProtocol.executeQuery(MySQLProtocol.java:991)
+	at org.mariadb.jdbc.MySQLStatement.execute(MySQLStatement.java:281)
+	... 21 more
+
+2015-02-25 11:48:32,453 ERROR [org.jboss.as.controller.management-operation] (management-handler-thread - 7) JBAS014613: Operation ("deploy") failed - address: ({"deployment" => "fx-rest-1.0.war"}) - failure description: {"JBAS014671: Failed services" => {"jboss.persistenceunit.\"fx-rest-1.0.war#fxPU\"" => "org.jboss.msc.service.StartException in service jboss.persistenceunit.\"fx-rest-1.0.war#fxPU\": javax.persistence.PersistenceException: Unable to execute JPA schema generation create command [create table fx_passwd (userId integer not null, passwd varchar(255), primary key (userId))]
+    Caused by: javax.persistence.PersistenceException: Unable to execute JPA schema generation create command [create table fx_passwd (userId integer not null, passwd varchar(255), primary key (userId))]
+    Caused by: java.sql.SQLException: No database selected
+    Caused by: org.mariadb.jdbc.internal.common.QueryException: No database selected"}}
+2015-02-25 11:48:32,454 ERROR [org.jboss.as.server] (management-handler-thread - 7) JBAS015870: Deploy of deployment "fx-rest-1.0.war" was rolled back with the following failure message: 
+{"JBAS014671: Failed services" => {"jboss.persistenceunit.\"fx-rest-1.0.war#fxPU\"" => "org.jboss.msc.service.StartException in service jboss.persistenceunit.\"fx-rest-1.0.war#fxPU\": javax.persistence.PersistenceException: Unable to execute JPA schema generation create command [create table fx_passwd (userId integer not null, passwd varchar(255), primary key (userId))]
+    Caused by: javax.persistence.PersistenceException: Unable to execute JPA schema generation create command [create table fx_passwd (userId integer not null, passwd varchar(255), primary key (userId))]
+    Caused by: java.sql.SQLException: No database selected
+    Caused by: org.mariadb.jdbc.internal.common.QueryException: No database selected"}}
+2015-02-25 11:48:32,460 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 61) JBAS011410: Stopping Persistence Unit (phase 1 of 2) Service 'fx-rest-1.0.war#fxPU'
+2015-02-25 11:48:32,470 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) JBAS015877: Stopped deployment fx-rest-1.0.war (runtime-name: fx-rest-1.0.war) in 16ms
+2015-02-25 11:48:32,473 INFO  [org.jboss.as.controller] (management-handler-thread - 7) JBAS014774: Service status report
+JBAS014775:    New missing/unsatisfied dependencies:
+      service jboss.deployment.unit."fx-rest-1.0.war".component."com.sun.faces.config.ConfigureListener".CREATE (missing) dependents: [service jboss.deployment.unit."fx-rest-1.0.war".component."com.sun.faces.config.ConfigureListener".START] 
+      service jboss.deployment.unit."fx-rest-1.0.war".component."com.sun.faces.config.ConfigureListener".START (missing) dependents: [service jboss.undertow.deployment.default-server.default-host."/fx-rest-1.0".UndertowDeploymentInfoService, service jboss.undertow.deployment.default-server.default-host."/fx-rest-1.0", service jboss.deployment.unit."fx-rest-1.0.war".deploymentCompleteService] 
+      service jboss.deployment.unit."fx-rest-1.0.war".component."javax.faces.webapp.FacetTag".CREATE (missing) dependents: [service jboss.deployment.unit."fx-rest-1.0.war".component."javax.faces.webapp.FacetTag".START] 
+      service jboss.deployment.unit."fx-rest-1.0.war".component."javax.faces.webapp.FacetTag".START (missing) dependents: [service jboss.undertow.deployment.default-server.default-host."/fx-rest-1.0".UndertowDeploymentInfoService, service jboss.undertow.deployment.default-server.default-host."/fx-rest-1.0", service jboss.deployment.unit."fx-rest-1.0.war".deploymentCompleteService] 
+      service jboss.deployment.unit."fx-rest-1.0.war".component."javax.servlet.jsp.jstl.tlv.PermittedTaglibsTLV".CREATE (missing) dependents: [service jboss.deployment.unit."fx-rest-1.0.war".component."javax.servlet.jsp.jstl.tlv.PermittedTaglibsTLV".START] 
+      service jboss.deployment.unit."fx-rest-1.0.war".component."javax.servlet.jsp.jstl.tlv.PermittedTaglibsTLV".START (missing) dependents: [service jboss.undertow.deployment.default-server.default-host."/fx-rest-1.0".UndertowDeploymentInfoService, service jboss.undertow.deployment.default-server.default-host."/fx-rest-1.0", service jboss.deployment.unit."fx-rest-1.0.war".deploymentCompleteService] 
+      service jboss.deployment.unit."fx-rest-1.0.war".component."javax.servlet.jsp.jstl.tlv.ScriptFreeTLV".CREATE (missing) dependents: [service jboss.deployment.unit."fx-rest-1.0.war".component."javax.servlet.jsp.jstl.tlv.ScriptFreeTLV".START] 
+      service jboss.deployment.unit."fx-rest-1.0.war".component."javax.servlet.jsp.jstl.tlv.ScriptFreeTLV".START (missing) dependents: [service jboss.undertow.deployment.default-server.default-host."/fx-rest-1.0".UndertowDeploymentInfoService, service jboss.deployment.unit."fx-rest-1.0.war".deploymentCompleteService] 
+      service jboss.deployment.unit."fx-rest-1.0.war".ee.ComponentRegistry (missing) dependents: [service jboss.undertow.deployment.default-server.default-host."/fx-rest-1.0".UndertowDeploymentInfoService] 
+      service jboss.deployment.unit."fx-rest-1.0.war".jndiDependencyService (missing) dependents: [service jboss.deployment.unit."fx-rest-1.0.war".component."javax.servlet.jsp.jstl.tlv.ScriptFreeTLV".START, service jboss.deployment.unit."fx-rest-1.0.war".component."com.sun.faces.config.ConfigureListener".START, service jboss.deployment.unit."fx-rest-1.0.war".component."javax.servlet.jsp.jstl.tlv.PermittedTaglibsTLV".START, service jboss.deployment.unit."fx-rest-1.0.war".component."javax.faces.webapp.FacetTag".START] 
+      service jboss.persistenceunit."fx-rest-1.0.war#fxPU" (missing) dependents: [service jboss.deployment.unit."fx-rest-1.0.war".component."javax.servlet.jsp.jstl.tlv.ScriptFreeTLV".START, service jboss.undertow.deployment.default-server.default-host."/fx-rest-1.0".UndertowDeploymentInfoService, service jboss.deployment.unit."fx-rest-1.0.war".component."com.sun.faces.config.ConfigureListener".START, service jboss.deployment.unit."fx-rest-1.0.war".component."javax.servlet.jsp.jstl.tlv.PermittedTaglibsTLV".START, JBAS014799: ... and 2 more ] 
+      service jboss.undertow.deployment.default-server.default-host."/fx-rest-1.0" (missing) dependents: [service jboss.deployment.unit."fx-rest-1.0.war".deploymentCompleteService] 
+      service jboss.undertow.deployment.default-server.default-host."/fx-rest-1.0".UndertowDeploymentInfoService (missing) dependents: [service jboss.undertow.deployment.default-server.default-host."/fx-rest-1.0"] 
+      service jboss.undertow.deployment.default-server.default-host."/fx-rest-1.0".codec (missing) dependents: [service jboss.undertow.deployment.default-server.default-host."/fx-rest-1.0".UndertowDeploymentInfoService] 
+JBAS014777:   Services which failed to start:      service jboss.persistenceunit."fx-rest-1.0.war#fxPU"
+
+2015-02-25 12:09:22,972 INFO  [org.jboss.as.repository] (management-handler-thread - 10) JBAS014900: Content added at location /usr/apps/wildfly-8.2.0.Final/standalone/data/content/44/77f288495f3193d4c1e670f59919548d06b48c/content
+2015-02-25 12:09:22,975 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-12) JBAS015876: Starting deployment of "fx-rest-1.0.war" (runtime-name: "fx-rest-1.0.war")
+2015-02-25 12:09:23,061 INFO  [org.jboss.as.jpa] (MSC service thread 1-4) JBAS011401: Read persistence.xml for fxPU
+2015-02-25 12:09:23,087 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 62) JBAS011409: Starting Persistence Unit (phase 1 of 2) Service 'fx-rest-1.0.war#fxPU'
+2015-02-25 12:09:23,088 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 62) HHH000204: Processing PersistenceUnitInfo [
+	name: fxPU
+	...]
+2015-02-25 12:09:23,121 INFO  [org.jboss.weld.deployer] (MSC service thread 1-13) JBAS016002: Processing weld deployment fx-rest-1.0.war
+2015-02-25 12:09:23,219 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-13) JNDI bindings for session bean named FxUsersServiceImpl in deployment unit deployment "fx-rest-1.0.war" are as follows:
+
+	java:global/fx-rest-1.0/FxUsersServiceImpl!com.uml.fx.entities.FxUsersService
+	java:app/fx-rest-1.0/FxUsersServiceImpl!com.uml.fx.entities.FxUsersService
+	java:module/FxUsersServiceImpl!com.uml.fx.entities.FxUsersService
+	java:global/fx-rest-1.0/FxUsersServiceImpl
+	java:app/fx-rest-1.0/FxUsersServiceImpl
+	java:module/FxUsersServiceImpl
+
+2015-02-25 12:09:23,304 INFO  [org.jboss.weld.deployer] (MSC service thread 1-10) JBAS016005: Starting Services for CDI deployment: fx-rest-1.0.war
+2015-02-25 12:09:23,363 INFO  [org.jboss.weld.Version] (MSC service thread 1-10) WELD-000900: 2.2.6 (Final)
+2015-02-25 12:09:23,370 INFO  [org.jboss.weld.deployer] (MSC service thread 1-15) JBAS016008: Starting weld service for deployment fx-rest-1.0.war
+2015-02-25 12:09:23,558 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 62) JBAS011409: Starting Persistence Unit (phase 2 of 2) Service 'fx-rest-1.0.war#fxPU'
+2015-02-25 12:09:23,562 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 62) HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2015-02-25 12:09:23,567 INFO  [org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory] (ServerService Thread Pool -- 62) HHH000397: Using ASTQueryTranslatorFactory
+2015-02-25 12:09:23,584 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 62) HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2015-02-25 12:09:23,585 ERROR [org.jboss.msc.service.fail] (ServerService Thread Pool -- 62) MSC000001: Failed to start service jboss.persistenceunit."fx-rest-1.0.war#fxPU": org.jboss.msc.service.StartException in service jboss.persistenceunit."fx-rest-1.0.war#fxPU": javax.persistence.PersistenceException: Unable to execute JPA schema generation create command [create table fx_passwd (userId integer not null, passwd varchar(255), primary key (userId))]
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl$1$1.run(PersistenceUnitServiceImpl.java:172) [wildfly-jpa-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl$1$1.run(PersistenceUnitServiceImpl.java:117) [wildfly-jpa-8.2.0.Final.jar:8.2.0.Final]
+	at java.security.AccessController.doPrivileged(Native Method) [rt.jar:1.8.0_25]
+	at org.wildfly.security.manager.WildFlySecurityManager.doChecked(WildFlySecurityManager.java:474)
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl$1.run(PersistenceUnitServiceImpl.java:182) [wildfly-jpa-8.2.0.Final.jar:8.2.0.Final]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [rt.jar:1.8.0_25]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [rt.jar:1.8.0_25]
+	at java.lang.Thread.run(Thread.java:745) [rt.jar:1.8.0_25]
+	at org.jboss.threads.JBossThread.run(JBossThread.java:122)
+Caused by: javax.persistence.PersistenceException: Unable to execute JPA schema generation create command [create table fx_passwd (userId integer not null, passwd varchar(255), primary key (userId))]
+	at org.hibernate.jpa.internal.schemagen.GenerationTargetToDatabase.acceptCreateCommands(GenerationTargetToDatabase.java:64) [hibernate-entitymanager-4.3.7.Final.jar:4.3.7.Final]
+	at org.hibernate.jpa.internal.schemagen.JpaSchemaGenerator.doGeneration(JpaSchemaGenerator.java:507) [hibernate-entitymanager-4.3.7.Final.jar:4.3.7.Final]
+	at org.hibernate.jpa.internal.schemagen.JpaSchemaGenerator.access$300(JpaSchemaGenerator.java:69) [hibernate-entitymanager-4.3.7.Final.jar:4.3.7.Final]
+	at org.hibernate.jpa.internal.schemagen.JpaSchemaGenerator$Generation.execute(JpaSchemaGenerator.java:184) [hibernate-entitymanager-4.3.7.Final.jar:4.3.7.Final]
+	at org.hibernate.jpa.internal.schemagen.JpaSchemaGenerator.performGeneration(JpaSchemaGenerator.java:76) [hibernate-entitymanager-4.3.7.Final.jar:4.3.7.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl$4.perform(EntityManagerFactoryBuilderImpl.java:859) [hibernate-entitymanager-4.3.7.Final.jar:4.3.7.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl$4.perform(EntityManagerFactoryBuilderImpl.java:845) [hibernate-entitymanager-4.3.7.Final.jar:4.3.7.Final]
+	at org.hibernate.boot.registry.classloading.internal.ClassLoaderServiceImpl.withTccl(ClassLoaderServiceImpl.java:398) [hibernate-core-4.3.7.Final.jar:4.3.7.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:844) [hibernate-entitymanager-4.3.7.Final.jar:4.3.7.Final]
+	at org.jboss.as.jpa.hibernate4.TwoPhaseBootstrapImpl.build(TwoPhaseBootstrapImpl.java:44) [jipijapa-hibernate4-3-1.0.1.Final.jar:]
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl$1$1.run(PersistenceUnitServiceImpl.java:154) [wildfly-jpa-8.2.0.Final.jar:8.2.0.Final]
+	... 8 more
+Caused by: java.sql.SQLException: No database selected
+	at org.mariadb.jdbc.internal.SQLExceptionMapper.get(SQLExceptionMapper.java:149)
+	at org.mariadb.jdbc.internal.SQLExceptionMapper.throwException(SQLExceptionMapper.java:106)
+	at org.mariadb.jdbc.MySQLStatement.executeQueryEpilog(MySQLStatement.java:264)
+	at org.mariadb.jdbc.MySQLStatement.execute(MySQLStatement.java:288)
+	at org.mariadb.jdbc.MySQLStatement.execute(MySQLStatement.java:338)
+	at org.jboss.jca.adapters.jdbc.WrappedStatement.execute(WrappedStatement.java:157)
+	at org.hibernate.jpa.internal.schemagen.GenerationTargetToDatabase.acceptCreateCommands(GenerationTargetToDatabase.java:61) [hibernate-entitymanager-4.3.7.Final.jar:4.3.7.Final]
+	... 18 more
+Caused by: org.mariadb.jdbc.internal.common.QueryException: No database selected
+	at org.mariadb.jdbc.internal.mysql.MySQLProtocol.getResult(MySQLProtocol.java:942)
+	at org.mariadb.jdbc.internal.mysql.MySQLProtocol.executeQuery(MySQLProtocol.java:991)
+	at org.mariadb.jdbc.MySQLStatement.execute(MySQLStatement.java:281)
+	... 21 more
+
+2015-02-25 12:09:23,589 ERROR [org.jboss.as.controller.management-operation] (management-handler-thread - 10) JBAS014613: Operation ("deploy") failed - address: ({"deployment" => "fx-rest-1.0.war"}) - failure description: {"JBAS014671: Failed services" => {"jboss.persistenceunit.\"fx-rest-1.0.war#fxPU\"" => "org.jboss.msc.service.StartException in service jboss.persistenceunit.\"fx-rest-1.0.war#fxPU\": javax.persistence.PersistenceException: Unable to execute JPA schema generation create command [create table fx_passwd (userId integer not null, passwd varchar(255), primary key (userId))]
+    Caused by: javax.persistence.PersistenceException: Unable to execute JPA schema generation create command [create table fx_passwd (userId integer not null, passwd varchar(255), primary key (userId))]
+    Caused by: java.sql.SQLException: No database selected
+    Caused by: org.mariadb.jdbc.internal.common.QueryException: No database selected"}}
+2015-02-25 12:09:23,590 ERROR [org.jboss.as.server] (management-handler-thread - 10) JBAS015870: Deploy of deployment "fx-rest-1.0.war" was rolled back with the following failure message: 
+{"JBAS014671: Failed services" => {"jboss.persistenceunit.\"fx-rest-1.0.war#fxPU\"" => "org.jboss.msc.service.StartException in service jboss.persistenceunit.\"fx-rest-1.0.war#fxPU\": javax.persistence.PersistenceException: Unable to execute JPA schema generation create command [create table fx_passwd (userId integer not null, passwd varchar(255), primary key (userId))]
+    Caused by: javax.persistence.PersistenceException: Unable to execute JPA schema generation create command [create table fx_passwd (userId integer not null, passwd varchar(255), primary key (userId))]
+    Caused by: java.sql.SQLException: No database selected
+    Caused by: org.mariadb.jdbc.internal.common.QueryException: No database selected"}}
+2015-02-25 12:09:23,593 INFO  [org.jboss.weld.deployer] (MSC service thread 1-11) JBAS016009: Stopping weld service for deployment fx-rest-1.0.war
+2015-02-25 12:09:23,625 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 62) JBAS011410: Stopping Persistence Unit (phase 1 of 2) Service 'fx-rest-1.0.war#fxPU'
+2015-02-25 12:09:23,630 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-10) JBAS015877: Stopped deployment fx-rest-1.0.war (runtime-name: fx-rest-1.0.war) in 40ms
+2015-02-25 12:09:23,632 INFO  [org.jboss.as.controller] (management-handler-thread - 10) JBAS014774: Service status report
+JBAS014775:    New missing/unsatisfied dependencies:
+      service jboss.deployment.unit."fx-rest-1.0.war".WeldBootstrapService (missing) dependents: [service jboss.deployment.unit."fx-rest-1.0.war".component."com.sun.faces.config.ConfigureListener".WeldInstantiator, service jboss.deployment.unit."fx-rest-1.0.war".component.FxUsersServiceImpl.WeldInterceptorBindingsService, service jboss.deployment.unit."fx-rest-1.0.war".component.FxUsersServiceImpl.WeldInstantiator, service jboss.deployment.unit."fx-rest-1.0.war".WeldStartService] 
+      service jboss.deployment.unit."fx-rest-1.0.war".WeldStartService (missing) dependents: [service jboss.deployment.unit."fx-rest-1.0.war".component.FxUsersServiceImpl.WeldInterceptorBindingsService] 
+      service jboss.deployment.unit."fx-rest-1.0.war".component.FxUsersServiceImpl.JndiBindingsService (missing) dependents: [service jboss.deployment.unit."fx-rest-1.0.war".jndiDependencyService] 
+      service jboss.deployment.unit."fx-rest-1.0.war".component.FxUsersServiceImpl.START (missing) dependents: [service jboss.undertow.deployment.default-server.default-host."/fx-rest-1.0".UndertowDeploymentInfoService, service jboss.deployment.unit."fx-rest-1.0.war".deploymentCompleteService, service jboss.deployment.unit."fx-rest-1.0.war".moduleDeploymentRuntimeInformationStart] 
+      service jboss.deployment.unit."fx-rest-1.0.war".component.FxUsersServiceImpl.VIEW."com.uml.fx.entities.FxUsersService".LOCAL (missing) dependents: [service jboss.deployment.unit."fx-rest-1.0.war".component.FxUsersServiceImpl.START] 
+      service jboss.deployment.unit."fx-rest-1.0.war".component.FxUsersServiceImpl.WeldInterceptorBindingsService (missing) dependents: [service jboss.deployment.unit."fx-rest-1.0.war".component.FxUsersServiceImpl.WeldInstantiator] 
+      service jboss.deployment.unit."fx-rest-1.0.war".component.FxUsersServiceImpl.ejb.non-functional-timerservice (missing) dependents: [service jboss.deployment.unit."fx-rest-1.0.war".component.FxUsersServiceImpl.START] 
+      service jboss.deployment.unit."fx-rest-1.0.war".component."com.sun.faces.config.ConfigureListener".JndiBindingsService (missing) dependents: [service jboss.deployment.unit."fx-rest-1.0.war".jndiDependencyService] 
+      service jboss.deployment.unit."fx-rest-1.0.war".component."javax.faces.webapp.FacetTag".JndiBindingsService (missing) dependents: [service jboss.deployment.unit."fx-rest-1.0.war".jndiDependencyService] 
+      service jboss.deployment.unit."fx-rest-1.0.war".component."javax.servlet.jsp.jstl.tlv.PermittedTaglibsTLV".JndiBindingsService (missing) dependents: [service jboss.deployment.unit."fx-rest-1.0.war".jndiDependencyService] 
+      service jboss.deployment.unit."fx-rest-1.0.war".component."javax.servlet.jsp.jstl.tlv.PermittedTaglibsTLV".WeldInstantiator (missing) dependents: [service jboss.deployment.unit."fx-rest-1.0.war".component."javax.servlet.jsp.jstl.tlv.PermittedTaglibsTLV".START] 
+      service jboss.deployment.unit."fx-rest-1.0.war".component."javax.servlet.jsp.jstl.tlv.ScriptFreeTLV".JndiBindingsService (missing) dependents: [service jboss.deployment.unit."fx-rest-1.0.war".jndiDependencyService] 
+      service jboss.deployment.unit."fx-rest-1.0.war".component."javax.servlet.jsp.jstl.tlv.ScriptFreeTLV".WeldInstantiator (missing) dependents: [service jboss.deployment.unit."fx-rest-1.0.war".component."javax.servlet.jsp.jstl.tlv.ScriptFreeTLV".START] 
+      service jboss.deployment.unit."fx-rest-1.0.war".component."org.jboss.weld.servlet.WeldInitialListener".CREATE (missing) dependents: [service jboss.deployment.unit."fx-rest-1.0.war".component."org.jboss.weld.servlet.WeldInitialListener".START] 
+      service jboss.deployment.unit."fx-rest-1.0.war".component."org.jboss.weld.servlet.WeldInitialListener".JndiBindingsService (missing) dependents: [service jboss.deployment.unit."fx-rest-1.0.war".jndiDependencyService] 
+      service jboss.deployment.unit."fx-rest-1.0.war".component."org.jboss.weld.servlet.WeldInitialListener".START (missing) dependents: [service jboss.undertow.deployment.default-server.default-host."/fx-rest-1.0".UndertowDeploymentInfoService, service jboss.deployment.unit."fx-rest-1.0.war".deploymentCompleteService] 
+      service jboss.deployment.unit."fx-rest-1.0.war".component."org.jboss.weld.servlet.WeldInitialListener".WeldInstantiator (missing) dependents: [service jboss.deployment.unit."fx-rest-1.0.war".component."org.jboss.weld.servlet.WeldInitialListener".START] 
+      service jboss.deployment.unit."fx-rest-1.0.war".component."org.jboss.weld.servlet.WeldTerminalListener".JndiBindingsService (missing) dependents: [service jboss.deployment.unit."fx-rest-1.0.war".jndiDependencyService] 
+      service jboss.deployment.unit."fx-rest-1.0.war".component."org.jboss.weld.servlet.WeldTerminalListener".START (missing) dependents: [service jboss.undertow.deployment.default-server.default-host."/fx-rest-1.0".UndertowDeploymentInfoService, service jboss.deployment.unit."fx-rest-1.0.war".deploymentCompleteService] 
+      service jboss.naming.context.java.app."fx-rest-1.0".env (missing) dependents: [service jboss.deployment.unit."fx-rest-1.0.war".jndiDependencyService] 
+      service jboss.naming.context.java.module."fx-rest-1.0"."fx-rest-1.0".BeanManager (missing) dependents: [service jboss.deployment.unit."fx-rest-1.0.war".jndiDependencyService] 
+      service jboss.naming.context.java.module."fx-rest-1.0"."fx-rest-1.0".DefaultContextService (missing) dependents: [service jboss.deployment.unit."fx-rest-1.0.war".jndiDependencyService] 
+      service jboss.naming.context.java.module."fx-rest-1.0"."fx-rest-1.0".DefaultDataSource (missing) dependents: [service jboss.deployment.unit."fx-rest-1.0.war".jndiDependencyService] 
+      service jboss.naming.context.java.module."fx-rest-1.0"."fx-rest-1.0".DefaultJMSConnectionFactory (missing) dependents: [service jboss.deployment.unit."fx-rest-1.0.war".jndiDependencyService] 
+      service jboss.naming.context.java.module."fx-rest-1.0"."fx-rest-1.0".DefaultManagedExecutorService (missing) dependents: [service jboss.deployment.unit."fx-rest-1.0.war".jndiDependencyService] 
+      service jboss.naming.context.java.module."fx-rest-1.0"."fx-rest-1.0".DefaultManagedScheduledExecutorService (missing) dependents: [service jboss.deployment.unit."fx-rest-1.0.war".jndiDependencyService] 
+      service jboss.naming.context.java.module."fx-rest-1.0"."fx-rest-1.0".DefaultManagedThreadFactory (missing) dependents: [service jboss.deployment.unit."fx-rest-1.0.war".jndiDependencyService] 
+      service jboss.naming.context.java.module."fx-rest-1.0"."fx-rest-1.0".EJBContext (missing) dependents: [service jboss.deployment.unit."fx-rest-1.0.war".jndiDependencyService] 
+      service jboss.naming.context.java.module."fx-rest-1.0"."fx-rest-1.0".TimerService (missing) dependents: [service jboss.deployment.unit."fx-rest-1.0.war".jndiDependencyService] 
+      service jboss.naming.context.java.module."fx-rest-1.0"."fx-rest-1.0".TransactionSynchronizationRegistry (missing) dependents: [service jboss.deployment.unit."fx-rest-1.0.war".jndiDependencyService] 
+      service jboss.naming.context.java.module."fx-rest-1.0"."fx-rest-1.0".UserTransaction (missing) dependents: [service jboss.deployment.unit."fx-rest-1.0.war".jndiDependencyService] 
+      service jboss.naming.context.java.module."fx-rest-1.0"."fx-rest-1.0".env (missing) dependents: [service jboss.deployment.unit."fx-rest-1.0.war".jndiDependencyService] 
+      service jboss.naming.context.java.module."fx-rest-1.0"."fx-rest-1.0".env."com.uml.fx.entities.FxUsersServiceImpl".em (missing) dependents: [service jboss.deployment.unit."fx-rest-1.0.war".component.FxUsersServiceImpl.START, service jboss.deployment.unit."fx-rest-1.0.war".jndiDependencyService] 
+JBAS014776:    Newly corrected services:
+      service jboss.deployment.unit."fx-rest-1.0.war".component."com.sun.faces.config.ConfigureListener".START (no longer required)
+      service jboss.deployment.unit."fx-rest-1.0.war".component."javax.faces.webapp.FacetTag".CREATE (no longer required)
+      service jboss.deployment.unit."fx-rest-1.0.war".component."javax.servlet.jsp.jstl.tlv.PermittedTaglibsTLV".CREATE (no longer required)
+      service jboss.undertow.deployment.default-server.default-host."/fx-rest-1.0".UndertowDeploymentInfoService (no longer required)
+JBAS014777:   Services which failed to start:      service jboss.persistenceunit."fx-rest-1.0.war#fxPU"
+
+2015-02-25 12:22:56,261 INFO  [org.jboss.as.repository] (management-handler-thread - 13) JBAS014900: Content added at location /usr/apps/wildfly-8.2.0.Final/standalone/data/content/24/50e033a01a6f95c9b3dfa348f6d98440571e68/content
+2015-02-25 12:22:56,263 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) JBAS015876: Starting deployment of "fx-rest-1.0.war" (runtime-name: "fx-rest-1.0.war")
+2015-02-25 12:22:56,300 INFO  [org.jboss.as.jpa] (MSC service thread 1-12) JBAS011401: Read persistence.xml for fxPU
+2015-02-25 12:22:56,311 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 63) JBAS011409: Starting Persistence Unit (phase 1 of 2) Service 'fx-rest-1.0.war#fxPU'
+2015-02-25 12:22:56,312 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 63) HHH000204: Processing PersistenceUnitInfo [
+	name: fxPU
+	...]
+2015-02-25 12:22:56,330 INFO  [org.jboss.weld.deployer] (MSC service thread 1-4) JBAS016002: Processing weld deployment fx-rest-1.0.war
+2015-02-25 12:22:56,335 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-4) JNDI bindings for session bean named FxUsersServiceImpl in deployment unit deployment "fx-rest-1.0.war" are as follows:
+
+	java:global/fx-rest-1.0/FxUsersServiceImpl!com.uml.fx.entities.FxUsersService
+	java:app/fx-rest-1.0/FxUsersServiceImpl!com.uml.fx.entities.FxUsersService
+	java:module/FxUsersServiceImpl!com.uml.fx.entities.FxUsersService
+	java:global/fx-rest-1.0/FxUsersServiceImpl
+	java:app/fx-rest-1.0/FxUsersServiceImpl
+	java:module/FxUsersServiceImpl
+
+2015-02-25 12:22:56,362 INFO  [org.jboss.weld.deployer] (MSC service thread 1-2) JBAS016005: Starting Services for CDI deployment: fx-rest-1.0.war
+2015-02-25 12:22:56,365 INFO  [org.jboss.weld.deployer] (MSC service thread 1-2) JBAS016008: Starting weld service for deployment fx-rest-1.0.war
+2015-02-25 12:22:56,377 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 63) JBAS011409: Starting Persistence Unit (phase 2 of 2) Service 'fx-rest-1.0.war#fxPU'
+2015-02-25 12:22:56,384 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 63) HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2015-02-25 12:22:56,387 INFO  [org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory] (ServerService Thread Pool -- 63) HHH000397: Using ASTQueryTranslatorFactory
+2015-02-25 12:22:56,399 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 63) HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2015-02-25 12:22:56,400 WARN  [org.hibernate.jpa.internal.schemagen.GenerationTargetToDatabase] (ServerService Thread Pool -- 63) Unable to execute JPA schema generation drop command [drop table if exists fx_passwd]
+2015-02-25 12:22:56,401 ERROR [org.jboss.msc.service.fail] (ServerService Thread Pool -- 63) MSC000001: Failed to start service jboss.persistenceunit."fx-rest-1.0.war#fxPU": org.jboss.msc.service.StartException in service jboss.persistenceunit."fx-rest-1.0.war#fxPU": javax.persistence.PersistenceException: Unable to execute JPA schema generation create command [create table fx_passwd (userId integer not null, passwd varchar(255), primary key (userId))]
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl$1$1.run(PersistenceUnitServiceImpl.java:172) [wildfly-jpa-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl$1$1.run(PersistenceUnitServiceImpl.java:117) [wildfly-jpa-8.2.0.Final.jar:8.2.0.Final]
+	at java.security.AccessController.doPrivileged(Native Method) [rt.jar:1.8.0_25]
+	at org.wildfly.security.manager.WildFlySecurityManager.doChecked(WildFlySecurityManager.java:474)
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl$1.run(PersistenceUnitServiceImpl.java:182) [wildfly-jpa-8.2.0.Final.jar:8.2.0.Final]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [rt.jar:1.8.0_25]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [rt.jar:1.8.0_25]
+	at java.lang.Thread.run(Thread.java:745) [rt.jar:1.8.0_25]
+	at org.jboss.threads.JBossThread.run(JBossThread.java:122)
+Caused by: javax.persistence.PersistenceException: Unable to execute JPA schema generation create command [create table fx_passwd (userId integer not null, passwd varchar(255), primary key (userId))]
+	at org.hibernate.jpa.internal.schemagen.GenerationTargetToDatabase.acceptCreateCommands(GenerationTargetToDatabase.java:64) [hibernate-entitymanager-4.3.7.Final.jar:4.3.7.Final]
+	at org.hibernate.jpa.internal.schemagen.JpaSchemaGenerator.doGeneration(JpaSchemaGenerator.java:507) [hibernate-entitymanager-4.3.7.Final.jar:4.3.7.Final]
+	at org.hibernate.jpa.internal.schemagen.JpaSchemaGenerator.access$300(JpaSchemaGenerator.java:69) [hibernate-entitymanager-4.3.7.Final.jar:4.3.7.Final]
+	at org.hibernate.jpa.internal.schemagen.JpaSchemaGenerator$Generation.execute(JpaSchemaGenerator.java:184) [hibernate-entitymanager-4.3.7.Final.jar:4.3.7.Final]
+	at org.hibernate.jpa.internal.schemagen.JpaSchemaGenerator.performGeneration(JpaSchemaGenerator.java:76) [hibernate-entitymanager-4.3.7.Final.jar:4.3.7.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl$4.perform(EntityManagerFactoryBuilderImpl.java:859) [hibernate-entitymanager-4.3.7.Final.jar:4.3.7.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl$4.perform(EntityManagerFactoryBuilderImpl.java:845) [hibernate-entitymanager-4.3.7.Final.jar:4.3.7.Final]
+	at org.hibernate.boot.registry.classloading.internal.ClassLoaderServiceImpl.withTccl(ClassLoaderServiceImpl.java:398) [hibernate-core-4.3.7.Final.jar:4.3.7.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:844) [hibernate-entitymanager-4.3.7.Final.jar:4.3.7.Final]
+	at org.jboss.as.jpa.hibernate4.TwoPhaseBootstrapImpl.build(TwoPhaseBootstrapImpl.java:44) [jipijapa-hibernate4-3-1.0.1.Final.jar:]
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl$1$1.run(PersistenceUnitServiceImpl.java:154) [wildfly-jpa-8.2.0.Final.jar:8.2.0.Final]
+	... 8 more
+Caused by: java.sql.SQLException: No database selected
+	at org.mariadb.jdbc.internal.SQLExceptionMapper.get(SQLExceptionMapper.java:149)
+	at org.mariadb.jdbc.internal.SQLExceptionMapper.throwException(SQLExceptionMapper.java:106)
+	at org.mariadb.jdbc.MySQLStatement.executeQueryEpilog(MySQLStatement.java:264)
+	at org.mariadb.jdbc.MySQLStatement.execute(MySQLStatement.java:288)
+	at org.mariadb.jdbc.MySQLStatement.execute(MySQLStatement.java:338)
+	at org.jboss.jca.adapters.jdbc.WrappedStatement.execute(WrappedStatement.java:157)
+	at org.hibernate.jpa.internal.schemagen.GenerationTargetToDatabase.acceptCreateCommands(GenerationTargetToDatabase.java:61) [hibernate-entitymanager-4.3.7.Final.jar:4.3.7.Final]
+	... 18 more
+Caused by: org.mariadb.jdbc.internal.common.QueryException: No database selected
+	at org.mariadb.jdbc.internal.mysql.MySQLProtocol.getResult(MySQLProtocol.java:942)
+	at org.mariadb.jdbc.internal.mysql.MySQLProtocol.executeQuery(MySQLProtocol.java:991)
+	at org.mariadb.jdbc.MySQLStatement.execute(MySQLStatement.java:281)
+	... 21 more
+
+2015-02-25 12:22:56,405 ERROR [org.jboss.as.controller.management-operation] (management-handler-thread - 13) JBAS014613: Operation ("deploy") failed - address: ({"deployment" => "fx-rest-1.0.war"}) - failure description: {"JBAS014671: Failed services" => {"jboss.persistenceunit.\"fx-rest-1.0.war#fxPU\"" => "org.jboss.msc.service.StartException in service jboss.persistenceunit.\"fx-rest-1.0.war#fxPU\": javax.persistence.PersistenceException: Unable to execute JPA schema generation create command [create table fx_passwd (userId integer not null, passwd varchar(255), primary key (userId))]
+    Caused by: javax.persistence.PersistenceException: Unable to execute JPA schema generation create command [create table fx_passwd (userId integer not null, passwd varchar(255), primary key (userId))]
+    Caused by: java.sql.SQLException: No database selected
+    Caused by: org.mariadb.jdbc.internal.common.QueryException: No database selected"}}
+2015-02-25 12:22:56,406 ERROR [org.jboss.as.server] (management-handler-thread - 13) JBAS015870: Deploy of deployment "fx-rest-1.0.war" was rolled back with the following failure message: 
+{"JBAS014671: Failed services" => {"jboss.persistenceunit.\"fx-rest-1.0.war#fxPU\"" => "org.jboss.msc.service.StartException in service jboss.persistenceunit.\"fx-rest-1.0.war#fxPU\": javax.persistence.PersistenceException: Unable to execute JPA schema generation create command [create table fx_passwd (userId integer not null, passwd varchar(255), primary key (userId))]
+    Caused by: javax.persistence.PersistenceException: Unable to execute JPA schema generation create command [create table fx_passwd (userId integer not null, passwd varchar(255), primary key (userId))]
+    Caused by: java.sql.SQLException: No database selected
+    Caused by: org.mariadb.jdbc.internal.common.QueryException: No database selected"}}
+2015-02-25 12:22:56,408 INFO  [org.jboss.weld.deployer] (MSC service thread 1-10) JBAS016009: Stopping weld service for deployment fx-rest-1.0.war
+2015-02-25 12:22:56,421 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 63) JBAS011410: Stopping Persistence Unit (phase 1 of 2) Service 'fx-rest-1.0.war#fxPU'
+2015-02-25 12:22:56,424 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) JBAS015877: Stopped deployment fx-rest-1.0.war (runtime-name: fx-rest-1.0.war) in 18ms
+2015-02-25 12:22:56,426 INFO  [org.jboss.as.controller] (management-handler-thread - 13) JBAS014774: Service status report
+JBAS014775:    New missing/unsatisfied dependencies:
+      service jboss.deployment.unit."fx-rest-1.0.war".component.FxUsersServiceImpl.CREATE (missing) dependents: [service jboss.deployment.unit."fx-rest-1.0.war".component.FxUsersServiceImpl.START] 
+      service jboss.deployment.unit."fx-rest-1.0.war".component.FxUsersServiceImpl.WeldInstantiator (missing) dependents: [service jboss.deployment.unit."fx-rest-1.0.war".component.FxUsersServiceImpl.START] 
+      service jboss.deployment.unit."fx-rest-1.0.war".component."com.sun.faces.config.ConfigureListener".START (missing) dependents: [service jboss.undertow.deployment.default-server.default-host."/fx-rest-1.0".UndertowDeploymentInfoService, service jboss.undertow.deployment.default-server.default-host."/fx-rest-1.0", service jboss.deployment.unit."fx-rest-1.0.war".deploymentCompleteService] 
+      service jboss.deployment.unit."fx-rest-1.0.war".component."javax.faces.webapp.FacetTag".CREATE (missing) dependents: [service jboss.deployment.unit."fx-rest-1.0.war".component."javax.faces.webapp.FacetTag".START] 
+      service jboss.deployment.unit."fx-rest-1.0.war".component."javax.faces.webapp.FacetTag".WeldInstantiator (missing) dependents: [service jboss.deployment.unit."fx-rest-1.0.war".component."javax.faces.webapp.FacetTag".START] 
+      service jboss.deployment.unit."fx-rest-1.0.war".component."javax.servlet.jsp.jstl.tlv.PermittedTaglibsTLV".CREATE (missing) dependents: [service jboss.deployment.unit."fx-rest-1.0.war".component."javax.servlet.jsp.jstl.tlv.PermittedTaglibsTLV".START] 
+      service jboss.deployment.unit."fx-rest-1.0.war".component."org.jboss.weld.servlet.WeldTerminalListener".CREATE (missing) dependents: [service jboss.deployment.unit."fx-rest-1.0.war".component."org.jboss.weld.servlet.WeldTerminalListener".START] 
+      service jboss.deployment.unit."fx-rest-1.0.war".component."org.jboss.weld.servlet.WeldTerminalListener".WeldInstantiator (missing) dependents: [service jboss.deployment.unit."fx-rest-1.0.war".component."org.jboss.weld.servlet.WeldTerminalListener".START] 
+      service jboss.deployment.unit."fx-rest-1.0.war".moduleDeploymentRuntimeInformation (missing) dependents: [service jboss.deployment.unit."fx-rest-1.0.war".component.FxUsersServiceImpl.START, service jboss.deployment.unit."fx-rest-1.0.war".moduleDeploymentRuntimeInformationStart] 
+      service jboss.undertow.deployment.default-server.default-host."/fx-rest-1.0".UndertowDeploymentInfoService (missing) dependents: [service jboss.undertow.deployment.default-server.default-host."/fx-rest-1.0"] 
+JBAS014776:    Newly corrected services:
+      service jboss.deployment.unit."fx-rest-1.0.war".component."javax.servlet.jsp.jstl.tlv.PermittedTaglibsTLV".JndiBindingsService (no longer required)
+      service jboss.deployment.unit."fx-rest-1.0.war".component."javax.servlet.jsp.jstl.tlv.ScriptFreeTLV".CREATE (no longer required)
+      service jboss.naming.context.java.module."fx-rest-1.0"."fx-rest-1.0".DefaultDataSource (no longer required)
+      service jboss.naming.context.java.module."fx-rest-1.0"."fx-rest-1.0".DefaultJMSConnectionFactory (no longer required)
+      service jboss.naming.context.java.module."fx-rest-1.0"."fx-rest-1.0".DefaultManagedThreadFactory (no longer required)
+      service jboss.naming.context.java.module."fx-rest-1.0"."fx-rest-1.0".EJBContext (no longer required)
+      service jboss.naming.context.java.module."fx-rest-1.0"."fx-rest-1.0".TimerService (no longer required)
+      service jboss.naming.context.java.module."fx-rest-1.0"."fx-rest-1.0".UserTransaction (no longer required)
+      service jboss.undertow.deployment.default-server.default-host."/fx-rest-1.0" (no longer required)
+JBAS014777:   Services which failed to start:      service jboss.persistenceunit."fx-rest-1.0.war#fxPU"
+
+2015-02-25 16:57:02,758 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-16) JBAS010409: Unbound data source [java:jboss/datasources/fxdb]
+2015-02-25 16:57:02,758 INFO  [org.jboss.as.messaging] (MSC service thread 1-13) JBAS011605: Unbound messaging object to jndi name java:jboss/DefaultJMSConnectionFactory
+2015-02-25 16:57:02,759 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-3) JBAS010409: Unbound data source [java:jboss/datasources/ExampleDS]
+2015-02-25 16:57:02,759 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-12) JBAS017532: Host default-host stopping
+2015-02-25 16:57:02,762 INFO  [org.jboss.as.connector.deployment] (MSC service thread 1-10) JBAS010410: Unbound JCA ConnectionFactory [java:/JmsXA]
+2015-02-25 16:57:02,764 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-15) JBAS010418: Stopped Driver service with driver-name = mariadb-java-client-1.1.7.jar
+2015-02-25 16:57:02,765 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-15) JBAS010418: Stopped Driver service with driver-name = h2
+2015-02-25 16:57:02,766 INFO  [org.jboss.as.messaging] (ServerService Thread Pool -- 64) JBAS011605: Unbound messaging object to jndi name java:jboss/exported/jms/RemoteConnectionFactory
+2015-02-25 16:57:02,772 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-16) JBAS015877: Stopped deployment mariadb-java-client-1.1.7.jar (runtime-name: mariadb-java-client-1.1.7.jar) in 13ms
+2015-02-25 16:57:02,796 INFO  [org.jboss.as.messaging] (ServerService Thread Pool -- 65) JBAS011605: Unbound messaging object to jndi name java:/ConnectionFactory
+2015-02-25 16:57:02,811 INFO  [org.hornetq.ra] (ServerService Thread Pool -- 64) HQ151003: HornetQ resource adaptor stopped
+2015-02-25 16:57:02,933 INFO  [org.hornetq.core.server] (ServerService Thread Pool -- 64) HQ221002: HornetQ Server version 2.4.5.FINAL (Wild Hornet, 124) [766cfc73-accb-11e4-941b-a7d4c5504193] stopped
+2015-02-25 16:57:02,934 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) JBAS017521: Undertow HTTP listener default suspending
+2015-02-25 16:57:02,936 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) JBAS017520: Undertow HTTP listener default stopped, was bound to localhost/127.0.0.1:8080
+2015-02-25 16:57:02,937 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) JBAS017506: Undertow 1.1.0.Final stopping
+2015-02-25 16:57:02,940 INFO  [org.jboss.as] (MSC service thread 1-10) JBAS015950: WildFly 8.2.0.Final "Tweek" stopped in 155ms
