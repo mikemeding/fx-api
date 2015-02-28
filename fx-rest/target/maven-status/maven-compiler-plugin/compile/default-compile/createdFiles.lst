@@ -13,8 +13,8 @@ com/uml/fx/json/JSONString.class
 com/uml/fx/rest/FundsExpert.class
 com/uml/fx/response/AbstractResponse.class
 com/uml/fx/json/JSONDifferenceItem.class
-com/uml/fx/json/jsonClasses/JSONTokenizer.class
 com/uml/fx/json/jsonClasses/JSONHelper.class
+com/uml/fx/json/jsonClasses/JSONTokenizer.class
 com/uml/fx/response/MessageResponse.class
 com/uml/fx/json/JSONObject.class
 com/uml/fx/json/JSONObject$Null.class
@@ -24,8 +24,8 @@ com/uml/fx/entities/FxUsersService.class
 com/uml/fx/json/JSONBearer.class
 com/uml/fx/json/JSONException.class
 com/uml/fx/json/JSONDifferenceItem$DiffType.class
-com/uml/fx/response/SubTagReference.class
 com/uml/fx/response/GenericResponse.class
+com/uml/fx/response/SubTagReference.class
 com/uml/fx/rest/CORSFilter.class
 com/uml/fx/json/JSONFactory.class
 com/uml/fx/json/JSONObject$1.class
