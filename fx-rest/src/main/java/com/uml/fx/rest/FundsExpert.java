@@ -18,6 +18,7 @@ import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 import com.uml.fx.json.DefaultJSONFactory;
 import com.uml.fx.json.JSONObject;
+import java.util.Date;
 import javax.ejb.EJB;
 
 /**
@@ -64,8 +65,15 @@ public class FundsExpert {
 	@Produces({MediaType.TEXT_PLAIN})
 	public Response ping(@Context HttpServletRequest req
 	) {
-		log.info("ABOUT TO CALL DATABASE");
-		users.createUserPasswd(123, "password");
+		log.info("ABOUT TO CALL DATABASE");		
+	String username = "test";
+	String password = "test";
+	String name = "testUser";
+	String email = "testUser@gmail.com";
+	Date created = new Date(System.currentTimeMillis());
+	int active = 1;
+	int can_edit_pages = 2;
+		users.createTestUser(username, password, name, email, created, active, can_edit_pages);
 		return Response.ok("PONG", MediaType.TEXT_PLAIN).build();
 	}
 

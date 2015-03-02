@@ -5,6 +5,7 @@
  */
 package com.uml.fx.entities;
 
+import java.util.Date;
 import javax.ejb.Local;
 
 /**
@@ -13,11 +14,19 @@ import javax.ejb.Local;
  */
 @Local
 public interface FxUsersService {
+
 	/**
 	 * Create a new entry in the password table for a given userId
+	 *
 	 * @param userId
-	 * @param passwd 
+	 * @param passwd
 	 */
-	void createUserPasswd(int userId, String passwd);
-	
+	void createTestUser(String username,
+			  String password,
+			  String name,
+			  String email,
+			  Date created,
+			  int active,
+			  int can_edit_pages);
+
 }

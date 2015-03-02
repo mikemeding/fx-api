@@ -150,7 +150,7 @@
                     </security>
                 </datasource>
                 <datasource jta="true" jndi-name="java:jboss/datasources/fxdb" pool-name="fxdb" enabled="true" use-ccm="true">
-                    <connection-url>jdbc:mariadb://localhost:3306</connection-url>
+                    <connection-url>jdbc:mariadb://localhost:3306/fxdb</connection-url>
                     <driver-class>org.mariadb.jdbc.Driver</driver-class>
                     <driver>mariadb-java-client-1.1.7.jar</driver>
                     <security>
@@ -508,8 +508,8 @@
     </socket-binding-group>
 
     <deployments>
-        <deployment name="fx-rest-1.0.war" runtime-name="fx-rest-1.0.war">
-            <content sha1="db6d3ea2aac93800a7a7b8aab2e00c2718b88cf7"/>
+        <deployment name="mariadb-java-client-1.1.7.jar" runtime-name="mariadb-java-client-1.1.7.jar">
+            <content sha1="7708265688e31a2826e8af5c333a8d862803db7b"/>
         </deployment>
     </deployments>
 </server>

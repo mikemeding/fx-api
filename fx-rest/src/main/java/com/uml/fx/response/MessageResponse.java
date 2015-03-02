@@ -8,7 +8,7 @@ import java.util.TreeMap;
 import javax.ejb.EJBException;
 import javax.ejb.TransactionRolledbackLocalException;
 import javax.xml.bind.annotation.XmlRootElement;
-import os.util.ExceptionHelper;
+import com.uml.fx.util.ExceptionHelper;
 
 /**
  * A message response

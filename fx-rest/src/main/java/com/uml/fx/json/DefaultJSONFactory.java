@@ -4,10 +4,7 @@
 package com.uml.fx.json;
 
 import java.io.IOException;
-import java.util.logging.Logger;
-import os.log.LogConst;
-import os.log.LogFactory;
-import os.util.ByteHelper;
+import com.uml.fx.util.ByteHelper;
 import com.uml.fx.json.jsonClasses.JSONParser;
 import com.uml.fx.json.jsonClasses.JSONTokenizer;
 
