@@ -4,8 +4,8 @@
     <jta-data-source>java:jboss/datasources/fxdb</jta-data-source>
     <exclude-unlisted-classes>false</exclude-unlisted-classes>
     <properties>
-      <property name="javax.persistence.schema-generation.database.action" value="create"/>
+      <property name="javax.persistence.schema-generation.database.action" value="none"/>
     </properties>
-    <class>com.uml.fx.entities.FxUsers</class>
+    <class>com.uml.fx.entities.FxUser</class>
   </persistence-unit>
 </persistence>

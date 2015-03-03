@@ -5,28 +5,26 @@
  */
 package com.uml.fx.entities;
 
+import com.uml.fx.json.JSONArray;
+
 import java.util.Date;
 import javax.ejb.Local;
 
 /**
- *
  * @author mike
  */
 @Local
 public interface FxUsersService {
 
-	/**
-	 * Create a new entry in the password table for a given userId
-	 *
-	 * @param userId
-	 * @param passwd
-	 */
-	void createTestUser(String username,
-			  String password,
-			  String name,
-			  String email,
-			  Date created,
-			  int active,
-			  int can_edit_pages);
+    void addNewUser(String username,
+                    String password,
+                    String name,
+                    String email,
+                    Date created,
+                    int active,
+                    int can_edit_pages);
+
+    JSONArray selectAllActive();
+
 
 }

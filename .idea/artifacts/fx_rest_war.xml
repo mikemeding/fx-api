@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" build-on-make="true" name="fx-rest:war">
+    <output-path>$PROJECT_DIR$/fx-rest/target</output-path>
+    <root id="archive" name="fx-rest-1.0.war">
+      <element id="artifact" artifact-name="fx-rest:war exploded" />
+    </root>
+  </artifact>
+</component>

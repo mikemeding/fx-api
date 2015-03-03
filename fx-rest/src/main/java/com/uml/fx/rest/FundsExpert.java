@@ -2,6 +2,7 @@ package com.uml.fx.rest;
 
 import com.uml.fx.entities.FxUsersService;
 import com.uml.fx.response.GenericResponse;
+
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
@@ -16,19 +17,20 @@ import javax.ws.rs.core.Response;
 import java.util.logging.Logger;
 import javax.ws.rs.POST;
 import javax.ws.rs.Path;
+
 import com.uml.fx.json.DefaultJSONFactory;
 import com.uml.fx.json.JSONObject;
+
 import java.util.Date;
 import javax.ejb.EJB;
 
 /**
- *
  * ==========================================================================
  * FundsXpert
- *
+ * <p/>
  * Graphical User Interface Programming II Professor Jessie Heines, Michael
  * Meding & Jose Flores 2015-02-12
- *
+ * <p/>
  * This is the main RESTful API class which controls our main page and all its
  * contents
  * ==========================================================================
@@ -38,85 +40,113 @@ import javax.ejb.EJB;
 @Path("fx")
 public class FundsExpert {
 
-	private static final Logger log = Logger.getLogger(FundsExpert.class.getName());
+    private static final Logger log = Logger.getLogger(FundsExpert.class.getName());
 
-	private final DefaultJSONFactory JSONFactory = DefaultJSONFactory.getInstance();
+    private final DefaultJSONFactory JSONFactory = DefaultJSONFactory.getInstance();
 
-	private final List<JSONObject> userList = new ArrayList<>();
+    private final List<JSONObject> userList = new ArrayList<>();
 
-	@EJB
-	private FxUsersService users;
+    @EJB
+    private FxUsersService users;
 
-	public FundsExpert() {
-		JSONObject jo = JSONFactory.jsonObject("{username:\"mike\",password:\"ccaes1\"}");
-		this.userList.add(jo);
-		JSONObject jo2 = JSONFactory.jsonObject("{username:\"root\",password:\"admin\"}");
-		this.userList.add(jo2);
-	}
+    public FundsExpert() {
+        JSONObject jo = JSONFactory.jsonObject("{username:\"mike\",password:\"ccaes1\"}");
+        this.userList.add(jo);
+        JSONObject jo2 = JSONFactory.jsonObject("{username:\"root\",password:\"admin\"}");
+        this.userList.add(jo2);
+    }
 
-	/**
-	 * Simply returns 200 OK if called.
-	 * <p>
-	 * @param req
-	 * @return
-	 */
-	@GET
-	@Path("ping")
-	@Produces({MediaType.TEXT_PLAIN})
-	public Response ping(@Context HttpServletRequest req
-	) {
-		log.info("ABOUT TO CALL DATABASE");		
-	String username = "test";
-	String password = "test";
-	String name = "testUser";
-	String email = "testUser@gmail.com";
-	Date created = new Date(System.currentTimeMillis());
-	int active = 1;
-	int can_edit_pages = 2;
-		users.createTestUser(username, password, name, email, created, active, can_edit_pages);
-		return Response.ok("PONG", MediaType.TEXT_PLAIN).build();
-	}
+    /**
+     * Simply returns 200 OK if called.
+     * <p/>
+     *
+     * @param req
+     * @return
+     */
+    @GET
+    @Path("ping")
+    @Produces({MediaType.TEXT_PLAIN})
+    public Response ping(@Context HttpServletRequest req
+    ) {
+        return Response.ok("PONG", MediaType.TEXT_PLAIN).build();
+    }
 
-	/**
-	 * A quick and dirty login function with no security
-	 *
-	 * @param req
-	 * @return
-	 */
-	@POST
-	@Path("login")
-	@Produces({MediaType.APPLICATION_JSON, MediaType.TEXT_PLAIN})
-	public Response login(@Context HttpServletRequest req
-	) {
-		StringBuilder sb = new StringBuilder();
+    /**
+     * A quick and dirty login function with no security
+     *
+     * @param req
+     * @return
+     */
+    @POST
+    @Path("login")
+    @Produces({MediaType.APPLICATION_JSON, MediaType.TEXT_PLAIN})
+    public Response login(@Context HttpServletRequest req
+    ) {
+        StringBuilder sb = new StringBuilder();
 
-		try {
-			String line;
+        try {
+            String line;
 
-			// parse input stream into a string
-			try (BufferedReader br = new BufferedReader(new InputStreamReader(req.getInputStream()))) {
-				while ((line = br.readLine()) != null) {
-					sb.append(line);
-				}
-			}
-			String data = sb.toString();
+            // parse input stream into a string
+            try (BufferedReader br = new BufferedReader(new InputStreamReader(req.getInputStream()))) {
+                while ((line = br.readLine()) != null) {
+                    sb.append(line);
+                }
+            }
+            String data = sb.toString();
 
-			log.info(data);
+            log.info(data);
 
-			// parse string to json object
-			JSONObject jo = JSONFactory.jsonObject(data);
+            // parse string to json object
+            JSONObject jo = JSONFactory.jsonObject(data);
 
-			// LOL authorize
-			if (userList.contains(jo)) {
-				return Response.ok().entity(GenericResponse.OK).build();
-			} else {
-				return Response.serverError().entity(GenericResponse.FAIL_STATUS).build();
-			}
+            // LOL authorize
+            if (userList.contains(jo)) {
+                return Response.ok().entity(GenericResponse.OK).build();
+            } else {
+                return Response.serverError().entity(GenericResponse.FAIL_STATUS).build();
+            }
 
-		} catch (Exception e) { // parse error
-			log.log(Level.SEVERE, e.getMessage());
-			return Response.serverError().entity(GenericResponse.FAIL_STATUS).build();
-		}
+        } catch (Exception e) { // parse error
+            log.log(Level.SEVERE, e.getMessage());
+            return Response.serverError().entity(GenericResponse.FAIL_STATUS).build();
+        }
 
-	}
+    }
+
+    /**
+     * Add new user to the database. All passwords and such are cleartext
+     * @param req
+     * @return
+     */
+    @POST
+    @Path("addFxUser")
+    @Produces({MediaType.APPLICATION_JSON, MediaType.TEXT_PLAIN})
+    public Response addFxUser(@Context HttpServletRequest req
+    ) {
+        // pull out all fields like login.
+        String username = "test";
+        String password = "test";
+        String name = "testUser";
+        String email = "testUser@gmail.com";
+        Date created = new Date(System.currentTimeMillis());
+        int active = 1;
+        int can_edit_pages = 2;
+        users.addNewUser(username, password, name, email, created, active, can_edit_pages);
+        return Response.ok("not there yet. hang tight.", MediaType.TEXT_PLAIN).build();
+    }
+
+    /**
+     * Queries and returns as a JSONArray all the active users in the database
+     * @param req
+     * @return JSONArray
+     */
+    @GET
+    @Path("getAllActiveUsers")
+    @Produces({MediaType.TEXT_PLAIN})
+    public Response getAllActiveUsers(@Context HttpServletRequest req
+    ) {
+        log.info("ABOUT TO CALL DATABASE");
+        return Response.ok(users.selectAllActive().toString(), MediaType.TEXT_PLAIN).build();
+    }
 }
