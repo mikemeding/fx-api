@@ -25,7 +25,7 @@ import java.util.Date;
 @Entity
 @Table(name = FxUser.TABLENAME,
         uniqueConstraints =
-                @UniqueConstraint(columnNames = {"id","username"})
+        @UniqueConstraint(columnNames = {"id", "username"})
 )
 @NamedQueries({
         @NamedQuery(

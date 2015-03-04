@@ -27,6 +27,8 @@ public interface FxUsersService {
 
     boolean deleteUser(String username);
 
+    boolean updateUser(FxUser user);
+
     JSONArray selectAllActive();
 
     boolean isValid(String username);

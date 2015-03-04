@@ -74,6 +74,18 @@ public class FxUsersServiceImpl implements FxUsersService {
 
     }
 
+    @Override
+    public boolean updateUser(FxUser user) {
+        TypedQuery<FxUser> query = em.createNamedQuery(FxUser.SELECT_BY_USERNAME, FxUser.class);
+        FxUser updateUser = query.setParameter("username", user.getUsername()).getSingleResult();
+        if(updateUser == null){
+            return false;
+        } else {
+            em.merge(user);
+            return true;
+        }
+    }
+
     /**
      * Performs named query to select all users from the database and return only the active ones.
      *
