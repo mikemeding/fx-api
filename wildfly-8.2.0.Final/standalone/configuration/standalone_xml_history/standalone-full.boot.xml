@@ -509,10 +509,10 @@
 
     <deployments>
         <deployment name="mariadb-java-client-1.1.7.jar" runtime-name="mariadb-java-client-1.1.7.jar">
-            <content sha1="7708265688e31a2826e8af5c333a8d862803db7b"/>
+            <fs-archive path="/BIG/DOCUMENTS/fx-api/mariadb/mariadb-java-client-1.1.7.jar"/>
         </deployment>
         <deployment name="fx-rest-1.0.war" runtime-name="fx-rest-1.0.war">
-            <content sha1="f7ce4a170a83d838c915ee6283e1e9f64f79f826"/>
+            <fs-archive path="/BIG/DOCUMENTS/fx-api/fx-rest/target/fx-rest-1.0.war"/>
         </deployment>
     </deployments>
 </server>

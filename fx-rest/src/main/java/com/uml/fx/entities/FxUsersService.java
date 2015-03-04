@@ -8,6 +8,7 @@ package com.uml.fx.entities;
 import com.uml.fx.json.JSONArray;
 
 import java.util.Date;
+import java.util.List;
 import javax.ejb.Local;
 
 /**
@@ -24,7 +25,13 @@ public interface FxUsersService {
                     int active,
                     int can_edit_pages);
 
+    boolean deleteUser(String username);
+
     JSONArray selectAllActive();
 
+    boolean isValid(String username);
 
+    boolean authenticate(String username, String password);
+
+    String getSchema();
 }

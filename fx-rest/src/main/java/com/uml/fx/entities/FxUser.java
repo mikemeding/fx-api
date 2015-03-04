@@ -23,11 +23,20 @@ import java.util.Date;
  * @author mike
  */
 @Entity
-@Table(name = FxUser.TABLENAME)
+@Table(name = FxUser.TABLENAME,
+        uniqueConstraints =
+                @UniqueConstraint(columnNames = {"id","username"})
+)
 @NamedQueries({
         @NamedQuery(
                 name = FxUser.SELECT_ALL,
                 query = "SELECT a FROM FxUser a ORDER BY a.username ASC"),
+        @NamedQuery(
+                name = FxUser.SELECT_BY_USERNAME,
+                query = "SELECT a FROM FxUser a WHERE a.username= :username"),
+        @NamedQuery(
+                name = FxUser.AUTHENTICATE,
+                query = "SELECT a FROM FxUser a WHERE a.username= :username AND a.password= :password"),
         @NamedQuery(
                 name = FxUser.SELECT_ALL_ACTIVE,
                 query = "SELECT a FROM FxUser a WHERE a.active=1 ORDER BY a.username ASC")
@@ -37,6 +46,8 @@ public class FxUser implements Serializable {
     public final static String TABLENAME = "users";
     public final static String SELECT_ALL = "FxUser.selectAll";
     public final static String SELECT_ALL_ACTIVE = "FxUser.selectAllActive";
+    public final static String SELECT_BY_USERNAME = "FxUser.selectByUsername";
+    public final static String AUTHENTICATE = "FxUser.authenticate";
 
     private long id;
     private String username;
@@ -71,7 +82,7 @@ public class FxUser implements Serializable {
         this.id = id;
     }
 
-    @Column(name = "username")
+    @Column(name = "username", nullable = false)
     public String getUsername() {
         return username;
     }
@@ -80,7 +91,7 @@ public class FxUser implements Serializable {
         this.username = username;
     }
 
-    @Column(name = "password")
+    @Column(name = "password", nullable = false)
     public String getPassword() {
         return password;
     }
@@ -89,7 +100,7 @@ public class FxUser implements Serializable {
         this.password = password;
     }
 
-    @Column(name = "name")
+    @Column(name = "name", nullable = true)
     public String getName() {
         return name;
     }
@@ -98,7 +109,7 @@ public class FxUser implements Serializable {
         this.name = name;
     }
 
-    @Column(name = "email")
+    @Column(name = "email", nullable = true)
     public String getEmail() {
         return email;
     }
