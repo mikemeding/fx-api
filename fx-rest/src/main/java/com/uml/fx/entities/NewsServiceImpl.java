@@ -31,16 +31,12 @@ public class NewsServiceImpl implements NewsService {
     }
 
     @Override
-    public boolean deleteNews(News news) {
-        //TODO: Error checking???
-        em.remove(news);
-        return false;
-    }
-
-    @Override
     public boolean deleteNews(long id) {
-        //TODO: add id lookup
-        return false;
+        TypedQuery<News> query = em.createNamedQuery(News.SELECT_BY_ID, News.class);
+        query.setParameter("id",id);
+        News item = query.getSingleResult();
+        em.remove(item);
+        return true;
     }
 
     @Override
@@ -54,15 +50,47 @@ public class NewsServiceImpl implements NewsService {
         TypedQuery<News> query = em.createNamedQuery(News.SELECT_ALL, News.class);
         List<News> newsList = query.getResultList();
         JSONArray jsonArray = new JSONArray();
-        for(News newsItem : newsList){
+        for (News newsItem : newsList) {
             JSONObject jo = new JSONObject();
-            jo.append("title",newsItem.getTitle());
-            jo.append("text",newsItem.getText());
-            jo.append("created",newsItem.getCreated().toString());
-            jo.append("user",newsItem.getUser());
-
+            jo.put("id", newsItem.getId()); //expose database generated id
+            jo.put("title", newsItem.getTitle());
+            jo.put("text", newsItem.getText());
+            jo.put("created", newsItem.getCreated().toString());
+            jo.put("user", newsItem.getUser());
             jsonArray.add(jo);
         }
         return jsonArray;
+    }
+
+    @Override
+    public JSONObject selectById(long id) {
+        TypedQuery<News> query = em.createNamedQuery(News.SELECT_BY_ID, News.class);
+        query.setParameter("id", id);
+        News news = query.getSingleResult();
+
+        JSONObject jo = new JSONObject();
+        jo.put("id", news.getId()); //expose database generated id
+        jo.put("title", news.getTitle());
+        jo.put("text", news.getText());
+        jo.put("created", news.getCreated().toString());
+        jo.put("user", news.getUser());
+
+        return jo;
+    }
+
+    @Override
+    public JSONObject selectByTitle(String title) {
+        TypedQuery<News> query = em.createNamedQuery(News.SELECT_BY_TITLE, News.class);
+        query.setParameter("title", title);
+        News news = query.getSingleResult();
+
+        JSONObject jo = new JSONObject();
+        jo.put("id", news.getId()); //expose database generated id
+        jo.put("title", news.getTitle());
+        jo.put("text", news.getText());
+        jo.put("created", news.getCreated().toString());
+        jo.put("user", news.getUser());
+
+        return jo;
     }
 }

@@ -10,5 +10,6 @@
         </properties>
         <class>com.uml.fx.entities.FxUser</class>
         <class>com.uml.fx.entities.News</class>
+        <class>com.uml.fx.entities.Contact</class>
     </persistence-unit>
 </persistence>

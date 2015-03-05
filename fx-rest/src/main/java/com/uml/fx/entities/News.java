@@ -26,18 +26,29 @@ import java.util.Date;
 @NamedQueries({
         @NamedQuery(
                 name = News.SELECT_ALL,
-                query = "SELECT a FROM News a")
+                query = "SELECT a FROM News a"),
+        @NamedQuery(
+                name = News.SELECT_BY_ID,
+                query = "SELECT a FROM News a WHERE a.id=:id"),
+        @NamedQuery(
+                name = News.SELECT_BY_TITLE,
+                query = "SELECT a FROM News a WHERE a.title =:title")
 })
 public class News implements Serializable {
 
     public final static String TABLENAME = "news";
     public final static String SELECT_ALL = "News.selectAll";
+    public final static String SELECT_BY_ID = "News.selectById";
+    public final static String SELECT_BY_TITLE = "News.selectByTitle";
 
     private long id;
     private String title;
     private String text;
     private Date created;
     private String user;
+
+    public News() {
+    }
 
     public News(String title, String text, Date created, String user) {
         this.title = title;
@@ -86,7 +97,6 @@ public class News implements Serializable {
 
     @Column(name = "text")
     public String getText() {
-
         return text;
     }
 

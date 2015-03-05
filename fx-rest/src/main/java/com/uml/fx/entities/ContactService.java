@@ -1,6 +1,7 @@
 package com.uml.fx.entities;
 
 import com.uml.fx.json.JSONArray;
+import com.uml.fx.json.JSONObject;
 
 import javax.ejb.Local;
 
@@ -12,12 +13,14 @@ public interface ContactService {
 
     boolean addContact(Contact contact);
 
-    boolean deleteContact(Contact contact);
-
     boolean deleteContact(long id);
 
     boolean editContact(Contact contact);
 
-    JSONArray getAll();
+    JSONArray selectAll();
+
+    JSONObject selectById(long id);
+
+    JSONObject selectByName(String name);
 
 }

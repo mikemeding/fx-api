@@ -15,7 +15,13 @@ import java.util.Date;
 @NamedQueries({
         @NamedQuery(
                 name = Contact.SELECT_ALL,
-                query = "SELECT a FROM Contact a")
+                query = "SELECT a FROM Contact a"),
+        @NamedQuery(
+                name = Contact.SELECT_BY_ID,
+                query = "SELECT a FROM Contact a WHERE a.id= :id"),
+        @NamedQuery(
+                name = Contact.SELECT_BY_NAME,
+                query = "SELECT a FROM Contact a WHERE a.name= :name")
 })
 public class Contact implements Serializable {
 
@@ -26,11 +32,15 @@ public class Contact implements Serializable {
     private int refundAmount;
     private Date date;
 
-    public final static String TABLENAME = "contact";
+    public final static String TABLENAME = "contacts";
     public final static String SELECT_ALL = "Contact.selectAll";
+    public final static String SELECT_BY_ID = "Contact.selectById";
+    public final static String SELECT_BY_NAME = "Contact.selectByName";
 
-    public Contact(long id, String name, String email, String message, int refundAmount, Date date) {
-        this.id = id;
+    public Contact() {
+    }
+
+    public Contact(String name, String email, String message, int refundAmount, Date date) {
         this.name = name;
         this.email = email;
         this.message = message;
@@ -76,7 +86,7 @@ public class Contact implements Serializable {
         this.message = message;
     }
 
-    @Column(name = "refund-amount")
+    @Column(name = "refundAmount")
     public int getRefundAmount() {
         return refundAmount;
     }

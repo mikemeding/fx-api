@@ -40,7 +40,7 @@ import javax.ejb.EJB;
  *
  * @author mike
  */
-@Path("fx")
+@Path("user")
 public class FundsExpert {
 
     private static final Logger log = Logger.getLogger(FundsExpert.class.getName());
@@ -62,7 +62,7 @@ public class FundsExpert {
     @Produces({MediaType.TEXT_PLAIN})
     public Response ping(@Context HttpServletRequest req
     ) {
-        return Response.ok("PONG", MediaType.TEXT_PLAIN).build();
+        return Response.ok("user PONG", MediaType.TEXT_PLAIN).build();
     }
 
     /**
@@ -115,7 +115,7 @@ public class FundsExpert {
      * @return
      */
     @POST
-    @Path("addFxUser")
+    @Path("addUser")
     @Produces({MediaType.APPLICATION_JSON, MediaType.TEXT_PLAIN})
     public Response addFxUser(@Context HttpServletRequest req
     ) {

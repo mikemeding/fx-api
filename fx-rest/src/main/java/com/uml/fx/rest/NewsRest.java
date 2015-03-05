@@ -106,4 +106,134 @@ public class NewsRest {
         }
     }
 
+    /**
+     * remove an article from the database
+     * @param req
+     * @return
+     */
+    @POST
+    @Path("removeNews")
+    @Produces({MediaType.TEXT_PLAIN})
+    public Response removeNews(@Context HttpServletRequest req
+    ) {
+        StringBuilder sb = new StringBuilder();
+
+        try {
+            String line;
+
+            // parse input stream into a string
+            try (BufferedReader br = new BufferedReader(new InputStreamReader(req.getInputStream()))) {
+                while ((line = br.readLine()) != null) {
+                    sb.append(line);
+                }
+            }
+            String data = sb.toString();
+
+            log.info(data);
+
+            // parse string to json object
+            JSONObject jo = JSONFactory.jsonObject(data);
+
+            // pull out all fields like login.
+            String id = jo.getString("id");
+
+            // actually removes matching news object
+            news.deleteNews(Integer.valueOf(id));
+            return Response.ok().build();
+
+        } catch(IOException | JSONException e){
+            // if any parsing fails.
+            log.log(Level.SEVERE, e.getMessage());
+            return Response.serverError().entity(GenericResponse.FAIL_STATUS).build();
+        }
+    }
+
+    /**
+     * Queries and returns as a JSONArray all the active users in the database
+     *
+     * @param req
+     * @return JSONArray
+     */
+    @GET
+    @Path("selectAll")
+    @Produces({MediaType.TEXT_PLAIN})
+    public Response getAll(@Context HttpServletRequest req
+    ) {
+        log.info("getting news articles");
+        return Response.ok(news.selectAll().toString(), MediaType.TEXT_PLAIN).build();
+    }
+
+
+    @POST
+    @Path("getById")
+    @Produces({MediaType.TEXT_PLAIN})
+    public Response getById(@Context HttpServletRequest req
+    ) {
+        StringBuilder sb = new StringBuilder();
+
+        try {
+            String line;
+
+            // parse input stream into a string
+            try (BufferedReader br = new BufferedReader(new InputStreamReader(req.getInputStream()))) {
+                while ((line = br.readLine()) != null) {
+                    sb.append(line);
+                }
+            }
+            String data = sb.toString();
+
+            log.info(data);
+
+            // parse string to json object
+            JSONObject jo = JSONFactory.jsonObject(data);
+
+            String id = jo.getString("id");
+
+            // actually add the news
+            JSONObject returnJo = news.selectById(Integer.valueOf(id));
+            return Response.ok(returnJo.toString(),MediaType.TEXT_PLAIN).build();
+
+        } catch(IOException | JSONException e){
+            // if any parsing fails.
+            log.log(Level.SEVERE, e.getMessage());
+            return Response.serverError().entity(GenericResponse.FAIL_STATUS).build();
+        }
+    }
+
+    @POST
+    @Path("getByTitle")
+    @Produces({MediaType.TEXT_PLAIN})
+    public Response getByTitle(@Context HttpServletRequest req
+    ) {
+        StringBuilder sb = new StringBuilder();
+
+        try {
+            String line;
+
+            // parse input stream into a string
+            try (BufferedReader br = new BufferedReader(new InputStreamReader(req.getInputStream()))) {
+                while ((line = br.readLine()) != null) {
+                    sb.append(line);
+                }
+            }
+            String data = sb.toString();
+
+            log.info(data);
+
+            // parse string to json object
+            JSONObject jo = JSONFactory.jsonObject(data);
+
+            String title = jo.getString("title");
+
+            // actually add the news
+            JSONObject returnJo = news.selectByTitle(title);
+            return Response.ok(returnJo.toString(),MediaType.TEXT_PLAIN).build();
+
+        } catch(IOException | JSONException e){
+            // if any parsing fails.
+            log.log(Level.SEVERE, e.getMessage());
+            return Response.serverError().entity(GenericResponse.FAIL_STATUS).build();
+        }
+    }
+
 }

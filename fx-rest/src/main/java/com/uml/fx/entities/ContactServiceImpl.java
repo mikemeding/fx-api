@@ -22,38 +22,72 @@ public class ContactServiceImpl implements ContactService {
 
     @Override
     public boolean addContact(Contact contact) {
-        return false;
-    }
-
-    @Override
-    public boolean deleteContact(Contact contact) {
-        return false;
+        em.persist(contact);
+        return true;
     }
 
     @Override
     public boolean deleteContact(long id) {
+        TypedQuery<Contact> query = em.createNamedQuery(Contact.SELECT_BY_ID, Contact.class);
+        query.setParameter("id", id);
+        Contact contact = query.getSingleResult();
+        em.remove(contact);
         return false;
     }
 
     @Override
     public boolean editContact(Contact contact) {
+        em.merge(contact);
         return false;
     }
 
     @Override
-    public JSONArray getAll() {
+    public JSONArray selectAll() {
         TypedQuery<Contact> query = em.createNamedQuery(Contact.SELECT_ALL, Contact.class);
         List<Contact> contactList = query.getResultList();
         JSONArray jsonArray = new JSONArray();
         for (Contact contactItem : contactList) {
             JSONObject jo = new JSONObject();
-            jo.append("name", contactItem.getName());
-            jo.append("email", contactItem.getEmail());
-            jo.append("message", contactItem.getMessage());
-            jo.append("refundAmount", (String.valueOf(contactItem.getRefundAmount())));
-            jo.append("date", contactItem.getDate().toString());
+            jo.put("id", contactItem.getId());
+            jo.put("name", contactItem.getName());
+            jo.put("email", contactItem.getEmail());
+            jo.put("message", contactItem.getMessage());
+            jo.put("refundAmount", (String.valueOf(contactItem.getRefundAmount())));
+            jo.put("date", contactItem.getDate().toString());
             jsonArray.add(jo);
         }
         return jsonArray;
+    }
+
+    @Override
+    public JSONObject selectById(long id) {
+        TypedQuery<Contact> query = em.createNamedQuery(Contact.SELECT_BY_ID, Contact.class);
+        query.setParameter("id", id);
+        Contact contact = query.getSingleResult();
+
+        JSONObject jo = new JSONObject();
+        jo.put("id", contact.getId()); //expose database generated id
+        jo.put("name", contact.getName());
+        jo.put("email", contact.getEmail());
+        jo.put("refundAmount", contact.getRefundAmount());
+        jo.put("date", contact.getDate().toString());
+
+        return jo;
+    }
+
+    @Override
+    public JSONObject selectByName(String name) {
+        TypedQuery<Contact> query = em.createNamedQuery(Contact.SELECT_BY_NAME, Contact.class);
+        query.setParameter("name", name);
+        Contact contact = query.getSingleResult();
+
+        JSONObject jo = new JSONObject();
+        jo.put("id", contact.getId()); //expose database generated id
+        jo.put("name", contact.getName());
+        jo.put("email", contact.getEmail());
+        jo.put("refundAmount", contact.getRefundAmount());
+        jo.put("date", contact.getDate().toString());
+
+        return jo;
     }
 }
