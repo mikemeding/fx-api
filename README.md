@@ -4,7 +4,7 @@ API for requesting data from the backend
 Each of the subsections is a different table in the database. The tables within are the allowed methods of that subsection.
 *unless otherwise specified all arguments are String.
 
-## users ##
+## user ##
 type  | method name | arguments
 ----- | ----------- | ---------
 GET | ping | NONE
