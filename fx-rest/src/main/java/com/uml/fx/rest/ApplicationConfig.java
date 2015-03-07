@@ -23,10 +23,11 @@ public class ApplicationConfig extends Application {
 	 * out calling this method in getClasses().
 	 */
 	private void addRestResourceClasses(Set<Class<?>> resources) {
+		resources.add(com.uml.fx.rest.Appraisal.class);
 		resources.add(com.uml.fx.rest.CORSFilter.class);
-		resources.add(com.uml.fx.rest.FundsExpert.class);
-        resources.add(com.uml.fx.rest.NewsRest.class);
         resources.add(com.uml.fx.rest.ContactRest.class);
+        resources.add(com.uml.fx.rest.FundsExpert.class);
+		resources.add(com.uml.fx.rest.NewsRest.class);
 	}
 
 }

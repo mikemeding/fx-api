@@ -2,12 +2,10 @@ package com.uml.fx.rest;
 
 import com.uml.fx.entities.Contact;
 import com.uml.fx.entities.ContactService;
-import com.uml.fx.entities.News;
 import com.uml.fx.json.DefaultJSONFactory;
 import com.uml.fx.json.JSONException;
 import com.uml.fx.json.JSONObject;
 import com.uml.fx.response.GenericResponse;
-import org.hibernate.dialect.SybaseAnywhereDialect;
 
 import javax.ejb.EJB;
 import javax.servlet.http.HttpServletRequest;
