@@ -1,6 +1,7 @@
 package com.uml.fx.entities;
 
 import java.util.List;
+import java.util.Map;
 
 /**
  * Appraisal service.
@@ -65,5 +66,14 @@ public interface AppraisalService {
 	 * @return the list of properties
 	 */
 	List<AppraisalData> getAppraisalDataByAssessedRange(String taxYear, double from, double to);
+
+	/**
+	 * Get the tax break down for a property.
+	 * <p>
+	 * @param year the year
+	 * @param pid  the property identifier
+	 * @return the tax break down
+	 */
+	Map<String, Double> getTaxBreakdown(String year, String pid);
 
 }

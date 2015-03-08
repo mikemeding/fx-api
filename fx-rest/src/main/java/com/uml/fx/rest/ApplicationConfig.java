@@ -28,6 +28,7 @@ public class ApplicationConfig extends Application {
         resources.add(com.uml.fx.rest.ContactRest.class);
         resources.add(com.uml.fx.rest.FundsExpert.class);
 		resources.add(com.uml.fx.rest.NewsRest.class);
+		resources.add(com.uml.fx.rest.TaxRates.class);
 	}
 
 }

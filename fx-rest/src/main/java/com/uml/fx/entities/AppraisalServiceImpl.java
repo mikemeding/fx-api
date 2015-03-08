@@ -1,6 +1,9 @@
 package com.uml.fx.entities;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
+import java.util.TreeMap;
 import javax.ejb.Local;
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
@@ -94,6 +97,38 @@ public class AppraisalServiceImpl implements AppraisalService {
 		query.setParameter("toValue", to);
 		query.setMaxResults(100);
 		return query.getResultList();
+	}
+
+	/**
+	 * {@inheritDoc }
+	 */
+	@Override
+	public Map<String, Double> getTaxBreakdown(String year, String pid) {
+		TypedQuery<AppraisalData> appQuery = em.createNamedQuery(AppraisalData.SELECT_BY_PID_YEAR, AppraisalData.class);
+		appQuery.setParameter("taxYear", year);
+		appQuery.setParameter("pid", pid);
+		List<AppraisalData> appList = appQuery.getResultList();
+		if (appList.isEmpty()) {
+			return new HashMap<>();
+		}
+
+		// extract the taxing entities
+		Map<String, Double> map = new TreeMap<>();
+		AppraisalData appData = appList.get(0);
+		for (String trName : appData.taxingEntites()) {
+			TypedQuery<TaxRate> trQuery = em.createNamedQuery(TaxRate.SELECT_BY_YEAR_NAME, TaxRate.class);
+			trQuery.setParameter("year", year);
+			trQuery.setParameter("trName", trName);
+			List<TaxRate> trList = trQuery.getResultList();
+			if (trList.isEmpty()) {
+				map.put(trName, 0.0d);
+			} else {
+				TaxRate tr = trList.get(0);
+				map.put(trName, 1.0d);
+			}
+		}
+
+		return map;
 	}
 
 }

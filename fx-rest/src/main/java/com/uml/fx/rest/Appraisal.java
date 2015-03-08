@@ -5,9 +5,11 @@ import com.uml.fx.entities.AppraisalLocation;
 import com.uml.fx.entities.AppraisalService;
 import com.uml.fx.response.GenericResponse;
 import com.uml.fx.response.ListResponse;
+import com.uml.fx.response.MapResponse;
 import com.uml.fx.response.MessageResponse;
 import com.uml.fx.response.SingleResponse;
 import java.util.List;
+import java.util.Map;
 import java.util.logging.Logger;
 import javax.ejb.EJB;
 import javax.servlet.http.HttpServletRequest;
@@ -197,6 +199,30 @@ public class Appraisal {
 		try {
 			List<AppraisalData> list = appraisal.getAppraisalDataByAssessedRange(taxYear, from, to);
 			return Response.ok(new ListResponse<>(list)).build();
+		} catch (Exception e) {
+			return Response.serverError().entity(MessageResponse.error(e)).build();
+		}
+	}
+
+	/**
+	 * Get the tax breakdown for a property.
+	 * <p>
+	 * @param year what year
+	 * @param pid  the property identifier
+	 * @param req  the HTTP request
+	 * @return the tax break down map
+	 */
+	@GET
+	@Path("getTaxBreakdown/{year}/{pid}")
+	@Produces({MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML})
+	@Consumes({MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML})
+	public Response getTaxBreakdown(
+			@PathParam("year") String year,
+			@PathParam("pid") String pid,
+			@Context HttpServletRequest req) {
+		try {
+			Map<String, Double> map = appraisal.getTaxBreakdown(year, pid);
+			return Response.ok(new MapResponse<>(map)).build();
 		} catch (Exception e) {
 			return Response.serverError().entity(MessageResponse.error(e)).build();
 		}
