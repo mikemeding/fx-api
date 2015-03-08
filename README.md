@@ -34,6 +34,20 @@ GET | selectAll | NONE
 POST| getById | id
 POST| getByTitle | title
 
+
+## appraisal ##
+type  | method name | arguments
+----- | ----------- | ---------
+GET | ping | NONE
+GET | getAppraisalLocation/{pid} | pid
+GET | getAppraisalLocationByDistrict/{district} | district
+GET | getAppraisalLocationByAddress/{address} | address
+POST| addAppraisalLocation | DTO
+POST| updateAppraisalLocation | DTO
+GET | getAppraisalData/{taxYear}/{pid} | taxYear,pid
+GET | getAppraisalDataInAssessedRange/{taxYear}/{fromValue}/{toValue} | taxYear,fromValue,toValue
+
+
 # Example AngularJS Usage #
 ```JavaScript
 var userData = {'username':'mike','password':'blah'} // arguments go here in JSON notation
