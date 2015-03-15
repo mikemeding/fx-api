@@ -209,19 +209,21 @@ public class Appraisal {
 	 * <p>
 	 * @param year what year
 	 * @param pid  the property identifier
+	 * @param type tax breakdown type (full, homestead)
 	 * @param req  the HTTP request
 	 * @return the tax break down map
 	 */
 	@GET
-	@Path("getTaxBreakdown/{year}/{pid}")
+	@Path("getTaxBreakdown/{year}/{pid}/{type}")
 	@Produces({MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML})
 	@Consumes({MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML})
 	public Response getTaxBreakdown(
 			@PathParam("year") String year,
 			@PathParam("pid") String pid,
+			@PathParam("type") String type,
 			@Context HttpServletRequest req) {
 		try {
-			Map<String, Double> map = appraisal.getTaxBreakdown(year, pid);
+			Map<String, Double> map = appraisal.getTaxBreakdown(year, pid, type);
 			return Response.ok(new MapResponse<>(map)).build();
 		} catch (Exception e) {
 			return Response.serverError().entity(MessageResponse.error(e)).build();

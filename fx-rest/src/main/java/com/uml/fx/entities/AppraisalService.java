@@ -72,8 +72,9 @@ public interface AppraisalService {
 	 * <p>
 	 * @param year the year
 	 * @param pid  the property identifier
+	 * @param type the breakdown type (full or homestead)
 	 * @return the tax break down
 	 */
-	Map<String, Double> getTaxBreakdown(String year, String pid);
+	Map<String, Double> getTaxBreakdown(String year, String pid, String type);
 
 }

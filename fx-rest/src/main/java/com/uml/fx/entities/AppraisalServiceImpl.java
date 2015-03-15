@@ -4,6 +4,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
+import javax.ejb.EJB;
 import javax.ejb.Local;
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
@@ -21,6 +22,9 @@ public class AppraisalServiceImpl implements AppraisalService {
 
 	@PersistenceContext(unitName = "fxPU")
 	private EntityManager em;
+
+	@EJB
+	private TaxCalculator taxCalc;
 
 	/**
 	 * {@inheritDoc }
@@ -103,7 +107,7 @@ public class AppraisalServiceImpl implements AppraisalService {
 	 * {@inheritDoc }
 	 */
 	@Override
-	public Map<String, Double> getTaxBreakdown(String year, String pid) {
+	public Map<String, Double> getTaxBreakdown(String year, String pid, String type) {
 		TypedQuery<AppraisalData> appQuery = em.createNamedQuery(AppraisalData.SELECT_BY_PID_YEAR, AppraisalData.class);
 		appQuery.setParameter("taxYear", year);
 		appQuery.setParameter("pid", pid);
@@ -121,10 +125,21 @@ public class AppraisalServiceImpl implements AppraisalService {
 			trQuery.setParameter("trName", trName);
 			List<TaxRate> trList = trQuery.getResultList();
 			if (trList.isEmpty()) {
-				map.put(trName, 0.0d);
+				map.put(trName, 0.0);
 			} else {
 				TaxRate tr = trList.get(0);
-				map.put(trName, 1.0d);
+
+				double tax;
+				switch (type) {
+					default:
+					case "full":
+						tax = taxCalc.fullTax(tr, appData);
+						break;
+					case "homestead":
+						tax = taxCalc.homesteadTax(tr, appData);
+						break;
+				}
+				map.put(trName, tax);
 			}
 		}
 
