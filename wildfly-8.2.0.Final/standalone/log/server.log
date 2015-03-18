@@ -4897,3 +4897,291 @@ JBAS014775:    New missing/unsatisfied dependencies:
 2015-03-18 12:15:20,150 INFO  [org.jboss.as.messaging] (ServerService Thread Pool -- 92) JBAS011605: Unbound messaging object to jndi name java:/ConnectionFactory
 2015-03-18 12:15:20,151 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-2) JBAS010418: Stopped Driver service with driver-name = h2
 2015-03-18 12:15:20,180 INFO  [org.hornetq.ra] (ServerService Thread Pool -- 98) HQ151003: HornetQ resource adaptor stopped
+2015-03-18 12:25:11,026 INFO  [org.jboss.modules] (main) JBoss Modules version 1.3.3.Final
+2015-03-18 12:25:11,260 INFO  [org.jboss.msc] (main) JBoss MSC version 1.2.2.Final
+2015-03-18 12:25:11,332 INFO  [org.jboss.as] (MSC service thread 1-7) JBAS015899: WildFly 8.2.0.Final "Tweek" starting
+2015-03-18 12:25:11,338 DEBUG [org.jboss.as.config] (MSC service thread 1-7) Configured system properties:
+	[Standalone] = 
+	awt.toolkit = sun.awt.X11.XToolkit
+	file.encoding = UTF-8
+	file.encoding.pkg = sun.io
+	file.separator = /
+	java.awt.graphicsenv = sun.awt.X11GraphicsEnvironment
+	java.awt.printerjob = sun.print.PSPrinterJob
+	java.class.path = /BIG/DOCUMENTS/fx-api/wildfly-8.2.0.Final/jboss-modules.jar
+	java.class.version = 52.0
+	java.endorsed.dirs = /usr/java/jdk1.8.0_25/jre/lib/endorsed
+	java.ext.dirs = /usr/java/jdk1.8.0_25/jre/lib/ext:/usr/java/packages/lib/ext
+	java.home = /usr/java/jdk1.8.0_25/jre
+	java.io.tmpdir = /tmp
+	java.library.path = /usr/apps/idea-IU-139.1117.1/bin::/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 1.8.0_25-b17
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 1.8
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+	java.version = 1.8.0_25
+	java.vm.info = mixed mode
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 1.8
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 25.25-b02
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	javax.xml.datatype.DatatypeFactory = __redirected.__DatatypeFactory
+	javax.xml.parsers.DocumentBuilderFactory = __redirected.__DocumentBuilderFactory
+	javax.xml.parsers.SAXParserFactory = __redirected.__SAXParserFactory
+	javax.xml.stream.XMLEventFactory = __redirected.__XMLEventFactory
+	javax.xml.stream.XMLInputFactory = __redirected.__XMLInputFactory
+	javax.xml.stream.XMLOutputFactory = __redirected.__XMLOutputFactory
+	javax.xml.transform.TransformerFactory = __redirected.__TransformerFactory
+	javax.xml.validation.SchemaFactory:http://www.w3.org/2001/XMLSchema = __redirected.__SchemaFactory
+	javax.xml.xpath.XPathFactory:http://java.sun.com/jaxp/xpath/dom = __redirected.__XPathFactory
+	jboss.home.dir = /BIG/DOCUMENTS/fx-api/wildfly-8.2.0.Final
+	jboss.host.name = apollo8
+	jboss.modules.dir = /BIG/DOCUMENTS/fx-api/wildfly-8.2.0.Final/modules
+	jboss.node.name = apollo8
+	jboss.qualified.host.name = apollo8
+	jboss.server.base.dir = /BIG/DOCUMENTS/fx-api/wildfly-8.2.0.Final/standalone
+	jboss.server.config.dir = /BIG/DOCUMENTS/fx-api/wildfly-8.2.0.Final/standalone/configuration
+	jboss.server.data.dir = /BIG/DOCUMENTS/fx-api/wildfly-8.2.0.Final/standalone/data
+	jboss.server.deploy.dir = /BIG/DOCUMENTS/fx-api/wildfly-8.2.0.Final/standalone/data/content
+	jboss.server.log.dir = /BIG/DOCUMENTS/fx-api/wildfly-8.2.0.Final/standalone/log
+	jboss.server.name = apollo8
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = /BIG/DOCUMENTS/fx-api/wildfly-8.2.0.Final/standalone/tmp
+	line.separator = 
+
+	logging.configuration = file:/BIG/DOCUMENTS/fx-api/wildfly-8.2.0.Final/standalone/configuration/logging.properties
+	module.path = /BIG/DOCUMENTS/fx-api/wildfly-8.2.0.Final/modules
+	org.jboss.boot.log.file = /BIG/DOCUMENTS/fx-api/wildfly-8.2.0.Final/standalone/log/server.log
+	org.jboss.resolver.warning = true
+	org.xml.sax.driver = __redirected.__XMLReaderFactory
+	os.arch = amd64
+	os.name = Linux
+	os.version = 3.16.0-31-generic
+	path.separator = :
+	sun.arch.data.model = 64
+	sun.boot.class.path = /usr/java/jdk1.8.0_25/jre/lib/resources.jar:/usr/java/jdk1.8.0_25/jre/lib/rt.jar:/usr/java/jdk1.8.0_25/jre/lib/sunrsasign.jar:/usr/java/jdk1.8.0_25/jre/lib/jsse.jar:/usr/java/jdk1.8.0_25/jre/lib/jce.jar:/usr/java/jdk1.8.0_25/jre/lib/charsets.jar:/usr/java/jdk1.8.0_25/jre/lib/jfr.jar:/usr/java/jdk1.8.0_25/jre/classes
+	sun.boot.library.path = /usr/java/jdk1.8.0_25/jre/lib/amd64
+	sun.cpu.endian = little
+	sun.cpu.isalist = 
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = /BIG/DOCUMENTS/fx-api/wildfly-8.2.0.Final/jboss-modules.jar -mp /BIG/DOCUMENTS/fx-api/wildfly-8.2.0.Final/modules org.jboss.as.standalone -Djboss.home.dir=/BIG/DOCUMENTS/fx-api/wildfly-8.2.0.Final -Djboss.server.base.dir=/BIG/DOCUMENTS/fx-api/wildfly-8.2.0.Final/standalone -c standalone-full.xml
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = UTF-8
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = unknown
+	user.country = US
+	user.dir = /BIG/DOCUMENTS/fx-api/wildfly-8.2.0.Final/bin
+	user.home = /home/mike
+	user.language = en
+	user.name = mike
+	user.timezone = America/New_York
+2015-03-18 12:25:11,339 DEBUG [org.jboss.as.config] (MSC service thread 1-7) VM Arguments: -D[Standalone] -agentlib:jdwp=transport=dt_socket,address=127.0.0.1:58588,suspend=y,server=n -Dorg.jboss.boot.log.file=/BIG/DOCUMENTS/fx-api/wildfly-8.2.0.Final/standalone/log/server.log -Dlogging.configuration=file:/BIG/DOCUMENTS/fx-api/wildfly-8.2.0.Final/standalone/configuration/logging.properties 
+2015-03-18 12:25:12,347 INFO  [org.jboss.as.server] (Controller Boot Thread) JBAS015888: Creating http management service using socket-binding (management-http)
+2015-03-18 12:25:12,365 INFO  [org.xnio] (MSC service thread 1-2) XNIO version 3.3.0.Final
+2015-03-18 12:25:12,374 INFO  [org.xnio.nio] (MSC service thread 1-2) XNIO NIO Implementation Version 3.3.0.Final
+2015-03-18 12:25:12,405 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 34) WFLYIO001: Worker 'default' has auto-configured to 16 core threads with 128 task threads based on your 8 available processors
+2015-03-18 12:25:12,406 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 35) JBAS010280: Activating Infinispan subsystem.
+2015-03-18 12:25:12,429 INFO  [org.jboss.as.jacorb] (ServerService Thread Pool -- 36) JBAS016300: Activating JacORB Subsystem
+2015-03-18 12:25:12,438 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 30) JBAS010403: Deploying JDBC-compliant driver class org.h2.Driver (version 1.3)
+2015-03-18 12:25:12,440 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 42) JBAS012615: Activated the following JSF Implementations: [main]
+2015-03-18 12:25:12,460 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 51) JBAS013171: Activating Security Subsystem
+2015-03-18 12:25:12,465 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 52) JBAS010153: Node identifier property is set to the default value. Please make sure it is unique.
+2015-03-18 12:25:12,469 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 46) JBAS011800: Activating Naming Subsystem
+2015-03-18 12:25:12,477 INFO  [org.jboss.as.security] (MSC service thread 1-14) JBAS013170: Current PicketBox version=4.0.21.Final
+2015-03-18 12:25:12,503 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 54) JBAS015537: Activating WebServices Extension
+2015-03-18 12:25:12,507 INFO  [org.jboss.as.connector.logging] (MSC service thread 1-8) JBAS010408: Starting JCA Subsystem (IronJacamar 1.1.9.Final)
+2015-03-18 12:25:12,509 INFO  [org.jboss.remoting] (MSC service thread 1-2) JBoss Remoting version 4.0.6.Final
+2015-03-18 12:25:12,557 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-7) JBAS010417: Started Driver service with driver-name = h2
+2015-03-18 12:25:12,694 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-2) JBAS015400: Bound mail session [java:jboss/mail/Default]
+2015-03-18 12:25:12,694 INFO  [org.jboss.as.naming] (MSC service thread 1-5) JBAS011802: Starting Naming Service
+2015-03-18 12:25:12,704 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) JBAS017502: Undertow 1.1.0.Final starting
+2015-03-18 12:25:12,705 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 53) JBAS017502: Undertow 1.1.0.Final starting
+2015-03-18 12:25:12,861 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 53) JBAS017527: Creating file handler for path /BIG/DOCUMENTS/fx-api/wildfly-8.2.0.Final/welcome-content
+2015-03-18 12:25:12,873 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-9) JBAS017525: Started server default-server.
+2015-03-18 12:25:12,884 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) JBAS017531: Host default-host starting
+2015-03-18 12:25:12,958 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-9) JBAS017519: Undertow HTTP listener default listening on /127.0.0.1:8080
+2015-03-18 12:25:13,034 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-2) JBAS015012: Started FileSystemDeploymentService for directory /BIG/DOCUMENTS/fx-api/wildfly-8.2.0.Final/standalone/deployments
+2015-03-18 12:25:13,036 INFO  [org.jboss.as.jacorb] (MSC service thread 1-6) JBAS016330: CORBA ORB Service started
+2015-03-18 12:25:13,057 INFO  [org.hornetq.core.server] (ServerService Thread Pool -- 56) HQ221000: live server is starting with configuration HornetQ Configuration (clustered=false,backup=false,sharedStore=true,journalDirectory=/BIG/DOCUMENTS/fx-api/wildfly-8.2.0.Final/standalone/data/messagingjournal,bindingsDirectory=/BIG/DOCUMENTS/fx-api/wildfly-8.2.0.Final/standalone/data/messagingbindings,largeMessagesDirectory=/BIG/DOCUMENTS/fx-api/wildfly-8.2.0.Final/standalone/data/messaginglargemessages,pagingDirectory=/BIG/DOCUMENTS/fx-api/wildfly-8.2.0.Final/standalone/data/messagingpaging)
+2015-03-18 12:25:13,062 INFO  [org.hornetq.core.server] (ServerService Thread Pool -- 56) HQ221006: Waiting to obtain live lock
+2015-03-18 12:25:13,115 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) JBAS010400: Bound data source [java:jboss/datasources/ExampleDS]
+2015-03-18 12:25:13,117 INFO  [org.hornetq.core.server] (ServerService Thread Pool -- 56) HQ221012: Using AIO Journal
+2015-03-18 12:25:13,190 INFO  [io.netty.util.internal.PlatformDependent] (ServerService Thread Pool -- 56) Your platform does not provide complete low-level API for accessing direct buffers reliably. Unless explicitly requested, heap buffer will always be preferred to avoid potential system unstability.
+2015-03-18 12:25:13,220 INFO  [org.hornetq.core.server] (ServerService Thread Pool -- 56) HQ221043: Adding protocol support CORE
+2015-03-18 12:25:13,228 INFO  [org.jboss.as.jacorb] (MSC service thread 1-1) JBAS016328: CORBA Naming Service started
+2015-03-18 12:25:13,229 INFO  [org.hornetq.core.server] (ServerService Thread Pool -- 56) HQ221043: Adding protocol support AMQP
+2015-03-18 12:25:13,234 INFO  [org.hornetq.core.server] (ServerService Thread Pool -- 56) HQ221043: Adding protocol support STOMP
+2015-03-18 12:25:13,302 INFO  [org.hornetq.core.server] (ServerService Thread Pool -- 56) HQ221034: Waiting to obtain live lock
+2015-03-18 12:25:13,303 INFO  [org.hornetq.core.server] (ServerService Thread Pool -- 56) HQ221035: Live Server Obtained live lock
+2015-03-18 12:25:13,414 INFO  [org.jboss.ws.common.management] (MSC service thread 1-9) JBWS022052: Starting JBoss Web Services - Stack CXF Server 4.3.2.Final
+2015-03-18 12:25:13,737 INFO  [org.jboss.messaging] (MSC service thread 1-10) JBAS011615: Registered HTTP upgrade for hornetq-remoting protocol handled by http-acceptor-throughput acceptor
+2015-03-18 12:25:13,737 INFO  [org.jboss.messaging] (MSC service thread 1-13) JBAS011615: Registered HTTP upgrade for hornetq-remoting protocol handled by http-acceptor acceptor
+2015-03-18 12:25:13,818 INFO  [org.hornetq.core.server] (ServerService Thread Pool -- 56) HQ221007: Server is now live
+2015-03-18 12:25:13,818 INFO  [org.hornetq.core.server] (ServerService Thread Pool -- 56) HQ221001: HornetQ Server version 2.4.5.FINAL (Wild Hornet, 124) [766cfc73-accb-11e4-941b-a7d4c5504193] 
+2015-03-18 12:25:13,834 INFO  [org.jboss.as.messaging] (ServerService Thread Pool -- 56) JBAS011601: Bound messaging object to jndi name java:/ConnectionFactory
+2015-03-18 12:25:13,878 INFO  [org.hornetq.core.server] (ServerService Thread Pool -- 58) HQ221003: trying to deploy queue jms.queue.DLQ
+2015-03-18 12:25:13,885 INFO  [org.jboss.as.messaging] (ServerService Thread Pool -- 58) JBAS011601: Bound messaging object to jndi name java:/jms/queue/DLQ
+2015-03-18 12:25:13,886 INFO  [org.jboss.as.messaging] (ServerService Thread Pool -- 59) JBAS011601: Bound messaging object to jndi name java:jboss/exported/jms/RemoteConnectionFactory
+2015-03-18 12:25:13,887 INFO  [org.hornetq.core.server] (ServerService Thread Pool -- 57) HQ221003: trying to deploy queue jms.queue.ExpiryQueue
+2015-03-18 12:25:13,887 INFO  [org.jboss.as.messaging] (ServerService Thread Pool -- 57) JBAS011601: Bound messaging object to jndi name java:/jms/queue/ExpiryQueue
+2015-03-18 12:25:13,895 INFO  [org.jboss.as.connector.deployment] (MSC service thread 1-2) JBAS010406: Registered connection factory java:/JmsXA
+2015-03-18 12:25:13,928 INFO  [org.hornetq.ra] (MSC service thread 1-2) HornetQ resource adaptor started
+2015-03-18 12:25:13,929 INFO  [org.jboss.as.connector.services.resourceadapters.ResourceAdapterActivatorService$ResourceAdapterActivator] (MSC service thread 1-2) IJ020002: Deployed: file://RaActivatorhornetq-ra
+2015-03-18 12:25:13,930 INFO  [org.jboss.as.messaging] (MSC service thread 1-1) JBAS011601: Bound messaging object to jndi name java:jboss/DefaultJMSConnectionFactory
+2015-03-18 12:25:13,930 INFO  [org.jboss.as.connector.deployment] (MSC service thread 1-15) JBAS010401: Bound JCA ConnectionFactory [java:/JmsXA]
+2015-03-18 12:25:13,932 ERROR [org.jboss.as.controller.management-operation] (Controller Boot Thread) JBAS014613: Operation ("add") failed - address: ([
+    ("subsystem" => "datasources"),
+    ("data-source" => "fxdb")
+]) - failure description: {"JBAS014771: Services with missing/unavailable dependencies" => [
+    "jboss.driver-demander.java:jboss/datasources/fxdb is missing [jboss.jdbc-driver.mariadb-java-client-1_1_7_jar]",
+    "jboss.data-source.java:jboss/datasources/fxdb is missing [jboss.jdbc-driver.mariadb-java-client-1_1_7_jar]"
+]}
+2015-03-18 12:25:13,934 ERROR [org.jboss.as.controller.management-operation] (Controller Boot Thread) JBAS014613: Operation ("add") failed - address: ([
+    ("subsystem" => "datasources"),
+    ("data-source" => "fxdb")
+]) - failure description: {
+    "JBAS014771: Services with missing/unavailable dependencies" => [
+        "jboss.driver-demander.java:jboss/datasources/fxdb is missing [jboss.jdbc-driver.mariadb-java-client-1_1_7_jar]",
+        "jboss.data-source.java:jboss/datasources/fxdb is missing [jboss.jdbc-driver.mariadb-java-client-1_1_7_jar]"
+    ],
+    "JBAS014879: One or more services were unable to start due to one or more indirect dependencies not being available." => {
+        "Services that were unable to start:" => [
+            "jboss.data-source.reference-factory.fxdb",
+            "jboss.naming.context.java.jboss.datasources.fxdb"
+        ],
+        "Services that may be the cause:" => ["jboss.jdbc-driver.mariadb-java-client-1_1_7_jar"]
+    }
+}
+2015-03-18 12:25:14,020 INFO  [org.jboss.as.controller] (Controller Boot Thread) JBAS014774: Service status report
+JBAS014775:    New missing/unsatisfied dependencies:
+      service jboss.jdbc-driver.mariadb-java-client-1_1_7_jar (missing) dependents: [service jboss.driver-demander.java:jboss/datasources/fxdb, service jboss.data-source.java:jboss/datasources/fxdb] 
+
+2015-03-18 12:25:14,198 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) JBAS015876: Starting deployment of "mariadb-java-client-1.1.7.jar" (runtime-name: "mariadb-java-client-1.1.7.jar")
+2015-03-18 12:25:14,359 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-5) JBAS010404: Deploying non-JDBC-compliant driver class org.mariadb.jdbc.Driver (version 1.1)
+2015-03-18 12:25:14,367 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-4) JBAS010417: Started Driver service with driver-name = mariadb-java-client-1.1.7.jar
+2015-03-18 12:25:14,369 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) JBAS010400: Bound data source [java:jboss/datasources/fxdb]
+2015-03-18 12:25:14,635 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015961: Http management interface listening on http://127.0.0.1:9990/management
+2015-03-18 12:25:14,635 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015951: Admin console listening on http://127.0.0.1:9990
+2015-03-18 12:25:14,635 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015874: WildFly 8.2.0.Final "Tweek" started in 3948ms - Started 256 of 311 services (101 services are lazy, passive or on-demand)
+2015-03-18 12:25:14,763 INFO  [org.jboss.as.server] (management-handler-thread - 3) JBAS018559: Deployed "mariadb-java-client-1.1.7.jar" (runtime-name : "mariadb-java-client-1.1.7.jar")
+2015-03-18 12:25:14,764 INFO  [org.jboss.as.controller] (management-handler-thread - 3) JBAS014774: Service status report
+JBAS014776:    Newly corrected services:
+      service jboss.jdbc-driver.mariadb-java-client-1_1_7_jar (new available)
+
+2015-03-18 12:25:14,936 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-13) JBAS015876: Starting deployment of "fx-rest-1.0.war" (runtime-name: "fx-rest-1.0.war")
+2015-03-18 12:25:15,021 INFO  [org.jboss.as.jpa] (MSC service thread 1-4) JBAS011401: Read persistence.xml for fxPU
+2015-03-18 12:25:15,070 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 7) JBAS011409: Starting Persistence Unit (phase 1 of 2) Service 'fx-rest-1.0.war#fxPU'
+2015-03-18 12:25:15,080 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 7) HHH000204: Processing PersistenceUnitInfo [
+	name: fxPU
+	...]
+2015-03-18 12:25:15,126 INFO  [org.hibernate.Version] (ServerService Thread Pool -- 7) HHH000412: Hibernate Core {4.3.7.Final}
+2015-03-18 12:25:15,127 INFO  [org.hibernate.cfg.Environment] (ServerService Thread Pool -- 7) HHH000206: hibernate.properties not found
+2015-03-18 12:25:15,129 INFO  [org.hibernate.cfg.Environment] (ServerService Thread Pool -- 7) HHH000021: Bytecode provider name : javassist
+2015-03-18 12:25:15,270 INFO  [org.jboss.weld.deployer] (MSC service thread 1-13) JBAS016002: Processing weld deployment fx-rest-1.0.war
+2015-03-18 12:25:15,325 INFO  [org.hibernate.validator.internal.util.Version] (MSC service thread 1-13) HV000001: Hibernate Validator 5.1.3.Final
+2015-03-18 12:25:15,389 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-13) JNDI bindings for session bean named FxUsersServiceImpl in deployment unit deployment "fx-rest-1.0.war" are as follows:
+
+	java:global/fx-rest-1.0/FxUsersServiceImpl!com.uml.fx.entities.FxUsersService
+	java:app/fx-rest-1.0/FxUsersServiceImpl!com.uml.fx.entities.FxUsersService
+	java:module/FxUsersServiceImpl!com.uml.fx.entities.FxUsersService
+	java:global/fx-rest-1.0/FxUsersServiceImpl
+	java:app/fx-rest-1.0/FxUsersServiceImpl
+	java:module/FxUsersServiceImpl
+
+2015-03-18 12:25:15,389 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-13) JNDI bindings for session bean named ContactServiceImpl in deployment unit deployment "fx-rest-1.0.war" are as follows:
+
+	java:global/fx-rest-1.0/ContactServiceImpl!com.uml.fx.entities.ContactService
+	java:app/fx-rest-1.0/ContactServiceImpl!com.uml.fx.entities.ContactService
+	java:module/ContactServiceImpl!com.uml.fx.entities.ContactService
+	java:global/fx-rest-1.0/ContactServiceImpl
+	java:app/fx-rest-1.0/ContactServiceImpl
+	java:module/ContactServiceImpl
+
+2015-03-18 12:25:15,389 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-13) JNDI bindings for session bean named NewsServiceImpl in deployment unit deployment "fx-rest-1.0.war" are as follows:
+
+	java:global/fx-rest-1.0/NewsServiceImpl!com.uml.fx.entities.NewsService
+	java:app/fx-rest-1.0/NewsServiceImpl!com.uml.fx.entities.NewsService
+	java:module/NewsServiceImpl!com.uml.fx.entities.NewsService
+	java:global/fx-rest-1.0/NewsServiceImpl
+	java:app/fx-rest-1.0/NewsServiceImpl
+	java:module/NewsServiceImpl
+
+2015-03-18 12:25:15,390 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-13) JNDI bindings for session bean named AppraisalServiceImpl in deployment unit deployment "fx-rest-1.0.war" are as follows:
+
+	java:global/fx-rest-1.0/AppraisalServiceImpl!com.uml.fx.entities.AppraisalService
+	java:app/fx-rest-1.0/AppraisalServiceImpl!com.uml.fx.entities.AppraisalService
+	java:module/AppraisalServiceImpl!com.uml.fx.entities.AppraisalService
+	java:global/fx-rest-1.0/AppraisalServiceImpl
+	java:app/fx-rest-1.0/AppraisalServiceImpl
+	java:module/AppraisalServiceImpl
+
+2015-03-18 12:25:15,390 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-13) JNDI bindings for session bean named TaxCalculatorImpl in deployment unit deployment "fx-rest-1.0.war" are as follows:
+
+	java:global/fx-rest-1.0/TaxCalculatorImpl!com.uml.fx.entities.TaxCalculator
+	java:app/fx-rest-1.0/TaxCalculatorImpl!com.uml.fx.entities.TaxCalculator
+	java:module/TaxCalculatorImpl!com.uml.fx.entities.TaxCalculator
+	java:global/fx-rest-1.0/TaxCalculatorImpl
+	java:app/fx-rest-1.0/TaxCalculatorImpl
+	java:module/TaxCalculatorImpl
+
+2015-03-18 12:25:15,390 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-13) JNDI bindings for session bean named TaxRateServiceImpl in deployment unit deployment "fx-rest-1.0.war" are as follows:
+
+	java:global/fx-rest-1.0/TaxRateServiceImpl!com.uml.fx.entities.TaxRateService
+	java:app/fx-rest-1.0/TaxRateServiceImpl!com.uml.fx.entities.TaxRateService
+	java:module/TaxRateServiceImpl!com.uml.fx.entities.TaxRateService
+	java:global/fx-rest-1.0/TaxRateServiceImpl
+	java:app/fx-rest-1.0/TaxRateServiceImpl
+	java:module/TaxRateServiceImpl
+
+2015-03-18 12:25:15,604 INFO  [org.jboss.weld.deployer] (MSC service thread 1-9) JBAS016005: Starting Services for CDI deployment: fx-rest-1.0.war
+2015-03-18 12:25:15,633 INFO  [org.jboss.weld.Version] (MSC service thread 1-9) WELD-000900: 2.2.6 (Final)
+2015-03-18 12:25:15,658 INFO  [org.jboss.weld.deployer] (MSC service thread 1-6) JBAS016008: Starting weld service for deployment fx-rest-1.0.war
+2015-03-18 12:25:15,783 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 7) JBAS011409: Starting Persistence Unit (phase 2 of 2) Service 'fx-rest-1.0.war#fxPU'
+2015-03-18 12:25:15,840 INFO  [org.hibernate.annotations.common.Version] (ServerService Thread Pool -- 7) HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2015-03-18 12:25:15,937 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 7) HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2015-03-18 12:25:16,062 WARN  [org.hibernate.mapping.RootClass] (ServerService Thread Pool -- 7) HHH000038: Composite-id class does not override equals(): com.uml.fx.entities.AppraisalData
+2015-03-18 12:25:16,063 WARN  [org.hibernate.mapping.RootClass] (ServerService Thread Pool -- 7) HHH000039: Composite-id class does not override hashCode(): com.uml.fx.entities.AppraisalData
+2015-03-18 12:25:16,068 INFO  [org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory] (ServerService Thread Pool -- 7) HHH000397: Using ASTQueryTranslatorFactory
+2015-03-18 12:25:17,475 INFO  [org.jboss.resteasy.spi.ResteasyDeployment] (MSC service thread 1-13) Deploying javax.ws.rs.core.Application: class com.uml.fx.rest.ApplicationConfig
+2015-03-18 12:25:17,475 INFO  [org.jboss.resteasy.spi.ResteasyDeployment] (MSC service thread 1-13) Adding class resource com.uml.fx.rest.TaxRates from Application class com.uml.fx.rest.ApplicationConfig
+2015-03-18 12:25:17,476 INFO  [org.jboss.resteasy.spi.ResteasyDeployment] (MSC service thread 1-13) Adding class resource com.uml.fx.rest.Appraisal from Application class com.uml.fx.rest.ApplicationConfig
+2015-03-18 12:25:17,476 INFO  [org.jboss.resteasy.spi.ResteasyDeployment] (MSC service thread 1-13) Adding class resource com.uml.fx.rest.NewsRest from Application class com.uml.fx.rest.ApplicationConfig
+2015-03-18 12:25:17,476 INFO  [org.jboss.resteasy.spi.ResteasyDeployment] (MSC service thread 1-13) Adding provider class com.uml.fx.rest.CORSFilter from Application class com.uml.fx.rest.ApplicationConfig
+2015-03-18 12:25:17,476 INFO  [org.jboss.resteasy.spi.ResteasyDeployment] (MSC service thread 1-13) Adding class resource com.uml.fx.rest.ContactRest from Application class com.uml.fx.rest.ApplicationConfig
+2015-03-18 12:25:17,476 INFO  [org.jboss.resteasy.spi.ResteasyDeployment] (MSC service thread 1-13) Adding class resource com.uml.fx.rest.FundsExpert from Application class com.uml.fx.rest.ApplicationConfig
+2015-03-18 12:25:17,548 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-13) JBAS017534: Registered web context: /fx-rest-1.0
+2015-03-18 12:25:17,666 INFO  [org.jboss.as.server] (management-handler-thread - 1) JBAS018559: Deployed "fx-rest-1.0.war" (runtime-name : "fx-rest-1.0.war")
+2015-03-18 12:25:23,516 INFO  [com.uml.fx.rest.FundsExpert] (default task-1) checking if user is registered
+2015-03-18 12:25:23,518 INFO  [com.uml.fx.rest.FundsExpert] (default task-1) {"username":"skdfj"}
+2015-03-18 12:25:35,162 INFO  [com.uml.fx.rest.FundsExpert] (default task-2) checking if user is registered
+2015-03-18 12:25:35,163 INFO  [com.uml.fx.rest.FundsExpert] (default task-2) {"username":"mike"}
+2015-03-18 12:25:54,627 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) JBAS017535: Unregistered web context: /fx-rest-1.0
+2015-03-18 12:25:54,641 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 66) JBAS011410: Stopping Persistence Unit (phase 2 of 2) Service 'fx-rest-1.0.war#fxPU'
+2015-03-18 12:25:54,643 INFO  [org.jboss.weld.deployer] (MSC service thread 1-3) JBAS016009: Stopping weld service for deployment fx-rest-1.0.war
+2015-03-18 12:25:54,666 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 66) JBAS011410: Stopping Persistence Unit (phase 1 of 2) Service 'fx-rest-1.0.war#fxPU'
+2015-03-18 12:25:54,684 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) JBAS015877: Stopped deployment fx-rest-1.0.war (runtime-name: fx-rest-1.0.war) in 61ms
+2015-03-18 12:25:54,792 INFO  [org.jboss.as.server] (management-handler-thread - 2) JBAS018558: Undeployed "fx-rest-1.0.war" (runtime-name: "fx-rest-1.0.war")
+2015-03-18 12:25:54,920 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) JBAS010409: Unbound data source [java:jboss/datasources/fxdb]
+2015-03-18 12:25:54,923 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-5) JBAS010418: Stopped Driver service with driver-name = mariadb-java-client-1.1.7.jar
+2015-03-18 12:25:54,927 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) JBAS015877: Stopped deployment mariadb-java-client-1.1.7.jar (runtime-name: mariadb-java-client-1.1.7.jar) in 7ms
+2015-03-18 12:25:55,061 INFO  [org.jboss.as.server] (management-handler-thread - 3) JBAS018558: Undeployed "mariadb-java-client-1.1.7.jar" (runtime-name: "mariadb-java-client-1.1.7.jar")
+2015-03-18 12:25:55,061 INFO  [org.jboss.as.controller] (management-handler-thread - 3) JBAS014774: Service status report
+JBAS014775:    New missing/unsatisfied dependencies:
+      service jboss.jdbc-driver.mariadb-java-client-1_1_7_jar (missing) dependents: [service jboss.driver-demander.java:jboss/datasources/fxdb, service jboss.data-source.java:jboss/datasources/fxdb] 
+
+2015-03-18 12:25:55,205 INFO  [org.jboss.as.messaging] (ServerService Thread Pool -- 66) JBAS011605: Unbound messaging object to jndi name java:jboss/exported/jms/RemoteConnectionFactory
+2015-03-18 12:25:55,205 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-11) JBAS010409: Unbound data source [java:jboss/datasources/ExampleDS]
+2015-03-18 12:25:55,206 INFO  [org.jboss.as.messaging] (MSC service thread 1-14) JBAS011605: Unbound messaging object to jndi name java:jboss/DefaultJMSConnectionFactory
+2015-03-18 12:25:55,209 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) JBAS017532: Host default-host stopping
+2015-03-18 12:25:55,210 INFO  [org.jboss.as.connector.deployment] (MSC service thread 1-6) JBAS010410: Unbound JCA ConnectionFactory [java:/JmsXA]
+2015-03-18 12:25:55,212 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-6) JBAS010418: Stopped Driver service with driver-name = h2
+2015-03-18 12:25:55,213 INFO  [org.jboss.as.messaging] (ServerService Thread Pool -- 64) JBAS011605: Unbound messaging object to jndi name java:/jms/queue/ExpiryQueue
+2015-03-18 12:25:55,241 INFO  [org.hornetq.ra] (ServerService Thread Pool -- 61) HQ151003: HornetQ resource adaptor stopped

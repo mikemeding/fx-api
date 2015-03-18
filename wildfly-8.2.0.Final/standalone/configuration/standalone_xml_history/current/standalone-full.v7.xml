@@ -507,4 +507,9 @@
         </outbound-socket-binding>
     </socket-binding-group>
 
+    <deployments>
+        <deployment name="mariadb-java-client-1.1.7.jar" runtime-name="mariadb-java-client-1.1.7.jar" enabled="false">
+            <fs-archive path="/BIG/DOCUMENTS/fx-api/mariadb/mariadb-java-client-1.1.7.jar"/>
+        </deployment>
+    </deployments>
 </server>

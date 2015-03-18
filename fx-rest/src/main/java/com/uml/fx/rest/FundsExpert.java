@@ -173,10 +173,11 @@ public class FundsExpert {
         JSONArray joa = users.selectAllActive();
         for (int x = 0; joa.length() > x; x++) {
             if (joa.getJSONObject(x).optString("username").equals(jo.optString("username"))) {
-                return Response.serverError().build();
+                return Response.ok("true", MediaType.TEXT_PLAIN).build();
+
             }
         }
-        return Response.ok("true", MediaType.TEXT_PLAIN).build();
+        return Response.serverError().build();
     }
 
     /**

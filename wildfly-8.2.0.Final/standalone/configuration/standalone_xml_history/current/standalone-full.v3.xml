@@ -508,7 +508,10 @@
     </socket-binding-group>
 
     <deployments>
-        <deployment name="fx-rest-1.0.war" runtime-name="fx-rest-1.0.war">
+        <deployment name="mariadb-java-client-1.1.7.jar" runtime-name="mariadb-java-client-1.1.7.jar">
+            <fs-archive path="/BIG/DOCUMENTS/fx-api/mariadb/mariadb-java-client-1.1.7.jar"/>
+        </deployment>
+        <deployment name="fx-rest-1.0.war" runtime-name="fx-rest-1.0.war" enabled="false">
             <fs-archive path="/BIG/DOCUMENTS/fx-api/fx-rest/target/fx-rest-1.0.war"/>
         </deployment>
     </deployments>
