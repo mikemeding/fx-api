@@ -25,13 +25,13 @@ public interface FxUsersService {
                     int active,
                     int can_edit_pages);
 
-    boolean deleteUser(String username);
+    boolean deleteUser(String id);
 
     boolean updateUser(FxUser user);
 
     JSONArray selectAllActive();
 
-    boolean isValid(String username);
+    boolean isValid(String id);
 
     boolean authenticate(String username, String password);
 

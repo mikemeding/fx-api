@@ -32,8 +32,8 @@ import java.util.Date;
                 name = FxUser.SELECT_ALL,
                 query = "SELECT a FROM FxUser a ORDER BY a.username ASC"),
         @NamedQuery(
-                name = FxUser.SELECT_BY_USERNAME,
-                query = "SELECT a FROM FxUser a WHERE a.username= :username"),
+                name = FxUser.SELECT_BY_ID,
+                query = "SELECT a FROM FxUser a WHERE a.id= :id"),
         @NamedQuery(
                 name = FxUser.AUTHENTICATE,
                 query = "SELECT a FROM FxUser a WHERE a.username= :username AND a.password= :password"),
@@ -46,7 +46,7 @@ public class FxUser implements Serializable {
     public final static String TABLENAME = "users";
     public final static String SELECT_ALL = "FxUser.selectAll";
     public final static String SELECT_ALL_ACTIVE = "FxUser.selectAllActive";
-    public final static String SELECT_BY_USERNAME = "FxUser.selectByUsername";
+    public final static String SELECT_BY_ID = "FxUser.selectById";
     public final static String AUTHENTICATE = "FxUser.authenticate";
 
     private long id;

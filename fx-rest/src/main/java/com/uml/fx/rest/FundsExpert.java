@@ -182,10 +182,10 @@ public class FundsExpert {
 
             // parse string to json object
             JSONObject jo = JSONFactory.jsonObject(data);
-            String username = jo.getString("username");
+            String id = jo.getString("id");
 
             // preform delete of user
-            users.deleteUser(username);
+            users.deleteUser(id);
 
             // if all went well
             return Response.ok().build();

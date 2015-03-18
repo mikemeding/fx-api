@@ -54,30 +54,11 @@ public class FxUsersServiceImpl implements FxUsersService {
         em.persist(testUser);
     }
 
-    /**
-     * Removes the given user from the database
-     *
-     * @param username
-     * @return false if user does not exist or if call fails
-     */
-    @Override
-    public boolean deleteUser(String username) {
-        TypedQuery<FxUser> query = em.createNamedQuery(FxUser.SELECT_BY_USERNAME, FxUser.class);
-        FxUser delUser = query.setParameter("username", username).getSingleResult();
-
-        if (delUser == null) {
-            return false;
-        } else {
-            em.remove(delUser);
-            return true;
-        }
-
-    }
 
     @Override
     public boolean updateUser(FxUser user) {
-        TypedQuery<FxUser> query = em.createNamedQuery(FxUser.SELECT_BY_USERNAME, FxUser.class);
-        FxUser updateUser = query.setParameter("username", user.getUsername()).getSingleResult();
+        TypedQuery<FxUser> query = em.createNamedQuery(FxUser.SELECT_BY_ID, FxUser.class);
+        FxUser updateUser = query.setParameter("id", user.getId()).getSingleResult();
         if(updateUser == null){
             return false;
         } else {
@@ -117,9 +98,9 @@ public class FxUsersServiceImpl implements FxUsersService {
 
 
     @Override
-    public boolean isValid(String username) {
-        TypedQuery<FxUser> query = em.createNamedQuery(FxUser.SELECT_BY_USERNAME, FxUser.class);
-        FxUser validUser = query.setParameter("username", username).getSingleResult();
+    public boolean isValid(String id) {
+        TypedQuery<FxUser> query = em.createNamedQuery(FxUser.SELECT_BY_ID, FxUser.class);
+        FxUser validUser = query.setParameter("id", id).getSingleResult();
 
         // if we get anything back then it must exist
         if (validUser == null) {
@@ -169,5 +150,23 @@ public class FxUsersServiceImpl implements FxUsersService {
 //        log.info(schema.get(0).toString());
 //        return schema;
         return "Ill fix if i have time";
+    }
+
+    /**
+     * Remove the user from the database with the corresponding id
+     * @param id
+     * @return
+     */
+    @Override
+    public boolean deleteUser(String id) {
+        TypedQuery<FxUser> query = em.createNamedQuery(FxUser.SELECT_BY_ID, FxUser.class);
+        FxUser delUser = query.setParameter("id", id).getSingleResult();
+
+        if (delUser == null) {
+            return false;
+        } else {
+            em.remove(delUser);
+            return true;
+        }
     }
 }
