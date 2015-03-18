@@ -13,6 +13,7 @@ import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.persistence.TypedQuery;
+import java.sql.SQLException;
 import java.util.Date;
 import java.util.logging.Logger;
 
@@ -58,8 +59,8 @@ public class FxUsersServiceImpl implements FxUsersService {
     @Override
     public boolean updateUser(FxUser user) {
         TypedQuery<FxUser> query = em.createNamedQuery(FxUser.SELECT_BY_ID, FxUser.class);
-        FxUser updateUser = query.setParameter("id", user.getId()).getSingleResult();
-        if(updateUser == null){
+        FxUser updateUser = query.setParameter("id", Long.valueOf(user.getId())).getSingleResult();
+        if (updateUser == null) {
             return false;
         } else {
             em.merge(user);
@@ -100,7 +101,8 @@ public class FxUsersServiceImpl implements FxUsersService {
     @Override
     public boolean isValid(String id) {
         TypedQuery<FxUser> query = em.createNamedQuery(FxUser.SELECT_BY_ID, FxUser.class);
-        FxUser validUser = query.setParameter("id", id).getSingleResult();
+        long parseId = Long.valueOf(id);
+        FxUser validUser = query.setParameter("id", parseId).getSingleResult();
 
         // if we get anything back then it must exist
         if (validUser == null) {
@@ -154,13 +156,15 @@ public class FxUsersServiceImpl implements FxUsersService {
 
     /**
      * Remove the user from the database with the corresponding id
+     *
      * @param id
      * @return
      */
     @Override
     public boolean deleteUser(String id) {
         TypedQuery<FxUser> query = em.createNamedQuery(FxUser.SELECT_BY_ID, FxUser.class);
-        FxUser delUser = query.setParameter("id", id).getSingleResult();
+        long parseId = Long.valueOf(id);
+        FxUser delUser = query.setParameter("id", parseId).getSingleResult();
 
         if (delUser == null) {
             return false;

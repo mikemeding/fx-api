@@ -1,11 +1,13 @@
 package com.uml.fx.rest;
 
 import com.uml.fx.entities.FxUsersService;
+import com.uml.fx.json.JSONArray;
 import com.uml.fx.json.JSONException;
 import com.uml.fx.response.GenericResponse;
 
 import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
@@ -23,6 +25,7 @@ import javax.ws.rs.Path;
 import com.uml.fx.json.DefaultJSONFactory;
 import com.uml.fx.json.JSONObject;
 import com.uml.fx.response.ListResponse;
+import com.uml.fx.response.MessageResponse;
 
 import java.util.Date;
 import javax.ejb.EJB;
@@ -76,36 +79,18 @@ public class FundsExpert {
     @Produces({MediaType.APPLICATION_JSON, MediaType.TEXT_PLAIN})
     public Response login(@Context HttpServletRequest req
     ) {
-        StringBuilder sb = new StringBuilder();
 
         try {
-            String line;
-
-            // parse input stream into a string
-            try (BufferedReader br = new BufferedReader(new InputStreamReader(req.getInputStream()))) {
-                while ((line = br.readLine()) != null) {
-                    sb.append(line);
-                }
-            }
-            String data = sb.toString();
-
-            log.info("attempting login of: " + data);
-
-            // parse string to json object
-            JSONObject jo = JSONFactory.jsonObject(data);
-
+            JSONObject jo = parseJSONStream(req);
             // LOL authorize
             if (users.authenticate(jo.optString("username"), jo.optString("password"))) {
                 return Response.ok().entity(GenericResponse.OK).build();
             } else {
                 return Response.serverError().entity(GenericResponse.FAIL_STATUS).build();
             }
-
-        } catch (Exception e) { // parse error
-            log.log(Level.SEVERE, e.getMessage());
-            return Response.serverError().entity(GenericResponse.FAIL_STATUS).build();
+        } catch (JSONException e) {
+            return Response.serverError().entity(MessageResponse.info("JSON parsing error")).build();
         }
-
     }
 
     /**
@@ -119,30 +104,16 @@ public class FundsExpert {
     @Produces({MediaType.APPLICATION_JSON, MediaType.TEXT_PLAIN})
     public Response addFxUser(@Context HttpServletRequest req
     ) {
-        StringBuilder sb = new StringBuilder();
-
         try {
-            String line;
-
-            // parse input stream into a string
-            try (BufferedReader br = new BufferedReader(new InputStreamReader(req.getInputStream()))) {
-                while ((line = br.readLine()) != null) {
-                    sb.append(line);
-                }
-            }
-            String data = sb.toString();
-
-            log.info(data);
-
-            // parse string to json object
-            JSONObject jo = JSONFactory.jsonObject(data);
+            // parse input JSON stream
+            JSONObject jo = parseJSONStream(req);
 
             // pull out all fields like login.
             String username = jo.getString("username");
             String password = jo.getString("password");
             String name = jo.getString("name");
             String email = jo.getString("email");
-            Date created = new Date(System.currentTimeMillis());
+            Date created = new Date(System.currentTimeMillis()); // creation date is today
             int active = 1;
             int can_edit_pages = 1;
 
@@ -152,12 +123,10 @@ public class FundsExpert {
 
             // All went according to plan.
             return Response.ok(GenericResponse.OK, MediaType.TEXT_PLAIN).build();
-
-        } catch (JSONException | IOException e) {
-            // if any parsing fails.
-            log.log(Level.SEVERE, e.getMessage());
-            return Response.serverError().entity(GenericResponse.FAIL_STATUS).build();
+        } catch (JSONException e) {
+            return Response.serverError().build();
         }
+
     }
 
     @POST
@@ -165,36 +134,18 @@ public class FundsExpert {
     @Produces({MediaType.TEXT_PLAIN})
     public Response deleteUser(@Context HttpServletRequest req
     ) {
-        StringBuilder sb = new StringBuilder();
+        // parse incomming stream
+        JSONObject jo = parseJSONStream(req);
 
-        try {
-            String line;
-
-            // parse input stream into a string
-            try (BufferedReader br = new BufferedReader(new InputStreamReader(req.getInputStream()))) {
-                while ((line = br.readLine()) != null) {
-                    sb.append(line);
-                }
-            }
-            String data = sb.toString();
-
-            log.info(data);
-
-            // parse string to json object
-            JSONObject jo = JSONFactory.jsonObject(data);
-            String id = jo.getString("id");
-
-            // preform delete of user
-            users.deleteUser(id);
-
-            // if all went well
-            return Response.ok().build();
-
-        } catch(IOException | JSONException e){
-            log.severe(e.getMessage());
-            return Response.serverError().entity(GenericResponse.FAIL_STATUS).build();
+        // preform delete and check return status
+        if (users.deleteUser(jo.optString("id"))) {
+            return Response.ok("true", MediaType.TEXT_PLAIN).build();
+        } else {
+            return Response.serverError().build();
         }
+
     }
+
 
     /**
      * Queries and returns as a JSONArray all the active users in the database
@@ -211,26 +162,54 @@ public class FundsExpert {
         return Response.ok(users.selectAllActive().toString(), MediaType.TEXT_PLAIN).build();
     }
 
-    @GET
-    @Path("getSchema")
+    @POST
+    @Path("isRegistered")
     @Produces({MediaType.TEXT_PLAIN})
-    public Response getSchema(@Context HttpServletRequest request
+    public Response isRegistered(@Context HttpServletRequest req
     ) {
-        log.info("getting FxUser table schema");
-        String response = users.getSchema();
-//        for (Object column : users.getSchema()) {
-//            JSONObject jo = new JSONObject();
-//            String[] array = (String[]) column; // cast to String array
-//            int x = 0;
-//            for (String item : array)  {
-//                jo.append(String.valueOf(x), item);
-//                x++;
-//            }
-//
-//            log.info(column.toString());
-//        }
-//        ListResponse listResponse = new ListResponse(users.getSchema());
-//        return Response.ok(listResponse).build();
-        return Response.ok().build();
+        log.info("checking if user is registered");
+        JSONObject jo = parseJSONStream(req);
+        // quick and dirty
+        JSONArray joa = users.selectAllActive();
+        for (int x = 0; joa.length() > x; x++) {
+            if (joa.getJSONObject(x).optString("username").equals(jo.optString("username"))) {
+                return Response.serverError().build();
+            }
+        }
+        return Response.ok("true", MediaType.TEXT_PLAIN).build();
     }
+
+    /**
+     * A util function to parse an input JSON stream and parses to a JSONObject
+     *
+     * @param req
+     * @return
+     */
+    private JSONObject parseJSONStream(HttpServletRequest req) {
+        StringBuilder sb = new StringBuilder();
+        try {
+            String line;
+
+            // parse input stream into a string
+            try (BufferedReader br = new BufferedReader(new InputStreamReader(req.getInputStream()))) {
+                while ((line = br.readLine()) != null) {
+                    sb.append(line);
+                }
+            }
+            String data = sb.toString();
+
+            log.info(data);
+
+            // parse string to json object
+            JSONObject jo = JSONFactory.jsonObject(data);
+
+            return jo;
+
+        } catch (IOException | JSONException e) {
+            log.severe(e.getMessage());
+            throw new JSONException("Stream parse error.");
+        }
+
+    }
+
 }
