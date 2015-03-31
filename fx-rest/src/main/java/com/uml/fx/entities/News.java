@@ -1,6 +1,8 @@
 package com.uml.fx.entities;
 
 
+import org.hibernate.annotations.Type;
+
 import javax.persistence.*;
 import java.io.Serializable;
 import java.util.Date;
@@ -95,6 +97,8 @@ public class News implements Serializable {
         this.created = created;
     }
 
+    @Lob
+    @Type(type = "org.hibernate.type.TextType")
     @Column(name = "text")
     public String getText() {
         return text;

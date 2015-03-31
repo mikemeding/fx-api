@@ -507,9 +507,4 @@
         </outbound-socket-binding>
     </socket-binding-group>
 
-    <deployments>
-        <deployment name="fx-rest-1.0.war" runtime-name="fx-rest-1.0.war">
-            <fs-archive path="/home/mike/Documents/fx-api/fx-rest/target/fx-rest-1.0.war"/>
-        </deployment>
-    </deployments>
 </server>
