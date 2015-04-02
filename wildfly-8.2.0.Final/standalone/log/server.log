@@ -745,3 +745,735 @@ JBAS014777:   Services which failed to start:      service jboss.deployment.unit
 2015-04-02 13:06:17,959 INFO  [com.uml.fx.rest.NewsRest] (default task-15) {"title":"long article","textMissing":false,"titleMissing":false,"text":"<p>THIS is a VERY long article.&nbsp;</p>\n\n<p>Bacon ipsum dolor amet ut spare ribs anim, deserunt commodo sint brisket minim salami dolor est pork belly. Cillum in aliqua sausage laborum. Minim anim pork loin, esse prosciutto commodo pastrami dolore ribeye leberkas boudin sed ullamco. Id ipsum enim andouille do et, beef ribs pork alcatra non pork loin ground round. Jerky tempor ad kielbasa fatback. In pariatur short loin eiusmod, officia bacon ham hock ullamco dolore tongue. Picanha irure jerky dolore ut in doner.</p>\n\n<ul>\n\t<li>bullet item 1</li>\n\t<li>bullet item 2</li>\n\t<li>bullet item 3</li>\n\t<li>bullet item 4</li>\n\t<li>bullet item 5</li>\n</ul>\n\n<ol>\n\t<li>eins</li>\n\t<li>zwei</li>\n\t<li>drei</li>\n\t<li>vier</li>\n\t<li>funf</li>\n</ol>\n\n<p>&OElig; &lt;-- unicode symbols</p>\n\n<p><a href=\"http://www.mikemeding.com\">http://www.mikemeding.com</a>&nbsp;&lt;-- hyperlink</p>\n\n<table border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width:500px\">\n\t<tbody>\n\t\t<tr>\n\t\t\t<td>stuff</td>\n\t\t\t<td>blah</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>this is a table</td>\n\t\t\t<td>table suff yeah</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>table</td>\n\t\t\t<td>table</td>\n\t\t</tr>\n\t</tbody>\n</table>\n\n<p>&nbsp;</p>\n","user":"root"}
 2015-04-02 13:06:18,146 INFO  [com.uml.fx.rest.NewsRest] (default task-16) getting news articles
 2015-04-02 13:06:21,844 INFO  [com.uml.fx.rest.NewsRest] (default task-17) getting news articles
+2015-04-02 13:15:56,808 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) JBAS017535: Unregistered web context: /fx-rest-1.0
+2015-04-02 13:15:56,821 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 168) JBAS011410: Stopping Persistence Unit (phase 2 of 2) Service 'fx-rest-1.0.war#fxPU'
+2015-04-02 13:15:56,828 INFO  [org.jboss.weld.deployer] (MSC service thread 1-2) JBAS016009: Stopping weld service for deployment fx-rest-1.0.war
+2015-04-02 13:15:56,851 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 168) JBAS011410: Stopping Persistence Unit (phase 1 of 2) Service 'fx-rest-1.0.war#fxPU'
+2015-04-02 13:15:56,855 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-8) JBAS010409: Unbound data source [java:jboss/datasources/fxdb]
+2015-04-02 13:15:56,860 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-5) JBAS010418: Stopped Driver service with driver-name = mariadb-java-client-1.1.7.jar
+2015-04-02 13:15:56,870 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) JBAS015877: Stopped deployment mariadb-java-client-1.1.7.jar (runtime-name: mariadb-java-client-1.1.7.jar) in 63ms
+2015-04-02 13:15:56,876 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) JBAS015876: Starting deployment of "mariadb-java-client-1.1.7.jar" (runtime-name: "mariadb-java-client-1.1.7.jar")
+2015-04-02 13:15:56,907 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-6) JBAS010404: Deploying non-JDBC-compliant driver class org.mariadb.jdbc.Driver (version 1.1)
+2015-04-02 13:15:56,913 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-5) JBAS010417: Started Driver service with driver-name = mariadb-java-client-1.1.7.jar
+2015-04-02 13:15:56,920 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-1) JBAS010400: Bound data source [java:jboss/datasources/fxdb]
+2015-04-02 13:15:56,921 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 168) JBAS011409: Starting Persistence Unit (phase 1 of 2) Service 'fx-rest-1.0.war#fxPU'
+2015-04-02 13:15:56,929 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 168) HHH000204: Processing PersistenceUnitInfo [
+	name: fxPU
+	...]
+2015-04-02 13:15:57,084 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) JBAS015971: Deployment restart detected for deployment fx-rest-1.0.war, performing full redeploy instead.
+2015-04-02 13:15:57,094 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 168) JBAS011410: Stopping Persistence Unit (phase 1 of 2) Service 'fx-rest-1.0.war#fxPU'
+2015-04-02 13:15:57,107 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) JBAS015877: Stopped deployment fx-rest-1.0.war (runtime-name: fx-rest-1.0.war) in 14ms
+2015-04-02 13:15:57,112 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) JBAS015876: Starting deployment of "fx-rest-1.0.war" (runtime-name: "fx-rest-1.0.war")
+2015-04-02 13:15:57,143 INFO  [org.jboss.as.jpa] (MSC service thread 1-3) JBAS011401: Read persistence.xml for fxPU
+2015-04-02 13:15:57,161 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 168) JBAS011409: Starting Persistence Unit (phase 1 of 2) Service 'fx-rest-1.0.war#fxPU'
+2015-04-02 13:15:57,166 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 168) HHH000204: Processing PersistenceUnitInfo [
+	name: fxPU
+	...]
+2015-04-02 13:15:57,339 INFO  [org.jboss.weld.deployer] (MSC service thread 1-1) JBAS016002: Processing weld deployment fx-rest-1.0.war
+2015-04-02 13:15:57,344 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-1) JNDI bindings for session bean named FxUsersServiceImpl in deployment unit deployment "fx-rest-1.0.war" are as follows:
+
+	java:global/fx-rest-1.0/FxUsersServiceImpl!com.uml.fx.entities.FxUsersService
+	java:app/fx-rest-1.0/FxUsersServiceImpl!com.uml.fx.entities.FxUsersService
+	java:module/FxUsersServiceImpl!com.uml.fx.entities.FxUsersService
+	java:global/fx-rest-1.0/FxUsersServiceImpl
+	java:app/fx-rest-1.0/FxUsersServiceImpl
+	java:module/FxUsersServiceImpl
+
+2015-04-02 13:15:57,359 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-1) JNDI bindings for session bean named ContactServiceImpl in deployment unit deployment "fx-rest-1.0.war" are as follows:
+
+	java:global/fx-rest-1.0/ContactServiceImpl!com.uml.fx.entities.ContactService
+	java:app/fx-rest-1.0/ContactServiceImpl!com.uml.fx.entities.ContactService
+	java:module/ContactServiceImpl!com.uml.fx.entities.ContactService
+	java:global/fx-rest-1.0/ContactServiceImpl
+	java:app/fx-rest-1.0/ContactServiceImpl
+	java:module/ContactServiceImpl
+
+2015-04-02 13:15:57,374 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-1) JNDI bindings for session bean named NewsServiceImpl in deployment unit deployment "fx-rest-1.0.war" are as follows:
+
+	java:global/fx-rest-1.0/NewsServiceImpl!com.uml.fx.entities.NewsService
+	java:app/fx-rest-1.0/NewsServiceImpl!com.uml.fx.entities.NewsService
+	java:module/NewsServiceImpl!com.uml.fx.entities.NewsService
+	java:global/fx-rest-1.0/NewsServiceImpl
+	java:app/fx-rest-1.0/NewsServiceImpl
+	java:module/NewsServiceImpl
+
+2015-04-02 13:15:57,389 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-1) JNDI bindings for session bean named TaxCalculatorImpl in deployment unit deployment "fx-rest-1.0.war" are as follows:
+
+	java:global/fx-rest-1.0/TaxCalculatorImpl!com.uml.fx.entities.TaxCalculator
+	java:app/fx-rest-1.0/TaxCalculatorImpl!com.uml.fx.entities.TaxCalculator
+	java:module/TaxCalculatorImpl!com.uml.fx.entities.TaxCalculator
+	java:global/fx-rest-1.0/TaxCalculatorImpl
+	java:app/fx-rest-1.0/TaxCalculatorImpl
+	java:module/TaxCalculatorImpl
+
+2015-04-02 13:15:57,404 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-1) JNDI bindings for session bean named AppraisalServiceImpl in deployment unit deployment "fx-rest-1.0.war" are as follows:
+
+	java:global/fx-rest-1.0/AppraisalServiceImpl!com.uml.fx.entities.AppraisalService
+	java:app/fx-rest-1.0/AppraisalServiceImpl!com.uml.fx.entities.AppraisalService
+	java:module/AppraisalServiceImpl!com.uml.fx.entities.AppraisalService
+	java:global/fx-rest-1.0/AppraisalServiceImpl
+	java:app/fx-rest-1.0/AppraisalServiceImpl
+	java:module/AppraisalServiceImpl
+
+2015-04-02 13:15:57,420 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-1) JNDI bindings for session bean named TaxRateServiceImpl in deployment unit deployment "fx-rest-1.0.war" are as follows:
+
+	java:global/fx-rest-1.0/TaxRateServiceImpl!com.uml.fx.entities.TaxRateService
+	java:app/fx-rest-1.0/TaxRateServiceImpl!com.uml.fx.entities.TaxRateService
+	java:module/TaxRateServiceImpl!com.uml.fx.entities.TaxRateService
+	java:global/fx-rest-1.0/TaxRateServiceImpl
+	java:app/fx-rest-1.0/TaxRateServiceImpl
+	java:module/TaxRateServiceImpl
+
+2015-04-02 13:15:57,474 ERROR [org.jboss.msc.service.fail] (MSC service thread 1-6) MSC000001: Failed to start service jboss.deployment.unit."fx-rest-1.0.war".INSTALL: org.jboss.msc.service.StartException in service jboss.deployment.unit."fx-rest-1.0.war".INSTALL: JBAS018733: Failed to process phase INSTALL of deployment "fx-rest-1.0.war"
+	at org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:166) [wildfly-server-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:1948) [jboss-msc-1.2.2.Final.jar:1.2.2.Final]
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1881) [jboss-msc-1.2.2.Final.jar:1.2.2.Final]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [rt.jar:1.8.0_25]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [rt.jar:1.8.0_25]
+	at java.lang.Thread.run(Thread.java:745) [rt.jar:1.8.0_25]
+Caused by: java.lang.IllegalStateException: JBAS014666: Duplicate resource fx-rest-1.0.war#fxPU
+	at org.jboss.as.controller.registry.AbstractModelResource$DefaultResourceProvider.register(AbstractModelResource.java:224)
+	at org.jboss.as.controller.registry.AbstractModelResource.registerChild(AbstractModelResource.java:134)
+	at org.jboss.as.jpa.processor.PersistenceUnitServiceHandler.addManagementConsole(PersistenceUnitServiceHandler.java:1077)
+	at org.jboss.as.jpa.processor.PersistenceUnitServiceHandler.deployPersistenceUnitPhaseTwo(PersistenceUnitServiceHandler.java:687)
+	at org.jboss.as.jpa.processor.PersistenceUnitServiceHandler.addPuService(PersistenceUnitServiceHandler.java:280)
+	at org.jboss.as.jpa.processor.PersistenceUnitServiceHandler.handleWarDeployment(PersistenceUnitServiceHandler.java:191)
+	at org.jboss.as.jpa.processor.PersistenceUnitServiceHandler.deploy(PersistenceUnitServiceHandler.java:126)
+	at org.jboss.as.jpa.processor.PersistenceCompleteInstallProcessor.deploy(PersistenceCompleteInstallProcessor.java:55)
+	at org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:159) [wildfly-server-8.2.0.Final.jar:8.2.0.Final]
+	... 5 more
+
+2015-04-02 13:15:57,535 WARN  [org.jboss.as.jpa] (management-handler-thread - 1) JBAS011411: Unexpected problem gathering statistics: java.lang.IllegalStateException: JBAS011477: Persistence unit 'fx-rest-1.0.war#fxPU' is not available
+	at org.jboss.as.jpa.management.EntityManagerFactoryLookup.entityManagerFactory(EntityManagerFactoryLookup.java:44)
+	at org.jboss.as.jpa.hibernate4.management.HibernateEntityCacheStatistics.getDynamicChildrenNames(HibernateEntityCacheStatistics.java:72)
+	at org.jboss.as.jpa.management.DynamicManagementStatisticsResource.getChildren(DynamicManagementStatisticsResource.java:204)
+	at org.jboss.as.controller.registry.AbstractModelResource$DelegateResource.getChildren(AbstractModelResource.java:254) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:252) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:239) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:225) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:254) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:239) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:225) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:254) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:239) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:225) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:254) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:239) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:225) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:213) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.ModelControllerImpl.writeModel(ModelControllerImpl.java:580) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.OperationContextImpl.createPersistenceResource(OperationContextImpl.java:229) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.AbstractOperationContext.doCompleteStep(AbstractOperationContext.java:543) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.AbstractOperationContext.completeStepInternal(AbstractOperationContext.java:298) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.AbstractOperationContext.finishStep(AbstractOperationContext.java:752) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.AbstractOperationContext.executeStep(AbstractOperationContext.java:727) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.AbstractOperationContext.doCompleteStep(AbstractOperationContext.java:501) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.AbstractOperationContext.completeStepInternal(AbstractOperationContext.java:298) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.AbstractOperationContext.executeOperation(AbstractOperationContext.java:293) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.ModelControllerImpl.internalExecute(ModelControllerImpl.java:276) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.ModelControllerImpl.execute(ModelControllerImpl.java:150) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.remote.ModelControllerClientOperationHandler$ExecuteRequestHandler.doExecute(ModelControllerClientOperationHandler.java:199) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.remote.ModelControllerClientOperationHandler$ExecuteRequestHandler.access$300(ModelControllerClientOperationHandler.java:130) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.remote.ModelControllerClientOperationHandler$ExecuteRequestHandler$1$1.run(ModelControllerClientOperationHandler.java:150) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.remote.ModelControllerClientOperationHandler$ExecuteRequestHandler$1$1.run(ModelControllerClientOperationHandler.java:146) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at java.security.AccessController.doPrivileged(Native Method) [rt.jar:1.8.0_25]
+	at javax.security.auth.Subject.doAs(Subject.java:422) [rt.jar:1.8.0_25]
+	at org.jboss.as.controller.AccessAuditContext.doAs(AccessAuditContext.java:94) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.remote.ModelControllerClientOperationHandler$ExecuteRequestHandler$1.execute(ModelControllerClientOperationHandler.java:146) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.protocol.mgmt.AbstractMessageHandler$2$1.doExecute(AbstractMessageHandler.java:283) [wildfly-protocol-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.protocol.mgmt.AbstractMessageHandler$AsyncTaskRunner.run(AbstractMessageHandler.java:504) [wildfly-protocol-8.2.0.Final.jar:8.2.0.Final]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [rt.jar:1.8.0_25]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [rt.jar:1.8.0_25]
+	at java.lang.Thread.run(Thread.java:745) [rt.jar:1.8.0_25]
+	at org.jboss.threads.JBossThread.run(JBossThread.java:122) [jboss-threads-2.1.1.Final.jar:2.1.1.Final]
+
+2015-04-02 13:15:57,728 WARN  [org.jboss.as.jpa] (management-handler-thread - 1) JBAS011411: Unexpected problem gathering statistics: java.lang.IllegalStateException: JBAS011477: Persistence unit 'fx-rest-1.0.war#fxPU' is not available
+	at org.jboss.as.jpa.management.EntityManagerFactoryLookup.entityManagerFactory(EntityManagerFactoryLookup.java:44)
+	at org.jboss.as.jpa.hibernate4.management.HibernateCollectionStatistics.getDynamicChildrenNames(HibernateCollectionStatistics.java:72)
+	at org.jboss.as.jpa.management.DynamicManagementStatisticsResource.getChildren(DynamicManagementStatisticsResource.java:204)
+	at org.jboss.as.controller.registry.AbstractModelResource$DelegateResource.getChildren(AbstractModelResource.java:254) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:252) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:239) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:225) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:254) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:239) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:225) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:254) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:239) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:225) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:254) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:239) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:225) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:213) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.ModelControllerImpl.writeModel(ModelControllerImpl.java:580) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.OperationContextImpl.createPersistenceResource(OperationContextImpl.java:229) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.AbstractOperationContext.doCompleteStep(AbstractOperationContext.java:543) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.AbstractOperationContext.completeStepInternal(AbstractOperationContext.java:298) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.AbstractOperationContext.finishStep(AbstractOperationContext.java:752) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.AbstractOperationContext.executeStep(AbstractOperationContext.java:727) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.AbstractOperationContext.doCompleteStep(AbstractOperationContext.java:501) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.AbstractOperationContext.completeStepInternal(AbstractOperationContext.java:298) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.AbstractOperationContext.executeOperation(AbstractOperationContext.java:293) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.ModelControllerImpl.internalExecute(ModelControllerImpl.java:276) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.ModelControllerImpl.execute(ModelControllerImpl.java:150) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.remote.ModelControllerClientOperationHandler$ExecuteRequestHandler.doExecute(ModelControllerClientOperationHandler.java:199) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.remote.ModelControllerClientOperationHandler$ExecuteRequestHandler.access$300(ModelControllerClientOperationHandler.java:130) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.remote.ModelControllerClientOperationHandler$ExecuteRequestHandler$1$1.run(ModelControllerClientOperationHandler.java:150) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.remote.ModelControllerClientOperationHandler$ExecuteRequestHandler$1$1.run(ModelControllerClientOperationHandler.java:146) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at java.security.AccessController.doPrivileged(Native Method) [rt.jar:1.8.0_25]
+	at javax.security.auth.Subject.doAs(Subject.java:422) [rt.jar:1.8.0_25]
+	at org.jboss.as.controller.AccessAuditContext.doAs(AccessAuditContext.java:94) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.remote.ModelControllerClientOperationHandler$ExecuteRequestHandler$1.execute(ModelControllerClientOperationHandler.java:146) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.protocol.mgmt.AbstractMessageHandler$2$1.doExecute(AbstractMessageHandler.java:283) [wildfly-protocol-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.protocol.mgmt.AbstractMessageHandler$AsyncTaskRunner.run(AbstractMessageHandler.java:504) [wildfly-protocol-8.2.0.Final.jar:8.2.0.Final]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [rt.jar:1.8.0_25]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [rt.jar:1.8.0_25]
+	at java.lang.Thread.run(Thread.java:745) [rt.jar:1.8.0_25]
+	at org.jboss.threads.JBossThread.run(JBossThread.java:122) [jboss-threads-2.1.1.Final.jar:2.1.1.Final]
+
+2015-04-02 13:15:57,921 WARN  [org.jboss.as.jpa] (management-handler-thread - 1) JBAS011411: Unexpected problem gathering statistics: java.lang.IllegalStateException: JBAS011477: Persistence unit 'fx-rest-1.0.war#fxPU' is not available
+	at org.jboss.as.jpa.management.EntityManagerFactoryLookup.entityManagerFactory(EntityManagerFactoryLookup.java:44)
+	at org.jboss.as.jpa.hibernate4.management.HibernateQueryCacheStatistics.getDynamicChildrenNames(HibernateQueryCacheStatistics.java:85)
+	at org.jboss.as.jpa.management.DynamicManagementStatisticsResource.getChildren(DynamicManagementStatisticsResource.java:204)
+	at org.jboss.as.controller.registry.AbstractModelResource$DelegateResource.getChildren(AbstractModelResource.java:254) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:252) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:239) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:225) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:254) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:239) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:225) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:254) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:239) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:225) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:254) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:239) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:225) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:213) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.ModelControllerImpl.writeModel(ModelControllerImpl.java:580) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.OperationContextImpl.createPersistenceResource(OperationContextImpl.java:229) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.AbstractOperationContext.doCompleteStep(AbstractOperationContext.java:543) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.AbstractOperationContext.completeStepInternal(AbstractOperationContext.java:298) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.AbstractOperationContext.finishStep(AbstractOperationContext.java:752) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.AbstractOperationContext.executeStep(AbstractOperationContext.java:727) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.AbstractOperationContext.doCompleteStep(AbstractOperationContext.java:501) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.AbstractOperationContext.completeStepInternal(AbstractOperationContext.java:298) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.AbstractOperationContext.executeOperation(AbstractOperationContext.java:293) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.ModelControllerImpl.internalExecute(ModelControllerImpl.java:276) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.ModelControllerImpl.execute(ModelControllerImpl.java:150) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.remote.ModelControllerClientOperationHandler$ExecuteRequestHandler.doExecute(ModelControllerClientOperationHandler.java:199) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.remote.ModelControllerClientOperationHandler$ExecuteRequestHandler.access$300(ModelControllerClientOperationHandler.java:130) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.remote.ModelControllerClientOperationHandler$ExecuteRequestHandler$1$1.run(ModelControllerClientOperationHandler.java:150) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.remote.ModelControllerClientOperationHandler$ExecuteRequestHandler$1$1.run(ModelControllerClientOperationHandler.java:146) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at java.security.AccessController.doPrivileged(Native Method) [rt.jar:1.8.0_25]
+	at javax.security.auth.Subject.doAs(Subject.java:422) [rt.jar:1.8.0_25]
+	at org.jboss.as.controller.AccessAuditContext.doAs(AccessAuditContext.java:94) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.remote.ModelControllerClientOperationHandler$ExecuteRequestHandler$1.execute(ModelControllerClientOperationHandler.java:146) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.protocol.mgmt.AbstractMessageHandler$2$1.doExecute(AbstractMessageHandler.java:283) [wildfly-protocol-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.protocol.mgmt.AbstractMessageHandler$AsyncTaskRunner.run(AbstractMessageHandler.java:504) [wildfly-protocol-8.2.0.Final.jar:8.2.0.Final]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [rt.jar:1.8.0_25]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [rt.jar:1.8.0_25]
+	at java.lang.Thread.run(Thread.java:745) [rt.jar:1.8.0_25]
+	at org.jboss.threads.JBossThread.run(JBossThread.java:122) [jboss-threads-2.1.1.Final.jar:2.1.1.Final]
+
+2015-04-02 13:15:58,118 WARN  [org.jboss.as.jpa] (management-handler-thread - 1) JBAS011411: Unexpected problem gathering statistics: java.lang.IllegalStateException: JBAS011477: Persistence unit 'fx-rest-1.0.war#fxPU' is not available
+	at org.jboss.as.jpa.management.EntityManagerFactoryLookup.entityManagerFactory(EntityManagerFactoryLookup.java:44)
+	at org.jboss.as.jpa.hibernate4.management.HibernateEntityStatistics.getDynamicChildrenNames(HibernateEntityStatistics.java:145)
+	at org.jboss.as.jpa.management.DynamicManagementStatisticsResource.getChildren(DynamicManagementStatisticsResource.java:204)
+	at org.jboss.as.controller.registry.AbstractModelResource$DelegateResource.getChildren(AbstractModelResource.java:254) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:252) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:239) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:225) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:254) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:239) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:225) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:254) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:239) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:225) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:254) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:239) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:225) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:213) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.ModelControllerImpl.writeModel(ModelControllerImpl.java:580) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.OperationContextImpl.createPersistenceResource(OperationContextImpl.java:229) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.AbstractOperationContext.doCompleteStep(AbstractOperationContext.java:543) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.AbstractOperationContext.completeStepInternal(AbstractOperationContext.java:298) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.AbstractOperationContext.finishStep(AbstractOperationContext.java:752) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.AbstractOperationContext.executeStep(AbstractOperationContext.java:727) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.AbstractOperationContext.doCompleteStep(AbstractOperationContext.java:501) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.AbstractOperationContext.completeStepInternal(AbstractOperationContext.java:298) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.AbstractOperationContext.executeOperation(AbstractOperationContext.java:293) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.ModelControllerImpl.internalExecute(ModelControllerImpl.java:276) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.ModelControllerImpl.execute(ModelControllerImpl.java:150) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.remote.ModelControllerClientOperationHandler$ExecuteRequestHandler.doExecute(ModelControllerClientOperationHandler.java:199) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.remote.ModelControllerClientOperationHandler$ExecuteRequestHandler.access$300(ModelControllerClientOperationHandler.java:130) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.remote.ModelControllerClientOperationHandler$ExecuteRequestHandler$1$1.run(ModelControllerClientOperationHandler.java:150) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.remote.ModelControllerClientOperationHandler$ExecuteRequestHandler$1$1.run(ModelControllerClientOperationHandler.java:146) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at java.security.AccessController.doPrivileged(Native Method) [rt.jar:1.8.0_25]
+	at javax.security.auth.Subject.doAs(Subject.java:422) [rt.jar:1.8.0_25]
+	at org.jboss.as.controller.AccessAuditContext.doAs(AccessAuditContext.java:94) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.remote.ModelControllerClientOperationHandler$ExecuteRequestHandler$1.execute(ModelControllerClientOperationHandler.java:146) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.protocol.mgmt.AbstractMessageHandler$2$1.doExecute(AbstractMessageHandler.java:283) [wildfly-protocol-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.protocol.mgmt.AbstractMessageHandler$AsyncTaskRunner.run(AbstractMessageHandler.java:504) [wildfly-protocol-8.2.0.Final.jar:8.2.0.Final]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [rt.jar:1.8.0_25]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [rt.jar:1.8.0_25]
+	at java.lang.Thread.run(Thread.java:745) [rt.jar:1.8.0_25]
+	at org.jboss.threads.JBossThread.run(JBossThread.java:122) [jboss-threads-2.1.1.Final.jar:2.1.1.Final]
+
+2015-04-02 13:15:58,302 INFO  [org.jboss.as.server] (management-handler-thread - 1) JBAS018565: Replaced deployment "mariadb-java-client-1.1.7.jar" with deployment "mariadb-java-client-1.1.7.jar"
+2015-04-02 13:15:58,307 INFO  [org.jboss.as.controller] (management-handler-thread - 1) JBAS014774: Service status report
+JBAS014777:   Services which failed to start:      service jboss.deployment.unit."fx-rest-1.0.war".INSTALL: org.jboss.msc.service.StartException in service jboss.deployment.unit."fx-rest-1.0.war".INSTALL: JBAS018733: Failed to process phase INSTALL of deployment "fx-rest-1.0.war"
+
+2015-04-02 13:16:00,901 INFO  [org.jboss.as.repository] (management-handler-thread - 3) JBAS014900: Content added at location /home/mike/apps/fx-api/wildfly-8.2.0.Final/standalone/data/content/5e/a13e8f0233f3e4b342875cae04e318e7806077/content
+2015-04-02 13:16:00,909 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 168) JBAS011410: Stopping Persistence Unit (phase 1 of 2) Service 'fx-rest-1.0.war#fxPU'
+2015-04-02 13:16:00,921 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) JBAS015877: Stopped deployment fx-rest-1.0.war (runtime-name: fx-rest-1.0.war) in 13ms
+2015-04-02 13:16:00,927 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) JBAS015876: Starting deployment of "fx-rest-1.0.war" (runtime-name: "fx-rest-1.0.war")
+2015-04-02 13:16:00,969 INFO  [org.jboss.as.jpa] (MSC service thread 1-7) JBAS011401: Read persistence.xml for fxPU
+2015-04-02 13:16:00,984 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 168) JBAS011409: Starting Persistence Unit (phase 1 of 2) Service 'fx-rest-1.0.war#fxPU'
+2015-04-02 13:16:00,989 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 168) HHH000204: Processing PersistenceUnitInfo [
+	name: fxPU
+	...]
+2015-04-02 13:16:01,159 INFO  [org.jboss.weld.deployer] (MSC service thread 1-4) JBAS016002: Processing weld deployment fx-rest-1.0.war
+2015-04-02 13:16:01,165 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-4) JNDI bindings for session bean named FxUsersServiceImpl in deployment unit deployment "fx-rest-1.0.war" are as follows:
+
+	java:global/fx-rest-1.0/FxUsersServiceImpl!com.uml.fx.entities.FxUsersService
+	java:app/fx-rest-1.0/FxUsersServiceImpl!com.uml.fx.entities.FxUsersService
+	java:module/FxUsersServiceImpl!com.uml.fx.entities.FxUsersService
+	java:global/fx-rest-1.0/FxUsersServiceImpl
+	java:app/fx-rest-1.0/FxUsersServiceImpl
+	java:module/FxUsersServiceImpl
+
+2015-04-02 13:16:01,181 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-4) JNDI bindings for session bean named ContactServiceImpl in deployment unit deployment "fx-rest-1.0.war" are as follows:
+
+	java:global/fx-rest-1.0/ContactServiceImpl!com.uml.fx.entities.ContactService
+	java:app/fx-rest-1.0/ContactServiceImpl!com.uml.fx.entities.ContactService
+	java:module/ContactServiceImpl!com.uml.fx.entities.ContactService
+	java:global/fx-rest-1.0/ContactServiceImpl
+	java:app/fx-rest-1.0/ContactServiceImpl
+	java:module/ContactServiceImpl
+
+2015-04-02 13:16:01,195 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-4) JNDI bindings for session bean named NewsServiceImpl in deployment unit deployment "fx-rest-1.0.war" are as follows:
+
+	java:global/fx-rest-1.0/NewsServiceImpl!com.uml.fx.entities.NewsService
+	java:app/fx-rest-1.0/NewsServiceImpl!com.uml.fx.entities.NewsService
+	java:module/NewsServiceImpl!com.uml.fx.entities.NewsService
+	java:global/fx-rest-1.0/NewsServiceImpl
+	java:app/fx-rest-1.0/NewsServiceImpl
+	java:module/NewsServiceImpl
+
+2015-04-02 13:16:01,212 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-4) JNDI bindings for session bean named TaxCalculatorImpl in deployment unit deployment "fx-rest-1.0.war" are as follows:
+
+	java:global/fx-rest-1.0/TaxCalculatorImpl!com.uml.fx.entities.TaxCalculator
+	java:app/fx-rest-1.0/TaxCalculatorImpl!com.uml.fx.entities.TaxCalculator
+	java:module/TaxCalculatorImpl!com.uml.fx.entities.TaxCalculator
+	java:global/fx-rest-1.0/TaxCalculatorImpl
+	java:app/fx-rest-1.0/TaxCalculatorImpl
+	java:module/TaxCalculatorImpl
+
+2015-04-02 13:16:01,227 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-4) JNDI bindings for session bean named AppraisalServiceImpl in deployment unit deployment "fx-rest-1.0.war" are as follows:
+
+	java:global/fx-rest-1.0/AppraisalServiceImpl!com.uml.fx.entities.AppraisalService
+	java:app/fx-rest-1.0/AppraisalServiceImpl!com.uml.fx.entities.AppraisalService
+	java:module/AppraisalServiceImpl!com.uml.fx.entities.AppraisalService
+	java:global/fx-rest-1.0/AppraisalServiceImpl
+	java:app/fx-rest-1.0/AppraisalServiceImpl
+	java:module/AppraisalServiceImpl
+
+2015-04-02 13:16:01,248 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-4) JNDI bindings for session bean named TaxRateServiceImpl in deployment unit deployment "fx-rest-1.0.war" are as follows:
+
+	java:global/fx-rest-1.0/TaxRateServiceImpl!com.uml.fx.entities.TaxRateService
+	java:app/fx-rest-1.0/TaxRateServiceImpl!com.uml.fx.entities.TaxRateService
+	java:module/TaxRateServiceImpl!com.uml.fx.entities.TaxRateService
+	java:global/fx-rest-1.0/TaxRateServiceImpl
+	java:app/fx-rest-1.0/TaxRateServiceImpl
+	java:module/TaxRateServiceImpl
+
+2015-04-02 13:16:01,315 INFO  [org.jboss.weld.deployer] (MSC service thread 1-1) JBAS016005: Starting Services for CDI deployment: fx-rest-1.0.war
+2015-04-02 13:16:01,322 INFO  [org.jboss.weld.deployer] (MSC service thread 1-2) JBAS016008: Starting weld service for deployment fx-rest-1.0.war
+2015-04-02 13:16:01,338 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 168) JBAS011409: Starting Persistence Unit (phase 2 of 2) Service 'fx-rest-1.0.war#fxPU'
+2015-04-02 13:16:01,351 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 168) HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2015-04-02 13:16:01,369 WARN  [org.hibernate.mapping.RootClass] (ServerService Thread Pool -- 168) HHH000038: Composite-id class does not override equals(): com.uml.fx.entities.AppraisalData
+2015-04-02 13:16:01,374 WARN  [org.hibernate.mapping.RootClass] (ServerService Thread Pool -- 168) HHH000039: Composite-id class does not override hashCode(): com.uml.fx.entities.AppraisalData
+2015-04-02 13:16:01,381 INFO  [org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory] (ServerService Thread Pool -- 168) HHH000397: Using ASTQueryTranslatorFactory
+2015-04-02 13:16:01,476 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 168) HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2015-04-02 13:16:01,808 INFO  [org.jboss.resteasy.spi.ResteasyDeployment] (MSC service thread 1-5) Deploying javax.ws.rs.core.Application: class com.uml.fx.rest.ApplicationConfig
+2015-04-02 13:16:01,814 INFO  [org.jboss.resteasy.spi.ResteasyDeployment] (MSC service thread 1-5) Adding provider class com.uml.fx.rest.CORSFilter from Application class com.uml.fx.rest.ApplicationConfig
+2015-04-02 13:16:01,821 INFO  [org.jboss.resteasy.spi.ResteasyDeployment] (MSC service thread 1-5) Adding class resource com.uml.fx.rest.TaxRates from Application class com.uml.fx.rest.ApplicationConfig
+2015-04-02 13:16:01,829 INFO  [org.jboss.resteasy.spi.ResteasyDeployment] (MSC service thread 1-5) Adding class resource com.uml.fx.rest.Appraisal from Application class com.uml.fx.rest.ApplicationConfig
+2015-04-02 13:16:01,837 INFO  [org.jboss.resteasy.spi.ResteasyDeployment] (MSC service thread 1-5) Adding class resource com.uml.fx.rest.NewsRest from Application class com.uml.fx.rest.ApplicationConfig
+2015-04-02 13:16:01,842 INFO  [org.jboss.resteasy.spi.ResteasyDeployment] (MSC service thread 1-5) Adding class resource com.uml.fx.rest.ContactRest from Application class com.uml.fx.rest.ApplicationConfig
+2015-04-02 13:16:01,848 INFO  [org.jboss.resteasy.spi.ResteasyDeployment] (MSC service thread 1-5) Adding class resource com.uml.fx.rest.FundsExpert from Application class com.uml.fx.rest.ApplicationConfig
+2015-04-02 13:16:01,881 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) JBAS017534: Registered web context: /fx-rest-1.0
+2015-04-02 13:16:01,893 INFO  [org.jboss.as.server] (management-handler-thread - 3) JBAS018565: Replaced deployment "fx-rest-1.0.war" with deployment "fx-rest-1.0.war"
+2015-04-02 13:16:01,900 INFO  [org.jboss.as.controller] (management-handler-thread - 3) JBAS014774: Service status report
+JBAS014777:   Services which failed to start:      service jboss.deployment.unit."fx-rest-1.0.war".INSTALL
+
+2015-04-02 13:16:01,908 INFO  [org.jboss.as.repository] (management-handler-thread - 3) JBAS014901: Content removed from location /home/mike/apps/fx-api/wildfly-8.2.0.Final/standalone/data/content/ad/f2252cb14370e5f5bfb74647419a3191c9bb9b/content
+2015-04-02 13:17:36,784 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) JBAS017535: Unregistered web context: /fx-rest-1.0
+2015-04-02 13:17:36,809 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 178) JBAS011410: Stopping Persistence Unit (phase 2 of 2) Service 'fx-rest-1.0.war#fxPU'
+2015-04-02 13:17:36,819 INFO  [org.jboss.weld.deployer] (MSC service thread 1-1) JBAS016009: Stopping weld service for deployment fx-rest-1.0.war
+2015-04-02 13:17:36,840 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 178) JBAS011410: Stopping Persistence Unit (phase 1 of 2) Service 'fx-rest-1.0.war#fxPU'
+2015-04-02 13:17:36,845 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) JBAS010409: Unbound data source [java:jboss/datasources/fxdb]
+2015-04-02 13:17:36,847 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-4) JBAS010418: Stopped Driver service with driver-name = mariadb-java-client-1.1.7.jar
+2015-04-02 13:17:36,861 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) JBAS015877: Stopped deployment mariadb-java-client-1.1.7.jar (runtime-name: mariadb-java-client-1.1.7.jar) in 78ms
+2015-04-02 13:17:36,869 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) JBAS015876: Starting deployment of "mariadb-java-client-1.1.7.jar" (runtime-name: "mariadb-java-client-1.1.7.jar")
+2015-04-02 13:17:36,899 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-8) JBAS010404: Deploying non-JDBC-compliant driver class org.mariadb.jdbc.Driver (version 1.1)
+2015-04-02 13:17:36,906 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-8) JBAS010417: Started Driver service with driver-name = mariadb-java-client-1.1.7.jar
+2015-04-02 13:17:36,914 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) JBAS010400: Bound data source [java:jboss/datasources/fxdb]
+2015-04-02 13:17:36,914 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 178) JBAS011409: Starting Persistence Unit (phase 1 of 2) Service 'fx-rest-1.0.war#fxPU'
+2015-04-02 13:17:36,923 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 178) HHH000204: Processing PersistenceUnitInfo [
+	name: fxPU
+	...]
+2015-04-02 13:17:37,090 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) JBAS015971: Deployment restart detected for deployment fx-rest-1.0.war, performing full redeploy instead.
+2015-04-02 13:17:37,096 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 178) JBAS011410: Stopping Persistence Unit (phase 1 of 2) Service 'fx-rest-1.0.war#fxPU'
+2015-04-02 13:17:37,107 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) JBAS015877: Stopped deployment fx-rest-1.0.war (runtime-name: fx-rest-1.0.war) in 10ms
+2015-04-02 13:17:37,113 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) JBAS015876: Starting deployment of "fx-rest-1.0.war" (runtime-name: "fx-rest-1.0.war")
+2015-04-02 13:17:37,144 INFO  [org.jboss.as.jpa] (MSC service thread 1-5) JBAS011401: Read persistence.xml for fxPU
+2015-04-02 13:17:37,160 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 178) JBAS011409: Starting Persistence Unit (phase 1 of 2) Service 'fx-rest-1.0.war#fxPU'
+2015-04-02 13:17:37,165 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 178) HHH000204: Processing PersistenceUnitInfo [
+	name: fxPU
+	...]
+2015-04-02 13:17:37,340 INFO  [org.jboss.weld.deployer] (MSC service thread 1-8) JBAS016002: Processing weld deployment fx-rest-1.0.war
+2015-04-02 13:17:37,349 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-8) JNDI bindings for session bean named FxUsersServiceImpl in deployment unit deployment "fx-rest-1.0.war" are as follows:
+
+	java:global/fx-rest-1.0/FxUsersServiceImpl!com.uml.fx.entities.FxUsersService
+	java:app/fx-rest-1.0/FxUsersServiceImpl!com.uml.fx.entities.FxUsersService
+	java:module/FxUsersServiceImpl!com.uml.fx.entities.FxUsersService
+	java:global/fx-rest-1.0/FxUsersServiceImpl
+	java:app/fx-rest-1.0/FxUsersServiceImpl
+	java:module/FxUsersServiceImpl
+
+2015-04-02 13:17:37,371 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-8) JNDI bindings for session bean named ContactServiceImpl in deployment unit deployment "fx-rest-1.0.war" are as follows:
+
+	java:global/fx-rest-1.0/ContactServiceImpl!com.uml.fx.entities.ContactService
+	java:app/fx-rest-1.0/ContactServiceImpl!com.uml.fx.entities.ContactService
+	java:module/ContactServiceImpl!com.uml.fx.entities.ContactService
+	java:global/fx-rest-1.0/ContactServiceImpl
+	java:app/fx-rest-1.0/ContactServiceImpl
+	java:module/ContactServiceImpl
+
+2015-04-02 13:17:37,391 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-8) JNDI bindings for session bean named NewsServiceImpl in deployment unit deployment "fx-rest-1.0.war" are as follows:
+
+	java:global/fx-rest-1.0/NewsServiceImpl!com.uml.fx.entities.NewsService
+	java:app/fx-rest-1.0/NewsServiceImpl!com.uml.fx.entities.NewsService
+	java:module/NewsServiceImpl!com.uml.fx.entities.NewsService
+	java:global/fx-rest-1.0/NewsServiceImpl
+	java:app/fx-rest-1.0/NewsServiceImpl
+	java:module/NewsServiceImpl
+
+2015-04-02 13:17:37,405 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-8) JNDI bindings for session bean named TaxCalculatorImpl in deployment unit deployment "fx-rest-1.0.war" are as follows:
+
+	java:global/fx-rest-1.0/TaxCalculatorImpl!com.uml.fx.entities.TaxCalculator
+	java:app/fx-rest-1.0/TaxCalculatorImpl!com.uml.fx.entities.TaxCalculator
+	java:module/TaxCalculatorImpl!com.uml.fx.entities.TaxCalculator
+	java:global/fx-rest-1.0/TaxCalculatorImpl
+	java:app/fx-rest-1.0/TaxCalculatorImpl
+	java:module/TaxCalculatorImpl
+
+2015-04-02 13:17:37,421 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-8) JNDI bindings for session bean named AppraisalServiceImpl in deployment unit deployment "fx-rest-1.0.war" are as follows:
+
+	java:global/fx-rest-1.0/AppraisalServiceImpl!com.uml.fx.entities.AppraisalService
+	java:app/fx-rest-1.0/AppraisalServiceImpl!com.uml.fx.entities.AppraisalService
+	java:module/AppraisalServiceImpl!com.uml.fx.entities.AppraisalService
+	java:global/fx-rest-1.0/AppraisalServiceImpl
+	java:app/fx-rest-1.0/AppraisalServiceImpl
+	java:module/AppraisalServiceImpl
+
+2015-04-02 13:17:37,438 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-8) JNDI bindings for session bean named TaxRateServiceImpl in deployment unit deployment "fx-rest-1.0.war" are as follows:
+
+	java:global/fx-rest-1.0/TaxRateServiceImpl!com.uml.fx.entities.TaxRateService
+	java:app/fx-rest-1.0/TaxRateServiceImpl!com.uml.fx.entities.TaxRateService
+	java:module/TaxRateServiceImpl!com.uml.fx.entities.TaxRateService
+	java:global/fx-rest-1.0/TaxRateServiceImpl
+	java:app/fx-rest-1.0/TaxRateServiceImpl
+	java:module/TaxRateServiceImpl
+
+2015-04-02 13:17:37,489 ERROR [org.jboss.msc.service.fail] (MSC service thread 1-1) MSC000001: Failed to start service jboss.deployment.unit."fx-rest-1.0.war".INSTALL: org.jboss.msc.service.StartException in service jboss.deployment.unit."fx-rest-1.0.war".INSTALL: JBAS018733: Failed to process phase INSTALL of deployment "fx-rest-1.0.war"
+	at org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:166) [wildfly-server-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:1948) [jboss-msc-1.2.2.Final.jar:1.2.2.Final]
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1881) [jboss-msc-1.2.2.Final.jar:1.2.2.Final]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [rt.jar:1.8.0_25]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [rt.jar:1.8.0_25]
+	at java.lang.Thread.run(Thread.java:745) [rt.jar:1.8.0_25]
+Caused by: java.lang.IllegalStateException: JBAS014666: Duplicate resource fx-rest-1.0.war#fxPU
+	at org.jboss.as.controller.registry.AbstractModelResource$DefaultResourceProvider.register(AbstractModelResource.java:224)
+	at org.jboss.as.controller.registry.AbstractModelResource.registerChild(AbstractModelResource.java:134)
+	at org.jboss.as.jpa.processor.PersistenceUnitServiceHandler.addManagementConsole(PersistenceUnitServiceHandler.java:1077)
+	at org.jboss.as.jpa.processor.PersistenceUnitServiceHandler.deployPersistenceUnitPhaseTwo(PersistenceUnitServiceHandler.java:687)
+	at org.jboss.as.jpa.processor.PersistenceUnitServiceHandler.addPuService(PersistenceUnitServiceHandler.java:280)
+	at org.jboss.as.jpa.processor.PersistenceUnitServiceHandler.handleWarDeployment(PersistenceUnitServiceHandler.java:191)
+	at org.jboss.as.jpa.processor.PersistenceUnitServiceHandler.deploy(PersistenceUnitServiceHandler.java:126)
+	at org.jboss.as.jpa.processor.PersistenceCompleteInstallProcessor.deploy(PersistenceCompleteInstallProcessor.java:55)
+	at org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:159) [wildfly-server-8.2.0.Final.jar:8.2.0.Final]
+	... 5 more
+
+2015-04-02 13:17:37,555 WARN  [org.jboss.as.jpa] (management-handler-thread - 1) JBAS011411: Unexpected problem gathering statistics: java.lang.IllegalStateException: JBAS011477: Persistence unit 'fx-rest-1.0.war#fxPU' is not available
+	at org.jboss.as.jpa.management.EntityManagerFactoryLookup.entityManagerFactory(EntityManagerFactoryLookup.java:44)
+	at org.jboss.as.jpa.hibernate4.management.HibernateEntityCacheStatistics.getDynamicChildrenNames(HibernateEntityCacheStatistics.java:72)
+	at org.jboss.as.jpa.management.DynamicManagementStatisticsResource.getChildren(DynamicManagementStatisticsResource.java:204)
+	at org.jboss.as.controller.registry.AbstractModelResource$DelegateResource.getChildren(AbstractModelResource.java:254) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:252) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:239) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:225) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:254) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:239) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:225) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:254) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:239) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:225) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:254) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:239) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:225) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:213) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.ModelControllerImpl.writeModel(ModelControllerImpl.java:580) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.OperationContextImpl.createPersistenceResource(OperationContextImpl.java:229) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.AbstractOperationContext.doCompleteStep(AbstractOperationContext.java:543) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.AbstractOperationContext.completeStepInternal(AbstractOperationContext.java:298) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.AbstractOperationContext.finishStep(AbstractOperationContext.java:752) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.AbstractOperationContext.executeStep(AbstractOperationContext.java:727) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.AbstractOperationContext.doCompleteStep(AbstractOperationContext.java:501) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.AbstractOperationContext.completeStepInternal(AbstractOperationContext.java:298) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.AbstractOperationContext.executeOperation(AbstractOperationContext.java:293) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.ModelControllerImpl.internalExecute(ModelControllerImpl.java:276) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.ModelControllerImpl.execute(ModelControllerImpl.java:150) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.remote.ModelControllerClientOperationHandler$ExecuteRequestHandler.doExecute(ModelControllerClientOperationHandler.java:199) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.remote.ModelControllerClientOperationHandler$ExecuteRequestHandler.access$300(ModelControllerClientOperationHandler.java:130) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.remote.ModelControllerClientOperationHandler$ExecuteRequestHandler$1$1.run(ModelControllerClientOperationHandler.java:150) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.remote.ModelControllerClientOperationHandler$ExecuteRequestHandler$1$1.run(ModelControllerClientOperationHandler.java:146) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at java.security.AccessController.doPrivileged(Native Method) [rt.jar:1.8.0_25]
+	at javax.security.auth.Subject.doAs(Subject.java:422) [rt.jar:1.8.0_25]
+	at org.jboss.as.controller.AccessAuditContext.doAs(AccessAuditContext.java:94) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.remote.ModelControllerClientOperationHandler$ExecuteRequestHandler$1.execute(ModelControllerClientOperationHandler.java:146) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.protocol.mgmt.AbstractMessageHandler$2$1.doExecute(AbstractMessageHandler.java:283) [wildfly-protocol-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.protocol.mgmt.AbstractMessageHandler$AsyncTaskRunner.run(AbstractMessageHandler.java:504) [wildfly-protocol-8.2.0.Final.jar:8.2.0.Final]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [rt.jar:1.8.0_25]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [rt.jar:1.8.0_25]
+	at java.lang.Thread.run(Thread.java:745) [rt.jar:1.8.0_25]
+	at org.jboss.threads.JBossThread.run(JBossThread.java:122) [jboss-threads-2.1.1.Final.jar:2.1.1.Final]
+
+2015-04-02 13:17:37,746 WARN  [org.jboss.as.jpa] (management-handler-thread - 1) JBAS011411: Unexpected problem gathering statistics: java.lang.IllegalStateException: JBAS011477: Persistence unit 'fx-rest-1.0.war#fxPU' is not available
+	at org.jboss.as.jpa.management.EntityManagerFactoryLookup.entityManagerFactory(EntityManagerFactoryLookup.java:44)
+	at org.jboss.as.jpa.hibernate4.management.HibernateCollectionStatistics.getDynamicChildrenNames(HibernateCollectionStatistics.java:72)
+	at org.jboss.as.jpa.management.DynamicManagementStatisticsResource.getChildren(DynamicManagementStatisticsResource.java:204)
+	at org.jboss.as.controller.registry.AbstractModelResource$DelegateResource.getChildren(AbstractModelResource.java:254) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:252) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:239) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:225) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:254) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:239) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:225) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:254) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:239) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:225) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:254) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:239) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:225) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:213) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.ModelControllerImpl.writeModel(ModelControllerImpl.java:580) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.OperationContextImpl.createPersistenceResource(OperationContextImpl.java:229) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.AbstractOperationContext.doCompleteStep(AbstractOperationContext.java:543) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.AbstractOperationContext.completeStepInternal(AbstractOperationContext.java:298) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.AbstractOperationContext.finishStep(AbstractOperationContext.java:752) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.AbstractOperationContext.executeStep(AbstractOperationContext.java:727) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.AbstractOperationContext.doCompleteStep(AbstractOperationContext.java:501) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.AbstractOperationContext.completeStepInternal(AbstractOperationContext.java:298) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.AbstractOperationContext.executeOperation(AbstractOperationContext.java:293) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.ModelControllerImpl.internalExecute(ModelControllerImpl.java:276) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.ModelControllerImpl.execute(ModelControllerImpl.java:150) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.remote.ModelControllerClientOperationHandler$ExecuteRequestHandler.doExecute(ModelControllerClientOperationHandler.java:199) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.remote.ModelControllerClientOperationHandler$ExecuteRequestHandler.access$300(ModelControllerClientOperationHandler.java:130) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.remote.ModelControllerClientOperationHandler$ExecuteRequestHandler$1$1.run(ModelControllerClientOperationHandler.java:150) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.remote.ModelControllerClientOperationHandler$ExecuteRequestHandler$1$1.run(ModelControllerClientOperationHandler.java:146) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at java.security.AccessController.doPrivileged(Native Method) [rt.jar:1.8.0_25]
+	at javax.security.auth.Subject.doAs(Subject.java:422) [rt.jar:1.8.0_25]
+	at org.jboss.as.controller.AccessAuditContext.doAs(AccessAuditContext.java:94) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.remote.ModelControllerClientOperationHandler$ExecuteRequestHandler$1.execute(ModelControllerClientOperationHandler.java:146) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.protocol.mgmt.AbstractMessageHandler$2$1.doExecute(AbstractMessageHandler.java:283) [wildfly-protocol-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.protocol.mgmt.AbstractMessageHandler$AsyncTaskRunner.run(AbstractMessageHandler.java:504) [wildfly-protocol-8.2.0.Final.jar:8.2.0.Final]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [rt.jar:1.8.0_25]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [rt.jar:1.8.0_25]
+	at java.lang.Thread.run(Thread.java:745) [rt.jar:1.8.0_25]
+	at org.jboss.threads.JBossThread.run(JBossThread.java:122) [jboss-threads-2.1.1.Final.jar:2.1.1.Final]
+
+2015-04-02 13:17:37,926 WARN  [org.jboss.as.jpa] (management-handler-thread - 1) JBAS011411: Unexpected problem gathering statistics: java.lang.IllegalStateException: JBAS011477: Persistence unit 'fx-rest-1.0.war#fxPU' is not available
+	at org.jboss.as.jpa.management.EntityManagerFactoryLookup.entityManagerFactory(EntityManagerFactoryLookup.java:44)
+	at org.jboss.as.jpa.hibernate4.management.HibernateQueryCacheStatistics.getDynamicChildrenNames(HibernateQueryCacheStatistics.java:85)
+	at org.jboss.as.jpa.management.DynamicManagementStatisticsResource.getChildren(DynamicManagementStatisticsResource.java:204)
+	at org.jboss.as.controller.registry.AbstractModelResource$DelegateResource.getChildren(AbstractModelResource.java:254) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:252) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:239) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:225) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:254) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:239) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:225) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:254) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:239) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:225) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:254) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:239) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:225) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:213) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.ModelControllerImpl.writeModel(ModelControllerImpl.java:580) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.OperationContextImpl.createPersistenceResource(OperationContextImpl.java:229) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.AbstractOperationContext.doCompleteStep(AbstractOperationContext.java:543) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.AbstractOperationContext.completeStepInternal(AbstractOperationContext.java:298) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.AbstractOperationContext.finishStep(AbstractOperationContext.java:752) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.AbstractOperationContext.executeStep(AbstractOperationContext.java:727) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.AbstractOperationContext.doCompleteStep(AbstractOperationContext.java:501) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.AbstractOperationContext.completeStepInternal(AbstractOperationContext.java:298) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.AbstractOperationContext.executeOperation(AbstractOperationContext.java:293) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.ModelControllerImpl.internalExecute(ModelControllerImpl.java:276) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.ModelControllerImpl.execute(ModelControllerImpl.java:150) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.remote.ModelControllerClientOperationHandler$ExecuteRequestHandler.doExecute(ModelControllerClientOperationHandler.java:199) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.remote.ModelControllerClientOperationHandler$ExecuteRequestHandler.access$300(ModelControllerClientOperationHandler.java:130) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.remote.ModelControllerClientOperationHandler$ExecuteRequestHandler$1$1.run(ModelControllerClientOperationHandler.java:150) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.remote.ModelControllerClientOperationHandler$ExecuteRequestHandler$1$1.run(ModelControllerClientOperationHandler.java:146) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at java.security.AccessController.doPrivileged(Native Method) [rt.jar:1.8.0_25]
+	at javax.security.auth.Subject.doAs(Subject.java:422) [rt.jar:1.8.0_25]
+	at org.jboss.as.controller.AccessAuditContext.doAs(AccessAuditContext.java:94) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.remote.ModelControllerClientOperationHandler$ExecuteRequestHandler$1.execute(ModelControllerClientOperationHandler.java:146) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.protocol.mgmt.AbstractMessageHandler$2$1.doExecute(AbstractMessageHandler.java:283) [wildfly-protocol-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.protocol.mgmt.AbstractMessageHandler$AsyncTaskRunner.run(AbstractMessageHandler.java:504) [wildfly-protocol-8.2.0.Final.jar:8.2.0.Final]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [rt.jar:1.8.0_25]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [rt.jar:1.8.0_25]
+	at java.lang.Thread.run(Thread.java:745) [rt.jar:1.8.0_25]
+	at org.jboss.threads.JBossThread.run(JBossThread.java:122) [jboss-threads-2.1.1.Final.jar:2.1.1.Final]
+
+2015-04-02 13:17:38,121 WARN  [org.jboss.as.jpa] (management-handler-thread - 1) JBAS011411: Unexpected problem gathering statistics: java.lang.IllegalStateException: JBAS011477: Persistence unit 'fx-rest-1.0.war#fxPU' is not available
+	at org.jboss.as.jpa.management.EntityManagerFactoryLookup.entityManagerFactory(EntityManagerFactoryLookup.java:44)
+	at org.jboss.as.jpa.hibernate4.management.HibernateEntityStatistics.getDynamicChildrenNames(HibernateEntityStatistics.java:145)
+	at org.jboss.as.jpa.management.DynamicManagementStatisticsResource.getChildren(DynamicManagementStatisticsResource.java:204)
+	at org.jboss.as.controller.registry.AbstractModelResource$DelegateResource.getChildren(AbstractModelResource.java:254) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:252) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:239) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:225) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:254) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:239) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:225) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:254) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:239) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:225) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:254) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:239) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:225) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:213) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.ModelControllerImpl.writeModel(ModelControllerImpl.java:580) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.OperationContextImpl.createPersistenceResource(OperationContextImpl.java:229) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.AbstractOperationContext.doCompleteStep(AbstractOperationContext.java:543) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.AbstractOperationContext.completeStepInternal(AbstractOperationContext.java:298) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.AbstractOperationContext.finishStep(AbstractOperationContext.java:752) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.AbstractOperationContext.executeStep(AbstractOperationContext.java:727) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.AbstractOperationContext.doCompleteStep(AbstractOperationContext.java:501) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.AbstractOperationContext.completeStepInternal(AbstractOperationContext.java:298) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.AbstractOperationContext.executeOperation(AbstractOperationContext.java:293) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.ModelControllerImpl.internalExecute(ModelControllerImpl.java:276) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.ModelControllerImpl.execute(ModelControllerImpl.java:150) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.remote.ModelControllerClientOperationHandler$ExecuteRequestHandler.doExecute(ModelControllerClientOperationHandler.java:199) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.remote.ModelControllerClientOperationHandler$ExecuteRequestHandler.access$300(ModelControllerClientOperationHandler.java:130) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.remote.ModelControllerClientOperationHandler$ExecuteRequestHandler$1$1.run(ModelControllerClientOperationHandler.java:150) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.remote.ModelControllerClientOperationHandler$ExecuteRequestHandler$1$1.run(ModelControllerClientOperationHandler.java:146) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at java.security.AccessController.doPrivileged(Native Method) [rt.jar:1.8.0_25]
+	at javax.security.auth.Subject.doAs(Subject.java:422) [rt.jar:1.8.0_25]
+	at org.jboss.as.controller.AccessAuditContext.doAs(AccessAuditContext.java:94) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.remote.ModelControllerClientOperationHandler$ExecuteRequestHandler$1.execute(ModelControllerClientOperationHandler.java:146) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.protocol.mgmt.AbstractMessageHandler$2$1.doExecute(AbstractMessageHandler.java:283) [wildfly-protocol-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.protocol.mgmt.AbstractMessageHandler$AsyncTaskRunner.run(AbstractMessageHandler.java:504) [wildfly-protocol-8.2.0.Final.jar:8.2.0.Final]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [rt.jar:1.8.0_25]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [rt.jar:1.8.0_25]
+	at java.lang.Thread.run(Thread.java:745) [rt.jar:1.8.0_25]
+	at org.jboss.threads.JBossThread.run(JBossThread.java:122) [jboss-threads-2.1.1.Final.jar:2.1.1.Final]
+
+2015-04-02 13:17:38,331 INFO  [org.jboss.as.server] (management-handler-thread - 1) JBAS018565: Replaced deployment "mariadb-java-client-1.1.7.jar" with deployment "mariadb-java-client-1.1.7.jar"
+2015-04-02 13:17:38,336 INFO  [org.jboss.as.controller] (management-handler-thread - 1) JBAS014774: Service status report
+JBAS014777:   Services which failed to start:      service jboss.deployment.unit."fx-rest-1.0.war".INSTALL: org.jboss.msc.service.StartException in service jboss.deployment.unit."fx-rest-1.0.war".INSTALL: JBAS018733: Failed to process phase INSTALL of deployment "fx-rest-1.0.war"
+
+2015-04-02 13:17:42,770 INFO  [org.jboss.as.repository] (management-handler-thread - 3) JBAS014900: Content added at location /home/mike/apps/fx-api/wildfly-8.2.0.Final/standalone/data/content/71/0190353a505ad04c859548224a85f449fef614/content
+2015-04-02 13:17:42,781 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 178) JBAS011410: Stopping Persistence Unit (phase 1 of 2) Service 'fx-rest-1.0.war#fxPU'
+2015-04-02 13:17:42,790 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) JBAS015877: Stopped deployment fx-rest-1.0.war (runtime-name: fx-rest-1.0.war) in 10ms
+2015-04-02 13:17:42,795 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) JBAS015876: Starting deployment of "fx-rest-1.0.war" (runtime-name: "fx-rest-1.0.war")
+2015-04-02 13:17:42,825 INFO  [org.jboss.as.jpa] (MSC service thread 1-8) JBAS011401: Read persistence.xml for fxPU
+2015-04-02 13:17:42,841 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 178) JBAS011409: Starting Persistence Unit (phase 1 of 2) Service 'fx-rest-1.0.war#fxPU'
+2015-04-02 13:17:42,846 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 178) HHH000204: Processing PersistenceUnitInfo [
+	name: fxPU
+	...]
+2015-04-02 13:17:43,018 INFO  [org.jboss.weld.deployer] (MSC service thread 1-8) JBAS016002: Processing weld deployment fx-rest-1.0.war
+2015-04-02 13:17:43,028 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-8) JNDI bindings for session bean named FxUsersServiceImpl in deployment unit deployment "fx-rest-1.0.war" are as follows:
+
+	java:global/fx-rest-1.0/FxUsersServiceImpl!com.uml.fx.entities.FxUsersService
+	java:app/fx-rest-1.0/FxUsersServiceImpl!com.uml.fx.entities.FxUsersService
+	java:module/FxUsersServiceImpl!com.uml.fx.entities.FxUsersService
+	java:global/fx-rest-1.0/FxUsersServiceImpl
+	java:app/fx-rest-1.0/FxUsersServiceImpl
+	java:module/FxUsersServiceImpl
+
+2015-04-02 13:17:43,042 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-8) JNDI bindings for session bean named ContactServiceImpl in deployment unit deployment "fx-rest-1.0.war" are as follows:
+
+	java:global/fx-rest-1.0/ContactServiceImpl!com.uml.fx.entities.ContactService
+	java:app/fx-rest-1.0/ContactServiceImpl!com.uml.fx.entities.ContactService
+	java:module/ContactServiceImpl!com.uml.fx.entities.ContactService
+	java:global/fx-rest-1.0/ContactServiceImpl
+	java:app/fx-rest-1.0/ContactServiceImpl
+	java:module/ContactServiceImpl
+
+2015-04-02 13:17:43,058 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-8) JNDI bindings for session bean named NewsServiceImpl in deployment unit deployment "fx-rest-1.0.war" are as follows:
+
+	java:global/fx-rest-1.0/NewsServiceImpl!com.uml.fx.entities.NewsService
+	java:app/fx-rest-1.0/NewsServiceImpl!com.uml.fx.entities.NewsService
+	java:module/NewsServiceImpl!com.uml.fx.entities.NewsService
+	java:global/fx-rest-1.0/NewsServiceImpl
+	java:app/fx-rest-1.0/NewsServiceImpl
+	java:module/NewsServiceImpl
+
+2015-04-02 13:17:43,073 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-8) JNDI bindings for session bean named TaxCalculatorImpl in deployment unit deployment "fx-rest-1.0.war" are as follows:
+
+	java:global/fx-rest-1.0/TaxCalculatorImpl!com.uml.fx.entities.TaxCalculator
+	java:app/fx-rest-1.0/TaxCalculatorImpl!com.uml.fx.entities.TaxCalculator
+	java:module/TaxCalculatorImpl!com.uml.fx.entities.TaxCalculator
+	java:global/fx-rest-1.0/TaxCalculatorImpl
+	java:app/fx-rest-1.0/TaxCalculatorImpl
+	java:module/TaxCalculatorImpl
+
+2015-04-02 13:17:43,087 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-8) JNDI bindings for session bean named AppraisalServiceImpl in deployment unit deployment "fx-rest-1.0.war" are as follows:
+
+	java:global/fx-rest-1.0/AppraisalServiceImpl!com.uml.fx.entities.AppraisalService
+	java:app/fx-rest-1.0/AppraisalServiceImpl!com.uml.fx.entities.AppraisalService
+	java:module/AppraisalServiceImpl!com.uml.fx.entities.AppraisalService
+	java:global/fx-rest-1.0/AppraisalServiceImpl
+	java:app/fx-rest-1.0/AppraisalServiceImpl
+	java:module/AppraisalServiceImpl
+
+2015-04-02 13:17:43,102 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-8) JNDI bindings for session bean named TaxRateServiceImpl in deployment unit deployment "fx-rest-1.0.war" are as follows:
+
+	java:global/fx-rest-1.0/TaxRateServiceImpl!com.uml.fx.entities.TaxRateService
+	java:app/fx-rest-1.0/TaxRateServiceImpl!com.uml.fx.entities.TaxRateService
+	java:module/TaxRateServiceImpl!com.uml.fx.entities.TaxRateService
+	java:global/fx-rest-1.0/TaxRateServiceImpl
+	java:app/fx-rest-1.0/TaxRateServiceImpl
+	java:module/TaxRateServiceImpl
+
+2015-04-02 13:17:43,157 INFO  [org.jboss.weld.deployer] (MSC service thread 1-1) JBAS016005: Starting Services for CDI deployment: fx-rest-1.0.war
+2015-04-02 13:17:43,169 INFO  [org.jboss.weld.deployer] (MSC service thread 1-5) JBAS016008: Starting weld service for deployment fx-rest-1.0.war
+2015-04-02 13:17:43,180 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 178) JBAS011409: Starting Persistence Unit (phase 2 of 2) Service 'fx-rest-1.0.war#fxPU'
+2015-04-02 13:17:43,193 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 178) HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2015-04-02 13:17:43,212 WARN  [org.hibernate.mapping.RootClass] (ServerService Thread Pool -- 178) HHH000038: Composite-id class does not override equals(): com.uml.fx.entities.AppraisalData
+2015-04-02 13:17:43,218 WARN  [org.hibernate.mapping.RootClass] (ServerService Thread Pool -- 178) HHH000039: Composite-id class does not override hashCode(): com.uml.fx.entities.AppraisalData
+2015-04-02 13:17:43,223 INFO  [org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory] (ServerService Thread Pool -- 178) HHH000397: Using ASTQueryTranslatorFactory
+2015-04-02 13:17:43,520 INFO  [org.jboss.resteasy.spi.ResteasyDeployment] (MSC service thread 1-3) Deploying javax.ws.rs.core.Application: class com.uml.fx.rest.ApplicationConfig
+2015-04-02 13:17:43,525 INFO  [org.jboss.resteasy.spi.ResteasyDeployment] (MSC service thread 1-3) Adding class resource com.uml.fx.rest.TaxRates from Application class com.uml.fx.rest.ApplicationConfig
+2015-04-02 13:17:43,532 INFO  [org.jboss.resteasy.spi.ResteasyDeployment] (MSC service thread 1-3) Adding class resource com.uml.fx.rest.ContactRest from Application class com.uml.fx.rest.ApplicationConfig
+2015-04-02 13:17:43,538 INFO  [org.jboss.resteasy.spi.ResteasyDeployment] (MSC service thread 1-3) Adding class resource com.uml.fx.rest.FundsExpert from Application class com.uml.fx.rest.ApplicationConfig
+2015-04-02 13:17:43,544 INFO  [org.jboss.resteasy.spi.ResteasyDeployment] (MSC service thread 1-3) Adding provider class com.uml.fx.rest.CORSFilter from Application class com.uml.fx.rest.ApplicationConfig
+2015-04-02 13:17:43,550 INFO  [org.jboss.resteasy.spi.ResteasyDeployment] (MSC service thread 1-3) Adding class resource com.uml.fx.rest.Appraisal from Application class com.uml.fx.rest.ApplicationConfig
+2015-04-02 13:17:43,556 INFO  [org.jboss.resteasy.spi.ResteasyDeployment] (MSC service thread 1-3) Adding class resource com.uml.fx.rest.NewsRest from Application class com.uml.fx.rest.ApplicationConfig
+2015-04-02 13:17:43,586 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) JBAS017534: Registered web context: /fx-rest-1.0
+2015-04-02 13:17:43,598 INFO  [org.jboss.as.server] (management-handler-thread - 3) JBAS018565: Replaced deployment "fx-rest-1.0.war" with deployment "fx-rest-1.0.war"
+2015-04-02 13:17:43,603 INFO  [org.jboss.as.controller] (management-handler-thread - 3) JBAS014774: Service status report
+JBAS014777:   Services which failed to start:      service jboss.deployment.unit."fx-rest-1.0.war".INSTALL
+
+2015-04-02 13:17:43,609 INFO  [org.jboss.as.repository] (management-handler-thread - 3) JBAS014901: Content removed from location /home/mike/apps/fx-api/wildfly-8.2.0.Final/standalone/data/content/5e/a13e8f0233f3e4b342875cae04e318e7806077/content
+2015-04-02 13:20:40,996 INFO  [com.uml.fx.rest.NewsRest] (default task-19) getting news articles
+2015-04-02 13:21:04,297 INFO  [com.uml.fx.rest.ContactRest] (default task-18) getting all contacts
+2015-04-02 13:21:06,154 INFO  [com.uml.fx.rest.NewsRest] (default task-22) getting news articles
+2015-04-02 13:21:06,189 INFO  [com.uml.fx.rest.FundsExpert] (default task-20) getting active FxUsers
+2015-04-02 13:21:15,221 INFO  [com.uml.fx.rest.NewsRest] (default task-23) {"title":"long article","textMissing":false,"titleMissing":false,"text":"<p>Bacon ipsum dolor amet pork loin brisket short ribs ea beef qui fugiat. Shank consequat et capicola t-bone prosciutto alcatra leberkas dolore. In tri-tip capicola sed. Tenderloin officia deserunt, cillum kielbasa sed in duis prosciutto magna strip steak ut ham hock beef consectetur.</p>\n\n<p>Pork loin occaecat venison, tongue kielbasa qui excepteur commodo. Anim short ribs sirloin ut. Frankfurter strip steak et, pancetta est proident doner do cupidatat ea. Shank tri-tip quis tempor id ribeye et, ut leberkas.</p>\n\n<p>Landjaeger shankle velit sed, porchetta in rump culpa ullamco minim ham hock ea sint tail. Fatback shank salami ipsum aliqua. Flank t-bone ullamco incididunt rump boudin bresaola adipisicing nulla meatball jerky et. Salami incididunt tongue flank. Corned beef beef ribs shoulder sirloin, tri-tip pariatur id. Capicola esse jerky, doner est ut ham hock. Spare ribs doner lorem in non flank porchetta excepteur.</p>\n\n<p>Ipsum excepteur prosciutto reprehenderit ham, turkey short loin ground round do frankfurter pariatur pancetta. Et swine laboris kevin. Ullamco jerky elit, id fugiat pancetta aute duis beef anim ut ad ea. Duis beef salami shank, cupim est ball tip. Shankle andouille elit id.</p>\n\n<p>Et bacon boudin veniam. Et fugiat officia sed meatball landjaeger. Labore aute leberkas incididunt in corned beef, officia ad. Shank mollit ribeye non, nisi id excepteur elit officia aliqua brisket kielbasa meatloaf anim swine. Bacon picanha minim, kielbasa chicken nostrud short loin culpa porchetta labore voluptate. Capicola aute pig doner fugiat, sint ullamco strip steak. Exercitation pastrami lorem meatball pig, beef consectetur jowl cupidatat.</p>\n","user":"root"}
+2015-04-02 13:21:15,431 INFO  [com.uml.fx.rest.NewsRest] (default task-24) getting news articles
+2015-04-02 13:21:18,115 INFO  [com.uml.fx.rest.NewsRest] (default task-26) getting news articles
