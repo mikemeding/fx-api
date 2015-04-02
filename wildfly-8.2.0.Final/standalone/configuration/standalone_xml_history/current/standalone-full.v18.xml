@@ -512,7 +512,7 @@
             <content sha1="7708265688e31a2826e8af5c333a8d862803db7b"/>
         </deployment>
         <deployment name="fx-rest-1.0.war" runtime-name="fx-rest-1.0.war">
-            <content sha1="adf2252cb14370e5f5bfb74647419a3191c9bb9b"/>
+            <content sha1="beacd02c0eeff13cf9bc14dc484b8bb0456bc49b"/>
         </deployment>
     </deployments>
 </server>
