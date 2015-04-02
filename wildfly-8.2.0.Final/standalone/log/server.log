@@ -12332,3 +12332,499 @@ JBAS014775:    New missing/unsatisfied dependencies:
 2015-03-31 13:23:13,623 INFO  [org.jboss.as.connector.deployment] (MSC service thread 1-7) JBAS010410: Unbound JCA ConnectionFactory [java:/JmsXA]
 2015-03-31 13:23:13,674 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-2) JBAS010418: Stopped Driver service with driver-name = h2
 2015-03-31 13:23:13,675 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) JBAS017532: Host default-host stopping
+2015-03-31 13:30:34,652 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 35) JBAS010280: Activating Infinispan subsystem.
+2015-03-31 13:30:34,665 INFO  [org.jboss.as.jacorb] (ServerService Thread Pool -- 36) JBAS016300: Activating JacORB Subsystem
+2015-03-31 13:30:34,674 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 34) WFLYIO001: Worker 'default' has auto-configured to 8 core threads with 64 task threads based on your 4 available processors
+2015-03-31 13:30:34,742 INFO  [org.jboss.as.connector.logging] (MSC service thread 1-1) JBAS010408: Starting JCA Subsystem (IronJacamar 1.1.9.Final)
+2015-03-31 13:30:34,781 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 30) JBAS010403: Deploying JDBC-compliant driver class org.h2.Driver (version 1.3)
+2015-03-31 13:30:34,798 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-1) JBAS010417: Started Driver service with driver-name = h2
+2015-03-31 13:30:34,803 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 42) JBAS012615: Activated the following JSF Implementations: [main]
+2015-03-31 13:30:34,812 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 46) JBAS011800: Activating Naming Subsystem
+2015-03-31 13:30:34,822 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 51) JBAS013171: Activating Security Subsystem
+2015-03-31 13:30:34,825 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 52) JBAS010153: Node identifier property is set to the default value. Please make sure it is unique.
+2015-03-31 13:30:34,838 INFO  [org.jboss.as.security] (MSC service thread 1-3) JBAS013170: Current PicketBox version=4.0.21.Final
+2015-03-31 13:30:34,851 INFO  [org.jboss.remoting] (MSC service thread 1-6) JBoss Remoting version 4.0.6.Final
+2015-03-31 13:30:34,898 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 54) JBAS015537: Activating WebServices Extension
+2015-03-31 13:30:34,924 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 53) JBAS017502: Undertow 1.1.0.Final starting
+2015-03-31 13:30:34,928 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) JBAS017502: Undertow 1.1.0.Final starting
+2015-03-31 13:30:35,003 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-4) JBAS015400: Bound mail session [java:jboss/mail/Default]
+2015-03-31 13:30:35,004 INFO  [org.jboss.as.naming] (MSC service thread 1-5) JBAS011802: Starting Naming Service
+2015-03-31 13:30:35,253 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 53) JBAS017527: Creating file handler for path /home/mike/apps/fx-api/wildfly-8.2.0.Final/welcome-content
+2015-03-31 13:30:35,309 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) JBAS017525: Started server default-server.
+2015-03-31 13:30:35,315 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) JBAS017531: Host default-host starting
+2015-03-31 13:30:35,428 ERROR [org.jboss.msc.service.fail] (MSC service thread 1-1) MSC000001: Failed to start service jboss.undertow.listener.default: org.jboss.msc.service.StartException in service jboss.undertow.listener.default: Could not start http listener
+	at org.wildfly.extension.undertow.ListenerService.start(ListenerService.java:137)
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:1948) [jboss-msc-1.2.2.Final.jar:1.2.2.Final]
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1881) [jboss-msc-1.2.2.Final.jar:1.2.2.Final]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [rt.jar:1.8.0_25]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [rt.jar:1.8.0_25]
+	at java.lang.Thread.run(Thread.java:745) [rt.jar:1.8.0_25]
+Caused by: java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method) [rt.jar:1.8.0_25]
+	at sun.nio.ch.Net.bind(Net.java:436) [rt.jar:1.8.0_25]
+	at sun.nio.ch.Net.bind(Net.java:428) [rt.jar:1.8.0_25]
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:214) [rt.jar:1.8.0_25]
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74) [rt.jar:1.8.0_25]
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:67) [rt.jar:1.8.0_25]
+	at org.xnio.nio.NioXnioWorker.createTcpConnectionServer(NioXnioWorker.java:182)
+	at org.xnio.XnioWorker.createStreamConnectionServer(XnioWorker.java:243)
+	at org.wildfly.extension.undertow.HttpListenerService.startListening(HttpListenerService.java:113)
+	at org.wildfly.extension.undertow.ListenerService.start(ListenerService.java:134)
+	... 5 more
+
+2015-03-31 13:30:35,531 INFO  [org.jboss.as.jacorb] (MSC service thread 1-3) JBAS016330: CORBA ORB Service started
+2015-03-31 13:30:35,542 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-1) JBAS015012: Started FileSystemDeploymentService for directory /home/mike/apps/fx-api/wildfly-8.2.0.Final/standalone/deployments
+2015-03-31 13:30:35,595 ERROR [org.jboss.msc.service.fail] (MSC service thread 1-6) MSC000001: Failed to start service jboss.serverManagement.controller.management.http: org.jboss.msc.service.StartException in service jboss.serverManagement.controller.management.http: JBAS015811: Failed to start the http-interface service
+	at org.jboss.as.server.mgmt.UndertowHttpManagementService.start(UndertowHttpManagementService.java:258) [wildfly-server-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:1948) [jboss-msc-1.2.2.Final.jar:1.2.2.Final]
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1881) [jboss-msc-1.2.2.Final.jar:1.2.2.Final]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [rt.jar:1.8.0_25]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [rt.jar:1.8.0_25]
+	at java.lang.Thread.run(Thread.java:745) [rt.jar:1.8.0_25]
+Caused by: java.lang.RuntimeException: java.net.BindException: Address already in use
+	at org.jboss.as.domain.http.server.ManagementHttpServer.start(ManagementHttpServer.java:156)
+	at org.jboss.as.server.mgmt.UndertowHttpManagementService.start(UndertowHttpManagementService.java:224) [wildfly-server-8.2.0.Final.jar:8.2.0.Final]
+	... 5 more
+Caused by: java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method) [rt.jar:1.8.0_25]
+	at sun.nio.ch.Net.bind(Net.java:436) [rt.jar:1.8.0_25]
+	at sun.nio.ch.Net.bind(Net.java:428) [rt.jar:1.8.0_25]
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:214) [rt.jar:1.8.0_25]
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74) [rt.jar:1.8.0_25]
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:67) [rt.jar:1.8.0_25]
+	at org.xnio.nio.NioXnioWorker.createTcpConnectionServer(NioXnioWorker.java:182)
+	at org.xnio.XnioWorker.createStreamConnectionServer(XnioWorker.java:243)
+	at org.jboss.as.domain.http.server.ManagementHttpServer.start(ManagementHttpServer.java:135)
+	... 6 more
+
+2015-03-31 13:30:35,790 WARN  [jacorb.orb.iiop] (MSC service thread 1-4) could not create server socket port: 3528 host: /127.0.0.1: java.net.BindException: Address already in use
+	at java.net.PlainSocketImpl.socketBind(Native Method) [rt.jar:1.8.0_25]
+	at java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:382) [rt.jar:1.8.0_25]
+	at java.net.ServerSocket.bind(ServerSocket.java:375) [rt.jar:1.8.0_25]
+	at java.net.ServerSocket.<init>(ServerSocket.java:237) [rt.jar:1.8.0_25]
+	at org.jacorb.orb.factory.DefaultServerSocketFactory.createServerSocket(DefaultServerSocketFactory.java:49) [jacorb-2.3.2-jbossorg-5.jar:2.3.2-jbossorg-5]
+	at org.jacorb.orb.iiop.IIOPListener$Acceptor.createServerSocket(IIOPListener.java:572) [jacorb-2.3.2-jbossorg-5.jar:2.3.2-jbossorg-5]
+	at org.jacorb.orb.iiop.IIOPListener$Acceptor.init(IIOPListener.java:417) [jacorb-2.3.2-jbossorg-5.jar:2.3.2-jbossorg-5]
+	at org.jacorb.orb.iiop.IIOPListener.configure(IIOPListener.java:163) [jacorb-2.3.2-jbossorg-5.jar:2.3.2-jbossorg-5]
+	at org.jacorb.orb.etf.FactoriesBase.newInstance(FactoriesBase.java:125) [jacorb-2.3.2-jbossorg-5.jar:2.3.2-jbossorg-5]
+	at org.jacorb.orb.etf.FactoriesBase.create_listener(FactoriesBase.java:74) [jacorb-2.3.2-jbossorg-5.jar:2.3.2-jbossorg-5]
+	at org.jacorb.orb.BasicAdapter.configure(BasicAdapter.java:102) [jacorb-2.3.2-jbossorg-5.jar:2.3.2-jbossorg-5]
+	at org.jacorb.orb.ORB.getRootPOA(ORB.java:1036) [jacorb-2.3.2-jbossorg-5.jar:2.3.2-jbossorg-5]
+	at org.jacorb.orb.ORB.resolve_initial_references(ORB.java:1307) [jacorb-2.3.2-jbossorg-5.jar:2.3.2-jbossorg-5]
+	at org.jboss.as.jacorb.service.CorbaPOAService.start(CorbaPOAService.java:153) [wildfly-jacorb-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:1948) [jboss-msc-1.2.2.Final.jar:1.2.2.Final]
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1881) [jboss-msc-1.2.2.Final.jar:1.2.2.Final]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [rt.jar:1.8.0_25]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [rt.jar:1.8.0_25]
+	at java.lang.Thread.run(Thread.java:745) [rt.jar:1.8.0_25]
+
+2015-03-31 13:30:35,797 ERROR [org.jboss.msc.service.fail] (MSC service thread 1-4) MSC000001: Failed to start service jboss.jacorb.poa-service.rootpoa: org.jboss.msc.service.StartException in service jboss.jacorb.poa-service.rootpoa: JBAS016490: Failed to resolve initial reference RootPOA
+	at org.jboss.as.jacorb.service.CorbaPOAService.start(CorbaPOAService.java:155)
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:1948) [jboss-msc-1.2.2.Final.jar:1.2.2.Final]
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1881) [jboss-msc-1.2.2.Final.jar:1.2.2.Final]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [rt.jar:1.8.0_25]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [rt.jar:1.8.0_25]
+	at java.lang.Thread.run(Thread.java:745) [rt.jar:1.8.0_25]
+Caused by: org.omg.CORBA.INITIALIZE: Could not create server socket (3528): java.net.BindException: Address already in use
+	at org.jacorb.orb.iiop.IIOPListener$Acceptor.createServerSocket(IIOPListener.java:580)
+	at org.jacorb.orb.iiop.IIOPListener$Acceptor.init(IIOPListener.java:417)
+	at org.jacorb.orb.iiop.IIOPListener.configure(IIOPListener.java:163)
+	at org.jacorb.orb.etf.FactoriesBase.newInstance(FactoriesBase.java:125)
+	at org.jacorb.orb.etf.FactoriesBase.create_listener(FactoriesBase.java:74)
+	at org.jacorb.orb.BasicAdapter.configure(BasicAdapter.java:102)
+	at org.jacorb.orb.ORB.getRootPOA(ORB.java:1036)
+	at org.jacorb.orb.ORB.resolve_initial_references(ORB.java:1307)
+	at org.jboss.as.jacorb.service.CorbaPOAService.start(CorbaPOAService.java:153)
+	... 5 more
+
+2015-03-31 13:30:35,893 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) JBAS010400: Bound data source [java:jboss/datasources/ExampleDS]
+2015-03-31 13:30:35,897 ERROR [org.jboss.as.controller.management-operation] (Controller Boot Thread) JBAS014613: Operation ("add") failed - address: ([
+    ("core-service" => "management"),
+    ("management-interface" => "http-interface")
+]) - failure description: {"JBAS014671: Failed services" => {"jboss.serverManagement.controller.management.http" => "org.jboss.msc.service.StartException in service jboss.serverManagement.controller.management.http: JBAS015811: Failed to start the http-interface service
+    Caused by: java.lang.RuntimeException: java.net.BindException: Address already in use
+    Caused by: java.net.BindException: Address already in use"}}
+2015-03-31 13:30:35,899 ERROR [org.jboss.as.controller.management-operation] (Controller Boot Thread) JBAS014613: Operation ("add") failed - address: ([
+    ("subsystem" => "datasources"),
+    ("data-source" => "fxdb")
+]) - failure description: {"JBAS014771: Services with missing/unavailable dependencies" => [
+    "jboss.data-source.java:jboss/datasources/fxdb is missing [jboss.jdbc-driver.mariadb-java-client-1_1_7_jar]",
+    "jboss.driver-demander.java:jboss/datasources/fxdb is missing [jboss.jdbc-driver.mariadb-java-client-1_1_7_jar]"
+]}
+2015-03-31 13:30:35,901 ERROR [org.jboss.as.controller.management-operation] (Controller Boot Thread) JBAS014613: Operation ("add") failed - address: ([
+    ("subsystem" => "messaging"),
+    ("hornetq-server" => "default")
+]) - failure description: {
+    "JBAS014771: Services with missing/unavailable dependencies" => ["jboss.messaging.default is missing [jboss.http-upgrade-registry.default]"],
+    "JBAS014879: One or more services were unable to start due to one or more indirect dependencies not being available." => {
+        "Services that were unable to start:" => ["jboss.messaging.default.jms.manager"],
+        "Services that may be the cause:" => [
+            "jboss.http-upgrade-registry.default",
+            "jboss.jdbc-driver.mariadb-java-client-1_1_7_jar",
+            "jboss.remoting.remotingConnectorInfoService.http-remoting-connector"
+        ]
+    }
+}
+2015-03-31 13:30:35,903 ERROR [org.jboss.as.controller.management-operation] (Controller Boot Thread) JBAS014613: Operation ("add") failed - address: ([
+    ("subsystem" => "datasources"),
+    ("data-source" => "fxdb")
+]) - failure description: {
+    "JBAS014771: Services with missing/unavailable dependencies" => [
+        "jboss.data-source.java:jboss/datasources/fxdb is missing [jboss.jdbc-driver.mariadb-java-client-1_1_7_jar]",
+        "jboss.driver-demander.java:jboss/datasources/fxdb is missing [jboss.jdbc-driver.mariadb-java-client-1_1_7_jar]"
+    ],
+    "JBAS014879: One or more services were unable to start due to one or more indirect dependencies not being available." => {
+        "Services that were unable to start:" => [
+            "jboss.data-source.reference-factory.fxdb",
+            "jboss.naming.context.java.jboss.datasources.fxdb"
+        ],
+        "Services that may be the cause:" => [
+            "jboss.http-upgrade-registry.default",
+            "jboss.jdbc-driver.mariadb-java-client-1_1_7_jar",
+            "jboss.remoting.remotingConnectorInfoService.http-remoting-connector"
+        ]
+    }
+}
+2015-03-31 13:30:35,905 ERROR [org.jboss.as.controller.management-operation] (Controller Boot Thread) JBAS014613: Operation ("add") failed - address: ([("subsystem" => "jacorb")]) - failure description: {
+    "JBAS014671: Failed services" => {"jboss.jacorb.poa-service.rootpoa" => "org.jboss.msc.service.StartException in service jboss.jacorb.poa-service.rootpoa: JBAS016490: Failed to resolve initial reference RootPOA
+    Caused by: org.omg.CORBA.INITIALIZE: Could not create server socket (3528): java.net.BindException: Address already in use"},
+    "JBAS014879: One or more services were unable to start due to one or more indirect dependencies not being available." => {
+        "Services that were unable to start:" => [
+            "jboss.jacorb.naming-service",
+            "jboss.jacorb.poa-service.irpoa",
+            "jboss.jacorb.poa-service.namingpoa"
+        ],
+        "Services that may be the cause:" => [
+            "jboss.http-upgrade-registry.default",
+            "jboss.jdbc-driver.mariadb-java-client-1_1_7_jar",
+            "jboss.remoting.remotingConnectorInfoService.http-remoting-connector"
+        ]
+    }
+}
+2015-03-31 13:30:35,906 ERROR [org.jboss.as.controller.management-operation] (Controller Boot Thread) JBAS014613: Operation ("add") failed - address: ([("subsystem" => "webservices")]) - failure description: {"JBAS014879: One or more services were unable to start due to one or more indirect dependencies not being available." => {
+    "Services that were unable to start:" => ["jboss.ws.config"],
+    "Services that may be the cause:" => [
+        "jboss.http-upgrade-registry.default",
+        "jboss.jdbc-driver.mariadb-java-client-1_1_7_jar",
+        "jboss.remoting.remotingConnectorInfoService.http-remoting-connector"
+    ]
+}}
+2015-03-31 13:30:35,907 ERROR [org.jboss.as.controller.management-operation] (Controller Boot Thread) JBAS014613: Operation ("add") failed - address: ([
+    ("subsystem" => "undertow"),
+    ("server" => "default-server"),
+    ("http-listener" => "default")
+]) - failure description: {"JBAS014671: Failed services" => {"jboss.undertow.listener.default" => "org.jboss.msc.service.StartException in service jboss.undertow.listener.default: Could not start http listener
+    Caused by: java.net.BindException: Address already in use"}}
+2015-03-31 13:30:35,908 ERROR [org.jboss.as.controller.management-operation] (Controller Boot Thread) JBAS014613: Operation ("add") failed - address: ([
+    ("subsystem" => "ejb3"),
+    ("service" => "remote")
+]) - failure description: {"JBAS014771: Services with missing/unavailable dependencies" => ["jboss.ejb3.connector is missing [jboss.remoting.remotingConnectorInfoService.http-remoting-connector]"]}
+2015-03-31 13:30:35,967 INFO  [org.jboss.as.controller] (Controller Boot Thread) JBAS014774: Service status report
+JBAS014775:    New missing/unsatisfied dependencies:
+      service jboss.http-upgrade-registry.default (missing) dependents: [service jboss.messaging.default] 
+      service jboss.jdbc-driver.mariadb-java-client-1_1_7_jar (missing) dependents: [service jboss.driver-demander.java:jboss/datasources/fxdb, service jboss.data-source.java:jboss/datasources/fxdb] 
+      service jboss.remoting.remotingConnectorInfoService.http-remoting-connector (missing) dependents: [service jboss.ejb3.connector] 
+JBAS014777:   Services which failed to start:      service jboss.jacorb.poa-service.rootpoa: org.jboss.msc.service.StartException in service jboss.jacorb.poa-service.rootpoa: JBAS016490: Failed to resolve initial reference RootPOA
+      service jboss.serverManagement.controller.management.http: org.jboss.msc.service.StartException in service jboss.serverManagement.controller.management.http: JBAS015811: Failed to start the http-interface service
+      service jboss.undertow.listener.default: org.jboss.msc.service.StartException in service jboss.undertow.listener.default: Could not start http listener
+
+2015-03-31 13:30:35,990 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015964: Http management interface is not enabled
+2015-03-31 13:30:35,991 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015954: Admin console is not enabled
+2015-03-31 13:30:35,991 ERROR [org.jboss.as] (Controller Boot Thread) JBAS015875: WildFly 8.2.0.Final "Tweek" started (with errors) in 3834ms - Started 183 of 259 services (14 services failed or missing dependencies, 92 services are lazy, passive or on-demand)
+2015-03-31 13:30:39,459 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) JBAS017532: Host default-host stopping
+2015-03-31 13:30:39,459 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-8) JBAS010409: Unbound data source [java:jboss/datasources/ExampleDS]
+2015-03-31 13:30:39,465 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) JBAS017506: Undertow 1.1.0.Final stopping
+2015-03-31 13:30:39,466 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-1) JBAS010418: Stopped Driver service with driver-name = h2
+2015-03-31 13:30:39,475 INFO  [org.jboss.as] (MSC service thread 1-6) JBAS015950: WildFly 8.2.0.Final "Tweek" stopped in 25ms
+2015-03-31 13:30:44,078 INFO  [org.jboss.modules] (main) JBoss Modules version 1.3.3.Final
+2015-03-31 13:30:44,346 INFO  [org.jboss.msc] (main) JBoss MSC version 1.2.2.Final
+2015-03-31 13:30:44,448 INFO  [org.jboss.as] (MSC service thread 1-6) JBAS015899: WildFly 8.2.0.Final "Tweek" starting
+2015-03-31 13:30:44,456 DEBUG [org.jboss.as.config] (MSC service thread 1-6) Configured system properties:
+	[Standalone] = 
+	awt.toolkit = sun.awt.X11.XToolkit
+	file.encoding = UTF-8
+	file.encoding.pkg = sun.io
+	file.separator = /
+	java.awt.graphicsenv = sun.awt.X11GraphicsEnvironment
+	java.awt.headless = true
+	java.awt.printerjob = sun.print.PSPrinterJob
+	java.class.path = /home/mike/apps/fx-api/wildfly-8.2.0.Final/jboss-modules.jar
+	java.class.version = 52.0
+	java.endorsed.dirs = /usr/java/jdk1.8.0_25/jre/lib/endorsed
+	java.ext.dirs = /usr/java/jdk1.8.0_25/jre/lib/ext:/usr/java/packages/lib/ext
+	java.home = /usr/java/jdk1.8.0_25/jre
+	java.io.tmpdir = /tmp
+	java.library.path = /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+	java.net.preferIPv4Stack = true
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 1.8.0_25-b17
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 1.8
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+	java.version = 1.8.0_25
+	java.vm.info = mixed mode
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 1.8
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 25.25-b02
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	javax.xml.datatype.DatatypeFactory = __redirected.__DatatypeFactory
+	javax.xml.parsers.DocumentBuilderFactory = __redirected.__DocumentBuilderFactory
+	javax.xml.parsers.SAXParserFactory = __redirected.__SAXParserFactory
+	javax.xml.stream.XMLEventFactory = __redirected.__XMLEventFactory
+	javax.xml.stream.XMLInputFactory = __redirected.__XMLInputFactory
+	javax.xml.stream.XMLOutputFactory = __redirected.__XMLOutputFactory
+	javax.xml.transform.TransformerFactory = __redirected.__TransformerFactory
+	javax.xml.validation.SchemaFactory:http://www.w3.org/2001/XMLSchema = __redirected.__SchemaFactory
+	javax.xml.xpath.XPathFactory:http://java.sun.com/jaxp/xpath/dom = __redirected.__XPathFactory
+	jboss.home.dir = /home/mike/apps/fx-api/wildfly-8.2.0.Final
+	jboss.host.name = xbs11
+	jboss.modules.dir = /home/mike/apps/fx-api/wildfly-8.2.0.Final/modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = xbs11
+	jboss.qualified.host.name = xbs11.uwemeding.com
+	jboss.server.base.dir = /home/mike/apps/fx-api/wildfly-8.2.0.Final/standalone
+	jboss.server.config.dir = /home/mike/apps/fx-api/wildfly-8.2.0.Final/standalone/configuration
+	jboss.server.data.dir = /home/mike/apps/fx-api/wildfly-8.2.0.Final/standalone/data
+	jboss.server.deploy.dir = /home/mike/apps/fx-api/wildfly-8.2.0.Final/standalone/data/content
+	jboss.server.log.dir = /home/mike/apps/fx-api/wildfly-8.2.0.Final/standalone/log
+	jboss.server.name = xbs11
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = /home/mike/apps/fx-api/wildfly-8.2.0.Final/standalone/tmp
+	line.separator = 
+
+	logging.configuration = file:/home/mike/apps/fx-api/wildfly-8.2.0.Final/standalone/configuration/logging.properties
+	module.path = /home/mike/apps/fx-api/wildfly-8.2.0.Final/modules
+	org.jboss.boot.log.file = /home/mike/apps/fx-api/wildfly-8.2.0.Final/standalone/log/server.log
+	org.jboss.resolver.warning = true
+	org.xml.sax.driver = __redirected.__XMLReaderFactory
+	os.arch = amd64
+	os.name = Linux
+	os.version = 3.19.1-x86_64-linode53
+	path.separator = :
+	sun.arch.data.model = 64
+	sun.boot.class.path = /usr/java/jdk1.8.0_25/jre/lib/resources.jar:/usr/java/jdk1.8.0_25/jre/lib/rt.jar:/usr/java/jdk1.8.0_25/jre/lib/sunrsasign.jar:/usr/java/jdk1.8.0_25/jre/lib/jsse.jar:/usr/java/jdk1.8.0_25/jre/lib/jce.jar:/usr/java/jdk1.8.0_25/jre/lib/charsets.jar:/usr/java/jdk1.8.0_25/jre/lib/jfr.jar:/usr/java/jdk1.8.0_25/jre/classes
+	sun.boot.library.path = /usr/java/jdk1.8.0_25/jre/lib/amd64
+	sun.cpu.endian = little
+	sun.cpu.isalist = 
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = /home/mike/apps/fx-api/wildfly-8.2.0.Final/jboss-modules.jar -mp /home/mike/apps/fx-api/wildfly-8.2.0.Final/modules org.jboss.as.standalone -Djboss.home.dir=/home/mike/apps/fx-api/wildfly-8.2.0.Final -Djboss.server.base.dir=/home/mike/apps/fx-api/wildfly-8.2.0.Final/standalone -c standalone-full.xml
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = UTF-8
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = unknown
+	user.country = US
+	user.dir = /home/mike/apps/fx-api/wildfly-8.2.0.Final/standalone/configuration
+	user.home = /home/mike
+	user.language = en
+	user.name = mike
+	user.timezone = America/New_York
+2015-03-31 13:30:44,457 DEBUG [org.jboss.as.config] (MSC service thread 1-6) VM Arguments: -D[Standalone] -Xms64m -Xmx512m -XX:MaxPermSize=256m -Djava.net.preferIPv4Stack=true -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true -Dorg.jboss.boot.log.file=/home/mike/apps/fx-api/wildfly-8.2.0.Final/standalone/log/server.log -Dlogging.configuration=file:/home/mike/apps/fx-api/wildfly-8.2.0.Final/standalone/configuration/logging.properties 
+2015-03-31 13:30:45,983 INFO  [org.jboss.as.server] (Controller Boot Thread) JBAS015888: Creating http management service using socket-binding (management-http)
+2015-03-31 13:30:46,012 INFO  [org.xnio] (MSC service thread 1-5) XNIO version 3.3.0.Final
+2015-03-31 13:30:46,031 INFO  [org.xnio.nio] (MSC service thread 1-5) XNIO NIO Implementation Version 3.3.0.Final
+2015-03-31 13:30:46,104 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 34) WFLYIO001: Worker 'default' has auto-configured to 8 core threads with 64 task threads based on your 4 available processors
+2015-03-31 13:30:46,105 INFO  [org.jboss.remoting] (MSC service thread 1-5) JBoss Remoting version 4.0.6.Final
+2015-03-31 13:30:46,119 INFO  [org.jboss.as.jacorb] (ServerService Thread Pool -- 36) JBAS016300: Activating JacORB Subsystem
+2015-03-31 13:30:46,144 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 35) JBAS010280: Activating Infinispan subsystem.
+2015-03-31 13:30:46,198 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 51) JBAS013171: Activating Security Subsystem
+2015-03-31 13:30:46,200 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 52) JBAS010153: Node identifier property is set to the default value. Please make sure it is unique.
+2015-03-31 13:30:46,219 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 42) JBAS012615: Activated the following JSF Implementations: [main]
+2015-03-31 13:30:46,223 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 46) JBAS011800: Activating Naming Subsystem
+2015-03-31 13:30:46,230 INFO  [org.jboss.as.security] (MSC service thread 1-7) JBAS013170: Current PicketBox version=4.0.21.Final
+2015-03-31 13:30:46,256 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 30) JBAS010403: Deploying JDBC-compliant driver class org.h2.Driver (version 1.3)
+2015-03-31 13:30:46,259 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 54) JBAS015537: Activating WebServices Extension
+2015-03-31 13:30:46,302 INFO  [org.jboss.as.connector.logging] (MSC service thread 1-5) JBAS010408: Starting JCA Subsystem (IronJacamar 1.1.9.Final)
+2015-03-31 13:30:46,328 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-5) JBAS010417: Started Driver service with driver-name = h2
+2015-03-31 13:30:46,357 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) JBAS017502: Undertow 1.1.0.Final starting
+2015-03-31 13:30:46,359 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 53) JBAS017502: Undertow 1.1.0.Final starting
+2015-03-31 13:30:46,626 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-1) JBAS015400: Bound mail session [java:jboss/mail/Default]
+2015-03-31 13:30:46,630 INFO  [org.jboss.as.naming] (MSC service thread 1-3) JBAS011802: Starting Naming Service
+2015-03-31 13:30:46,765 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 53) JBAS017527: Creating file handler for path /home/mike/apps/fx-api/wildfly-8.2.0.Final/welcome-content
+2015-03-31 13:30:46,796 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) JBAS017525: Started server default-server.
+2015-03-31 13:30:46,829 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) JBAS017531: Host default-host starting
+2015-03-31 13:30:46,928 ERROR [org.jboss.msc.service.fail] (MSC service thread 1-5) MSC000001: Failed to start service jboss.undertow.listener.default: org.jboss.msc.service.StartException in service jboss.undertow.listener.default: Could not start http listener
+	at org.wildfly.extension.undertow.ListenerService.start(ListenerService.java:137)
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:1948) [jboss-msc-1.2.2.Final.jar:1.2.2.Final]
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1881) [jboss-msc-1.2.2.Final.jar:1.2.2.Final]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [rt.jar:1.8.0_25]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [rt.jar:1.8.0_25]
+	at java.lang.Thread.run(Thread.java:745) [rt.jar:1.8.0_25]
+Caused by: java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method) [rt.jar:1.8.0_25]
+	at sun.nio.ch.Net.bind(Net.java:436) [rt.jar:1.8.0_25]
+	at sun.nio.ch.Net.bind(Net.java:428) [rt.jar:1.8.0_25]
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:214) [rt.jar:1.8.0_25]
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74) [rt.jar:1.8.0_25]
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:67) [rt.jar:1.8.0_25]
+	at org.xnio.nio.NioXnioWorker.createTcpConnectionServer(NioXnioWorker.java:182)
+	at org.xnio.XnioWorker.createStreamConnectionServer(XnioWorker.java:243)
+	at org.wildfly.extension.undertow.HttpListenerService.startListening(HttpListenerService.java:113)
+	at org.wildfly.extension.undertow.ListenerService.start(ListenerService.java:134)
+	... 5 more
+
+2015-03-31 13:30:47,066 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-3) JBAS015012: Started FileSystemDeploymentService for directory /home/mike/apps/fx-api/wildfly-8.2.0.Final/standalone/deployments
+2015-03-31 13:30:47,135 INFO  [org.jboss.as.jacorb] (MSC service thread 1-1) JBAS016330: CORBA ORB Service started
+2015-03-31 13:30:47,163 ERROR [org.jboss.msc.service.fail] (MSC service thread 1-7) MSC000001: Failed to start service jboss.serverManagement.controller.management.http: org.jboss.msc.service.StartException in service jboss.serverManagement.controller.management.http: JBAS015811: Failed to start the http-interface service
+	at org.jboss.as.server.mgmt.UndertowHttpManagementService.start(UndertowHttpManagementService.java:258) [wildfly-server-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:1948) [jboss-msc-1.2.2.Final.jar:1.2.2.Final]
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1881) [jboss-msc-1.2.2.Final.jar:1.2.2.Final]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [rt.jar:1.8.0_25]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [rt.jar:1.8.0_25]
+	at java.lang.Thread.run(Thread.java:745) [rt.jar:1.8.0_25]
+Caused by: java.lang.RuntimeException: java.net.BindException: Address already in use
+	at org.jboss.as.domain.http.server.ManagementHttpServer.start(ManagementHttpServer.java:156)
+	at org.jboss.as.server.mgmt.UndertowHttpManagementService.start(UndertowHttpManagementService.java:224) [wildfly-server-8.2.0.Final.jar:8.2.0.Final]
+	... 5 more
+Caused by: java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method) [rt.jar:1.8.0_25]
+	at sun.nio.ch.Net.bind(Net.java:436) [rt.jar:1.8.0_25]
+	at sun.nio.ch.Net.bind(Net.java:428) [rt.jar:1.8.0_25]
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:214) [rt.jar:1.8.0_25]
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74) [rt.jar:1.8.0_25]
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:67) [rt.jar:1.8.0_25]
+	at org.xnio.nio.NioXnioWorker.createTcpConnectionServer(NioXnioWorker.java:182)
+	at org.xnio.XnioWorker.createStreamConnectionServer(XnioWorker.java:243)
+	at org.jboss.as.domain.http.server.ManagementHttpServer.start(ManagementHttpServer.java:135)
+	... 6 more
+
+2015-03-31 13:30:47,185 WARN  [jacorb.orb.iiop] (MSC service thread 1-1) could not create server socket port: 3528 host: /127.0.0.1: java.net.BindException: Address already in use
+	at java.net.PlainSocketImpl.socketBind(Native Method) [rt.jar:1.8.0_25]
+	at java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:382) [rt.jar:1.8.0_25]
+	at java.net.ServerSocket.bind(ServerSocket.java:375) [rt.jar:1.8.0_25]
+	at java.net.ServerSocket.<init>(ServerSocket.java:237) [rt.jar:1.8.0_25]
+	at org.jacorb.orb.factory.DefaultServerSocketFactory.createServerSocket(DefaultServerSocketFactory.java:49) [jacorb-2.3.2-jbossorg-5.jar:2.3.2-jbossorg-5]
+	at org.jacorb.orb.iiop.IIOPListener$Acceptor.createServerSocket(IIOPListener.java:572) [jacorb-2.3.2-jbossorg-5.jar:2.3.2-jbossorg-5]
+	at org.jacorb.orb.iiop.IIOPListener$Acceptor.init(IIOPListener.java:417) [jacorb-2.3.2-jbossorg-5.jar:2.3.2-jbossorg-5]
+	at org.jacorb.orb.iiop.IIOPListener.configure(IIOPListener.java:163) [jacorb-2.3.2-jbossorg-5.jar:2.3.2-jbossorg-5]
+	at org.jacorb.orb.etf.FactoriesBase.newInstance(FactoriesBase.java:125) [jacorb-2.3.2-jbossorg-5.jar:2.3.2-jbossorg-5]
+	at org.jacorb.orb.etf.FactoriesBase.create_listener(FactoriesBase.java:74) [jacorb-2.3.2-jbossorg-5.jar:2.3.2-jbossorg-5]
+	at org.jacorb.orb.BasicAdapter.configure(BasicAdapter.java:102) [jacorb-2.3.2-jbossorg-5.jar:2.3.2-jbossorg-5]
+	at org.jacorb.orb.ORB.getRootPOA(ORB.java:1036) [jacorb-2.3.2-jbossorg-5.jar:2.3.2-jbossorg-5]
+	at org.jacorb.orb.ORB.resolve_initial_references(ORB.java:1307) [jacorb-2.3.2-jbossorg-5.jar:2.3.2-jbossorg-5]
+	at org.jboss.as.jacorb.service.CorbaPOAService.start(CorbaPOAService.java:153) [wildfly-jacorb-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:1948) [jboss-msc-1.2.2.Final.jar:1.2.2.Final]
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1881) [jboss-msc-1.2.2.Final.jar:1.2.2.Final]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [rt.jar:1.8.0_25]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [rt.jar:1.8.0_25]
+	at java.lang.Thread.run(Thread.java:745) [rt.jar:1.8.0_25]
+
+2015-03-31 13:30:47,191 ERROR [org.jboss.msc.service.fail] (MSC service thread 1-1) MSC000001: Failed to start service jboss.jacorb.poa-service.rootpoa: org.jboss.msc.service.StartException in service jboss.jacorb.poa-service.rootpoa: JBAS016490: Failed to resolve initial reference RootPOA
+	at org.jboss.as.jacorb.service.CorbaPOAService.start(CorbaPOAService.java:155)
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:1948) [jboss-msc-1.2.2.Final.jar:1.2.2.Final]
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1881) [jboss-msc-1.2.2.Final.jar:1.2.2.Final]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [rt.jar:1.8.0_25]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [rt.jar:1.8.0_25]
+	at java.lang.Thread.run(Thread.java:745) [rt.jar:1.8.0_25]
+Caused by: org.omg.CORBA.INITIALIZE: Could not create server socket (3528): java.net.BindException: Address already in use
+	at org.jacorb.orb.iiop.IIOPListener$Acceptor.createServerSocket(IIOPListener.java:580)
+	at org.jacorb.orb.iiop.IIOPListener$Acceptor.init(IIOPListener.java:417)
+	at org.jacorb.orb.iiop.IIOPListener.configure(IIOPListener.java:163)
+	at org.jacorb.orb.etf.FactoriesBase.newInstance(FactoriesBase.java:125)
+	at org.jacorb.orb.etf.FactoriesBase.create_listener(FactoriesBase.java:74)
+	at org.jacorb.orb.BasicAdapter.configure(BasicAdapter.java:102)
+	at org.jacorb.orb.ORB.getRootPOA(ORB.java:1036)
+	at org.jacorb.orb.ORB.resolve_initial_references(ORB.java:1307)
+	at org.jboss.as.jacorb.service.CorbaPOAService.start(CorbaPOAService.java:153)
+	... 5 more
+
+2015-03-31 13:30:47,198 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) JBAS010400: Bound data source [java:jboss/datasources/ExampleDS]
+2015-03-31 13:30:47,203 ERROR [org.jboss.as.controller.management-operation] (Controller Boot Thread) JBAS014613: Operation ("add") failed - address: ([
+    ("core-service" => "management"),
+    ("management-interface" => "http-interface")
+]) - failure description: {"JBAS014671: Failed services" => {"jboss.serverManagement.controller.management.http" => "org.jboss.msc.service.StartException in service jboss.serverManagement.controller.management.http: JBAS015811: Failed to start the http-interface service
+    Caused by: java.lang.RuntimeException: java.net.BindException: Address already in use
+    Caused by: java.net.BindException: Address already in use"}}
+2015-03-31 13:30:47,205 ERROR [org.jboss.as.controller.management-operation] (Controller Boot Thread) JBAS014613: Operation ("add") failed - address: ([
+    ("subsystem" => "datasources"),
+    ("data-source" => "fxdb")
+]) - failure description: {"JBAS014771: Services with missing/unavailable dependencies" => [
+    "jboss.driver-demander.java:jboss/datasources/fxdb is missing [jboss.jdbc-driver.mariadb-java-client-1_1_7_jar]",
+    "jboss.data-source.java:jboss/datasources/fxdb is missing [jboss.jdbc-driver.mariadb-java-client-1_1_7_jar]"
+]}
+2015-03-31 13:30:47,208 ERROR [org.jboss.as.controller.management-operation] (Controller Boot Thread) JBAS014613: Operation ("add") failed - address: ([
+    ("subsystem" => "messaging"),
+    ("hornetq-server" => "default")
+]) - failure description: {
+    "JBAS014771: Services with missing/unavailable dependencies" => ["jboss.messaging.default is missing [jboss.http-upgrade-registry.default]"],
+    "JBAS014879: One or more services were unable to start due to one or more indirect dependencies not being available." => {
+        "Services that were unable to start:" => ["jboss.messaging.default.jms.manager"],
+        "Services that may be the cause:" => [
+            "jboss.http-upgrade-registry.default",
+            "jboss.jdbc-driver.mariadb-java-client-1_1_7_jar",
+            "jboss.remoting.remotingConnectorInfoService.http-remoting-connector"
+        ]
+    }
+}
+2015-03-31 13:30:47,210 ERROR [org.jboss.as.controller.management-operation] (Controller Boot Thread) JBAS014613: Operation ("add") failed - address: ([
+    ("subsystem" => "datasources"),
+    ("data-source" => "fxdb")
+]) - failure description: {
+    "JBAS014771: Services with missing/unavailable dependencies" => [
+        "jboss.driver-demander.java:jboss/datasources/fxdb is missing [jboss.jdbc-driver.mariadb-java-client-1_1_7_jar]",
+        "jboss.data-source.java:jboss/datasources/fxdb is missing [jboss.jdbc-driver.mariadb-java-client-1_1_7_jar]"
+    ],
+    "JBAS014879: One or more services were unable to start due to one or more indirect dependencies not being available." => {
+        "Services that were unable to start:" => [
+            "jboss.data-source.reference-factory.fxdb",
+            "jboss.naming.context.java.jboss.datasources.fxdb"
+        ],
+        "Services that may be the cause:" => [
+            "jboss.http-upgrade-registry.default",
+            "jboss.jdbc-driver.mariadb-java-client-1_1_7_jar",
+            "jboss.remoting.remotingConnectorInfoService.http-remoting-connector"
+        ]
+    }
+}
+2015-03-31 13:30:47,212 ERROR [org.jboss.as.controller.management-operation] (Controller Boot Thread) JBAS014613: Operation ("add") failed - address: ([
+    ("subsystem" => "undertow"),
+    ("server" => "default-server"),
+    ("http-listener" => "default")
+]) - failure description: {"JBAS014671: Failed services" => {"jboss.undertow.listener.default" => "org.jboss.msc.service.StartException in service jboss.undertow.listener.default: Could not start http listener
+    Caused by: java.net.BindException: Address already in use"}}
+2015-03-31 13:30:47,213 ERROR [org.jboss.as.controller.management-operation] (Controller Boot Thread) JBAS014613: Operation ("add") failed - address: ([("subsystem" => "webservices")]) - failure description: {"JBAS014879: One or more services were unable to start due to one or more indirect dependencies not being available." => {
+    "Services that were unable to start:" => ["jboss.ws.config"],
+    "Services that may be the cause:" => [
+        "jboss.http-upgrade-registry.default",
+        "jboss.jdbc-driver.mariadb-java-client-1_1_7_jar",
+        "jboss.remoting.remotingConnectorInfoService.http-remoting-connector"
+    ]
+}}
+2015-03-31 13:30:47,215 ERROR [org.jboss.as.controller.management-operation] (Controller Boot Thread) JBAS014613: Operation ("add") failed - address: ([("subsystem" => "jacorb")]) - failure description: {
+    "JBAS014671: Failed services" => {"jboss.jacorb.poa-service.rootpoa" => "org.jboss.msc.service.StartException in service jboss.jacorb.poa-service.rootpoa: JBAS016490: Failed to resolve initial reference RootPOA
+    Caused by: org.omg.CORBA.INITIALIZE: Could not create server socket (3528): java.net.BindException: Address already in use"},
+    "JBAS014879: One or more services were unable to start due to one or more indirect dependencies not being available." => {
+        "Services that were unable to start:" => [
+            "jboss.jacorb.naming-service",
+            "jboss.jacorb.poa-service.irpoa",
+            "jboss.jacorb.poa-service.namingpoa"
+        ],
+        "Services that may be the cause:" => [
+            "jboss.http-upgrade-registry.default",
+            "jboss.jdbc-driver.mariadb-java-client-1_1_7_jar",
+            "jboss.remoting.remotingConnectorInfoService.http-remoting-connector"
+        ]
+    }
+}
+2015-03-31 13:30:47,216 ERROR [org.jboss.as.controller.management-operation] (Controller Boot Thread) JBAS014613: Operation ("add") failed - address: ([
+    ("subsystem" => "ejb3"),
+    ("service" => "remote")
+]) - failure description: {"JBAS014771: Services with missing/unavailable dependencies" => ["jboss.ejb3.connector is missing [jboss.remoting.remotingConnectorInfoService.http-remoting-connector]"]}
+2015-03-31 13:30:47,285 INFO  [org.jboss.as.controller] (Controller Boot Thread) JBAS014774: Service status report
+JBAS014775:    New missing/unsatisfied dependencies:
+      service jboss.http-upgrade-registry.default (missing) dependents: [service jboss.messaging.default] 
+      service jboss.jdbc-driver.mariadb-java-client-1_1_7_jar (missing) dependents: [service jboss.driver-demander.java:jboss/datasources/fxdb, service jboss.data-source.java:jboss/datasources/fxdb] 
+      service jboss.remoting.remotingConnectorInfoService.http-remoting-connector (missing) dependents: [service jboss.ejb3.connector] 
+JBAS014777:   Services which failed to start:      service jboss.jacorb.poa-service.rootpoa: org.jboss.msc.service.StartException in service jboss.jacorb.poa-service.rootpoa: JBAS016490: Failed to resolve initial reference RootPOA
+      service jboss.serverManagement.controller.management.http: org.jboss.msc.service.StartException in service jboss.serverManagement.controller.management.http: JBAS015811: Failed to start the http-interface service
+      service jboss.undertow.listener.default: org.jboss.msc.service.StartException in service jboss.undertow.listener.default: Could not start http listener
+
+2015-03-31 13:30:47,296 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015964: Http management interface is not enabled
+2015-03-31 13:30:47,297 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015954: Admin console is not enabled
+2015-03-31 13:30:47,297 ERROR [org.jboss.as] (Controller Boot Thread) JBAS015875: WildFly 8.2.0.Final "Tweek" started (with errors) in 3665ms - Started 183 of 259 services (14 services failed or missing dependencies, 92 services are lazy, passive or on-demand)
