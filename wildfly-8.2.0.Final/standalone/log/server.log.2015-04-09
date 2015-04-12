@@ -1,0 +1,873 @@
+2015-04-09 00:49:16,031 WARN  [org.jboss.resteasy.core.ExceptionHandler] (default task-6) failed to execute: javax.ws.rs.NotSupportedException: Cannot consume content type
+	at org.jboss.resteasy.core.registry.SegmentNode.match(SegmentNode.java:380) [resteasy-jaxrs-3.0.10.Final.jar:]
+	at org.jboss.resteasy.core.registry.SegmentNode.match(SegmentNode.java:114) [resteasy-jaxrs-3.0.10.Final.jar:]
+	at org.jboss.resteasy.core.registry.RootNode.match(RootNode.java:43) [resteasy-jaxrs-3.0.10.Final.jar:]
+	at org.jboss.resteasy.core.registry.RootClassNode.match(RootClassNode.java:48) [resteasy-jaxrs-3.0.10.Final.jar:]
+	at org.jboss.resteasy.core.ResourceMethodRegistry.getResourceInvoker(ResourceMethodRegistry.java:444) [resteasy-jaxrs-3.0.10.Final.jar:]
+	at org.jboss.resteasy.core.SynchronousDispatcher.getInvoker(SynchronousDispatcher.java:234) [resteasy-jaxrs-3.0.10.Final.jar:]
+	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:171) [resteasy-jaxrs-3.0.10.Final.jar:]
+	at org.jboss.resteasy.plugins.server.servlet.ServletContainerDispatcher.service(ServletContainerDispatcher.java:220) [resteasy-jaxrs-3.0.10.Final.jar:]
+	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:56) [resteasy-jaxrs-3.0.10.Final.jar:]
+	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:51) [resteasy-jaxrs-3.0.10.Final.jar:]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790) [jboss-servlet-api_3.1_spec-1.0.0.Final.jar:1.0.0.Final]
+	at io.undertow.servlet.handlers.ServletHandler.handleRequest(ServletHandler.java:85) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:61) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at org.wildfly.extension.undertow.security.SecurityContextAssociationHandler.handleRequest(SecurityContextAssociationHandler.java:78)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:131) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:56) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:45) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:63) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.security.handlers.AuthenticationMechanismsHandler.handleRequest(AuthenticationMechanismsHandler.java:58) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.security.CachedAuthenticatedSessionHandler.handleRequest(CachedAuthenticatedSessionHandler.java:70) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.security.handlers.SecurityInitialHandler.handleRequest(SecurityInitialHandler.java:76) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at org.wildfly.extension.undertow.security.jacc.JACCContextIdHandler.handleRequest(JACCContextIdHandler.java:61)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:261) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:247) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler.access$000(ServletInitialHandler.java:76) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:166) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.server.Connectors.executeRootHandler(Connectors.java:197) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:759) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [rt.jar:1.8.0_25]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [rt.jar:1.8.0_25]
+	at java.lang.Thread.run(Thread.java:745) [rt.jar:1.8.0_25]
+
+2015-04-09 00:49:53,922 WARN  [org.jboss.resteasy.core.ExceptionHandler] (default task-7) failed to execute: javax.ws.rs.NotSupportedException: Cannot consume content type
+	at org.jboss.resteasy.core.registry.SegmentNode.match(SegmentNode.java:380) [resteasy-jaxrs-3.0.10.Final.jar:]
+	at org.jboss.resteasy.core.registry.SegmentNode.match(SegmentNode.java:114) [resteasy-jaxrs-3.0.10.Final.jar:]
+	at org.jboss.resteasy.core.registry.RootNode.match(RootNode.java:43) [resteasy-jaxrs-3.0.10.Final.jar:]
+	at org.jboss.resteasy.core.registry.RootClassNode.match(RootClassNode.java:48) [resteasy-jaxrs-3.0.10.Final.jar:]
+	at org.jboss.resteasy.core.ResourceMethodRegistry.getResourceInvoker(ResourceMethodRegistry.java:444) [resteasy-jaxrs-3.0.10.Final.jar:]
+	at org.jboss.resteasy.core.SynchronousDispatcher.getInvoker(SynchronousDispatcher.java:234) [resteasy-jaxrs-3.0.10.Final.jar:]
+	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:171) [resteasy-jaxrs-3.0.10.Final.jar:]
+	at org.jboss.resteasy.plugins.server.servlet.ServletContainerDispatcher.service(ServletContainerDispatcher.java:220) [resteasy-jaxrs-3.0.10.Final.jar:]
+	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:56) [resteasy-jaxrs-3.0.10.Final.jar:]
+	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:51) [resteasy-jaxrs-3.0.10.Final.jar:]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790) [jboss-servlet-api_3.1_spec-1.0.0.Final.jar:1.0.0.Final]
+	at io.undertow.servlet.handlers.ServletHandler.handleRequest(ServletHandler.java:85) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:61) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at org.wildfly.extension.undertow.security.SecurityContextAssociationHandler.handleRequest(SecurityContextAssociationHandler.java:78)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:131) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:56) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:45) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:63) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.security.handlers.AuthenticationMechanismsHandler.handleRequest(AuthenticationMechanismsHandler.java:58) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.security.CachedAuthenticatedSessionHandler.handleRequest(CachedAuthenticatedSessionHandler.java:70) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.security.handlers.SecurityInitialHandler.handleRequest(SecurityInitialHandler.java:76) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at org.wildfly.extension.undertow.security.jacc.JACCContextIdHandler.handleRequest(JACCContextIdHandler.java:61)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:261) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:247) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler.access$000(ServletInitialHandler.java:76) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:166) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.server.Connectors.executeRootHandler(Connectors.java:197) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:759) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [rt.jar:1.8.0_25]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [rt.jar:1.8.0_25]
+	at java.lang.Thread.run(Thread.java:745) [rt.jar:1.8.0_25]
+
+2015-04-09 00:51:35,656 WARN  [org.jboss.resteasy.core.ExceptionHandler] (default task-9) failed to execute: javax.ws.rs.NotSupportedException: Cannot consume content type
+	at org.jboss.resteasy.core.registry.SegmentNode.match(SegmentNode.java:380) [resteasy-jaxrs-3.0.10.Final.jar:]
+	at org.jboss.resteasy.core.registry.SegmentNode.match(SegmentNode.java:114) [resteasy-jaxrs-3.0.10.Final.jar:]
+	at org.jboss.resteasy.core.registry.RootNode.match(RootNode.java:43) [resteasy-jaxrs-3.0.10.Final.jar:]
+	at org.jboss.resteasy.core.registry.RootClassNode.match(RootClassNode.java:48) [resteasy-jaxrs-3.0.10.Final.jar:]
+	at org.jboss.resteasy.core.ResourceMethodRegistry.getResourceInvoker(ResourceMethodRegistry.java:444) [resteasy-jaxrs-3.0.10.Final.jar:]
+	at org.jboss.resteasy.core.SynchronousDispatcher.getInvoker(SynchronousDispatcher.java:234) [resteasy-jaxrs-3.0.10.Final.jar:]
+	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:171) [resteasy-jaxrs-3.0.10.Final.jar:]
+	at org.jboss.resteasy.plugins.server.servlet.ServletContainerDispatcher.service(ServletContainerDispatcher.java:220) [resteasy-jaxrs-3.0.10.Final.jar:]
+	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:56) [resteasy-jaxrs-3.0.10.Final.jar:]
+	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:51) [resteasy-jaxrs-3.0.10.Final.jar:]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790) [jboss-servlet-api_3.1_spec-1.0.0.Final.jar:1.0.0.Final]
+	at io.undertow.servlet.handlers.ServletHandler.handleRequest(ServletHandler.java:85) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:61) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at org.wildfly.extension.undertow.security.SecurityContextAssociationHandler.handleRequest(SecurityContextAssociationHandler.java:78)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:131) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:56) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:45) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:63) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.security.handlers.AuthenticationMechanismsHandler.handleRequest(AuthenticationMechanismsHandler.java:58) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.security.CachedAuthenticatedSessionHandler.handleRequest(CachedAuthenticatedSessionHandler.java:70) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.security.handlers.SecurityInitialHandler.handleRequest(SecurityInitialHandler.java:76) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at org.wildfly.extension.undertow.security.jacc.JACCContextIdHandler.handleRequest(JACCContextIdHandler.java:61)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:261) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:247) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler.access$000(ServletInitialHandler.java:76) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:166) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.server.Connectors.executeRootHandler(Connectors.java:197) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:759) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [rt.jar:1.8.0_25]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [rt.jar:1.8.0_25]
+	at java.lang.Thread.run(Thread.java:745) [rt.jar:1.8.0_25]
+
+2015-04-09 01:24:07,803 INFO  [com.uml.fx.rest.NewsRest] (default task-30) getting news articles
+2015-04-09 15:20:38,055 INFO  [com.uml.fx.rest.ContactRest] (default task-31) getting all contacts
+2015-04-09 15:20:38,063 WARN  [org.hibernate.engine.jdbc.spi.SqlExceptionHelper] (default task-31) SQL Error: -1, SQLState: 08
+2015-04-09 15:20:38,072 ERROR [org.hibernate.engine.jdbc.spi.SqlExceptionHelper] (default task-31) Could not read resultset: unexpected end of stream, read 0bytes from 4
+2015-04-09 15:20:38,086 ERROR [org.jboss.as.ejb3.invocation] (default task-31) JBAS014134: EJB Invocation failed on component ContactServiceImpl for method public abstract com.uml.fx.json.JSONArray com.uml.fx.entities.ContactService.selectAll(): javax.ejb.EJBException: javax.persistence.PersistenceException: org.hibernate.exception.JDBCConnectionException: could not extract ResultSet
+	at org.jboss.as.ejb3.tx.CMTTxInterceptor.handleExceptionInOurTx(CMTTxInterceptor.java:190) [wildfly-ejb3-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.ejb3.tx.CMTTxInterceptor.invokeInOurTx(CMTTxInterceptor.java:275) [wildfly-ejb3-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.ejb3.tx.CMTTxInterceptor.required(CMTTxInterceptor.java:340) [wildfly-ejb3-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.ejb3.tx.CMTTxInterceptor.processInvocation(CMTTxInterceptor.java:239) [wildfly-ejb3-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:309)
+	at org.jboss.as.ejb3.component.interceptors.CurrentInvocationContextInterceptor.processInvocation(CurrentInvocationContextInterceptor.java:41) [wildfly-ejb3-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:309)
+	at org.jboss.as.ejb3.component.invocationmetrics.WaitTimeInterceptor.processInvocation(WaitTimeInterceptor.java:43) [wildfly-ejb3-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:309)
+	at org.jboss.as.ejb3.security.SecurityContextInterceptor.processInvocation(SecurityContextInterceptor.java:95) [wildfly-ejb3-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:309)
+	at org.jboss.as.ejb3.component.interceptors.ShutDownInterceptorFactory$1.processInvocation(ShutDownInterceptorFactory.java:64) [wildfly-ejb3-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:309)
+	at org.jboss.as.ejb3.component.interceptors.LoggingInterceptor.processInvocation(LoggingInterceptor.java:59) [wildfly-ejb3-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:309)
+	at org.jboss.as.ee.component.NamespaceContextInterceptor.processInvocation(NamespaceContextInterceptor.java:50)
+	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:309)
+	at org.jboss.as.ejb3.component.interceptors.AdditionalSetupInterceptor.processInvocation(AdditionalSetupInterceptor.java:55) [wildfly-ejb3-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:309)
+	at org.jboss.invocation.ContextClassLoaderInterceptor.processInvocation(ContextClassLoaderInterceptor.java:64)
+	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:309)
+	at org.jboss.invocation.InterceptorContext.run(InterceptorContext.java:326)
+	at org.wildfly.security.manager.WildFlySecurityManager.doChecked(WildFlySecurityManager.java:448)
+	at org.jboss.invocation.AccessCheckingInterceptor.processInvocation(AccessCheckingInterceptor.java:61)
+	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:309)
+	at org.jboss.invocation.InterceptorContext.run(InterceptorContext.java:326)
+	at org.jboss.invocation.PrivilegedWithCombinerInterceptor.processInvocation(PrivilegedWithCombinerInterceptor.java:80)
+	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:309)
+	at org.jboss.invocation.ChainedInterceptor.processInvocation(ChainedInterceptor.java:61)
+	at org.jboss.as.ee.component.ViewService$View.invoke(ViewService.java:185)
+	at org.jboss.as.ee.component.ViewDescription$1.processInvocation(ViewDescription.java:182)
+	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:309)
+	at org.jboss.invocation.ChainedInterceptor.processInvocation(ChainedInterceptor.java:61)
+	at org.jboss.as.ee.component.ProxyInvocationHandler.invoke(ProxyInvocationHandler.java:73)
+	at com.uml.fx.entities.ContactService$$$view152.selectAll(Unknown Source) [classes:]
+	at com.uml.fx.rest.ContactRest.selectAll(ContactRest.java:145) [classes:]
+	at com.uml.fx.rest.ContactRest$Proxy$_$$_WeldClientProxy.selectAll(Unknown Source) [classes:]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) [rt.jar:1.8.0_25]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) [rt.jar:1.8.0_25]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) [rt.jar:1.8.0_25]
+	at java.lang.reflect.Method.invoke(Method.java:483) [rt.jar:1.8.0_25]
+	at org.jboss.resteasy.core.MethodInjectorImpl.invoke(MethodInjectorImpl.java:137) [resteasy-jaxrs-3.0.10.Final.jar:]
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invokeOnTarget(ResourceMethodInvoker.java:296) [resteasy-jaxrs-3.0.10.Final.jar:]
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:250) [resteasy-jaxrs-3.0.10.Final.jar:]
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:237) [resteasy-jaxrs-3.0.10.Final.jar:]
+	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:356) [resteasy-jaxrs-3.0.10.Final.jar:]
+	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:179) [resteasy-jaxrs-3.0.10.Final.jar:]
+	at org.jboss.resteasy.plugins.server.servlet.ServletContainerDispatcher.service(ServletContainerDispatcher.java:220) [resteasy-jaxrs-3.0.10.Final.jar:]
+	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:56) [resteasy-jaxrs-3.0.10.Final.jar:]
+	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:51) [resteasy-jaxrs-3.0.10.Final.jar:]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790) [jboss-servlet-api_3.1_spec-1.0.0.Final.jar:1.0.0.Final]
+	at io.undertow.servlet.handlers.ServletHandler.handleRequest(ServletHandler.java:85) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:61) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at org.wildfly.extension.undertow.security.SecurityContextAssociationHandler.handleRequest(SecurityContextAssociationHandler.java:78)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:131) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:56) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:45) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:63) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.security.handlers.AuthenticationMechanismsHandler.handleRequest(AuthenticationMechanismsHandler.java:58) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.security.CachedAuthenticatedSessionHandler.handleRequest(CachedAuthenticatedSessionHandler.java:70) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.security.handlers.SecurityInitialHandler.handleRequest(SecurityInitialHandler.java:76) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at org.wildfly.extension.undertow.security.jacc.JACCContextIdHandler.handleRequest(JACCContextIdHandler.java:61)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:261) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:247) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler.access$000(ServletInitialHandler.java:76) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:166) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.server.Connectors.executeRootHandler(Connectors.java:197) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:759) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [rt.jar:1.8.0_25]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [rt.jar:1.8.0_25]
+	at java.lang.Thread.run(Thread.java:745) [rt.jar:1.8.0_25]
+Caused by: javax.persistence.PersistenceException: org.hibernate.exception.JDBCConnectionException: could not extract ResultSet
+	at org.hibernate.jpa.spi.AbstractEntityManagerImpl.convert(AbstractEntityManagerImpl.java:1763) [hibernate-entitymanager-4.3.7.Final.jar:4.3.7.Final]
+	at org.hibernate.jpa.spi.AbstractEntityManagerImpl.convert(AbstractEntityManagerImpl.java:1677) [hibernate-entitymanager-4.3.7.Final.jar:4.3.7.Final]
+	at org.hibernate.jpa.internal.QueryImpl.getResultList(QueryImpl.java:458) [hibernate-entitymanager-4.3.7.Final.jar:4.3.7.Final]
+	at com.uml.fx.entities.ContactServiceImpl.selectAll(ContactServiceImpl.java:47) [classes:]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) [rt.jar:1.8.0_25]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) [rt.jar:1.8.0_25]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) [rt.jar:1.8.0_25]
+	at java.lang.reflect.Method.invoke(Method.java:483) [rt.jar:1.8.0_25]
+	at org.jboss.as.ee.component.ManagedReferenceMethodInterceptor.processInvocation(ManagedReferenceMethodInterceptor.java:52)
+	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:309)
+	at org.jboss.invocation.WeavedInterceptor.processInvocation(WeavedInterceptor.java:53)
+	at org.jboss.as.ee.component.interceptors.UserInterceptorFactory$1.processInvocation(UserInterceptorFactory.java:63)
+	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:309)
+	at org.jboss.invocation.InterceptorContext$Invocation.proceed(InterceptorContext.java:407)
+	at org.jboss.as.weld.ejb.Jsr299BindingsInterceptor.doMethodInterception(Jsr299BindingsInterceptor.java:82) [wildfly-weld-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.weld.ejb.Jsr299BindingsInterceptor.processInvocation(Jsr299BindingsInterceptor.java:93) [wildfly-weld-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.ee.component.interceptors.UserInterceptorFactory$1.processInvocation(UserInterceptorFactory.java:63)
+	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:309)
+	at org.jboss.invocation.WeavedInterceptor.processInvocation(WeavedInterceptor.java:53)
+	at org.jboss.as.ee.component.interceptors.UserInterceptorFactory$1.processInvocation(UserInterceptorFactory.java:63)
+	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:309)
+	at org.jboss.as.ejb3.component.invocationmetrics.ExecutionTimeInterceptor.processInvocation(ExecutionTimeInterceptor.java:43) [wildfly-ejb3-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:309)
+	at org.jboss.as.jpa.interceptor.SBInvocationInterceptor.processInvocation(SBInvocationInterceptor.java:47) [wildfly-jpa-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:309)
+	at org.jboss.invocation.InterceptorContext$Invocation.proceed(InterceptorContext.java:407)
+	at org.jboss.weld.ejb.AbstractEJBRequestScopeActivationInterceptor.aroundInvoke(AbstractEJBRequestScopeActivationInterceptor.java:46) [weld-core-impl-2.2.6.Final.jar:2014-10-03 10:05]
+	at org.jboss.as.weld.ejb.EjbRequestScopeActivationInterceptor.processInvocation(EjbRequestScopeActivationInterceptor.java:83) [wildfly-weld-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:309)
+	at org.jboss.as.ee.concurrent.ConcurrentContextInterceptor.processInvocation(ConcurrentContextInterceptor.java:45) [wildfly-ee-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:309)
+	at org.jboss.invocation.InitialInterceptor.processInvocation(InitialInterceptor.java:21)
+	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:309)
+	at org.jboss.invocation.ChainedInterceptor.processInvocation(ChainedInterceptor.java:61)
+	at org.jboss.as.ee.component.interceptors.ComponentDispatcherInterceptor.processInvocation(ComponentDispatcherInterceptor.java:53)
+	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:309)
+	at org.jboss.as.ejb3.component.interceptors.NonPooledEJBComponentInstanceAssociatingInterceptor.processInvocation(NonPooledEJBComponentInstanceAssociatingInterceptor.java:59) [wildfly-ejb3-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:309)
+	at org.jboss.as.ejb3.tx.CMTTxInterceptor.invokeInOurTx(CMTTxInterceptor.java:273) [wildfly-ejb3-8.2.0.Final.jar:8.2.0.Final]
+	... 75 more
+Caused by: org.hibernate.exception.JDBCConnectionException: could not extract ResultSet
+	at org.hibernate.exception.internal.SQLExceptionTypeDelegate.convert(SQLExceptionTypeDelegate.java:65) [hibernate-core-4.3.7.Final.jar:4.3.7.Final]
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:49) [hibernate-core-4.3.7.Final.jar:4.3.7.Final]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:126) [hibernate-core-4.3.7.Final.jar:4.3.7.Final]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:112) [hibernate-core-4.3.7.Final.jar:4.3.7.Final]
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.extract(ResultSetReturnImpl.java:91) [hibernate-core-4.3.7.Final.jar:4.3.7.Final]
+	at org.hibernate.loader.Loader.getResultSet(Loader.java:2066) [hibernate-core-4.3.7.Final.jar:4.3.7.Final]
+	at org.hibernate.loader.Loader.executeQueryStatement(Loader.java:1863) [hibernate-core-4.3.7.Final.jar:4.3.7.Final]
+	at org.hibernate.loader.Loader.executeQueryStatement(Loader.java:1839) [hibernate-core-4.3.7.Final.jar:4.3.7.Final]
+	at org.hibernate.loader.Loader.doQuery(Loader.java:910) [hibernate-core-4.3.7.Final.jar:4.3.7.Final]
+	at org.hibernate.loader.Loader.doQueryAndInitializeNonLazyCollections(Loader.java:355) [hibernate-core-4.3.7.Final.jar:4.3.7.Final]
+	at org.hibernate.loader.Loader.doList(Loader.java:2554) [hibernate-core-4.3.7.Final.jar:4.3.7.Final]
+	at org.hibernate.loader.Loader.doList(Loader.java:2540) [hibernate-core-4.3.7.Final.jar:4.3.7.Final]
+	at org.hibernate.loader.Loader.listIgnoreQueryCache(Loader.java:2370) [hibernate-core-4.3.7.Final.jar:4.3.7.Final]
+	at org.hibernate.loader.Loader.list(Loader.java:2365) [hibernate-core-4.3.7.Final.jar:4.3.7.Final]
+	at org.hibernate.loader.hql.QueryLoader.list(QueryLoader.java:497) [hibernate-core-4.3.7.Final.jar:4.3.7.Final]
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.list(QueryTranslatorImpl.java:387) [hibernate-core-4.3.7.Final.jar:4.3.7.Final]
+	at org.hibernate.engine.query.spi.HQLQueryPlan.performList(HQLQueryPlan.java:236) [hibernate-core-4.3.7.Final.jar:4.3.7.Final]
+	at org.hibernate.internal.SessionImpl.list(SessionImpl.java:1264) [hibernate-core-4.3.7.Final.jar:4.3.7.Final]
+	at org.hibernate.internal.QueryImpl.list(QueryImpl.java:103) [hibernate-core-4.3.7.Final.jar:4.3.7.Final]
+	at org.hibernate.jpa.internal.QueryImpl.list(QueryImpl.java:573) [hibernate-entitymanager-4.3.7.Final.jar:4.3.7.Final]
+	at org.hibernate.jpa.internal.QueryImpl.getResultList(QueryImpl.java:449) [hibernate-entitymanager-4.3.7.Final.jar:4.3.7.Final]
+	... 111 more
+Caused by: java.sql.SQLNonTransientConnectionException: Could not read resultset: unexpected end of stream, read 0bytes from 4
+	at org.mariadb.jdbc.internal.SQLExceptionMapper.get(SQLExceptionMapper.java:136)
+	at org.mariadb.jdbc.internal.SQLExceptionMapper.throwException(SQLExceptionMapper.java:106)
+	at org.mariadb.jdbc.MySQLStatement.executeQueryEpilog(MySQLStatement.java:264)
+	at org.mariadb.jdbc.MySQLStatement.execute(MySQLStatement.java:288)
+	at org.mariadb.jdbc.MySQLStatement.executeQuery(MySQLStatement.java:302)
+	at org.mariadb.jdbc.MySQLPreparedStatement.executeQuery(MySQLPreparedStatement.java:112)
+	at org.jboss.jca.adapters.jdbc.WrappedPreparedStatement.executeQuery(WrappedPreparedStatement.java:462)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.extract(ResultSetReturnImpl.java:82) [hibernate-core-4.3.7.Final.jar:4.3.7.Final]
+	... 127 more
+Caused by: org.mariadb.jdbc.internal.common.QueryException: Could not read resultset: unexpected end of stream, read 0bytes from 4
+	at org.mariadb.jdbc.internal.mysql.MySQLProtocol.getResult(MySQLProtocol.java:926)
+	at org.mariadb.jdbc.internal.mysql.MySQLProtocol.executeQuery(MySQLProtocol.java:991)
+	at org.mariadb.jdbc.MySQLStatement.execute(MySQLStatement.java:281)
+	... 131 more
+Caused by: java.io.EOFException: unexpected end of stream, read 0bytes from 4
+	at org.mariadb.jdbc.internal.common.packet.buffer.ReadUtil.readFully(ReadUtil.java:84)
+	at org.mariadb.jdbc.internal.common.packet.buffer.ReadUtil.readFully(ReadUtil.java:92)
+	at org.mariadb.jdbc.internal.common.packet.RawPacket.nextPacket(RawPacket.java:77)
+	at org.mariadb.jdbc.internal.common.packet.SyncPacketFetcher.getRawPacket(SyncPacketFetcher.java:67)
+	at org.mariadb.jdbc.internal.mysql.MySQLProtocol.getResult(MySQLProtocol.java:894)
+	... 133 more
+
+2015-04-09 15:20:39,094 ERROR [io.undertow.request] (default task-31) UT005023: Exception handling request to /fx-rest-1.0/contact/selectAll: org.jboss.resteasy.spi.UnhandledException: javax.ejb.EJBException: javax.persistence.PersistenceException: org.hibernate.exception.JDBCConnectionException: could not extract ResultSet
+	at org.jboss.resteasy.core.ExceptionHandler.handleApplicationException(ExceptionHandler.java:76) [resteasy-jaxrs-3.0.10.Final.jar:]
+	at org.jboss.resteasy.core.ExceptionHandler.handleException(ExceptionHandler.java:212) [resteasy-jaxrs-3.0.10.Final.jar:]
+	at org.jboss.resteasy.core.SynchronousDispatcher.writeException(SynchronousDispatcher.java:149) [resteasy-jaxrs-3.0.10.Final.jar:]
+	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:372) [resteasy-jaxrs-3.0.10.Final.jar:]
+	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:179) [resteasy-jaxrs-3.0.10.Final.jar:]
+	at org.jboss.resteasy.plugins.server.servlet.ServletContainerDispatcher.service(ServletContainerDispatcher.java:220) [resteasy-jaxrs-3.0.10.Final.jar:]
+	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:56) [resteasy-jaxrs-3.0.10.Final.jar:]
+	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:51) [resteasy-jaxrs-3.0.10.Final.jar:]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790) [jboss-servlet-api_3.1_spec-1.0.0.Final.jar:1.0.0.Final]
+	at io.undertow.servlet.handlers.ServletHandler.handleRequest(ServletHandler.java:85) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:61) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at org.wildfly.extension.undertow.security.SecurityContextAssociationHandler.handleRequest(SecurityContextAssociationHandler.java:78)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:131) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:56) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:45) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:63) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.security.handlers.AuthenticationMechanismsHandler.handleRequest(AuthenticationMechanismsHandler.java:58) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.security.CachedAuthenticatedSessionHandler.handleRequest(CachedAuthenticatedSessionHandler.java:70) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.security.handlers.SecurityInitialHandler.handleRequest(SecurityInitialHandler.java:76) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at org.wildfly.extension.undertow.security.jacc.JACCContextIdHandler.handleRequest(JACCContextIdHandler.java:61)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:261) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:247) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler.access$000(ServletInitialHandler.java:76) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:166) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.server.Connectors.executeRootHandler(Connectors.java:197) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:759) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [rt.jar:1.8.0_25]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [rt.jar:1.8.0_25]
+	at java.lang.Thread.run(Thread.java:745) [rt.jar:1.8.0_25]
+Caused by: javax.ejb.EJBException: javax.persistence.PersistenceException: org.hibernate.exception.JDBCConnectionException: could not extract ResultSet
+	at org.jboss.as.ejb3.tx.CMTTxInterceptor.handleExceptionInOurTx(CMTTxInterceptor.java:190) [wildfly-ejb3-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.ejb3.tx.CMTTxInterceptor.invokeInOurTx(CMTTxInterceptor.java:275) [wildfly-ejb3-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.ejb3.tx.CMTTxInterceptor.required(CMTTxInterceptor.java:340) [wildfly-ejb3-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.ejb3.tx.CMTTxInterceptor.processInvocation(CMTTxInterceptor.java:239) [wildfly-ejb3-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:309)
+	at org.jboss.as.ejb3.component.interceptors.CurrentInvocationContextInterceptor.processInvocation(CurrentInvocationContextInterceptor.java:41) [wildfly-ejb3-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:309)
+	at org.jboss.as.ejb3.component.invocationmetrics.WaitTimeInterceptor.processInvocation(WaitTimeInterceptor.java:43) [wildfly-ejb3-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:309)
+	at org.jboss.as.ejb3.security.SecurityContextInterceptor.processInvocation(SecurityContextInterceptor.java:95) [wildfly-ejb3-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:309)
+	at org.jboss.as.ejb3.component.interceptors.ShutDownInterceptorFactory$1.processInvocation(ShutDownInterceptorFactory.java:64) [wildfly-ejb3-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:309)
+	at org.jboss.as.ejb3.component.interceptors.LoggingInterceptor.processInvocation(LoggingInterceptor.java:59) [wildfly-ejb3-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:309)
+	at org.jboss.as.ee.component.NamespaceContextInterceptor.processInvocation(NamespaceContextInterceptor.java:50)
+	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:309)
+	at org.jboss.as.ejb3.component.interceptors.AdditionalSetupInterceptor.processInvocation(AdditionalSetupInterceptor.java:55) [wildfly-ejb3-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:309)
+	at org.jboss.invocation.ContextClassLoaderInterceptor.processInvocation(ContextClassLoaderInterceptor.java:64)
+	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:309)
+	at org.jboss.invocation.InterceptorContext.run(InterceptorContext.java:326)
+	at org.wildfly.security.manager.WildFlySecurityManager.doChecked(WildFlySecurityManager.java:448)
+	at org.jboss.invocation.AccessCheckingInterceptor.processInvocation(AccessCheckingInterceptor.java:61)
+	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:309)
+	at org.jboss.invocation.InterceptorContext.run(InterceptorContext.java:326)
+	at org.jboss.invocation.PrivilegedWithCombinerInterceptor.processInvocation(PrivilegedWithCombinerInterceptor.java:80)
+	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:309)
+	at org.jboss.invocation.ChainedInterceptor.processInvocation(ChainedInterceptor.java:61)
+	at org.jboss.as.ee.component.ViewService$View.invoke(ViewService.java:185)
+	at org.jboss.as.ee.component.ViewDescription$1.processInvocation(ViewDescription.java:182)
+	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:309)
+	at org.jboss.invocation.ChainedInterceptor.processInvocation(ChainedInterceptor.java:61)
+	at org.jboss.as.ee.component.ProxyInvocationHandler.invoke(ProxyInvocationHandler.java:73)
+	at com.uml.fx.entities.ContactService$$$view152.selectAll(Unknown Source) [classes:]
+	at com.uml.fx.rest.ContactRest.selectAll(ContactRest.java:145) [classes:]
+	at com.uml.fx.rest.ContactRest$Proxy$_$$_WeldClientProxy.selectAll(Unknown Source) [classes:]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) [rt.jar:1.8.0_25]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) [rt.jar:1.8.0_25]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) [rt.jar:1.8.0_25]
+	at java.lang.reflect.Method.invoke(Method.java:483) [rt.jar:1.8.0_25]
+	at org.jboss.resteasy.core.MethodInjectorImpl.invoke(MethodInjectorImpl.java:137) [resteasy-jaxrs-3.0.10.Final.jar:]
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invokeOnTarget(ResourceMethodInvoker.java:296) [resteasy-jaxrs-3.0.10.Final.jar:]
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:250) [resteasy-jaxrs-3.0.10.Final.jar:]
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:237) [resteasy-jaxrs-3.0.10.Final.jar:]
+	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:356) [resteasy-jaxrs-3.0.10.Final.jar:]
+	... 31 more
+Caused by: javax.persistence.PersistenceException: org.hibernate.exception.JDBCConnectionException: could not extract ResultSet
+	at org.hibernate.jpa.spi.AbstractEntityManagerImpl.convert(AbstractEntityManagerImpl.java:1763) [hibernate-entitymanager-4.3.7.Final.jar:4.3.7.Final]
+	at org.hibernate.jpa.spi.AbstractEntityManagerImpl.convert(AbstractEntityManagerImpl.java:1677) [hibernate-entitymanager-4.3.7.Final.jar:4.3.7.Final]
+	at org.hibernate.jpa.internal.QueryImpl.getResultList(QueryImpl.java:458) [hibernate-entitymanager-4.3.7.Final.jar:4.3.7.Final]
+	at com.uml.fx.entities.ContactServiceImpl.selectAll(ContactServiceImpl.java:47) [classes:]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) [rt.jar:1.8.0_25]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) [rt.jar:1.8.0_25]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) [rt.jar:1.8.0_25]
+	at java.lang.reflect.Method.invoke(Method.java:483) [rt.jar:1.8.0_25]
+	at org.jboss.as.ee.component.ManagedReferenceMethodInterceptor.processInvocation(ManagedReferenceMethodInterceptor.java:52)
+	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:309)
+	at org.jboss.invocation.WeavedInterceptor.processInvocation(WeavedInterceptor.java:53)
+	at org.jboss.as.ee.component.interceptors.UserInterceptorFactory$1.processInvocation(UserInterceptorFactory.java:63)
+	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:309)
+	at org.jboss.invocation.InterceptorContext$Invocation.proceed(InterceptorContext.java:407)
+	at org.jboss.as.weld.ejb.Jsr299BindingsInterceptor.doMethodInterception(Jsr299BindingsInterceptor.java:82) [wildfly-weld-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.weld.ejb.Jsr299BindingsInterceptor.processInvocation(Jsr299BindingsInterceptor.java:93) [wildfly-weld-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.ee.component.interceptors.UserInterceptorFactory$1.processInvocation(UserInterceptorFactory.java:63)
+	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:309)
+	at org.jboss.invocation.WeavedInterceptor.processInvocation(WeavedInterceptor.java:53)
+	at org.jboss.as.ee.component.interceptors.UserInterceptorFactory$1.processInvocation(UserInterceptorFactory.java:63)
+	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:309)
+	at org.jboss.as.ejb3.component.invocationmetrics.ExecutionTimeInterceptor.processInvocation(ExecutionTimeInterceptor.java:43) [wildfly-ejb3-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:309)
+	at org.jboss.as.jpa.interceptor.SBInvocationInterceptor.processInvocation(SBInvocationInterceptor.java:47) [wildfly-jpa-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:309)
+	at org.jboss.invocation.InterceptorContext$Invocation.proceed(InterceptorContext.java:407)
+	at org.jboss.weld.ejb.AbstractEJBRequestScopeActivationInterceptor.aroundInvoke(AbstractEJBRequestScopeActivationInterceptor.java:46) [weld-core-impl-2.2.6.Final.jar:2014-10-03 10:05]
+	at org.jboss.as.weld.ejb.EjbRequestScopeActivationInterceptor.processInvocation(EjbRequestScopeActivationInterceptor.java:83) [wildfly-weld-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:309)
+	at org.jboss.as.ee.concurrent.ConcurrentContextInterceptor.processInvocation(ConcurrentContextInterceptor.java:45) [wildfly-ee-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:309)
+	at org.jboss.invocation.InitialInterceptor.processInvocation(InitialInterceptor.java:21)
+	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:309)
+	at org.jboss.invocation.ChainedInterceptor.processInvocation(ChainedInterceptor.java:61)
+	at org.jboss.as.ee.component.interceptors.ComponentDispatcherInterceptor.processInvocation(ComponentDispatcherInterceptor.java:53)
+	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:309)
+	at org.jboss.as.ejb3.component.interceptors.NonPooledEJBComponentInstanceAssociatingInterceptor.processInvocation(NonPooledEJBComponentInstanceAssociatingInterceptor.java:59) [wildfly-ejb3-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:309)
+	at org.jboss.as.ejb3.tx.CMTTxInterceptor.invokeInOurTx(CMTTxInterceptor.java:273) [wildfly-ejb3-8.2.0.Final.jar:8.2.0.Final]
+	... 75 more
+Caused by: org.hibernate.exception.JDBCConnectionException: could not extract ResultSet
+	at org.hibernate.exception.internal.SQLExceptionTypeDelegate.convert(SQLExceptionTypeDelegate.java:65) [hibernate-core-4.3.7.Final.jar:4.3.7.Final]
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:49) [hibernate-core-4.3.7.Final.jar:4.3.7.Final]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:126) [hibernate-core-4.3.7.Final.jar:4.3.7.Final]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:112) [hibernate-core-4.3.7.Final.jar:4.3.7.Final]
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.extract(ResultSetReturnImpl.java:91) [hibernate-core-4.3.7.Final.jar:4.3.7.Final]
+	at org.hibernate.loader.Loader.getResultSet(Loader.java:2066) [hibernate-core-4.3.7.Final.jar:4.3.7.Final]
+	at org.hibernate.loader.Loader.executeQueryStatement(Loader.java:1863) [hibernate-core-4.3.7.Final.jar:4.3.7.Final]
+	at org.hibernate.loader.Loader.executeQueryStatement(Loader.java:1839) [hibernate-core-4.3.7.Final.jar:4.3.7.Final]
+	at org.hibernate.loader.Loader.doQuery(Loader.java:910) [hibernate-core-4.3.7.Final.jar:4.3.7.Final]
+	at org.hibernate.loader.Loader.doQueryAndInitializeNonLazyCollections(Loader.java:355) [hibernate-core-4.3.7.Final.jar:4.3.7.Final]
+	at org.hibernate.loader.Loader.doList(Loader.java:2554) [hibernate-core-4.3.7.Final.jar:4.3.7.Final]
+	at org.hibernate.loader.Loader.doList(Loader.java:2540) [hibernate-core-4.3.7.Final.jar:4.3.7.Final]
+	at org.hibernate.loader.Loader.listIgnoreQueryCache(Loader.java:2370) [hibernate-core-4.3.7.Final.jar:4.3.7.Final]
+	at org.hibernate.loader.Loader.list(Loader.java:2365) [hibernate-core-4.3.7.Final.jar:4.3.7.Final]
+	at org.hibernate.loader.hql.QueryLoader.list(QueryLoader.java:497) [hibernate-core-4.3.7.Final.jar:4.3.7.Final]
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.list(QueryTranslatorImpl.java:387) [hibernate-core-4.3.7.Final.jar:4.3.7.Final]
+	at org.hibernate.engine.query.spi.HQLQueryPlan.performList(HQLQueryPlan.java:236) [hibernate-core-4.3.7.Final.jar:4.3.7.Final]
+	at org.hibernate.internal.SessionImpl.list(SessionImpl.java:1264) [hibernate-core-4.3.7.Final.jar:4.3.7.Final]
+	at org.hibernate.internal.QueryImpl.list(QueryImpl.java:103) [hibernate-core-4.3.7.Final.jar:4.3.7.Final]
+	at org.hibernate.jpa.internal.QueryImpl.list(QueryImpl.java:573) [hibernate-entitymanager-4.3.7.Final.jar:4.3.7.Final]
+	at org.hibernate.jpa.internal.QueryImpl.getResultList(QueryImpl.java:449) [hibernate-entitymanager-4.3.7.Final.jar:4.3.7.Final]
+	... 111 more
+Caused by: java.sql.SQLNonTransientConnectionException: Could not read resultset: unexpected end of stream, read 0bytes from 4
+	at org.mariadb.jdbc.internal.SQLExceptionMapper.get(SQLExceptionMapper.java:136)
+	at org.mariadb.jdbc.internal.SQLExceptionMapper.throwException(SQLExceptionMapper.java:106)
+	at org.mariadb.jdbc.MySQLStatement.executeQueryEpilog(MySQLStatement.java:264)
+	at org.mariadb.jdbc.MySQLStatement.execute(MySQLStatement.java:288)
+	at org.mariadb.jdbc.MySQLStatement.executeQuery(MySQLStatement.java:302)
+	at org.mariadb.jdbc.MySQLPreparedStatement.executeQuery(MySQLPreparedStatement.java:112)
+	at org.jboss.jca.adapters.jdbc.WrappedPreparedStatement.executeQuery(WrappedPreparedStatement.java:462)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.extract(ResultSetReturnImpl.java:82) [hibernate-core-4.3.7.Final.jar:4.3.7.Final]
+	... 127 more
+Caused by: org.mariadb.jdbc.internal.common.QueryException: Could not read resultset: unexpected end of stream, read 0bytes from 4
+	at org.mariadb.jdbc.internal.mysql.MySQLProtocol.getResult(MySQLProtocol.java:926)
+	at org.mariadb.jdbc.internal.mysql.MySQLProtocol.executeQuery(MySQLProtocol.java:991)
+	at org.mariadb.jdbc.MySQLStatement.execute(MySQLStatement.java:281)
+	... 131 more
+Caused by: java.io.EOFException: unexpected end of stream, read 0bytes from 4
+	at org.mariadb.jdbc.internal.common.packet.buffer.ReadUtil.readFully(ReadUtil.java:84)
+	at org.mariadb.jdbc.internal.common.packet.buffer.ReadUtil.readFully(ReadUtil.java:92)
+	at org.mariadb.jdbc.internal.common.packet.RawPacket.nextPacket(RawPacket.java:77)
+	at org.mariadb.jdbc.internal.common.packet.SyncPacketFetcher.getRawPacket(SyncPacketFetcher.java:67)
+	at org.mariadb.jdbc.internal.mysql.MySQLProtocol.getResult(MySQLProtocol.java:894)
+	... 133 more
+
+2015-04-09 15:21:32,437 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) JBAS017535: Unregistered web context: /fx-rest-1.0
+2015-04-09 15:21:32,455 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 209) JBAS011410: Stopping Persistence Unit (phase 2 of 2) Service 'fx-rest-1.0.war#fxPU'
+2015-04-09 15:21:32,465 INFO  [org.jboss.weld.deployer] (MSC service thread 1-1) JBAS016009: Stopping weld service for deployment fx-rest-1.0.war
+2015-04-09 15:21:32,500 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 209) JBAS011410: Stopping Persistence Unit (phase 1 of 2) Service 'fx-rest-1.0.war#fxPU'
+2015-04-09 15:21:32,507 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) JBAS010409: Unbound data source [java:jboss/datasources/fxdb]
+2015-04-09 15:21:32,508 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-6) JBAS010418: Stopped Driver service with driver-name = mariadb-java-client-1.1.7.jar
+2015-04-09 15:21:32,524 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) JBAS015877: Stopped deployment mariadb-java-client-1.1.7.jar (runtime-name: mariadb-java-client-1.1.7.jar) in 89ms
+2015-04-09 15:21:32,532 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) JBAS015876: Starting deployment of "mariadb-java-client-1.1.7.jar" (runtime-name: "mariadb-java-client-1.1.7.jar")
+2015-04-09 15:21:32,566 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-5) JBAS010404: Deploying non-JDBC-compliant driver class org.mariadb.jdbc.Driver (version 1.1)
+2015-04-09 15:21:32,574 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-5) JBAS010417: Started Driver service with driver-name = mariadb-java-client-1.1.7.jar
+2015-04-09 15:21:32,585 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-3) JBAS010400: Bound data source [java:jboss/datasources/fxdb]
+2015-04-09 15:21:32,585 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 209) JBAS011409: Starting Persistence Unit (phase 1 of 2) Service 'fx-rest-1.0.war#fxPU'
+2015-04-09 15:21:32,599 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 209) HHH000204: Processing PersistenceUnitInfo [
+	name: fxPU
+	...]
+2015-04-09 15:21:32,792 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) JBAS015971: Deployment restart detected for deployment fx-rest-1.0.war, performing full redeploy instead.
+2015-04-09 15:21:32,800 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 209) JBAS011410: Stopping Persistence Unit (phase 1 of 2) Service 'fx-rest-1.0.war#fxPU'
+2015-04-09 15:21:32,814 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) JBAS015877: Stopped deployment fx-rest-1.0.war (runtime-name: fx-rest-1.0.war) in 13ms
+2015-04-09 15:21:32,820 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) JBAS015876: Starting deployment of "fx-rest-1.0.war" (runtime-name: "fx-rest-1.0.war")
+2015-04-09 15:21:32,858 INFO  [org.jboss.as.jpa] (MSC service thread 1-7) JBAS011401: Read persistence.xml for fxPU
+2015-04-09 15:21:32,880 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 209) JBAS011409: Starting Persistence Unit (phase 1 of 2) Service 'fx-rest-1.0.war#fxPU'
+2015-04-09 15:21:32,886 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 209) HHH000204: Processing PersistenceUnitInfo [
+	name: fxPU
+	...]
+2015-04-09 15:21:33,097 INFO  [org.jboss.weld.deployer] (MSC service thread 1-6) JBAS016002: Processing weld deployment fx-rest-1.0.war
+2015-04-09 15:21:33,106 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-6) JNDI bindings for session bean named FxUsersServiceImpl in deployment unit deployment "fx-rest-1.0.war" are as follows:
+
+	java:global/fx-rest-1.0/FxUsersServiceImpl!com.uml.fx.entities.FxUsersService
+	java:app/fx-rest-1.0/FxUsersServiceImpl!com.uml.fx.entities.FxUsersService
+	java:module/FxUsersServiceImpl!com.uml.fx.entities.FxUsersService
+	java:global/fx-rest-1.0/FxUsersServiceImpl
+	java:app/fx-rest-1.0/FxUsersServiceImpl
+	java:module/FxUsersServiceImpl
+
+2015-04-09 15:21:33,127 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-6) JNDI bindings for session bean named ContactServiceImpl in deployment unit deployment "fx-rest-1.0.war" are as follows:
+
+	java:global/fx-rest-1.0/ContactServiceImpl!com.uml.fx.entities.ContactService
+	java:app/fx-rest-1.0/ContactServiceImpl!com.uml.fx.entities.ContactService
+	java:module/ContactServiceImpl!com.uml.fx.entities.ContactService
+	java:global/fx-rest-1.0/ContactServiceImpl
+	java:app/fx-rest-1.0/ContactServiceImpl
+	java:module/ContactServiceImpl
+
+2015-04-09 15:21:33,148 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-6) JNDI bindings for session bean named NewsServiceImpl in deployment unit deployment "fx-rest-1.0.war" are as follows:
+
+	java:global/fx-rest-1.0/NewsServiceImpl!com.uml.fx.entities.NewsService
+	java:app/fx-rest-1.0/NewsServiceImpl!com.uml.fx.entities.NewsService
+	java:module/NewsServiceImpl!com.uml.fx.entities.NewsService
+	java:global/fx-rest-1.0/NewsServiceImpl
+	java:app/fx-rest-1.0/NewsServiceImpl
+	java:module/NewsServiceImpl
+
+2015-04-09 15:21:33,167 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-6) JNDI bindings for session bean named TaxCalculatorImpl in deployment unit deployment "fx-rest-1.0.war" are as follows:
+
+	java:global/fx-rest-1.0/TaxCalculatorImpl!com.uml.fx.entities.TaxCalculator
+	java:app/fx-rest-1.0/TaxCalculatorImpl!com.uml.fx.entities.TaxCalculator
+	java:module/TaxCalculatorImpl!com.uml.fx.entities.TaxCalculator
+	java:global/fx-rest-1.0/TaxCalculatorImpl
+	java:app/fx-rest-1.0/TaxCalculatorImpl
+	java:module/TaxCalculatorImpl
+
+2015-04-09 15:21:33,188 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-6) JNDI bindings for session bean named AppraisalServiceImpl in deployment unit deployment "fx-rest-1.0.war" are as follows:
+
+	java:global/fx-rest-1.0/AppraisalServiceImpl!com.uml.fx.entities.AppraisalService
+	java:app/fx-rest-1.0/AppraisalServiceImpl!com.uml.fx.entities.AppraisalService
+	java:module/AppraisalServiceImpl!com.uml.fx.entities.AppraisalService
+	java:global/fx-rest-1.0/AppraisalServiceImpl
+	java:app/fx-rest-1.0/AppraisalServiceImpl
+	java:module/AppraisalServiceImpl
+
+2015-04-09 15:21:33,207 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-6) JNDI bindings for session bean named TaxRateServiceImpl in deployment unit deployment "fx-rest-1.0.war" are as follows:
+
+	java:global/fx-rest-1.0/TaxRateServiceImpl!com.uml.fx.entities.TaxRateService
+	java:app/fx-rest-1.0/TaxRateServiceImpl!com.uml.fx.entities.TaxRateService
+	java:module/TaxRateServiceImpl!com.uml.fx.entities.TaxRateService
+	java:global/fx-rest-1.0/TaxRateServiceImpl
+	java:app/fx-rest-1.0/TaxRateServiceImpl
+	java:module/TaxRateServiceImpl
+
+2015-04-09 15:21:33,268 ERROR [org.jboss.msc.service.fail] (MSC service thread 1-5) MSC000001: Failed to start service jboss.deployment.unit."fx-rest-1.0.war".INSTALL: org.jboss.msc.service.StartException in service jboss.deployment.unit."fx-rest-1.0.war".INSTALL: JBAS018733: Failed to process phase INSTALL of deployment "fx-rest-1.0.war"
+	at org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:166) [wildfly-server-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:1948) [jboss-msc-1.2.2.Final.jar:1.2.2.Final]
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1881) [jboss-msc-1.2.2.Final.jar:1.2.2.Final]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [rt.jar:1.8.0_25]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [rt.jar:1.8.0_25]
+	at java.lang.Thread.run(Thread.java:745) [rt.jar:1.8.0_25]
+Caused by: java.lang.IllegalStateException: JBAS014666: Duplicate resource fx-rest-1.0.war#fxPU
+	at org.jboss.as.controller.registry.AbstractModelResource$DefaultResourceProvider.register(AbstractModelResource.java:224)
+	at org.jboss.as.controller.registry.AbstractModelResource.registerChild(AbstractModelResource.java:134)
+	at org.jboss.as.jpa.processor.PersistenceUnitServiceHandler.addManagementConsole(PersistenceUnitServiceHandler.java:1077)
+	at org.jboss.as.jpa.processor.PersistenceUnitServiceHandler.deployPersistenceUnitPhaseTwo(PersistenceUnitServiceHandler.java:687)
+	at org.jboss.as.jpa.processor.PersistenceUnitServiceHandler.addPuService(PersistenceUnitServiceHandler.java:280)
+	at org.jboss.as.jpa.processor.PersistenceUnitServiceHandler.handleWarDeployment(PersistenceUnitServiceHandler.java:191)
+	at org.jboss.as.jpa.processor.PersistenceUnitServiceHandler.deploy(PersistenceUnitServiceHandler.java:126)
+	at org.jboss.as.jpa.processor.PersistenceCompleteInstallProcessor.deploy(PersistenceCompleteInstallProcessor.java:55)
+	at org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:159) [wildfly-server-8.2.0.Final.jar:8.2.0.Final]
+	... 5 more
+
+2015-04-09 15:21:33,354 WARN  [org.jboss.as.jpa] (management-handler-thread - 1) JBAS011411: Unexpected problem gathering statistics: java.lang.IllegalStateException: JBAS011477: Persistence unit 'fx-rest-1.0.war#fxPU' is not available
+	at org.jboss.as.jpa.management.EntityManagerFactoryLookup.entityManagerFactory(EntityManagerFactoryLookup.java:44)
+	at org.jboss.as.jpa.hibernate4.management.HibernateEntityCacheStatistics.getDynamicChildrenNames(HibernateEntityCacheStatistics.java:72)
+	at org.jboss.as.jpa.management.DynamicManagementStatisticsResource.getChildren(DynamicManagementStatisticsResource.java:204)
+	at org.jboss.as.controller.registry.AbstractModelResource$DelegateResource.getChildren(AbstractModelResource.java:254) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:252) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:239) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:225) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:254) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:239) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:225) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:254) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:239) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:225) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:254) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:239) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:225) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:213) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.ModelControllerImpl.writeModel(ModelControllerImpl.java:580) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.OperationContextImpl.createPersistenceResource(OperationContextImpl.java:229) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.AbstractOperationContext.doCompleteStep(AbstractOperationContext.java:543) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.AbstractOperationContext.completeStepInternal(AbstractOperationContext.java:298) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.AbstractOperationContext.finishStep(AbstractOperationContext.java:752) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.AbstractOperationContext.executeStep(AbstractOperationContext.java:727) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.AbstractOperationContext.doCompleteStep(AbstractOperationContext.java:501) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.AbstractOperationContext.completeStepInternal(AbstractOperationContext.java:298) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.AbstractOperationContext.executeOperation(AbstractOperationContext.java:293) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.ModelControllerImpl.internalExecute(ModelControllerImpl.java:276) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.ModelControllerImpl.execute(ModelControllerImpl.java:150) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.remote.ModelControllerClientOperationHandler$ExecuteRequestHandler.doExecute(ModelControllerClientOperationHandler.java:199) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.remote.ModelControllerClientOperationHandler$ExecuteRequestHandler.access$300(ModelControllerClientOperationHandler.java:130) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.remote.ModelControllerClientOperationHandler$ExecuteRequestHandler$1$1.run(ModelControllerClientOperationHandler.java:150) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.remote.ModelControllerClientOperationHandler$ExecuteRequestHandler$1$1.run(ModelControllerClientOperationHandler.java:146) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at java.security.AccessController.doPrivileged(Native Method) [rt.jar:1.8.0_25]
+	at javax.security.auth.Subject.doAs(Subject.java:422) [rt.jar:1.8.0_25]
+	at org.jboss.as.controller.AccessAuditContext.doAs(AccessAuditContext.java:94) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.remote.ModelControllerClientOperationHandler$ExecuteRequestHandler$1.execute(ModelControllerClientOperationHandler.java:146) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.protocol.mgmt.AbstractMessageHandler$2$1.doExecute(AbstractMessageHandler.java:283) [wildfly-protocol-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.protocol.mgmt.AbstractMessageHandler$AsyncTaskRunner.run(AbstractMessageHandler.java:504) [wildfly-protocol-8.2.0.Final.jar:8.2.0.Final]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [rt.jar:1.8.0_25]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [rt.jar:1.8.0_25]
+	at java.lang.Thread.run(Thread.java:745) [rt.jar:1.8.0_25]
+	at org.jboss.threads.JBossThread.run(JBossThread.java:122) [jboss-threads-2.1.1.Final.jar:2.1.1.Final]
+
+2015-04-09 15:21:33,606 WARN  [org.jboss.as.jpa] (management-handler-thread - 1) JBAS011411: Unexpected problem gathering statistics: java.lang.IllegalStateException: JBAS011477: Persistence unit 'fx-rest-1.0.war#fxPU' is not available
+	at org.jboss.as.jpa.management.EntityManagerFactoryLookup.entityManagerFactory(EntityManagerFactoryLookup.java:44)
+	at org.jboss.as.jpa.hibernate4.management.HibernateCollectionStatistics.getDynamicChildrenNames(HibernateCollectionStatistics.java:72)
+	at org.jboss.as.jpa.management.DynamicManagementStatisticsResource.getChildren(DynamicManagementStatisticsResource.java:204)
+	at org.jboss.as.controller.registry.AbstractModelResource$DelegateResource.getChildren(AbstractModelResource.java:254) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:252) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:239) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:225) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:254) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:239) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:225) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:254) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:239) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:225) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:254) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:239) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:225) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:213) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.ModelControllerImpl.writeModel(ModelControllerImpl.java:580) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.OperationContextImpl.createPersistenceResource(OperationContextImpl.java:229) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.AbstractOperationContext.doCompleteStep(AbstractOperationContext.java:543) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.AbstractOperationContext.completeStepInternal(AbstractOperationContext.java:298) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.AbstractOperationContext.finishStep(AbstractOperationContext.java:752) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.AbstractOperationContext.executeStep(AbstractOperationContext.java:727) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.AbstractOperationContext.doCompleteStep(AbstractOperationContext.java:501) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.AbstractOperationContext.completeStepInternal(AbstractOperationContext.java:298) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.AbstractOperationContext.executeOperation(AbstractOperationContext.java:293) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.ModelControllerImpl.internalExecute(ModelControllerImpl.java:276) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.ModelControllerImpl.execute(ModelControllerImpl.java:150) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.remote.ModelControllerClientOperationHandler$ExecuteRequestHandler.doExecute(ModelControllerClientOperationHandler.java:199) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.remote.ModelControllerClientOperationHandler$ExecuteRequestHandler.access$300(ModelControllerClientOperationHandler.java:130) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.remote.ModelControllerClientOperationHandler$ExecuteRequestHandler$1$1.run(ModelControllerClientOperationHandler.java:150) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.remote.ModelControllerClientOperationHandler$ExecuteRequestHandler$1$1.run(ModelControllerClientOperationHandler.java:146) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at java.security.AccessController.doPrivileged(Native Method) [rt.jar:1.8.0_25]
+	at javax.security.auth.Subject.doAs(Subject.java:422) [rt.jar:1.8.0_25]
+	at org.jboss.as.controller.AccessAuditContext.doAs(AccessAuditContext.java:94) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.remote.ModelControllerClientOperationHandler$ExecuteRequestHandler$1.execute(ModelControllerClientOperationHandler.java:146) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.protocol.mgmt.AbstractMessageHandler$2$1.doExecute(AbstractMessageHandler.java:283) [wildfly-protocol-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.protocol.mgmt.AbstractMessageHandler$AsyncTaskRunner.run(AbstractMessageHandler.java:504) [wildfly-protocol-8.2.0.Final.jar:8.2.0.Final]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [rt.jar:1.8.0_25]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [rt.jar:1.8.0_25]
+	at java.lang.Thread.run(Thread.java:745) [rt.jar:1.8.0_25]
+	at org.jboss.threads.JBossThread.run(JBossThread.java:122) [jboss-threads-2.1.1.Final.jar:2.1.1.Final]
+
+2015-04-09 15:21:33,841 WARN  [org.jboss.as.jpa] (management-handler-thread - 1) JBAS011411: Unexpected problem gathering statistics: java.lang.IllegalStateException: JBAS011477: Persistence unit 'fx-rest-1.0.war#fxPU' is not available
+	at org.jboss.as.jpa.management.EntityManagerFactoryLookup.entityManagerFactory(EntityManagerFactoryLookup.java:44)
+	at org.jboss.as.jpa.hibernate4.management.HibernateQueryCacheStatistics.getDynamicChildrenNames(HibernateQueryCacheStatistics.java:85)
+	at org.jboss.as.jpa.management.DynamicManagementStatisticsResource.getChildren(DynamicManagementStatisticsResource.java:204)
+	at org.jboss.as.controller.registry.AbstractModelResource$DelegateResource.getChildren(AbstractModelResource.java:254) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:252) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:239) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:225) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:254) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:239) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:225) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:254) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:239) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:225) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:254) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:239) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:225) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:213) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.ModelControllerImpl.writeModel(ModelControllerImpl.java:580) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.OperationContextImpl.createPersistenceResource(OperationContextImpl.java:229) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.AbstractOperationContext.doCompleteStep(AbstractOperationContext.java:543) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.AbstractOperationContext.completeStepInternal(AbstractOperationContext.java:298) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.AbstractOperationContext.finishStep(AbstractOperationContext.java:752) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.AbstractOperationContext.executeStep(AbstractOperationContext.java:727) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.AbstractOperationContext.doCompleteStep(AbstractOperationContext.java:501) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.AbstractOperationContext.completeStepInternal(AbstractOperationContext.java:298) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.AbstractOperationContext.executeOperation(AbstractOperationContext.java:293) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.ModelControllerImpl.internalExecute(ModelControllerImpl.java:276) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.ModelControllerImpl.execute(ModelControllerImpl.java:150) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.remote.ModelControllerClientOperationHandler$ExecuteRequestHandler.doExecute(ModelControllerClientOperationHandler.java:199) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.remote.ModelControllerClientOperationHandler$ExecuteRequestHandler.access$300(ModelControllerClientOperationHandler.java:130) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.remote.ModelControllerClientOperationHandler$ExecuteRequestHandler$1$1.run(ModelControllerClientOperationHandler.java:150) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.remote.ModelControllerClientOperationHandler$ExecuteRequestHandler$1$1.run(ModelControllerClientOperationHandler.java:146) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at java.security.AccessController.doPrivileged(Native Method) [rt.jar:1.8.0_25]
+	at javax.security.auth.Subject.doAs(Subject.java:422) [rt.jar:1.8.0_25]
+	at org.jboss.as.controller.AccessAuditContext.doAs(AccessAuditContext.java:94) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.remote.ModelControllerClientOperationHandler$ExecuteRequestHandler$1.execute(ModelControllerClientOperationHandler.java:146) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.protocol.mgmt.AbstractMessageHandler$2$1.doExecute(AbstractMessageHandler.java:283) [wildfly-protocol-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.protocol.mgmt.AbstractMessageHandler$AsyncTaskRunner.run(AbstractMessageHandler.java:504) [wildfly-protocol-8.2.0.Final.jar:8.2.0.Final]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [rt.jar:1.8.0_25]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [rt.jar:1.8.0_25]
+	at java.lang.Thread.run(Thread.java:745) [rt.jar:1.8.0_25]
+	at org.jboss.threads.JBossThread.run(JBossThread.java:122) [jboss-threads-2.1.1.Final.jar:2.1.1.Final]
+
+2015-04-09 15:21:34,079 WARN  [org.jboss.as.jpa] (management-handler-thread - 1) JBAS011411: Unexpected problem gathering statistics: java.lang.IllegalStateException: JBAS011477: Persistence unit 'fx-rest-1.0.war#fxPU' is not available
+	at org.jboss.as.jpa.management.EntityManagerFactoryLookup.entityManagerFactory(EntityManagerFactoryLookup.java:44)
+	at org.jboss.as.jpa.hibernate4.management.HibernateEntityStatistics.getDynamicChildrenNames(HibernateEntityStatistics.java:145)
+	at org.jboss.as.jpa.management.DynamicManagementStatisticsResource.getChildren(DynamicManagementStatisticsResource.java:204)
+	at org.jboss.as.controller.registry.AbstractModelResource$DelegateResource.getChildren(AbstractModelResource.java:254) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:252) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:239) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:225) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:254) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:239) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:225) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:254) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:239) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:225) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:254) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:239) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:225) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:213) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.ModelControllerImpl.writeModel(ModelControllerImpl.java:580) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.OperationContextImpl.createPersistenceResource(OperationContextImpl.java:229) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.AbstractOperationContext.doCompleteStep(AbstractOperationContext.java:543) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.AbstractOperationContext.completeStepInternal(AbstractOperationContext.java:298) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.AbstractOperationContext.finishStep(AbstractOperationContext.java:752) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.AbstractOperationContext.executeStep(AbstractOperationContext.java:727) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.AbstractOperationContext.doCompleteStep(AbstractOperationContext.java:501) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.AbstractOperationContext.completeStepInternal(AbstractOperationContext.java:298) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.AbstractOperationContext.executeOperation(AbstractOperationContext.java:293) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.ModelControllerImpl.internalExecute(ModelControllerImpl.java:276) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.ModelControllerImpl.execute(ModelControllerImpl.java:150) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.remote.ModelControllerClientOperationHandler$ExecuteRequestHandler.doExecute(ModelControllerClientOperationHandler.java:199) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.remote.ModelControllerClientOperationHandler$ExecuteRequestHandler.access$300(ModelControllerClientOperationHandler.java:130) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.remote.ModelControllerClientOperationHandler$ExecuteRequestHandler$1$1.run(ModelControllerClientOperationHandler.java:150) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.remote.ModelControllerClientOperationHandler$ExecuteRequestHandler$1$1.run(ModelControllerClientOperationHandler.java:146) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at java.security.AccessController.doPrivileged(Native Method) [rt.jar:1.8.0_25]
+	at javax.security.auth.Subject.doAs(Subject.java:422) [rt.jar:1.8.0_25]
+	at org.jboss.as.controller.AccessAuditContext.doAs(AccessAuditContext.java:94) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.remote.ModelControllerClientOperationHandler$ExecuteRequestHandler$1.execute(ModelControllerClientOperationHandler.java:146) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.protocol.mgmt.AbstractMessageHandler$2$1.doExecute(AbstractMessageHandler.java:283) [wildfly-protocol-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.protocol.mgmt.AbstractMessageHandler$AsyncTaskRunner.run(AbstractMessageHandler.java:504) [wildfly-protocol-8.2.0.Final.jar:8.2.0.Final]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [rt.jar:1.8.0_25]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [rt.jar:1.8.0_25]
+	at java.lang.Thread.run(Thread.java:745) [rt.jar:1.8.0_25]
+	at org.jboss.threads.JBossThread.run(JBossThread.java:122) [jboss-threads-2.1.1.Final.jar:2.1.1.Final]
+
+2015-04-09 15:21:34,311 INFO  [org.jboss.as.server] (management-handler-thread - 1) JBAS018565: Replaced deployment "mariadb-java-client-1.1.7.jar" with deployment "mariadb-java-client-1.1.7.jar"
+2015-04-09 15:21:34,318 INFO  [org.jboss.as.controller] (management-handler-thread - 1) JBAS014774: Service status report
+JBAS014777:   Services which failed to start:      service jboss.deployment.unit."fx-rest-1.0.war".INSTALL: org.jboss.msc.service.StartException in service jboss.deployment.unit."fx-rest-1.0.war".INSTALL: JBAS018733: Failed to process phase INSTALL of deployment "fx-rest-1.0.war"
+
+2015-04-09 15:21:38,885 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 209) JBAS011410: Stopping Persistence Unit (phase 1 of 2) Service 'fx-rest-1.0.war#fxPU'
+2015-04-09 15:21:38,898 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) JBAS015877: Stopped deployment fx-rest-1.0.war (runtime-name: fx-rest-1.0.war) in 15ms
+2015-04-09 15:21:38,906 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) JBAS015876: Starting deployment of "fx-rest-1.0.war" (runtime-name: "fx-rest-1.0.war")
+2015-04-09 15:21:38,945 INFO  [org.jboss.as.jpa] (MSC service thread 1-2) JBAS011401: Read persistence.xml for fxPU
+2015-04-09 15:21:38,968 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 209) JBAS011409: Starting Persistence Unit (phase 1 of 2) Service 'fx-rest-1.0.war#fxPU'
+2015-04-09 15:21:38,973 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 209) HHH000204: Processing PersistenceUnitInfo [
+	name: fxPU
+	...]
+2015-04-09 15:21:39,171 INFO  [org.jboss.weld.deployer] (MSC service thread 1-7) JBAS016002: Processing weld deployment fx-rest-1.0.war
+2015-04-09 15:21:39,179 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-7) JNDI bindings for session bean named FxUsersServiceImpl in deployment unit deployment "fx-rest-1.0.war" are as follows:
+
+	java:global/fx-rest-1.0/FxUsersServiceImpl!com.uml.fx.entities.FxUsersService
+	java:app/fx-rest-1.0/FxUsersServiceImpl!com.uml.fx.entities.FxUsersService
+	java:module/FxUsersServiceImpl!com.uml.fx.entities.FxUsersService
+	java:global/fx-rest-1.0/FxUsersServiceImpl
+	java:app/fx-rest-1.0/FxUsersServiceImpl
+	java:module/FxUsersServiceImpl
+
+2015-04-09 15:21:39,199 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-7) JNDI bindings for session bean named ContactServiceImpl in deployment unit deployment "fx-rest-1.0.war" are as follows:
+
+	java:global/fx-rest-1.0/ContactServiceImpl!com.uml.fx.entities.ContactService
+	java:app/fx-rest-1.0/ContactServiceImpl!com.uml.fx.entities.ContactService
+	java:module/ContactServiceImpl!com.uml.fx.entities.ContactService
+	java:global/fx-rest-1.0/ContactServiceImpl
+	java:app/fx-rest-1.0/ContactServiceImpl
+	java:module/ContactServiceImpl
+
+2015-04-09 15:21:39,221 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-7) JNDI bindings for session bean named NewsServiceImpl in deployment unit deployment "fx-rest-1.0.war" are as follows:
+
+	java:global/fx-rest-1.0/NewsServiceImpl!com.uml.fx.entities.NewsService
+	java:app/fx-rest-1.0/NewsServiceImpl!com.uml.fx.entities.NewsService
+	java:module/NewsServiceImpl!com.uml.fx.entities.NewsService
+	java:global/fx-rest-1.0/NewsServiceImpl
+	java:app/fx-rest-1.0/NewsServiceImpl
+	java:module/NewsServiceImpl
+
+2015-04-09 15:21:39,239 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-7) JNDI bindings for session bean named TaxCalculatorImpl in deployment unit deployment "fx-rest-1.0.war" are as follows:
+
+	java:global/fx-rest-1.0/TaxCalculatorImpl!com.uml.fx.entities.TaxCalculator
+	java:app/fx-rest-1.0/TaxCalculatorImpl!com.uml.fx.entities.TaxCalculator
+	java:module/TaxCalculatorImpl!com.uml.fx.entities.TaxCalculator
+	java:global/fx-rest-1.0/TaxCalculatorImpl
+	java:app/fx-rest-1.0/TaxCalculatorImpl
+	java:module/TaxCalculatorImpl
+
+2015-04-09 15:21:39,258 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-7) JNDI bindings for session bean named AppraisalServiceImpl in deployment unit deployment "fx-rest-1.0.war" are as follows:
+
+	java:global/fx-rest-1.0/AppraisalServiceImpl!com.uml.fx.entities.AppraisalService
+	java:app/fx-rest-1.0/AppraisalServiceImpl!com.uml.fx.entities.AppraisalService
+	java:module/AppraisalServiceImpl!com.uml.fx.entities.AppraisalService
+	java:global/fx-rest-1.0/AppraisalServiceImpl
+	java:app/fx-rest-1.0/AppraisalServiceImpl
+	java:module/AppraisalServiceImpl
+
+2015-04-09 15:21:39,278 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-7) JNDI bindings for session bean named TaxRateServiceImpl in deployment unit deployment "fx-rest-1.0.war" are as follows:
+
+	java:global/fx-rest-1.0/TaxRateServiceImpl!com.uml.fx.entities.TaxRateService
+	java:app/fx-rest-1.0/TaxRateServiceImpl!com.uml.fx.entities.TaxRateService
+	java:module/TaxRateServiceImpl!com.uml.fx.entities.TaxRateService
+	java:global/fx-rest-1.0/TaxRateServiceImpl
+	java:app/fx-rest-1.0/TaxRateServiceImpl
+	java:module/TaxRateServiceImpl
+
+2015-04-09 15:21:39,348 INFO  [org.jboss.weld.deployer] (MSC service thread 1-1) JBAS016005: Starting Services for CDI deployment: fx-rest-1.0.war
+2015-04-09 15:21:39,360 INFO  [org.jboss.weld.deployer] (MSC service thread 1-7) JBAS016008: Starting weld service for deployment fx-rest-1.0.war
+2015-04-09 15:21:39,372 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 209) JBAS011409: Starting Persistence Unit (phase 2 of 2) Service 'fx-rest-1.0.war#fxPU'
+2015-04-09 15:21:39,390 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 209) HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2015-04-09 15:21:39,416 WARN  [org.hibernate.mapping.RootClass] (ServerService Thread Pool -- 209) HHH000038: Composite-id class does not override equals(): com.uml.fx.entities.AppraisalData
+2015-04-09 15:21:39,424 WARN  [org.hibernate.mapping.RootClass] (ServerService Thread Pool -- 209) HHH000039: Composite-id class does not override hashCode(): com.uml.fx.entities.AppraisalData
+2015-04-09 15:21:39,433 INFO  [org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory] (ServerService Thread Pool -- 209) HHH000397: Using ASTQueryTranslatorFactory
+2015-04-09 15:21:39,799 INFO  [org.jboss.resteasy.spi.ResteasyDeployment] (MSC service thread 1-4) Deploying javax.ws.rs.core.Application: class com.uml.fx.rest.ApplicationConfig
+2015-04-09 15:21:39,806 INFO  [org.jboss.resteasy.spi.ResteasyDeployment] (MSC service thread 1-4) Adding class resource com.uml.fx.rest.Appraisal from Application class com.uml.fx.rest.ApplicationConfig
+2015-04-09 15:21:39,813 INFO  [org.jboss.resteasy.spi.ResteasyDeployment] (MSC service thread 1-4) Adding class resource com.uml.fx.rest.TaxRates from Application class com.uml.fx.rest.ApplicationConfig
+2015-04-09 15:21:39,820 INFO  [org.jboss.resteasy.spi.ResteasyDeployment] (MSC service thread 1-4) Adding class resource com.uml.fx.rest.FundsExpert from Application class com.uml.fx.rest.ApplicationConfig
+2015-04-09 15:21:39,828 INFO  [org.jboss.resteasy.spi.ResteasyDeployment] (MSC service thread 1-4) Adding provider class com.uml.fx.rest.CORSFilter from Application class com.uml.fx.rest.ApplicationConfig
+2015-04-09 15:21:39,836 INFO  [org.jboss.resteasy.spi.ResteasyDeployment] (MSC service thread 1-4) Adding class resource com.uml.fx.rest.ContactRest from Application class com.uml.fx.rest.ApplicationConfig
+2015-04-09 15:21:39,843 INFO  [org.jboss.resteasy.spi.ResteasyDeployment] (MSC service thread 1-4) Adding class resource com.uml.fx.rest.NewsRest from Application class com.uml.fx.rest.ApplicationConfig
+2015-04-09 15:21:39,883 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) JBAS017534: Registered web context: /fx-rest-1.0
+2015-04-09 15:21:39,900 INFO  [org.jboss.as.server] (management-handler-thread - 3) JBAS018565: Replaced deployment "fx-rest-1.0.war" with deployment "fx-rest-1.0.war"
+2015-04-09 15:21:39,906 INFO  [org.jboss.as.controller] (management-handler-thread - 3) JBAS014774: Service status report
+JBAS014777:   Services which failed to start:      service jboss.deployment.unit."fx-rest-1.0.war".INSTALL
+
+2015-04-09 15:21:50,058 INFO  [com.uml.fx.rest.ContactRest] (default task-32) getting all contacts
+2015-04-09 15:22:09,502 INFO  [com.uml.fx.rest.NewsRest] (default task-33) getting news articles
+2015-04-09 15:22:09,502 INFO  [com.uml.fx.rest.FundsExpert] (default task-34) getting active FxUsers
+2015-04-09 19:19:56,786 WARN  [org.jboss.resteasy.core.ExceptionHandler] (default task-36) failed to execute: javax.ws.rs.NotFoundException: Unable to extract parameter from http request: javax.ws.rs.PathParam("fromValue") value is 'undefined' for public javax.ws.rs.core.Response com.uml.fx.rest.Appraisal.getAppraisalDataInAssessedRange(java.lang.String,java.lang.Double,java.lang.Double,javax.servlet.http.HttpServletRequest)
+	at org.jboss.resteasy.core.PathParamInjector$1.throwProcessingException(PathParamInjector.java:54) [resteasy-jaxrs-3.0.10.Final.jar:]
+	at org.jboss.resteasy.core.StringParameterInjector.extractValue(StringParameterInjector.java:336) [resteasy-jaxrs-3.0.10.Final.jar:]
+	at org.jboss.resteasy.core.PathParamInjector.inject(PathParamInjector.java:131) [resteasy-jaxrs-3.0.10.Final.jar:]
+	at org.jboss.resteasy.core.MethodInjectorImpl.injectArguments(MethodInjectorImpl.java:89) [resteasy-jaxrs-3.0.10.Final.jar:]
+	at org.jboss.resteasy.core.MethodInjectorImpl.invoke(MethodInjectorImpl.java:112) [resteasy-jaxrs-3.0.10.Final.jar:]
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invokeOnTarget(ResourceMethodInvoker.java:296) [resteasy-jaxrs-3.0.10.Final.jar:]
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:250) [resteasy-jaxrs-3.0.10.Final.jar:]
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:237) [resteasy-jaxrs-3.0.10.Final.jar:]
+	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:356) [resteasy-jaxrs-3.0.10.Final.jar:]
+	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:179) [resteasy-jaxrs-3.0.10.Final.jar:]
+	at org.jboss.resteasy.plugins.server.servlet.ServletContainerDispatcher.service(ServletContainerDispatcher.java:220) [resteasy-jaxrs-3.0.10.Final.jar:]
+	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:56) [resteasy-jaxrs-3.0.10.Final.jar:]
+	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:51) [resteasy-jaxrs-3.0.10.Final.jar:]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790) [jboss-servlet-api_3.1_spec-1.0.0.Final.jar:1.0.0.Final]
+	at io.undertow.servlet.handlers.ServletHandler.handleRequest(ServletHandler.java:85) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:61) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at org.wildfly.extension.undertow.security.SecurityContextAssociationHandler.handleRequest(SecurityContextAssociationHandler.java:78)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:131) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:56) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:45) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:63) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.security.handlers.AuthenticationMechanismsHandler.handleRequest(AuthenticationMechanismsHandler.java:58) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.security.CachedAuthenticatedSessionHandler.handleRequest(CachedAuthenticatedSessionHandler.java:70) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.security.handlers.SecurityInitialHandler.handleRequest(SecurityInitialHandler.java:76) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at org.wildfly.extension.undertow.security.jacc.JACCContextIdHandler.handleRequest(JACCContextIdHandler.java:61)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:261) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:247) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler.access$000(ServletInitialHandler.java:76) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:166) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.server.Connectors.executeRootHandler(Connectors.java:197) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:759) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [rt.jar:1.8.0_25]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [rt.jar:1.8.0_25]
+	at java.lang.Thread.run(Thread.java:745) [rt.jar:1.8.0_25]
+Caused by: java.lang.NumberFormatException: For input string: "undefined"
+	at sun.misc.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:2043) [rt.jar:1.8.0_25]
+	at sun.misc.FloatingDecimal.parseDouble(FloatingDecimal.java:110) [rt.jar:1.8.0_25]
+	at java.lang.Double.parseDouble(Double.java:538) [rt.jar:1.8.0_25]
+	at java.lang.Double.<init>(Double.java:608) [rt.jar:1.8.0_25]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) [rt.jar:1.8.0_25]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) [rt.jar:1.8.0_25]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) [rt.jar:1.8.0_25]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408) [rt.jar:1.8.0_25]
+	at org.jboss.resteasy.core.StringParameterInjector.extractValue(StringParameterInjector.java:319) [resteasy-jaxrs-3.0.10.Final.jar:]
+	... 38 more
+
